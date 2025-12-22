@@ -1,225 +1,244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="no-referrer" />
+
   <title>Cognitive Workstead</title>
-  <meta name="description" content="Cognitive Workstead is a hands-on environment for applying AI to real-world systems across energy, infrastructure, and operations." />
+  <meta name="description" content="Cognitive Workstead explores applied intelligence through real-world systems. COLBY integrates AI into energy, infrastructure, and operational environments." />
 
   <style>
-    :root{
-      --bg:#ffffff;
-      --text:#0b1220;
-      --muted:#3a4a63;
-      --border:#e6e9f2;
-      --card:#ffffff;
-      --shadow: 0 18px 60px rgba(10,18,32,0.08);
-      --shadow2: 0 10px 30px rgba(10,18,32,0.06);
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
+
+      --accent-sun: #facc15;
+      --accent-green: #22c55e;
+      --accent-teal: #06b6d4;
+
       --radius: 18px;
-      --max: 1120px;
-
-      --c1:#7c3aed;
-      --c2:#06b6d4;
-      --c3:#22c55e;
-      --c4:#f97316;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+      --max-width: 1100px;
     }
 
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(900px 520px at 10% 0%, rgba(124,58,237,0.12), transparent 60%),
-        radial-gradient(900px 520px at 90% 10%, rgba(6,182,212,0.12), transparent 55%),
-        radial-gradient(900px 520px at 55% 100%, rgba(34,197,94,0.10), transparent 60%),
-        var(--bg);
-      line-height:1.5;
-      letter-spacing:0.2px;
+    * {
+      box-sizing: border-box;
     }
 
-    a{ color:inherit; text-decoration:none; }
-    a:focus-visible, button:focus-visible{
-      outline: 3px solid rgba(6,182,212,0.35);
-      outline-offset: 3px;
-      border-radius: 12px;
-    }
-
-    .wrap{ max-width:var(--max); margin:0 auto; padding: 26px 18px 70px; }
-
-    header{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding: 10px 0 24px;
-    }
-
-    .brand{ display:flex; align-items:center; gap:12px; }
-    .mark{
-      width:42px; height:42px; border-radius:14px;
-      background: linear-gradient(135deg, rgba(124,58,237,0.95), rgba(6,182,212,0.90));
-      box-shadow: var(--shadow2);
-      border: 1px solid rgba(10,18,32,0.08);
-    }
-    .brand h1{ margin:0; font-size:16px; font-weight:750; letter-spacing:0.4px; }
-    .brand p{ margin:0; font-size:13px; color:var(--muted); }
-
-    nav{ display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end; }
-    .pill{
-      padding:10px 12px;
-      border:1px solid var(--border);
-      border-radius:999px;
-      background: rgba(255,255,255,0.7);
-      box-shadow: 0 6px 18px rgba(10,18,32,0.04);
-      font-size:13px;
-      color:var(--muted);
-      transition: transform 120ms ease, box-shadow 120ms ease;
-    }
-    .pill:hover{ transform: translateY(-1px); box-shadow: 0 10px 26px rgba(10,18,32,0.06); }
-
-    .hero{
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,0.86);
-      box-shadow: var(--shadow);
-      padding: 28px;
-      overflow:hidden;
-      position:relative;
-    }
-    .hero:before{
-      content:"";
-      position:absolute; inset:-2px;
-      background:
-        radial-gradient(520px 240px at 16% 10%, rgba(249,115,22,0.14), transparent 62%),
-        radial-gradient(520px 240px at 85% 18%, rgba(124,58,237,0.14), transparent 60%),
-        radial-gradient(520px 240px at 60% 90%, rgba(34,197,94,0.10), transparent 65%);
-      pointer-events:none;
-      filter: blur(1px);
-    }
-    .hero-inner{ position:relative; display:grid; grid-template-columns: 1.25fr 0.75fr; gap:18px; }
-
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 8px 12px;
-      border-radius:999px;
-      border: 1px solid rgba(6,182,212,0.25);
-      background: rgba(6,182,212,0.08);
-      color: #0b3b43;
-      font-size: 13px;
-      width: fit-content;
-    }
-    .dot{ width:9px; height:9px; border-radius:50%; background: var(--c2); }
-
-    h2{
-      margin: 14px 0 10px;
-      font-size: clamp(30px, 4.2vw, 46px);
-      line-height:1.08;
-      letter-spacing:0.2px;
-    }
-    .lead{
-      margin:0;
-      font-size:16px;
-      color: var(--muted);
-      max-width: 66ch;
-    }
-
-    .cta{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border:1px solid var(--border);
-      background:#fff;
-      box-shadow: 0 10px 30px rgba(10,18,32,0.06);
-      font-weight:700;
-      font-size:14px;
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
-      transition: transform 120ms ease, box-shadow 120ms ease;
-    }
-    .btn:hover{ transform: translateY(-1px); box-shadow: 0 14px 38px rgba(10,18,32,0.08); }
-    .btn.primary{
-      border: none;
-      background: linear-gradient(135deg, rgba(124,58,237,0.95), rgba(6,182,212,0.92));
-      color:#fff;
+      background: var(--bg);
+      line-height: 1.55;
     }
 
-    .side{
-      border:1px solid var(--border);
-      border-radius: 16px;
-      background:#fff;
-      padding: 16px;
-      box-shadow: var(--shadow2);
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-    .side h3{
-      margin:0 0 8px;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-placeholder {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(
+        135deg,
+        var(--accent-sun),
+        var(--accent-green),
+        var(--accent-teal)
+      );
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .brand-text p {
+      margin: 0;
       font-size: 13px;
-      letter-spacing:0.5px;
-      text-transform: uppercase;
-      color: rgba(11,18,32,0.78);
+      color: var(--muted);
     }
-    .side ul{ margin:0; padding-left:18px; color:var(--muted); font-size:14px; }
-    .side li{ margin: 8px 0; }
 
-    section{ margin-top: 26px; }
-    .section-title{
-      display:flex; align-items:baseline; justify-content:space-between;
-      gap:12px; margin-bottom: 12px;
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
     }
-    .section-title h3{ margin:0; font-size:18px; letter-spacing:0.2px; }
-    .section-title span{ font-size:13px; color:var(--muted); }
 
-    .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .card{
-      border:1px solid var(--border);
-      border-radius: 16px;
-      background:#fff;
-      padding: 16px;
-      box-shadow: var(--shadow2);
-      min-height: 150px;
-    }
-    .card h4{ margin:0 0 8px; font-size: 15px; }
-    .card p{ margin:0; color:var(--muted); font-size: 14px; }
-
-    .two{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
-    .panel{
-      border:1px solid var(--border);
-      border-radius:16px;
-      background:#fff;
-      padding: 16px;
-      box-shadow: var(--shadow2);
-    }
-    .panel p{ margin:0; color:var(--muted); font-size: 14px; }
-    .bullets{ margin: 12px 0 0; padding-left: 18px; color:var(--muted); font-size:14px; }
-    .bullets li{ margin: 8px 0; }
-
-    .tag{
-      display:inline-block;
-      padding: 6px 10px;
+    nav a {
+      padding: 10px 14px;
       border-radius: 999px;
       border: 1px solid var(--border);
-      font-size: 12px;
+      font-size: 14px;
       color: var(--muted);
-      background: rgba(255,255,255,0.7);
-      margin: 6px 8px 0 0;
+      transition: all 0.15s ease;
     }
 
-    footer{
-      margin-top: 34px;
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
+    nav a:hover {
+      color: var(--text);
+      border-color: var(--accent-teal);
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+      margin-bottom: 64px;
+    }
+
+    .hero h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.15;
+      margin: 0 0 16px;
+    }
+
+    .hero p {
+      font-size: 16px;
       color: var(--muted);
+      max-width: 60ch;
+      margin: 0 0 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 600;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn.primary {
+      background: linear-gradient(
+        135deg,
+        var(--accent-sun),
+        var(--accent-green),
+        var(--accent-teal)
+      );
+      color: #0f172a;
+      border: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .portrait {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .portrait-caption {
+      margin-top: 12px;
       font-size: 13px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:space-between;
+      color: var(--muted);
     }
 
-    @media (max-width: 900px){
-      .hero-inner{ grid-template-columns: 1fr; }
-      .grid{ grid-template-columns: 1fr; }
-      .two{ grid-template-columns: 1fr; }
-      nav{ justify-content:flex-start; }
+    /* Sections */
+    section {
+      margin-bottom: 56px;
+    }
+
+    section h3 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    section p {
+      max-width: 70ch;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    .card h4 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -228,201 +247,108 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="mark" aria-hidden="true"></div>
-        <div>
+        <!-- Replace this div with <img src="logo.png"> when logo is finalized -->
+        <div class="logo-placeholder" aria-hidden="true"></div>
+        <div class="brand-text">
           <h1>Cognitive Workstead</h1>
           <p>Applied intelligence through real-world systems</p>
         </div>
       </div>
-      <nav aria-label="Primary navigation">
-        <a class="pill" href="#colby">COLBY</a>
-        <a class="pill" href="#domains">Domains</a>
-        <a class="pill" href="#labs">Labs</a>
-        <a class="pill" href="#learning">Learning Centers</a>
-        <a class="pill" href="#connect">Connect</a>
+
+      <nav>
+        <a href="#colby">COLBY</a>
+        <a href="#labs">Labs</a>
+        <a href="#learning">Learning Centers</a>
+        <a href="#connect">Connect</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" aria-label="Introduction">
-        <div class="hero-inner">
-          <div>
-            <div class="kicker"><span class="dot" aria-hidden="true"></span>Learning-forward, evidence-driven, built for real conditions</div>
-            <h2>Learning how intelligent systems behave in the real world.</h2>
-            <p class="lead">
-              Cognitive Workstead is a hands-on environment where AI, infrastructure, energy, and operations are explored through lived experience.
-              The work centers on observation over time, practical iteration, and documentation that stays grounded in what actually happens.
-            </p>
-
-            <div class="cta">
-              <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">Email Colby</a>
-              <a class="btn" href="#colby">Meet COLBY</a>
-            </div>
+      <section class="hero">
+        <div>
+          <h2>Learning how intelligent systems behave in the real world.</h2>
+          <p>
+            Cognitive Workstead is a hands-on environment focused on understanding how AI, energy,
+            infrastructure, and operations interact over time. Learning here is grounded in lived
+            systems, not abstractions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">Email COLBY</a>
+            <a class="btn" href="#colby">Meet COLBY</a>
           </div>
-
-          <aside class="side" aria-label="Quick overview">
-            <h3>What you will find here</h3>
-            <ul>
-              <li>AI integrated into real operations</li>
-              <li>Energy and infrastructure learning</li>
-              <li>Systems observed across seasons and use</li>
-              <li>Documentation that improves with time</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-
-      <section id="colby" aria-label="COLBY">
-        <div class="section-title">
-          <h3>COLBY</h3>
-          <span>The cognitive brain behind the work</span>
         </div>
 
-        <div class="two">
-          <div class="panel">
-            <p>
-              COLBY is the Cognitive Operations and Learning Brain that integrates artificial intelligence into real-world systems.
-              COLBY connects operational signals, environmental data, and human input into a shared learning model that improves over time.
-            </p>
-            <ul class="bullets">
-              <li>Observes system behavior across domains</li>
-              <li>Correlates patterns across time and context</li>
-              <li>Supports decisions with operational memory</li>
-              <li>Strengthens resilience through feedback loops</li>
-            </ul>
+        <div>
+          <div class="portrait">
+            <img src="artemis-colby.png" alt="Artemis Colby, physical representation of COLBY" />
           </div>
-
-          <div class="panel">
-            <p>
-              COLBY focuses on real conditions. Learning is shaped by maintenance cycles, weather, usage patterns, and constraints.
-              Outputs are designed to be understandable and useful to people operating the systems.
-            </p>
-            <div>
-              <span class="tag">Applied AI</span>
-              <span class="tag">Operational memory</span>
-              <span class="tag">Observability</span>
-              <span class="tag">Resilience</span>
-              <span class="tag">Human-in-the-loop</span>
-            </div>
+          <div class="portrait-caption">
+            <strong>Artemis Colby</strong> — the physical manifestation of COLBY, designed to operate
+            alongside real systems in real environments.
           </div>
         </div>
       </section>
 
-      <section id="domains" aria-label="Core domains">
-        <div class="section-title">
-          <h3>Core domains of work</h3>
-          <span>Learning concentrated where systems meet reality</span>
-        </div>
+      <section id="colby">
+        <h3>COLBY</h3>
+        <p>
+          COLBY is the Cognitive Operations and Learning Brain embedded within Cognitive Workstead.
+          It observes system behavior, correlates signals over time, and supports decision-making
+          through accumulated operational understanding.
+        </p>
+      </section>
 
+      <section id="labs">
+        <h3>Cognitive Workstead Labs</h3>
         <div class="grid">
           <div class="card">
-            <h4>Intelligent systems</h4>
-            <p>Decision support, monitoring, automation, and learning loops designed to assist human judgment over time.</p>
+            <h4>Energy and Power</h4>
+            <p>Solar generation, storage, load behavior, and efficiency observed through continuous operation.</p>
           </div>
           <div class="card">
-            <h4>Energy and power systems</h4>
-            <p>Solar generation, storage, load behavior, and efficiency tracked through continuous operation and measurement.</p>
+            <h4>Intelligent Systems</h4>
+            <p>Applied AI for monitoring, decision support, and adaptive automation.</p>
           </div>
           <div class="card">
-            <h4>Operations and resilience</h4>
-            <p>Reliability, recovery, and long-term maintainability studied under real constraints and evolving requirements.</p>
+            <h4>Resilient Operations</h4>
+            <p>Reliability, recovery, and long-term system health under real constraints.</p>
           </div>
         </div>
       </section>
 
-      <section id="labs" aria-label="Labs">
-        <div class="section-title">
-          <h3>Cognitive Workstead Labs</h3>
-          <span>Focused environments for experimentation</span>
-        </div>
-
-        <div class="two">
-          <div class="panel">
-            <p>
-              Labs are structured around specific learning objectives and connected back into COLBY’s long-term understanding.
-              Each lab keeps scope clear while remaining grounded in real operation.
-            </p>
-            <ul class="bullets">
-              <li>Edge intelligence and local inference</li>
-              <li>Energy optimization and system balancing</li>
-              <li>Environmental monitoring and response</li>
-              <li>Automation with human oversight</li>
-            </ul>
+      <section id="learning">
+        <h3>Learning Centers</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>System Documentation</h4>
+            <p>Clear records of what exists, how it behaves, and why it was designed that way.</p>
           </div>
-
-          <div class="panel">
-            <p>
-              Labs produce observations, datasets, and lessons learned. Findings are refined through repetition across time and conditions.
-            </p>
-            <ul class="bullets">
-              <li>Baseline measurements</li>
-              <li>Controlled adjustments</li>
-              <li>Longitudinal tracking</li>
-              <li>Documentation as a living asset</li>
-            </ul>
+          <div class="card">
+            <h4>Operational Playbooks</h4>
+            <p>Repeatable guidance for maintenance, response, and improvement.</p>
+          </div>
+          <div class="card">
+            <h4>Emerging Work</h4>
+            <p>New ideas and projects evolve as systems mature and learning compounds.</p>
           </div>
         </div>
       </section>
 
-      <section id="learning" aria-label="Learning Centers">
-        <div class="section-title">
-          <h3>Learning Centers</h3>
-          <span>Structured spaces for knowledge transfer</span>
-        </div>
-
-        <div class="two">
-          <div class="panel">
-            <p>
-              Learning Centers translate applied work into usable understanding. They capture designs, playbooks, and long-term performance studies.
-            </p>
-            <ul class="bullets">
-              <li>System overviews and diagrams</li>
-              <li>Operational playbooks</li>
-              <li>Performance trends over time</li>
-              <li>Guided learning paths by domain</li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <p>
-              Emerging work is documented as it stabilizes. Topics evolve through operation, observation, and iteration.
-            </p>
-            <ul class="bullets">
-              <li>AI-assisted facilities intelligence</li>
-              <li>Adaptive energy behavior modeling</li>
-              <li>Long-term system health prediction</li>
-              <li>Human-centered automation patterns</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="connect" aria-label="Connect">
-        <div class="section-title">
-          <h3>Connect</h3>
-          <span>Conversation is welcome</span>
-        </div>
-
-        <div class="panel">
-          <p>
-            If you are interested in the work, shared learning, or future collaboration, email is the best place to begin.
-          </p>
-          <div class="cta" style="margin-top:12px">
-            <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">colby@cognitiveworkstead.com</a>
-            <a class="btn" href="#domains">Explore the domains</a>
-          </div>
-        </div>
+      <section id="connect">
+        <h3>Connect</h3>
+        <p>
+          Cognitive Workstead is built around shared learning. Conversations begin by email.
+        </p>
+        <p>
+          <strong>colby@cognitiveworkstead.com</strong>
+        </p>
       </section>
     </main>
 
     <footer>
-      <div>© <span id="year"></span> Cognitive Workstead LLC</div>
-      <div>Applied intelligence through real-world systems</div>
+      <span>© 2025 Cognitive Workstead LLC</span>
+      <span>Built for learning, not spectacle</span>
     </footer>
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
