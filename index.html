@@ -24,7 +24,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -70,14 +69,12 @@
       height: 44px;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--sun), var(--green), var(--teal));
-      flex: 0 0 auto;
     }
 
     .brand h1 {
       margin: 0;
       font-size: 18px;
       font-weight: 800;
-      letter-spacing: 0.2px;
     }
 
     .brand p {
@@ -89,7 +86,6 @@
     nav {
       display: flex;
       gap: 12px;
-      flex-wrap: wrap;
     }
 
     nav a {
@@ -98,13 +94,13 @@
       border: 1px solid var(--border);
       font-size: 14px;
       color: var(--muted);
-      transition: border 0.15s ease, transform 0.15s ease, color 0.15s ease;
       background: #fff;
+      transition: transform 0.15s ease, border-color 0.15s ease;
     }
 
     nav a:hover {
-      border-color: var(--teal);
       transform: translateY(-1px);
+      border-color: var(--teal);
       color: var(--text);
     }
 
@@ -114,7 +110,6 @@
       gap: 32px;
       align-items: center;
       margin-bottom: 56px;
-      padding-top: 10px;
     }
 
     .hero h2 {
@@ -132,8 +127,8 @@
     .actions {
       display: flex;
       gap: 14px;
-      flex-wrap: wrap;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -175,23 +170,11 @@
       object-fit: cover;
     }
 
-    .colby-thumb span {
-      font-size: 14px;
-      font-weight: 800;
-    }
-
     .portrait {
       border-radius: var(--radius);
       overflow: hidden;
       border: 1px solid var(--border);
       box-shadow: var(--shadow);
-      background: #fff;
-    }
-
-    .caption {
-      margin-top: 12px;
-      font-size: 13px;
-      color: var(--muted);
     }
 
     section {
@@ -205,7 +188,6 @@
     }
 
     section p {
-      margin: 0;
       color: var(--muted);
       max-width: 72ch;
     }
@@ -225,24 +207,11 @@
       background: #fff;
     }
 
-    .card h4 {
-      margin: 0 0 8px;
-      font-size: 16px;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
     footer {
       border-top: 1px solid var(--border);
       padding-top: 24px;
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
       font-size: 13px;
       color: var(--muted);
     }
@@ -290,7 +259,7 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo"></div>
         <div>
           <h1>Cognitive Workstead</h1>
           <p>Applied intelligence through real-world systems</p>
@@ -301,7 +270,6 @@
         <a href="#colby">COLBY</a>
         <a href="#labs">Labs</a>
         <a href="#learning">Learning Centers</a>
-        <a href="#connect">Connect</a>
       </nav>
     </header>
 
@@ -317,19 +285,14 @@
             <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">Email COLBY</a>
 
             <button class="colby-thumb" onclick="document.getElementById('colbyModal').showModal()">
-              <img src="artemis-colby.png?v=3" alt="Meet Artemis Colby" />
-              <span>Meet COLBY</span>
+              <img src="artemis-colby.png" alt="Meet Artemis Colby" />
+              <strong>Meet COLBY</strong>
             </button>
           </div>
         </div>
 
-        <div>
-          <div class="portrait">
-            <img src="artemis-colby.png?v=3" alt="Artemis Colby" />
-          </div>
-          <div class="caption">
-            <strong>Artemis Colby</strong> — physical representation of COLBY operating alongside real systems.
-          </div>
+        <div class="portrait">
+          <img src="artemis-colby.png" alt="Artemis Colby" />
         </div>
       </section>
 
@@ -375,7 +338,6 @@
           </div>
         </div>
       </section>
-      
     </main>
 
     <footer>
@@ -386,7 +348,7 @@
 
   <dialog id="colbyModal">
     <button class="close" onclick="this.closest('dialog').close()">✕</button>
-    <img class="modal-img" src="artemis-colby.png?v=3" alt="Artemis Colby full image" />
+    <img class="modal-img" src="artemis-colby.png" alt="Artemis Colby full image" />
   </dialog>
 </body>
 </html>
