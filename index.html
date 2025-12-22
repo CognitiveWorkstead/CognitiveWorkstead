@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="referrer" content="no-referrer" />
 
   <title>Cognitive Workstead</title>
-  <meta name="description" content="Cognitive Workstead explores applied intelligence through real-world systems. COLBY integrates AI into energy, infrastructure, and operational environments." />
+  <meta name="description" content="Cognitive Workstead explores applied intelligence through real-world systems." />
 
   <style>
     :root {
@@ -35,7 +34,6 @@
     }
 
     a { color: inherit; text-decoration: none; }
-
     img { max-width: 100%; display: block; }
 
     .wrap {
@@ -44,7 +42,6 @@
       padding: 32px 20px 80px;
     }
 
-    /* Header */
     header {
       display: flex;
       justify-content: space-between;
@@ -70,7 +67,6 @@
       margin: 0;
       font-size: 18px;
       font-weight: 700;
-      letter-spacing: 0.3px;
     }
 
     .brand p {
@@ -82,7 +78,6 @@
     nav {
       display: flex;
       gap: 12px;
-      flex-wrap: wrap;
     }
 
     nav a {
@@ -91,15 +86,8 @@
       border: 1px solid var(--border);
       font-size: 14px;
       color: var(--muted);
-      transition: border 0.15s ease;
     }
 
-    nav a:hover {
-      border-color: var(--teal);
-      color: var(--text);
-    }
-
-    /* Hero */
     .hero {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
@@ -110,21 +98,17 @@
 
     .hero h2 {
       font-size: clamp(30px, 4vw, 44px);
-      line-height: 1.15;
-      margin: 0 0 16px;
+      margin-bottom: 16px;
     }
 
     .hero p {
-      font-size: 16px;
       color: var(--muted);
-      max-width: 60ch;
-      margin: 0 0 24px;
+      margin-bottom: 24px;
     }
 
     .actions {
       display: flex;
       gap: 14px;
-      flex-wrap: wrap;
       align-items: center;
     }
 
@@ -132,10 +116,8 @@
       padding: 12px 18px;
       border-radius: 14px;
       border: 1px solid var(--border);
-      font-size: 14px;
-      font-weight: 600;
       background: #fff;
-      cursor: pointer;
+      font-weight: 600;
     }
 
     .btn.primary {
@@ -143,7 +125,6 @@
       border: none;
     }
 
-    /* COLBY Thumbnail */
     .colby-thumb {
       display: inline-flex;
       align-items: center;
@@ -163,12 +144,6 @@
       object-fit: cover;
     }
 
-    .colby-thumb span {
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    /* Portrait */
     .portrait {
       border-radius: var(--radius);
       overflow: hidden;
@@ -176,30 +151,12 @@
       box-shadow: var(--shadow);
     }
 
-    .caption {
-      margin-top: 12px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    /* Sections */
     section { margin-bottom: 56px; }
-
-    section h3 {
-      font-size: 22px;
-      margin-bottom: 14px;
-    }
-
-    section p {
-      max-width: 70ch;
-      color: var(--muted);
-    }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
-      margin-top: 22px;
     }
 
     .card {
@@ -207,17 +164,6 @@
       border-radius: var(--radius);
       border: 1px solid var(--border);
       box-shadow: var(--shadow);
-      background: #fff;
-    }
-
-    .card h4 {
-      margin: 0 0 8px;
-      font-size: 16px;
-    }
-
-    .card p {
-      margin: 0;
-      font-size: 14px;
     }
 
     footer {
@@ -225,12 +171,10 @@
       padding-top: 24px;
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
       font-size: 13px;
       color: var(--muted);
     }
 
-    /* Modal */
     dialog {
       border: none;
       background: transparent;
@@ -255,9 +199,9 @@
       width: 36px;
       height: 36px;
       border-radius: 999px;
-      border: none;
       background: rgba(0,0,0,0.6);
       color: #fff;
+      border: none;
       font-size: 18px;
       cursor: pointer;
     }
@@ -273,13 +217,12 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo"></div>
         <div>
           <h1>Cognitive Workstead</h1>
           <p>Applied intelligence through real-world systems</p>
         </div>
       </div>
-
       <nav>
         <a href="#colby">COLBY</a>
         <a href="#labs">Labs</a>
@@ -288,84 +231,33 @@
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div>
-          <h2>Learning how intelligent systems behave in the real world.</h2>
-          <p>
-            Cognitive Workstead is a hands-on environment focused on understanding how AI,
-            energy, infrastructure, and operations interact over time.
-          </p>
-
-          <div class="actions">
-            <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">Email COLBY</a>
-
-            <button class="colby-thumb" onclick="document.getElementById('colbyModal').showModal()">
-              <img src="artemis-colby.png" alt="View Artemis Colby" />
-              <span>Meet COLBY</span>
-            </button>
-          </div>
-        </div>
-
-        <div>
-          <div class="portrait">
-            <img src="artemis-colby.png" alt="Artemis Colby" />
-          </div>
-          <div class="caption">
-            <strong>Artemis Colby</strong> — physical representation of COLBY operating alongside real systems.
-          </div>
-        </div>
-      </section>
-
-      <section id="colby">
-        <h3>COLBY</h3>
+    <section class="hero">
+      <div>
+        <h2>Learning how intelligent systems behave in the real world.</h2>
         <p>
-          COLBY is the Cognitive Operations and Learning Brain embedded within Cognitive Workstead.
-          It observes system behavior, correlates signals over time, and supports durable learning.
+          Cognitive Workstead studies how AI, energy, infrastructure, and operations
+          interact over time through real systems.
         </p>
-      </section>
-
-      <section id="labs">
-        <h3>Cognitive Workstead Labs</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Energy Systems</h4>
-            <p>Solar generation, storage, and load behavior studied through continuous operation.</p>
-          </div>
-          <div class="card">
-            <h4>Intelligent Systems</h4>
-            <p>Applied AI for monitoring, decision support, and adaptive automation.</p>
-          </div>
-          <div class="card">
-            <h4>Resilient Operations</h4>
-            <p>Reliability, recovery, and long-term system health under real constraints.</p>
-          </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">Email COLBY</a>
+          <button class="colby-thumb" onclick="document.getElementById('colbyModal').showModal()">
+            <img src="./artemis-colby.png" alt="Meet Artemis Colby" />
+            <span>Meet COLBY</span>
+          </button>
         </div>
-      </section>
+      </div>
 
-      <section id="learning">
-        <h3>Learning Centers</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>System Documentation</h4>
-            <p>Clear records of how systems behave, evolve, and are maintained.</p>
-          </div>
-          <div class="card">
-            <h4>Operational Playbooks</h4>
-            <p>Repeatable guidance for response, tuning, and improvement.</p>
-          </div>
-          <div class="card">
-            <h4>Emerging Work</h4>
-            <p>New ideas evolve as learning compounds over time.</p>
-          </div>
-        </div>
-      </section>
+      <div class="portrait">
+        <img src="./artemis-colby.png" alt="Artemis Colby" />
+      </div>
+    </section>
 
-      <section id="connect">
-        <h3>Connect</h3>
-        <p><strong>colby@cognitiveworkstead.com</strong></p>
-      </section>
-    </main>
+    <section id="colby">
+      <h3>COLBY</h3>
+      <p>
+        COLBY is the Cognitive Operations and Learning Brain embedded within Cognitive Workstead.
+      </p>
+    </section>
 
     <footer>
       <span>© 2025 Cognitive Workstead LLC</span>
@@ -373,10 +265,9 @@
     </footer>
   </div>
 
-  <!-- Modal -->
   <dialog id="colbyModal">
     <button class="close" onclick="this.closest('dialog').close()">✕</button>
-    <img class="modal-img" src="artemis-colby.png" alt="Artemis Colby full image" />
+    <img class="modal-img" src="./artemis-colby.png" alt="Artemis Colby full image" />
   </dialog>
 </body>
 </html>
