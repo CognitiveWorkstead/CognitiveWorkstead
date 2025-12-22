@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cognitive Workstead</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cognitive Workstead is an applied research and learning workstead focused on AI, systems thinking, and resilient design.">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 32px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cognitive Workstead</h1>
+    <div class="subtitle">
+      An applied research and learning workstead exploring AI, systems thinking, and resilient design.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Purpose</h2>
+        <p>
+          Cognitive Workstead exists to experiment, document, and teach practical approaches to modern
+          technical and organizational systems.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Focus Areas</h2>
+        <p>
+          Artificial intelligence operations, identity and trust, observability, automation,
+          and sustainable infrastructure.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Status</h2>
+        <p>
+          Early-stage planning and applied research. Public materials will expand as projects mature.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Cognitive Workstead LLC
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
