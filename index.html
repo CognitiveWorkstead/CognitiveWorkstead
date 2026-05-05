@@ -1,379 +1,862 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Cognitive Workstead</title>
-  <meta name="description" content="Cognitive Workstead explores applied intelligence through real-world systems." />
+  <title>Cognitive Workstead | AI-Assisted Living. Sustainability First.</title>
+
+  <meta name="description" content="Cognitive Workstead is a South Alabama-based applied learning and demonstration site focused on AI-assisted living, sustainability, rural resilience, off-grid systems, affordable living models, aquaponics, and hands-on learning." />
+
+  <meta property="og:title" content="Cognitive Workstead" />
+  <meta property="og:description" content="AI-assisted living. Sustainability first. Practical resilience through off-grid systems, affordable living models, hands-on learning, aquaponics, and intelligent operations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cognitiveworkstead.com" />
+  <meta property="og:image" content="https://www.cognitiveworkstead.com/COL-B.png" />
+
+  <link rel="icon" href="COL-B.png" />
 
   <style>
     :root {
-      --bg: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --border: #e5e7eb;
-
-      --sun: #facc15;
-      --green: #22c55e;
-      --teal: #06b6d4;
-
-      --radius: 18px;
-      --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-      --max: 1100px;
+      --bg: #f7f5ef;
+      --bg-soft: #fffaf0;
+      --text: #172018;
+      --muted: #5d665c;
+      --green: #2f6f46;
+      --green-dark: #1f4c32;
+      --green-light: #dcebdd;
+      --gold: #c89b3c;
+      --line: #ded8cb;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(23, 32, 24, 0.12);
+      --radius: 24px;
+      --max: 1160px;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      line-height: 1.55;
-      font-size: 15px;
+      background: var(--bg);
+      line-height: 1.6;
     }
 
-    a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-
-    .wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 24px 20px 70px;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      margin-bottom: 36px;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .topbar {
       position: sticky;
       top: 0;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(8px);
-      padding: 14px 0;
-      z-index: 20;
-      border-bottom: 1px solid rgba(229,231,235,0.7);
+      z-index: 100;
+      background: rgba(247, 245, 239, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
+      min-width: 240px;
     }
 
-    .logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--sun), var(--green), var(--teal));
+    .brand img {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: var(--white);
     }
 
-    .brand h1 {
-      margin: 0;
-      font-size: 16px;
+    .brand-title {
+      font-size: 18px;
       font-weight: 800;
-      letter-spacing: 0.2px;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
     }
 
-    .brand p {
-      margin: 0;
-      font-size: 12.5px;
+    .brand-subtitle {
+      font-size: 12px;
       color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-top: 3px;
     }
 
-    nav {
+    .nav-links {
       display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      padding: 9px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      font-size: 13px;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 700;
       color: var(--muted);
-      background: #fff;
-      transition: transform 0.15s ease, border-color 0.15s ease;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
+      color: var(--green-dark);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      background: var(--green);
+      color: var(--white);
+      box-shadow: 0 10px 24px rgba(47, 111, 70, 0.22);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .button:hover {
       transform: translateY(-1px);
-      border-color: var(--teal);
-      color: var(--text);
+      box-shadow: 0 14px 28px rgba(47, 111, 70, 0.28);
+    }
+
+    .button.secondary {
+      background: var(--white);
+      color: var(--green-dark);
+      border-color: var(--line);
+      box-shadow: none;
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
-      align-items: center;
-      margin-bottom: 44px;
-    }
-
-    .hero h2 {
-      font-size: clamp(24px, 2.6vw, 36px);
-      line-height: 1.18;
-      margin: 0 0 12px;
-      letter-spacing: -0.2px;
-    }
-
-    .hero p {
-      color: var(--muted);
-      margin: 0 0 18px;
-      max-width: 64ch;
-      font-size: 14px;
-    }
-
-    .actions {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 11px 16px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: #fff;
-      font-weight: 800;
-      cursor: pointer;
-      transition: transform 0.15s ease;
-      font-size: 13px;
-    }
-
-    .btn:hover { transform: translateY(-1px); }
-
-    .btn.primary {
-      background: linear-gradient(135deg, var(--sun), var(--green), var(--teal));
-      border: none;
-    }
-
-    .colby-thumb {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 12px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: #fff;
-      cursor: pointer;
-      box-shadow: var(--shadow);
-      transition: transform 0.15s ease;
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .colby-thumb:hover { transform: translateY(-1px); }
-
-    .colby-thumb img {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    .portrait {
-      border-radius: var(--radius);
+      position: relative;
       overflow: hidden;
-      border: 1px solid var(--border);
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(circle at top left, rgba(47, 111, 70, 0.17), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(200, 155, 60, 0.19), transparent 36%),
+        var(--bg-soft);
+    }
+
+    .hero-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 88px 20px 76px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      margin: 0 0 18px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      max-width: 820px;
+    }
+
+    .hero-copy {
+      margin: 26px 0 0;
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--line);
+      border-radius: 32px;
       box-shadow: var(--shadow);
-      background: #fff;
+      padding: 28px;
+    }
+
+    .hero-card img {
+      width: 170px;
+      height: 170px;
+      object-fit: contain;
+      margin: 0 auto 22px;
+      border-radius: 28px;
+      background: var(--white);
+      padding: 8px;
+      border: 1px solid var(--line);
+    }
+
+    .hero-card h2 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-card p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 16px;
     }
 
     section {
-      margin-bottom: 44px;
-      scroll-margin-top: 90px;
+      padding: 78px 20px;
     }
 
-    section h3 {
-      font-size: 18px;
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .section-header {
+      max-width: 820px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--green);
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.22em;
       margin: 0 0 10px;
-      letter-spacing: -0.1px;
     }
 
-    section p {
-      color: var(--muted);
-      max-width: 72ch;
+    h2 {
       margin: 0;
-      font-size: 14px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .section-header p {
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 760px;
+    }
+
+    .intro-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: 0 8px 24px rgba(23, 32, 24, 0.06);
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    .intro-box p {
+      margin: 0;
+      font-size: 20px;
+      color: var(--muted);
+    }
+
+    .intro-box p + p {
+      margin-top: 18px;
+      color: var(--text);
+      font-weight: 800;
     }
 
     .grid {
       display: grid;
+      gap: 18px;
+    }
+
+    .grid.three {
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 16px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
-      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--line);
       border-radius: var(--radius);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      background: #fff;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(23, 32, 24, 0.05);
     }
 
-    .card h4 {
-      margin: 0 0 8px;
-      font-size: 15px;
+    .card h3 {
+      margin: 0;
+      font-size: 21px;
+      letter-spacing: -0.02em;
     }
 
     .card p {
-      margin: 0;
-      font-size: 13.5px;
+      margin: 12px 0 0;
       color: var(--muted);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .dark {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    .dark .section-label {
+      color: #bde3c5;
+    }
+
+    .dark .section-header p,
+    .dark .card p {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .dark .card {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow: none;
+    }
+
+    .phase {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .phase-number {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .phase-title {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .list li {
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .progress-list {
+      counter-reset: progress;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .progress-list li {
+      counter-increment: progress;
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 16px;
+      font-weight: 800;
+    }
+
+    .progress-list li::before {
+      content: counter(progress);
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green-light);
+      color: var(--green-dark);
+      border-radius: 16px;
+      font-weight: 900;
+    }
+
+    .contact {
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 34%),
+        var(--green-dark);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .contact p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 18px;
+      max-width: 840px;
+      margin: 20px auto 0;
+    }
+
+    .contact .button {
+      background: var(--white);
+      color: var(--green-dark);
+      margin-top: 28px;
+      box-shadow: none;
     }
 
     footer {
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      padding: 26px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      gap: 18px;
       flex-wrap: wrap;
-      gap: 10px;
-      font-size: 12.5px;
-      color: var(--muted);
-    }
-
-    dialog {
-      border: none;
-      background: transparent;
-      padding: 0;
-    }
-
-    dialog::backdrop {
-      background: rgba(15, 23, 42, 0.75);
-    }
-
-    .modal-img {
-      max-width: 90vw;
-      max-height: 90vh;
-      border-radius: 18px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.35);
-    }
-
-    .close {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      width: 36px;
-      height: 36px;
-      border-radius: 999px;
-      background: rgba(0,0,0,0.6);
-      color: #fff;
-      border: none;
-      font-size: 18px;
-      cursor: pointer;
     }
 
     @media (max-width: 900px) {
-      header { position: relative; backdrop-filter: none; }
-      .hero { grid-template-columns: 1fr; }
-      .grid { grid-template-columns: 1fr; }
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding-top: 62px;
+      }
+
+      .grid.three,
+      .grid.two,
+      .progress-list {
+        grid-template-columns: 1fr;
+      }
+
+      .phase {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .brand {
+        min-width: auto;
+      }
+
+      .brand-title {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      section {
+        padding: 58px 18px;
+      }
+
+      .intro-box,
+      .card,
+      .hero-card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+  <header class="topbar">
+    <nav class="nav">
+      <a href="#home" class="brand" aria-label="Cognitive Workstead home">
+        <img src="COL-B.png" alt="COL-B logo" />
         <div>
-          <h1>Cognitive Workstead</h1>
-          <p>Applied intelligence through real-world systems</p>
+          <div class="brand-title">Cognitive Workstead</div>
+          <div class="brand-subtitle">South Alabama</div>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#focus">Focus Areas</a>
+        <a href="#projects">Projects</a>
+        <a href="#funding">Funding</a>
+        <a href="#progress">Progress Log</a>
+        <a href="#colb">Ask COL-B</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">AI-assisted living. Sustainability first.</p>
+          <h1>Practical resilience for a sustainability-first future.</h1>
+          <p class="hero-copy">
+            Cognitive Workstead is a South Alabama-based applied learning and demonstration site where AI-assisted living, sustainable infrastructure, off-grid systems, and affordable living models come together in practical, real-world ways.
+          </p>
+          <p class="hero-copy">
+            The project helps people experience, understand, and replicate resilient systems for everyday life, rural communities, and a sustainability-first future.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Partner With Cognitive Workstead</a>
+            <a class="button secondary" href="#focus">Explore Focus Areas</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <img src="COL-B.png" alt="COL-B, Cognitive Operations and Learning Brain" />
+          <h2>Cognitive Operations & Learning Brain</h2>
+          <p>
+            COL-B represents the intelligent operations layer behind Cognitive Workstead: monitoring, learning, documenting, and helping turn sustainability systems into practical daily living models.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="intro-box">
+          <p>
+            Cognitive Workstead is being developed as a real-world proving ground for practical resilience. The site will combine sustainable energy, water-conscious systems, affordable living concepts, hands-on education, nature-based experiences, aquaponics, and AI-assisted operations into one working environment.
+          </p>
+          <p>
+            The goal is simple: create systems people can see, use, learn from, and adapt to their own homes, communities, businesses, and rural properties.
+          </p>
         </div>
       </div>
+    </section>
 
-      <nav>
-        <a href="#colby">COLBY</a>
-        <a href="#labs">Labs</a>
-        <a href="#learning">Learning Centers</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div>
-          <h2>Learning how intelligent systems behave in the real world.</h2>
+    <section id="mission">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Mission</p>
+          <h2>Advancing rural resilience through practical demonstrations.</h2>
           <p>
-            Cognitive Workstead studies how AI, energy, infrastructure, and operations interact over time through real systems.
+            Cognitive Workstead’s mission is to advance rural resilience through practical demonstrations, hands-on learning, sustainable infrastructure, off-grid systems, affordable living models, and AI-assisted operations that people can experience, understand, and replicate.
           </p>
+        </div>
 
-          <div class="actions">
-            <a class="btn primary" href="mailto:colby@cognitiveworkstead.com">Email COLBY</a>
+        <div class="section-header" style="margin-bottom: 0;">
+          <p class="section-label">Vision</p>
+          <h2>A South Alabama model for practical resilience.</h2>
+          <p>
+            Cognitive Workstead’s vision is to become a South Alabama model for practical resilience, where people can see, test, and learn affordable ways to live more sustainably, reduce dependence on fragile systems, and use technology to strengthen rural communities.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <button class="colby-thumb" onclick="document.getElementById('colbyModal').showModal()">
-              <img src="artemis-colby.png" alt="Meet Artemis Colby" />
-              Meet COLBY
-            </button>
+    <section id="focus" style="background: #ffffff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Core Focus Areas</p>
+          <h2>Built around practical systems that can be tested, improved, and replicated.</h2>
+          <p>
+            Each focus area serves a practical purpose on-site while also becoming a visible demonstration that others can study, improve, and adapt.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <div class="card">
+            <div class="icon">☀️</div>
+            <h3>Sustainable Infrastructure</h3>
+            <p>Solar power, battery storage, efficient buildings, water-conscious systems, waste reduction, and resilient site design.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🧠</div>
+            <h3>AI-Assisted Operations</h3>
+            <p>Intelligent monitoring, automation, system insights, energy optimization, maintenance planning, and practical decision support.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🏡</div>
+            <h3>Affordable Living Models</h3>
+            <p>Small-footprint living, efficient layouts, lower operating costs, shared resources, and practical systems that reduce daily living burdens.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🌱</div>
+            <h3>Aquaponics & Food Systems</h3>
+            <p>Aquaponics, controlled growing environments, water-efficient food production, composting, nutrient cycling, and practical models for local food resilience.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>Hands-On Learning</h3>
+            <p>Workshops, demonstrations, build documentation, technical learning, and practical education for people who want to understand resilient systems.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🌲</div>
+            <h3>Nature-Based Experiences</h3>
+            <p>Trails, guest stays, outdoor learning, quiet spaces, and experiences that reconnect people with land, systems, and community.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🛡️</div>
+            <h3>Rural Resilience</h3>
+            <p>Replicable models that strengthen rural properties, small communities, families, and local economic opportunity.</p>
+          </div>
+
+          <div class="card" style="grid-column: span 2;">
+            <div class="icon">🔬</div>
+            <h3>Applied Research & Development</h3>
+            <p>Testing, documenting, improving, and comparing practical approaches across energy, water, food, housing, automation, AI, land use, and guest operations.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="portrait">
-          <img src="artemis-colby.png" alt="Artemis Colby" />
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">What We Are Building</p>
+          <h2>A phased demonstration site for sustainable living, learning, and resilience.</h2>
+          <p>
+            Cognitive Workstead is being built in phases around practical systems that support sustainable living, learning, and resilience.
+          </p>
         </div>
-      </section>
 
-      <section id="colby">
-        <h3>COLBY</h3>
+        <div class="grid">
+          <div class="card phase">
+            <div>
+              <div class="phase-number">Phase 1</div>
+              <div class="phase-title">Foundation and Readiness</div>
+            </div>
+            <p>Legal, banking, insurance, website, planning, baseline site assessment, partner outreach, grant readiness, and initial documentation.</p>
+          </div>
+
+          <div class="card phase">
+            <div>
+              <div class="phase-number">Phase 2</div>
+              <div class="phase-title">Site Preparation and Core Infrastructure</div>
+            </div>
+            <p>Access, safety, cleanup, utilities, power planning, water planning, trails, work areas, storage, and basic operating systems.</p>
+          </div>
+
+          <div class="card phase">
+            <div>
+              <div class="phase-number">Phase 3</div>
+              <div class="phase-title">Demonstration Systems</div>
+            </div>
+            <p>Solar, battery storage, water-conscious systems, aquaponics, monitoring, automation, AI-assisted operations, and early research documentation.</p>
+          </div>
+
+          <div class="card phase">
+            <div>
+              <div class="phase-number">Phase 4</div>
+              <div class="phase-title">Learning and Guest Experience Pilot</div>
+            </div>
+            <p>Workshops, guided demonstrations, nature-based stays, guest readiness, educational materials, safety procedures, and pilot program feedback.</p>
+          </div>
+
+          <div class="card phase">
+            <div>
+              <div class="phase-number">Phase 5</div>
+              <div class="phase-title">Replication and Community Partnerships</div>
+            </div>
+            <p>Grant-funded pilots, nonprofit and public partnerships, replication guides, community demonstrations, workforce learning, and regional rural resilience models.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" style="background: #ffffff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Grant-Relevant Impact Areas</p>
+          <h2>Designed to support measurable rural and community value.</h2>
+          <p>
+            Cognitive Workstead is designed to support measurable impact across rural resilience, sustainable infrastructure, affordable living, local food systems, energy independence, water stewardship, workforce learning, technology adoption, and community development.
+          </p>
+          <p>
+            By turning ideas into working demonstrations, the project creates practical examples that can help funders, partners, residents, students, veterans, families, and rural communities understand what works, what it costs, and how similar models can be adapted elsewhere.
+          </p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>Who We Serve</h3>
+            <p>Rural communities, residents interested in affordable sustainable living, students and learners, veterans and families, educators, nonprofits, public agencies, funders, grant partners, and guests seeking nature-based stays connected to real-world sustainability and resilience.</p>
+          </div>
+
+          <div class="card">
+            <h3>Public Value Proposition</h3>
+            <p>Cognitive Workstead helps people, partners, and rural communities understand what practical resilience looks like in real life. The project turns complex ideas into visible, usable demonstrations that can inform better decisions, reduce waste, lower operating costs, and support stronger rural communities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funding" class="dark">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Funding & Partnerships</p>
+          <h2>Seeking aligned partners for phased development.</h2>
+          <p>
+            Cognitive Workstead is seeking funding and partnership support for practical systems, public benefit, learning infrastructure, and replicable rural models.
+          </p>
+        </div>
+
+        <ul class="list">
+          <li>Sustainable energy systems, including solar, battery storage, monitoring, and backup power</li>
+          <li>Water-conscious infrastructure, including conservation, collection, filtration, reuse, and education</li>
+          <li>Aquaponics, controlled growing systems, composting, and local food resilience</li>
+          <li>Affordable living demonstrations, including small-footprint structures, efficient layouts, and lower-cost operating models</li>
+          <li>AI-assisted monitoring, automation, safety, maintenance, reporting, and operational decision support</li>
+          <li>Trails, outdoor learning spaces, accessibility improvements, and nature-based guest infrastructure</li>
+          <li>Workshop, training, and demonstration materials</li>
+          <li>Applied research, documentation, evaluation, and replication guides</li>
+          <li>Safety, insurance, permitting, utilities, and site-readiness improvements</li>
+        </ul>
+
+        <div class="card" style="margin-top: 22px;">
+          <h3>Partnership Statement</h3>
+          <p>
+            Cognitive Workstead is seeking aligned partners who share an interest in sustainability, rural resilience, affordable living, food systems, workforce learning, AI-assisted operations, and practical community development. Potential partners may include educators, nonprofits, public agencies, veteran-serving organizations, funders, technology providers, local businesses, builders, growers, researchers, and community organizations.
+          </p>
+          <p>
+            Partnerships may support demonstrations, workshops, pilot programs, research, grant-funded projects, volunteer efforts, site improvements, guest experiences, and replicable models for rural communities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="progress">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Progress Log</p>
+          <h2>Follow the build. Learn from the process.</h2>
+          <p>
+            Cognitive Workstead’s Progress Log will document the project as it develops, including site work, sustainable systems, AI-assisted operations, aquaponics, affordable living models, grants, partnerships, lessons learned, and practical decisions others can adapt for their own properties and communities.
+          </p>
+        </div>
+
+        <ol class="progress-list">
+          <li>Cognitive Workstead, LLC has been formed</li>
+          <li>Why South Alabama is the right place for a resilience demonstration site</li>
+          <li>What “AI-assisted living. Sustainability first.” means</li>
+          <li>The phased development model</li>
+          <li>Why affordable living models matter</li>
+          <li>Why aquaponics belongs in a resilience project</li>
+          <li>What Ask COL-B will do</li>
+          <li>Grant readiness and partnership priorities</li>
+          <li>What we are building first and why</li>
+          <li>How followers can get involved</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="colb" style="background: #ffffff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="grid two" style="align-items: center;">
+          <div>
+            <p class="section-label">Ask COL-B</p>
+            <h2>Cognitive Operations & Learning Brain</h2>
+            <p style="font-size: 18px; color: var(--muted);">
+              Ask COL-B will be Cognitive Workstead’s AI-assisted public Q&A feature. It will help visitors understand the project’s mission, focus areas, funding priorities, phased development plan, sustainability systems, partnership opportunities, and future learning experiences using approved public information from the website and project materials.
+            </p>
+            <p style="font-size: 18px; color: var(--muted);">
+              Ask COL-B is designed to provide general project information and help visitors navigate Cognitive Workstead resources. Partnership, funding, guest stay, volunteer, site visit, and formal program inquiries should be submitted through the contact form.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="COL-B.png" alt="COL-B logo" style="width: 220px; margin: 0 auto 22px; border-radius: 28px;" />
+            <h3>Sample future questions</h3>
+            <p>What is Cognitive Workstead?</p>
+            <p>How will AI-assisted living work?</p>
+            <p>What are the funding priorities?</p>
+            <p>How can partners get involved?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <p class="section-label" style="color: #bde3c5;">Contact</p>
+        <h2>Help build practical resilience in South Alabama.</h2>
         <p>
-          COLBY is the Cognitive Operations and Learning Brain embedded within Cognitive Workstead. It observes system behavior, correlates signals over time, and supports durable learning.
+          Cognitive Workstead is seeking aligned partners, funders, educators, builders, growers, technologists, veteran-serving organizations, and community groups interested in sustainability, rural resilience, affordable living, food systems, hands-on learning, and AI-assisted operations.
         </p>
-      </section>
+        <a class="button" href="mailto:colby@cognitiveworkstead.com?subject=Cognitive%20Workstead%20Inquiry">Partner With Cognitive Workstead</a>
+        <p style="font-size: 14px;">
+          Inquiry categories include funding, partnerships, education, volunteering, guest interest, AI collaboration, aquaponics, media, and general questions.
+        </p>
+      </div>
+    </section>
+  </main>
 
-      <section id="labs">
-        <h3>Cognitive Workstead Labs</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Energy Systems</h4>
-            <p>Solar generation, storage, and load behavior studied through continuous operation.</p>
-          </div>
-          <div class="card">
-            <h4>Intelligent Systems</h4>
-            <p>Applied AI for monitoring, decision support, and adaptive automation.</p>
-          </div>
-          <div class="card">
-            <h4>Resilient Operations</h4>
-            <p>Reliability, recovery, and long-term system health under real constraints.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="learning">
-        <h3>Learning Centers</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>System Documentation</h4>
-            <p>Clear records of how systems behave, evolve, and are maintained.</p>
-          </div>
-          <div class="card">
-            <h4>Operational Playbooks</h4>
-            <p>Repeatable guidance for response, tuning, and improvement.</p>
-          </div>
-          <div class="card">
-            <h4>Emerging Work</h4>
-            <p>New ideas evolve as learning compounds over time.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span>© 2025 Cognitive Workstead LLC</span>
-      <span>Built for learning, not spectacle</span>
-    </footer>
-  </div>
-
-  <dialog id="colbyModal">
-    <button class="close" onclick="this.closest('dialog').close()">✕</button>
-    <img class="modal-img" src="artemis-colby.png" alt="Artemis Colby full image" />
-  </dialog>
+  <footer>
+    <div class="footer-inner">
+      <div>© 2026 Cognitive Workstead, LLC. All rights reserved.</div>
+      <div>AI-assisted living. Sustainability first.</div>
+    </div>
+  </footer>
 </body>
 </html>
