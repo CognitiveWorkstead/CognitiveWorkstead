@@ -4,20 +4,355 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>McKenzie Solar Status</title>
+
 <style>
-html,body{
-  margin:0;
-  padding:0;
-  background:#000;
+:root{
+  --bg:#08110c;
+  --card:#0d1712cc;
+  --border:#2c4938;
+  --text:#eef8f0;
+  --muted:#b8d2bf;
+  --green:#57d66f;
+  --yellow:#e0c54a;
+  --red:#d85d5d;
 }
-img{
-  display:block;
-  width:100%;
-  height:auto;
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Segoe UI,Arial,sans-serif;
+  color:var(--text);
+  background:
+    linear-gradient(rgba(5,10,8,.35),rgba(5,10,8,.65)),
+    url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80');
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+.container{
+  max-width:1500px;
+  margin:auto;
+  padding:24px;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  margin-bottom:22px;
+}
+
+.title h1{
+  margin:0;
+  font-size:72px;
+  letter-spacing:2px;
+  font-weight:900;
+  text-transform:uppercase;
+  text-shadow:0 4px 14px #000;
+}
+
+.title p{
+  margin:8px 0 0;
+  font-size:24px;
+  color:var(--muted);
+}
+
+.status-box{
+  min-width:260px;
+  background:rgba(20,50,28,.9);
+  border:2px solid #4fa85d;
+  border-radius:18px;
+  padding:18px;
+  text-align:center;
+  box-shadow:0 10px 30px #000;
+}
+
+.status-box .label{
+  font-size:18px;
+  color:#cbe8d1;
+}
+
+.status-box .value{
+  font-size:48px;
+  font-weight:900;
+  margin:10px 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:18px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+  backdrop-filter:blur(8px);
+}
+
+.card h3{
+  margin:0 0 14px;
+  color:#d7f3dd;
+  font-size:24px;
+  text-transform:uppercase;
+}
+
+.big{
+  font-size:54px;
+  font-weight:900;
+}
+
+.medium{
+  font-size:28px;
+  font-weight:700;
+}
+
+.small{
+  font-size:18px;
+  line-height:1.5;
+  color:var(--muted);
+}
+
+.now{grid-column:span 2}
+.weather{grid-column:span 3}
+.battery{grid-column:span 2}
+.occupancy{grid-column:span 2}
+.performance{grid-column:span 3}
+.today{grid-column:span 6}
+.survivability{grid-column:span 6}
+.flags{grid-column:span 12}
+
+.prob{
+  margin-top:10px;
+}
+
+.bar{
+  height:16px;
+  background:#1a2a20;
+  border-radius:10px;
+  overflow:hidden;
+  margin:8px 0 14px;
+}
+
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--green),var(--yellow));
+}
+
+.good{color:var(--green)}
+.warn{color:var(--yellow)}
+.bad{color:var(--red)}
+
+.footer{
+  margin-top:20px;
+  text-align:right;
+  font-size:16px;
+  color:var(--muted);
+}
+
+@media(max-width:1200px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .card,.now,.weather,.battery,.occupancy,.performance,.today,.survivability,.flags{
+    grid-column:span 2;
+  }
+  .title h1{font-size:44px}
+}
+
+@media(max-width:700px){
+  .header{
+    flex-direction:column;
+  }
+  .grid{grid-template-columns:1fr}
+  .card,.now,.weather,.battery,.occupancy,.performance,.today,.survivability,.flags{
+    grid-column:span 1;
+  }
 }
 </style>
 </head>
+
 <body>
-<img src="dashboard.png" alt="McKenzie Solar Status">
+<div class="container">
+
+  <div class="header">
+    <div class="title">
+      <h1>McKenzie Solar Status</h1>
+      <p>Real data. Real time. Off grid.</p>
+    </div>
+
+    <div class="status-box">
+      <div class="label">SYSTEM STATUS</div>
+      <div id="status" class="value">LOADING</div>
+      <div id="updated" class="small">Connecting...</div>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card now">
+      <h3>Load</h3>
+      <div id="load" class="big">--</div>
+    </div>
+
+    <div class="card now">
+      <h3>Solar</h3>
+      <div id="solar" class="big">--</div>
+    </div>
+
+    <div class="card battery">
+      <h3>Battery</h3>
+      <div id="battery" class="big">--</div>
+      <div id="batteryPower" class="small"></div>
+    </div>
+
+    <div class="card weather">
+      <h3>Weather</h3>
+      <div id="weatherTemp" class="medium">--</div>
+      <div id="weatherDetail" class="small"></div>
+    </div>
+
+    <div class="card occupancy">
+      <h3>Occupancy</h3>
+      <div id="occupancyState" class="medium">--</div>
+      <div id="occupancyProb" class="small"></div>
+    </div>
+
+    <div class="card performance">
+      <h3>Performance</h3>
+      <div id="perf" class="small"></div>
+    </div>
+
+    <div class="card today">
+      <h3>Today</h3>
+      <div id="today" class="small"></div>
+    </div>
+
+    <div class="card survivability">
+      <h3>Survivability Forecast</h3>
+      <div id="survive" class="small"></div>
+
+      <div class="prob">
+        <div>24 Hour Sustainability</div>
+        <div class="bar"><div id="prob24" class="fill" style="width:0%"></div></div>
+
+        <div>48 Hour Sustainability</div>
+        <div class="bar"><div id="prob48" class="fill" style="width:0%"></div></div>
+
+        <div>72 Hour Sustainability</div>
+        <div class="bar"><div id="prob72" class="fill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="card flags">
+      <h3>Flags</h3>
+      <div id="flags" class="small">Loading analysis...</div>
+    </div>
+
+  </div>
+
+  <div id="footer" class="footer"></div>
+
+</div>
+
+<script>
+function pct(v){ return Math.max(0,Math.min(100,v)); }
+
+function survivabilityProb(days){
+  return {
+    p24: pct((days/1)*100),
+    p48: pct((days/2)*100),
+    p72: pct((days/3)*100)
+  };
+}
+
+async function loadData(){
+  try{
+    const r = await fetch('solarstatus.json?v=' + Date.now());
+    const d = await r.json();
+
+    const age = Math.round((Date.now() - new Date(d.timestamp))/60000);
+
+    document.getElementById('status').textContent = age > 15 ? 'STALE' : d.status;
+    document.getElementById('updated').textContent = age + ' min ago';
+
+    document.getElementById('load').textContent =
+      Math.round(d.now.load_w).toLocaleString() + 'W';
+
+    document.getElementById('solar').textContent =
+      Math.round(d.now.solar_w).toLocaleString() + 'W';
+
+    document.getElementById('battery').textContent =
+      Math.round(d.now.battery_soc) + '%';
+
+    document.getElementById('batteryPower').textContent =
+      Math.round(d.now.battery_power_w).toLocaleString() + 'W | ' + d.now.mode;
+
+    document.getElementById('weatherTemp').textContent =
+      Math.round(d.weather.temperature_f) + '°F';
+
+    document.getElementById('weatherDetail').textContent =
+      d.weather.humidity + '% humidity | ' +
+      d.weather.cloud_cover + '% cloud cover | ' +
+      d.weather.class;
+
+    document.getElementById('occupancyState').textContent =
+      d.occupancy.state.toUpperCase();
+
+    document.getElementById('occupancyProb').textContent =
+      'Confidence: ' + d.occupancy.probability + '%';
+
+    document.getElementById('perf').innerHTML =
+      'Actual solar: <b>' + Math.round(d.performance.actual_solar_w).toLocaleString() + 'W</b><br>' +
+      'Similar-condition average: <b>' + Math.round(d.performance.similar_avg_solar_w).toLocaleString() + 'W</b>';
+
+    document.getElementById('today').innerHTML =
+      'Consumed: <b>' + d.today.consumed_kwh + ' kWh</b><br>' +
+      'Produced: <b>' + d.today.produced_kwh + ' kWh</b><br>' +
+      'Average load: <b>' + d.today.avg_load_w + 'W</b><br>' +
+      'Peak load: <b>' + d.today.peak_load_w + 'W</b><br>' +
+      'Peak solar: <b>' + d.today.peak_solar_w + 'W</b><br>' +
+      'Lowest SOC: <b>' + d.today.lowest_soc + '%</b>';
+
+    document.getElementById('survive').innerHTML =
+      'Usable battery: <b>' + d.survivability.usable_battery_kwh + ' kWh</b><br>' +
+      'Zero solar estimate: <b>' + d.survivability.zero_solar_days + ' days</b><br>' +
+      'Similar weather estimate: <b>' + d.survivability.similar_weather_days + ' days</b><br>' +
+      'Historical samples: <b>' + d.survivability.samples + '</b>';
+
+    const probs = survivabilityProb(d.survivability.similar_weather_days);
+
+    document.getElementById('prob24').style.width = probs.p24 + '%';
+    document.getElementById('prob48').style.width = probs.p48 + '%';
+    document.getElementById('prob72').style.width = probs.p72 + '%';
+
+    let flags = [];
+
+    if(age > 15) flags.push('Dashboard data is stale.');
+    if(d.now.battery_soc < 30) flags.push('Battery reserve below 30%.');
+    if(d.performance.actual_solar_w < d.performance.similar_avg_solar_w * 0.5)
+      flags.push('Solar production materially below similar conditions.');
+
+    if(flags.length === 0)
+      flags.push('No critical issues.');
+
+    document.getElementById('flags').innerHTML = flags.join('<br>');
+
+    document.getElementById('footer').textContent =
+      'Last source update: ' + new Date(d.timestamp).toLocaleString();
+
+  } catch(e){
+    document.getElementById('status').textContent='ERROR';
+    document.getElementById('flags').textContent='Failed to load solarstatus.json';
+  }
+}
+
+loadData();
+setInterval(loadData,60000);
+</script>
+
 </body>
 </html>
