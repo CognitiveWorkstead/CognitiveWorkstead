@@ -5,68 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>McKenzie Solar Status</title>
 <style>
-html,body{margin:0;background:#000;color:#eef7ef;font-family:Arial,sans-serif}
-.page{position:relative;min-height:100vh;background:#000;overflow:hidden}
-.bg{width:100%;display:block}
-.live{position:absolute;left:2%;right:2%;bottom:2%;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
-.card{background:rgba(5,14,10,.82);border:1px solid rgba(170,210,180,.45);border-radius:14px;padding:12px;box-shadow:0 8px 24px #0008}
-.label{font-size:12px;color:#b8d8c0;text-transform:uppercase;letter-spacing:.05em}
-.value{font-size:24px;font-weight:800;margin-top:4px}
-.small{font-size:14px;line-height:1.35}
-.status{background:rgba(35,143,78,.9)}
-.stale{background:rgba(180,130,20,.9)}
-@media(max-width:800px){.live{position:relative;left:auto;right:auto;bottom:auto;padding:12px}.value{font-size:22px}}
+html,body{
+  margin:0;
+  padding:0;
+  background:#000;
+}
+img{
+  display:block;
+  width:100%;
+  height:auto;
+}
 </style>
 </head>
 <body>
-<div class="page">
-  <img class="bg" src="dashboard.png" alt="McKenzie Solar Status">
-  <div class="live">
-    <div id="statusCard" class="card status"><div class="label">Live Status</div><div id="status" class="value">Loading</div><div id="updated" class="small"></div></div>
-    <div class="card"><div class="label">Load</div><div id="load" class="value">--</div></div>
-    <div class="card"><div class="label">Solar</div><div id="solar" class="value">--</div></div>
-    <div class="card"><div class="label">Battery</div><div id="battery" class="value">--</div><div id="battery2" class="small"></div></div>
-    <div class="card"><div class="label">Weather</div><div id="weather" class="value">--</div><div id="weather2" class="small"></div></div>
-    <div class="card"><div class="label">Survivability</div><div id="survive" class="small">--</div></div>
-    <div class="card"><div class="label">Performance</div><div id="perf" class="small">--</div></div>
-    <div class="card"><div class="label">Occupancy</div><div id="occ" class="small">--</div></div>
-  </div>
-</div>
-
-<script>
-async function loadData(){
-  const r = await fetch('solarstatus.json?v=' + Date.now());
-  const d = await r.json();
-
-  const age = Math.round((Date.now() - new Date(d.timestamp).getTime()) / 60000);
-  const stale = age > 15;
-
-  document.getElementById('status').textContent = stale ? 'STALE' : d.status;
-  document.getElementById('statusCard').className = stale ? 'card stale' : 'card status';
-  document.getElementById('updated').textContent = 'Updated ' + age + ' min ago';
-
-  document.getElementById('load').textContent = Math.round(d.now.load_w).toLocaleString() + 'W';
-  document.getElementById('solar').textContent = Math.round(d.now.solar_w).toLocaleString() + 'W';
-  document.getElementById('battery').textContent = Math.round(d.now.battery_soc) + '%';
-  document.getElementById('battery2').textContent = Math.round(d.now.battery_power_w).toLocaleString() + 'W';
-
-  document.getElementById('weather').textContent = Math.round(d.weather.temperature_f) + '°F';
-  document.getElementById('weather2').textContent = d.weather.humidity + '% humidity | ' + d.weather.cloud_cover + '% clouds';
-
-  document.getElementById('survive').innerHTML =
-    'Usable: ~' + d.survivability.usable_battery_kwh + ' kWh<br>' +
-    'Zero solar: ~' + d.survivability.zero_solar_days + ' days<br>' +
-    'Similar weather: ~' + d.survivability.similar_weather_days + ' days';
-
-  document.getElementById('perf').innerHTML =
-    'Actual: ' + Math.round(d.performance.actual_solar_w).toLocaleString() + 'W<br>' +
-    'Similar avg: ' + Math.round(d.performance.similar_avg_solar_w).toLocaleString() + 'W';
-
-  document.getElementById('occ').innerHTML =
-    d.occupancy.state + '<br>Confidence: ' + d.occupancy.probability + '%';
-}
-loadData();
-setInterval(loadData, 60000);
-</script>
+<img src="dashboard.png" alt="McKenzie Solar Status">
 </body>
 </html>
