@@ -2,98 +2,132 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>McKenzie Solar Status</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McKenzie Solar Status</title>
 
 <style>
 
-/* ===== BACKGROUND SCENE ===== */
+/* ===== BACKGROUND (SCENE SIMULATION) ===== */
 body {
   margin:0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   color:#fff;
 
   background:
-    linear-gradient(to bottom, rgba(20,40,20,.6), rgba(0,0,0,.85)),
-    radial-gradient(circle at center, rgba(120,120,120,.15), transparent),
-    linear-gradient(#1c2b1c,#050605);
-
+    linear-gradient(to bottom, rgba(20,30,20,.6), rgba(0,0,0,.9)),
+    radial-gradient(circle at 70% 60%, rgba(150,150,150,.15), transparent 50%),
+    linear-gradient(#2a3b2a,#040604);
 }
 
 /* vignette */
-body:after {
+body::after {
   content:"";
   position:fixed;
   inset:0;
-  background:
-    radial-gradient(circle, transparent 60%, rgba(0,0,0,.7));
+  background: radial-gradient(circle, transparent 65%, rgba(0,0,0,.85));
   pointer-events:none;
 }
 
-/* ===== GLOBAL ===== */
-.container { padding:30px; }
+.container { padding:28px; }
+
+/* ===== PANEL STYLE ===== */
 .panel {
-  background: rgba(0,0,0,.65);
-  border-radius:14px;
-  padding:16px;
-  border:1px solid rgba(255,255,255,.08);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 30px rgba(0,0,0,.5);
+  background: rgba(0,0,0,.68);
+  backdrop-filter: blur(12px);
+  border-radius:12px;
+  padding:14px;
+  border:1px solid rgba(255,255,255,.07);
+  box-shadow:0 10px 30px rgba(0,0,0,.6);
 }
 
-.label {font-size:11px; opacity:.6; letter-spacing:1px;}
-.big {font-size:32px; font-weight:600;}
+/* TEXT SCALE */
+.label {
+  font-size:11px;
+  letter-spacing:1px;
+  opacity:.65;
+}
+.big {
+  font-size:30px;
+  font-weight:600;
+}
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header {
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
   margin-bottom:20px;
 }
+
 .title {
-  font-size:60px;
+  font-size:56px;
   font-weight:800;
-  letter-spacing:2px;
   color:#d8f5d2;
+  letter-spacing:2px;
 }
-.subtitle {opacity:.75;}
-
-.status {
-  background:linear-gradient(160deg,#0f4d0f,#0a2c0a);
-  padding:20px;
-  border-radius:14px;
-  text-align:center;
+.subtitle {
+  opacity:.8;
+  margin-top:6px;
 }
-.status .big {color:#7CFF7C;}
 
-.time {margin-top:5px; font-size:14px;}
+/* STATUS */
+.status-wrap { text-align:right; }
 
-/* NOW STRIP */
+.status-box {
+  background:linear-gradient(160deg,#0f4d0f,#082208);
+  padding:18px 24px;
+  border-radius:12px;
+}
+.status-val {
+  color:#7CFF7C;
+  font-size:28px;
+}
+.time {
+  margin-top:6px;
+  font-size:14px;
+}
+
+/* ===== NOW STRIP ===== */
 .now {
   display:flex;
-  gap:12px;
-  margin-bottom:20px;
+  gap:10px;
+  margin-bottom:18px;
 }
-.now .panel {flex:1; text-align:center;}
+.now .panel {
+  flex:1;
+  text-align:center;
+}
 
-/* GRID */
+/* icons */
+.icon {
+  width:18px;
+  height:18px;
+  opacity:.8;
+  display:block;
+  margin:0 auto 4px;
+}
+
+/* ===== GRID ===== */
 .grid {
   display:grid;
   grid-template-columns: 1fr 2fr 1.4fr;
   gap:16px;
 }
 
-/* survivability spans */
 .survive {
   grid-column: span 3;
 }
 
-/* progress */
+/* ===== GAUGE ===== */
+.gauge {
+  width:100%;
+  height:90px;
+}
+
+/* ===== PROGRESS ===== */
 .bar {
   height:10px;
   background:#333;
-  border-radius:5px;
+  border-radius:6px;
   overflow:hidden;
 }
 .fill {
@@ -101,31 +135,28 @@ body:after {
   background:linear-gradient(to right,#7CFF7C,#eaff57);
 }
 
-/* battery */
+/* ===== BATTERY ===== */
 .battery {
-  height:18px;
+  height:16px;
   border:2px solid #aaa;
+  border-radius:3px;
 }
 .battery-fill {
   height:100%;
   background:linear-gradient(to right,red,yellow,lime);
 }
 
-/* gauge smaller */
-.gauge {
-  width:100%;
-  height:100px;
-}
-
+/* FOOTER */
 .footer {
   margin-top:20px;
   text-align:center;
   opacity:.7;
 }
 
+/* MOBILE */
 @media(max-width:900px){
   .grid {grid-template-columns:1fr;}
-  .survive {grid-column:span 1;}
+  .survive {grid-column: span 1;}
   .now {flex-direction:column;}
 }
 
@@ -142,10 +173,10 @@ body:after {
 <div class="subtitle">REAL DATA. REAL TIME. OFF GRID.</div>
 </div>
 
-<div>
-<div class="status">
+<div class="status-wrap">
+<div class="status-box">
 <div>STATUS</div>
-<div id="statusText" class="big"></div>
+<div id="statusText" class="status-val"></div>
 </div>
 <div id="timestamp" class="time"></div>
 </div>
@@ -205,8 +236,8 @@ body:after {
 <div class="label">PERFORMANCE</div>
 
 <svg viewBox="0 0 200 100" class="gauge">
-<path d="M20,100 A80,80 0 0,1 180,100" stroke="#333" stroke-width="14" fill="none"/>
-<path d="M20,100 A80,80 0 0,1 180,100" stroke="url(#grad)" stroke-width="14" fill="none"/>
+<path d="M20,100 A80,80 0 0,1 180,100" stroke="#222" stroke-width="12" fill="none"/>
+<path d="M20,100 A80,80 0 0,1 180,100" stroke="url(#grad)" stroke-width="12" fill="none"/>
 <defs>
 <linearGradient id="grad">
 <stop offset="0%" stop-color="red"/>
@@ -214,7 +245,7 @@ body:after {
 <stop offset="100%" stop-color="lime"/>
 </linearGradient>
 </defs>
-<line id="needle" x1="100" y1="100" x2="100" y2="40" stroke="white" stroke-width="2"/>
+<line id="needle" x1="100" y1="100" x2="100" y2="45" stroke="white" stroke-width="2"/>
 </svg>
 
 <div id="actual"></div>
@@ -237,7 +268,7 @@ body:after {
 <div>Zero solar</div>
 <div class="bar"><div id="zeroBar" class="fill"></div></div>
 
-<div>Similar</div>
+<div>Similar weather</div>
 <div class="bar"><div id="similarBar" class="fill"></div></div>
 
 </div>
@@ -252,59 +283,59 @@ Sustainable Living • Hands-on Education • Community Resilience • Building 
 
 <script>
 
-function setGauge(val){
-  let angle = (val/2000)*180;
-  let rad = angle*Math.PI/180;
-  let x=100+70*Math.cos(Math.PI-rad);
-  let y=100-70*Math.sin(Math.PI-rad);
-  let n=document.getElementById("needle");
-  n.setAttribute("x2",x);
-  n.setAttribute("y2",y);
+function setGauge(v){
+ let a=(v/2000)*180;
+ let r=a*Math.PI/180;
+ let x=100+70*Math.cos(Math.PI-r);
+ let y=100-70*Math.sin(Math.PI-r);
+ let n=document.getElementById("needle");
+ n.setAttribute("x2",x);
+ n.setAttribute("y2",y);
 }
 
 async function loadData(){
-  let r=await fetch("solarstatus.json?v="+Date.now());
-  let d=await r.json();
+ let r=await fetch("solarstatus.json?v="+Date.now());
+ let d=await r.json();
 
-  document.getElementById("statusText").innerText=d.status;
-  document.getElementById("timestamp").innerText=new Date(d.timestamp).toLocaleString();
+ document.getElementById("statusText").innerText=d.status;
+ document.getElementById("timestamp").innerText=new Date(d.timestamp).toLocaleString();
 
-  document.getElementById("load").innerText=Math.round(d.now.load_w)+"W";
-  document.getElementById("solar").innerText=Math.round(d.now.solar_w)+"W";
+ document.getElementById("load").innerText=Math.round(d.now.load_w)+"W";
+ document.getElementById("solar").innerText=Math.round(d.now.solar_w)+"W";
 
-  document.getElementById("battery").innerText=d.now.battery_soc+"%";
-  document.getElementById("batteryFill").style.width=d.now.battery_soc+"%";
+ document.getElementById("battery").innerText=d.now.battery_soc+"%";
+ document.getElementById("batteryFill").style.width=d.now.battery_soc+"%";
 
-  document.getElementById("mode").innerText=d.now.mode;
-  document.getElementById("tempNow").innerText=d.weather.temperature_f+"°F";
+ document.getElementById("mode").innerText=d.now.mode;
+ document.getElementById("tempNow").innerText=d.weather.temperature_f+"°F";
 
-  document.getElementById("temp").innerText=d.weather.temperature_f+"°F";
-  document.getElementById("humidity").innerText=d.weather.humidity+"%";
-  document.getElementById("cloud").innerText=d.weather.cloud_cover+"%";
+ document.getElementById("temp").innerText=d.weather.temperature_f+"°F";
+ document.getElementById("humidity").innerText=d.weather.humidity+"%";
+ document.getElementById("cloud").innerText=d.weather.cloud_cover+"%";
 
-  document.getElementById("consumed").innerText="Consumed "+d.today.consumed_kwh+" kWh";
-  document.getElementById("produced").innerText="Produced "+d.today.produced_kwh+" kWh";
-  document.getElementById("avg").innerText="Avg "+d.today.avg_load_w+"W";
-  document.getElementById("peakLoad").innerText="Peak "+d.today.peak_load_w+"W";
+ document.getElementById("consumed").innerText="Consumed "+d.today.consumed_kwh+" kWh";
+ document.getElementById("produced").innerText="Produced "+d.today.produced_kwh+" kWh";
+ document.getElementById("avg").innerText="Avg "+d.today.avg_load_w+"W";
+ document.getElementById("peakLoad").innerText="Peak "+d.today.peak_load_w+"W";
 
-  document.getElementById("batteryKwh").innerText="Battery "+d.survivability.usable_battery_kwh+"kWh";
+ document.getElementById("batteryKwh").innerText="Battery "+d.survivability.usable_battery_kwh+"kWh";
 
-  document.getElementById("zeroBar").style.width=Math.min(d.survivability.zero_solar_days*12,100)+"%";
-  document.getElementById("similarBar").style.width=Math.min(d.survivability.similar_weather_days*3,100)+"%";
+ document.getElementById("zeroBar").style.width=Math.min(d.survivability.zero_solar_days*12,100)+"%";
+ document.getElementById("similarBar").style.width=Math.min(d.survivability.similar_weather_days*3,100)+"%";
 
-  document.getElementById("occState").innerText=d.occupancy.state;
-  document.getElementById("occProb").innerText=d.occupancy.probability+"%";
+ document.getElementById("occState").innerText=d.occupancy.state;
+ document.getElementById("occProb").innerText=d.occupancy.probability+"%";
 
-  document.getElementById("actual").innerText="Actual "+d.performance.actual_solar_w+"W";
-  document.getElementById("similar").innerText="Expected "+d.performance.similar_avg_solar_w+"W";
+ document.getElementById("actual").innerText="Actual "+d.performance.actual_solar_w+"W";
+ document.getElementById("similar").innerText="Expected "+d.performance.similar_avg_solar_w+"W";
 
-  setGauge(d.performance.actual_solar_w);
+ setGauge(d.performance.actual_solar_w);
 }
 
 setInterval(loadData,60000);
 loadData();
 
 </script>
-
 </body>
 </html>
+``
