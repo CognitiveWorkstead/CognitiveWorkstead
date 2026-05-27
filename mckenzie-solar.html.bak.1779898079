@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>McKenzie Solar Status</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* ===== ROOT ===== */
+:root {
+  --green:#7CFF7C;
+  --panel:rgba(10,10,10,.72);
+  --border:rgba(255,255,255,.08);
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  margin:0;
+  font-family: "Segoe UI","Arial";
+  color:#fff;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(70,140,80,.25), transparent 40%),
+    radial-gradient(circle at 80% 50%, rgba(160,160,100,.15), transparent 40%),
+    linear-gradient(#1a251c,#0a0e0a);
+
+}
+
+/* ===== GLOBAL ===== */
+.container {
+  padding:28px;
+}
+
+.panel {
+  background:var(--panel);
+  backdrop-filter: blur(14px);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+}
+
+/* ===== HEADER ===== */
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:20px;
+}
+
+.title {
+  font-size:54px;
+  font-weight:800;
+  letter-spacing:2px;
+  color:#cfe9cc;
+}
+
+.subtitle {
+  opacity:.8;
+  margin-top:6px;
+}
+
+/* STATUS */
+.status-box {
+  background:linear-gradient(160deg,#0d3f0d,#144d14);
+  padding:18px 26px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.status-box .value {
+  color:var(--green);
+  font-size:28px;
+  font-weight:700;
+}
+
+/* ===== NOW STRIP ===== */
+.now {
+  display:flex;
+  gap:10px;
+  margin-bottom:16px;
+}
+
+.now-card {
+  flex:1;
+  text-align:center;
+}
+
+.label {
+  font-size:11px;
+  opacity:.6;
+  letter-spacing:1px;
+}
+
+.big {
+  font-size:28px;
+  font-weight:600;
+}
+
+/* sparkline */
+.sparkline {
+  width:100%;
+  height:30px;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display:grid;
+  grid-template-columns: 1.2fr 2fr 1.6fr;
+  gap:14px;
+}
+
+.col {
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+/* ===== PERFORMANCE GAUGE ===== */
+.gauge-wrap {
+  position:relative;
+  height:130px;
+}
+
+.gauge needle {
+  stroke:white;
+}
+
+.gauge-text {
+  text-align:center;
+  margin-top:5px;
+}
+
+/* ===== BATTERY BAR ===== */
+.battery {
+  height:16px;
+  border:2px solid #aaa;
+  border-radius:4px;
+  position:relative;
+}
+
+.battery-fill {
+  height:100%;
+  background:linear-gradient(to right, red, yellow, lime);
+}
+
+/* ===== PROGRESS ===== */
+.progress {
+  margin-top:8px;
+}
+
+.bar {
+  height:10px;
+  background:#333;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.fill {
+  height:100%;
+  background:linear-gradient(to right,#6aff6a,#d4ff66);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top:18px;
+  text-align:center;
+  opacity:.65;
+}
+
+@media(max-width:900px){
+  .grid {grid-template-columns:1fr;}
+  .now {flex-direction:column;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="title">MCKENZIE SOLAR STATUS</div>
+    <div class="subtitle">REAL DATA. REAL TIME. OFF GRID.</div>
+  </div>
+
+  <div class="status-box">
+    <div>STATUS</div>
+    <div id="statusText" class="value">--</div>
+    <div id="timestamp"></div>
+  </div>
+</div>
+
+<!-- NOW -->
+<div class="now">
+
+<div class="panel now-card">
+<div class="label">LOAD</div>
+<div id="load" class="big"></div>
+<svg class="sparkline"><polyline fill="none" stroke="#7CFF7C" stroke-width="2" points="0,25 10,20 20,22 30,18 40,23 50,19 60,21 70,17 80,22 90,20 100,22"/></svg>
+</div>
+
+<div class="panel now-card">
+<div class="label">SOLAR</div>
+<div id="solar" class="big"></div>
+<svg class="sparkline"><polyline fill="none" stroke="#7CFF7C" stroke-width="2" points="0,25 10,10 20,15 30,18 40,12 50,20 60,18 70,13 80,15 90,12 100,14"/></svg>
+</div>
+
+<div class="panel now-card">
+<div class="label">BATTERY</div>
+<div id="battery" class="big"></div>
+<div id="batteryPower"></div>
+<div class="battery"><div id="batteryFill" class="battery-fill"></div></div>
+</div>
+
+<div class="panel now-card">
+<div class="label">MODE</div>
+<div id="mode" class="big"></div>
+</div>
+
+<div class="panel now-card">
+<div class="label">TEMP</div>
+<div id="tempNow" class="big"></div>
+</div>
+
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+<!-- LEFT -->
+<div class="col">
+
+<div class="panel">
+<div class="label">WEATHER</div>
+<div id="temp"></div>
+<div id="humidity"></div>
+<div id="cloud"></div>
+</div>
+
+<div class="panel">
+<div class="label">OCCUPANCY</div>
+<div id="occState" class="big"></div>
+<div id="occProb"></div>
+</div>
+
+</div>
+
+<!-- CENTER -->
+<div class="col">
+
+<div class="panel">
+<div class="label">TODAY</div>
+<div id="consumed"></div>
+<div id="produced"></div>
+<div id="avg"></div>
+<div id="peakLoad"></div>
+</div>
+
+<div class="panel">
+<div class="label">SURVIVABILITY</div>
+
+<div id="batteryKwh"></div>
+<div class="battery"><div style="width:80%" class="battery-fill"></div></div>
+
+<div class="progress">
+Zero solar
+<div class="bar"><div id="zeroBar" class="fill"></div></div>
+</div>
+
+<div class="progress">
+Similar
+<div class="bar"><div id="similarBar" class="fill"></div></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="col">
+
+<div class="panel">
+<div class="label">PERFORMANCE</div>
+
+<div class="gauge-wrap">
+<svg viewBox="0 0 200 100" class="gauge">
+
+<!-- background -->
+<path d="M20,100 A80,80 0 0,1 180,100" stroke="#333" stroke-width="16" fill="none"/>
+
+<!-- colored -->
+<path d="M20,100 A80,80 0 0,1 180,100" stroke="url(#grad)" stroke-width="16" fill="none"/>
+
+<defs>
+<linearGradient id="grad">
+<stop offset="0%" stop-color="red"/>
+<stop offset="50%" stop-color="yellow"/>
+<stop offset="100%" stop-color="lime"/>
+</linearGradient>
+</defs>
+
+<!-- needle -->
+<line id="needle" x1="100" y1="100" x2="100" y2="30" stroke="white" stroke-width="2"/>
+
+</svg>
+</div>
+
+<div id="actual"></div>
+<div id="similar"></div>
+<div class="gauge-text" id="perfText"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Sustainable Living • Hands-on Education • Community Resilience • Building a Better Tomorrow
+</div>
+
+</div>
+
+<script>
+
+function setGauge(val){
+  let angle = (val/2000)*180;
+  let rad = angle*Math.PI/180;
+  let x = 100 + 70 * Math.cos(Math.PI - rad);
+  let y = 100 - 70 * Math.sin(Math.PI - rad);
+
+  document.getElementById("needle")
+    .setAttribute("x2",x);
+  document.getElementById("needle")
+    .setAttribute("y2",y);
+}
+
+async function loadData(){
+  let r = await fetch("solarstatus.json?v="+Date.now());
+  let d = await r.json();
+
+  document.getElementById("statusText").innerText = d.status;
+  document.getElementById("timestamp").innerText = new Date(d.timestamp).toLocaleString();
+
+  document.getElementById("load").innerText = Math.round(d.now.load_w)+"W";
+  document.getElementById("solar").innerText = Math.round(d.now.solar_w)+"W";
+
+  document.getElementById("battery").innerText = d.now.battery_soc+"%";
+  document.getElementById("batteryPower").innerText = d.now.battery_power_w+"W";
+  document.getElementById("batteryFill").style.width = d.now.battery_soc+"%";
+
+  document.getElementById("mode").innerText = d.now.mode;
+  document.getElementById("tempNow").innerText = d.weather.temperature_f+"°F";
+
+  document.getElementById("temp").innerText = d.weather.temperature_f+"°F";
+  document.getElementById("humidity").innerText = d.weather.humidity+"% humidity";
+  document.getElementById("cloud").innerText = d.weather.cloud_cover+"% cloud";
+
+  document.getElementById("consumed").innerText = "Consumed "+d.today.consumed_kwh+" kWh";
+  document.getElementById("produced").innerText = "Produced "+d.today.produced_kwh+" kWh";
+  document.getElementById("avg").innerText = "Avg "+d.today.avg_load_w+" W";
+  document.getElementById("peakLoad").innerText = "Peak "+d.today.peak_load_w+" W";
+
+  document.getElementById("batteryKwh").innerText = "Battery "+d.survivability.usable_battery_kwh+" kWh";
+
+  document.getElementById("zeroBar").style.width = Math.min(d.survivability.zero_solar_days*10,100)+"%";
+  document.getElementById("similarBar").style.width = Math.min(d.survivability.similar_weather_days*3,100)+"%";
+
+  document.getElementById("occState").innerText = d.occupancy.state;
+  document.getElementById("occProb").innerText = d.occupancy.probability+"%";
+
+  document.getElementById("actual").innerText = "Actual "+d.performance.actual_solar_w+"W";
+  document.getElementById("similar").innerText = "Expected "+d.performance.similar_avg_solar_w+"W";
+
+  let ratio = d.performance.actual_solar_w / d.performance.similar_avg_solar_w;
+  setGauge(d.performance.actual_solar_w);
+
+  document.getElementById("perfText").innerText =
+    ratio > 1 ? "Performing WELL" :
+    ratio > 0.6 ? "Moderate" : "Underperforming";
+}
+
+setInterval(loadData,60000);
+loadData();
+
+</script>
+
+</body>
+</html>
