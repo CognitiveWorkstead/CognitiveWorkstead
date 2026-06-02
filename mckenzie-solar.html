@@ -133,7 +133,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
     <div class="card occupancy">
       <h2>👥 OCCUPANCY</h2>
       <div class="big green" id="occState">--</div>
-      <p>Probability: <b id="occProb">--</b>%</p>
+      <p><span id="occLabel">Probability</span>: <b id="occProb">--</b>%</p>
       <p>Reason:<br><span id="occReason">phone presence model</span></p>
       <div style="font-size:50px">🏡</div>
     </div>
@@ -214,6 +214,7 @@ async function refresh(){
 
   set("occState",j.occupancy?.state||"--");
   set("occProb",fmt(j.occupancy?.probability));
+  set("occLabel",j.occupancy?.label || (j.occupancy?.state==="occupied" ? "Probability" : "Confidence"));
   set("occReason",j.occupancy?.reason || "phone presence model");
 
   const days=Number(j.survivability?.similar_weather_days||0);
