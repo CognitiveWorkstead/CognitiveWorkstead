@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-06-02T21:25:30.832890+00:00",
+  "timestamp": "2026-06-02T21:30:35.400628+00:00",
   "status": "GREEN",
   "now": {
-    "load_w": 971.0,
-    "solar_w": 1371.0,
+    "load_w": 1048.0,
+    "solar_w": 1155.0,
     "battery_soc": 97.0,
-    "battery_power_w": 360.0,
+    "battery_power_w": 310.0,
     "mode": "Solar/Battery"
   },
   "weather": {
@@ -16,12 +16,14 @@
   },
   "occupancy": {
     "state": "away",
-    "probability": 95
+    "probability": 95,
+    "label": "Confidence",
+    "reason": "phone presence model"
   },
   "today": {
-    "consumed_kwh": 16.64,
-    "produced_kwh": 28.99,
-    "avg_load_w": 776,
+    "consumed_kwh": 16.73,
+    "produced_kwh": 29.19,
+    "avg_load_w": 777,
     "peak_load_w": 5854,
     "peak_solar_w": 6138,
     "lowest_soc": 61
@@ -33,7 +35,7 @@
     "samples": 4250
   },
   "performance": {
-    "actual_solar_w": 1371.0,
+    "actual_solar_w": 1155.0,
     "similar_avg_solar_w": 389
   }
 }
