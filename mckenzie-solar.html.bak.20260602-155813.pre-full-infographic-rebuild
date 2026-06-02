@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McKenzie Solar Status</title>
+
+<style>
+
+/* ===== RESET ===== */
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  color:#ffffff;
+
+  background:
+    linear-gradient(to bottom,
+      rgba(0,0,0,0.50) 0%,
+      rgba(0,0,0,0.75) 45%,
+      rgba(0,0,0,0.95) 100%
+    ),
+    url("/assets/mckenzie-real.jpg");
+
+  background-size: cover;
+  background-position: center 40%;
+  background-attachment: fixed;
+}
+
+/* ===== LIGHT ATMOSPHERE (SUBTLE, NOT HEAVY) ===== */
+body::before {
+  content:"";
+  position:fixed;
+  inset:0;
+
+  background:
+    radial-gradient(circle at 50% 25%,
+      rgba(255,255,255,0.07),
+      transparent 60%
+    );
+
+  pointer-events:none;
+}
+
+/* ===== REMOVE HEAVY BLUR (THIS FIXES YOUR ISSUE) ===== */
+body::after {
+  display:none;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  padding:25px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  font-size:48px;
+  font-weight:700;
+  margin:0;
+  letter-spacing:1px;
+}
+
+.subtitle {
+  margin-top:5px;
+  opacity:0.85;
+  font-size:16px;
+}
+
+/* ===== STATUS ===== */
+.status {
+  margin-top:10px;
+  font-size:18px;
+  color:#7CFF7C;
+}
+
+/* ===== PANELS ===== */
+.panel {
+  background: rgba(20,20,20,0.65);
+  border-radius:10px;
+  padding:15px;
+  margin-top:12px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== TEXT ===== */
+.label {
+  font-size:12px;
+  opacity:0.7;
+}
+
+.big {
+  font-size:26px;
+  font-weight:600;
+  margin-top:5px;
+}
+
+/* ===== NOW STRIP ===== */
+.now {
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+}
+
+.now .panel {
+  flex:1;
+  text-align:center;
+}
+
+/* ===== STACK SECTIONS ===== */
+.section {
+  margin-top:15px;
+}
+
+/* ===== GAUGE FIX ===== */
+.gauge {
+  width:100%;
+  max-width:300px;
+  height:auto;
+  margin:0 auto;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top:20px;
+  text-align:center;
+  opacity:0.7;
+}
+
+@media(max-width:900px){
+  .now {
+    flex-direction:column;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+<div>
+<div class="title">MCKENZIE SOLAR STATUS</div>
+<div class="subtitle">REAL DATA. REAL TIME. OFF GRID.</div>
+</div>
+
+<div class="status-wrap">
+<div class="status-box">
+<div>STATUS</div>
+<div id="statusText" class="status-val"></div>
+</div>
+<div id="timestamp" class="time"></div>
+</div>
+</div>
+
+<!-- NOW -->
+<div class="now">
+
+<div class="panel">
+<div class="label">LOAD</div>
+<div id="load" class="big"></div>
+</div>
+
+<div class="panel">
+<div class="label">SOLAR</div>
+<div id="solar" class="big"></div>
+</div>
+
+<div class="panel">
+<div class="label">BATTERY</div>
+<div id="battery" class="big"></div>
+<div id="batteryPower"></div>
+<div class="battery"><div id="batteryFill" class="battery-fill"></div></div>
+</div>
+
+<div class="panel">
+<div class="label">MODE</div>
+<div id="mode" class="big"></div>
+</div>
+
+<div class="panel">
+<div class="label">TEMP</div>
+<div id="tempNow" class="big"></div>
+</div>
+
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+<div class="panel">
+<div class="label">WEATHER</div>
+<div id="temp"></div>
+<div id="humidity"></div>
+<div id="cloud"></div>
+</div>
+
+<div class="panel">
+<div class="label">TODAY</div>
+<div id="consumed"></div>
+<div id="produced"></div>
+<div id="avg"></div>
+<div id="peakLoad"></div>
+</div>
+
+<div class="panel">
+<div class="label">PERFORMANCE</div>
+
+<svg viewBox="0 0 200 100" class="gauge">
+<path d="M20,100 A80,80 0 0,1 180,100" stroke="#222" stroke-width="12" fill="none"/>
+<path d="M20,100 A80,80 0 0,1 180,100" stroke="url(#grad)" stroke-width="12" fill="none"/>
+<defs>
+<linearGradient id="grad">
+<stop offset="0%" stop-color="red"/>
+<stop offset="50%" stop-color="yellow"/>
+<stop offset="100%" stop-color="lime"/>
+</linearGradient>
+</defs>
+<line id="needle" x1="100" y1="100" x2="100" y2="45" stroke="white" stroke-width="2"/>
+</svg>
+
+<div id="actual"></div>
+<div id="similar"></div>
+
+</div>
+
+<div class="panel">
+<div class="label">OCCUPANCY</div>
+<div id="occState" class="big"></div>
+<div id="occProb"></div>
+</div>
+
+<div class="panel survive">
+<div class="label">SURVIVABILITY</div>
+
+<div id="batteryKwh"></div>
+<div class="battery"><div id="survBattery" class="battery-fill"></div></div>
+
+<div>Zero solar</div>
+<div class="bar"><div id="zeroBar" class="fill"></div></div>
+
+<div>Similar weather</div>
+<div class="bar"><div id="similarBar" class="fill"></div></div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Sustainable Living • Hands-on Education • Community Resilience • Building a Better Tomorrow
+</div>
+
+</div>
+
+<script>
+
+function setGauge(v){
+ let a=(v/2000)*180;
+ let r=a*Math.PI/180;
+ let x=100+70*Math.cos(Math.PI-r);
+ let y=100-70*Math.sin(Math.PI-r);
+ let n=document.getElementById("needle");
+ n.setAttribute("x2",x);
+ n.setAttribute("y2",y);
+}
+
+async function loadData(){
+ let r=await fetch("solarstatus.json?v="+Date.now());
+ let d=await r.json();
+
+ document.getElementById("statusText").innerText=d.status;
+ document.getElementById("timestamp").innerText=new Date(d.timestamp).toLocaleString();
+
+ document.getElementById("load").innerText=Math.round(d.now.load_w)+"W";
+ document.getElementById("solar").innerText=Math.round(d.now.solar_w)+"W";
+
+ document.getElementById("battery").innerText=d.now.battery_soc+"%";
+ document.getElementById("batteryFill").style.width=d.now.battery_soc+"%";
+
+ document.getElementById("mode").innerText=d.now.mode;
+ document.getElementById("tempNow").innerText=d.weather.temperature_f+"°F";
+
+ document.getElementById("temp").innerText=d.weather.temperature_f+"°F";
+ document.getElementById("humidity").innerText=d.weather.humidity+"%";
+ document.getElementById("cloud").innerText=d.weather.cloud_cover+"%";
+
+ document.getElementById("consumed").innerText="Consumed "+d.today.consumed_kwh+" kWh";
+ document.getElementById("produced").innerText="Produced "+d.today.produced_kwh+" kWh";
+ document.getElementById("avg").innerText="Avg "+d.today.avg_load_w+"W";
+ document.getElementById("peakLoad").innerText="Peak "+d.today.peak_load_w+"W";
+
+ document.getElementById("batteryKwh").innerText="Battery "+d.survivability.usable_battery_kwh+"kWh";
+
+ document.getElementById("zeroBar").style.width=Math.min(d.survivability.zero_solar_days*12,100)+"%";
+ document.getElementById("similarBar").style.width=Math.min(d.survivability.similar_weather_days*3,100)+"%";
+
+ document.getElementById("occState").innerText=d.occupancy.state;
+ document.getElementById("occProb").innerText=d.occupancy.probability+"%";
+
+ document.getElementById("actual").innerText="Actual "+d.performance.actual_solar_w+"W";
+ document.getElementById("similar").innerText="Expected "+d.performance.similar_avg_solar_w+"W";
+
+ setGauge(d.performance.actual_solar_w);
+}
+
+setInterval(loadData,60000);
+loadData();
+
+</script>
+</body>
+</html>
+``
