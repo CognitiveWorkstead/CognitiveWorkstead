@@ -128,6 +128,20 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <p>Actual solar under current conditions:<br><b class="big" id="actualSolar">--</b>W</p>
       <p>Similar-condition average:<br><b class="big" id="similarAvg">--</b>W</p>
       <h2 class="green" style="text-align:center">Performing WELL</h2>
+      <hr>
+      <div class="small">
+        <b>ARRAY PERFORMANCE</b><br>
+        <span id="array1Name">Array 1</span> / <span id="array1Mppt">MPPT1</span>:
+        <b id="array1Power">--</b>W / <span id="array1Rated">--</span>W
+        (<span id="array1Eff">--</span>%)<br>
+        <span id="array2Name">Array 2</span> / <span id="array2Mppt">MPPT2</span>:
+        <b id="array2Power">--</b>W / <span id="array2Rated">--</span>W
+        (<span id="array2Eff">--</span>%)<br>
+        Total:
+        <b id="arrayTotalPower">--</b>W / <span id="arrayTotalRated">--</span>W
+        (<span id="arrayTotalEff">--</span>%)<br>
+        <span id="arrayInsight">Waiting for array data.</span>
+      </div>
     </div>
 
     <div class="card occupancy">
@@ -257,6 +271,23 @@ async function refresh(){
 
   set("actualSolar",fmt(j.performance?.actual_solar_w));
   set("similarAvg",fmt(j.performance?.similar_avg_solar_w));
+
+  set("array1Name",j.arrays?.array_1?.name || "Array 1");
+  set("array1Mppt",j.arrays?.array_1?.mppt || "MPPT1");
+  set("array1Power",fmt(j.arrays?.array_1?.power_w));
+  set("array1Rated",fmt(j.arrays?.array_1?.rated_w));
+  set("array1Eff",one(j.arrays?.array_1?.efficiency_pct));
+
+  set("array2Name",j.arrays?.array_2?.name || "Array 2");
+  set("array2Mppt",j.arrays?.array_2?.mppt || "MPPT2");
+  set("array2Power",fmt(j.arrays?.array_2?.power_w));
+  set("array2Rated",fmt(j.arrays?.array_2?.rated_w));
+  set("array2Eff",one(j.arrays?.array_2?.efficiency_pct));
+
+  set("arrayTotalPower",fmt(j.arrays?.total?.power_w));
+  set("arrayTotalRated",fmt(j.arrays?.total?.rated_w));
+  set("arrayTotalEff",one(j.arrays?.total?.efficiency_pct));
+  set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
 
   set("occState",j.occupancy?.state||"--");
   set("occProb",fmt(j.occupancy?.probability));
