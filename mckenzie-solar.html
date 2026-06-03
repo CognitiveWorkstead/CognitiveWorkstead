@@ -132,14 +132,17 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <div class="small">
         <b>ARRAY PERFORMANCE</b><br>
         <span id="array1Name">Array 1</span> / <span id="array1Mppt">MPPT1</span>:
-        <b id="array1Power">--</b>W / <span id="array1Rated">--</span>W
-        (<span id="array1Eff">--</span>%)<br>
+        Current <b id="array1Power">--</b>W / <span id="array1Rated">--</span>W
+        (<span id="array1Eff">--</span>%) |
+        Peak <b id="array1Peak">--</b>W at <span id="array1PeakTime">--</span><br>
         <span id="array2Name">Array 2</span> / <span id="array2Mppt">MPPT2</span>:
-        <b id="array2Power">--</b>W / <span id="array2Rated">--</span>W
-        (<span id="array2Eff">--</span>%)<br>
+        Current <b id="array2Power">--</b>W / <span id="array2Rated">--</span>W
+        (<span id="array2Eff">--</span>%) |
+        Peak <b id="array2Peak">--</b>W at <span id="array2PeakTime">--</span><br>
         Total:
-        <b id="arrayTotalPower">--</b>W / <span id="arrayTotalRated">--</span>W
-        (<span id="arrayTotalEff">--</span>%)<br>
+        Current <b id="arrayTotalPower">--</b>W / <span id="arrayTotalRated">--</span>W
+        (<span id="arrayTotalEff">--</span>%) |
+        Peak <b id="arrayTotalPeak">--</b>W at <span id="arrayTotalPeakTime">--</span><br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
     </div>
@@ -277,16 +280,22 @@ async function refresh(){
   set("array1Power",fmt(j.arrays?.array_1?.power_w));
   set("array1Rated",fmt(j.arrays?.array_1?.rated_w));
   set("array1Eff",one(j.arrays?.array_1?.efficiency_pct));
+  set("array1Peak",fmt(j.arrays?.array_1?.peak_today_w));
+  set("array1PeakTime",j.arrays?.array_1?.peak_today_time_central || "--");
 
   set("array2Name",j.arrays?.array_2?.name || "Array 2");
   set("array2Mppt",j.arrays?.array_2?.mppt || "MPPT2");
   set("array2Power",fmt(j.arrays?.array_2?.power_w));
   set("array2Rated",fmt(j.arrays?.array_2?.rated_w));
   set("array2Eff",one(j.arrays?.array_2?.efficiency_pct));
+  set("array2Peak",fmt(j.arrays?.array_2?.peak_today_w));
+  set("array2PeakTime",j.arrays?.array_2?.peak_today_time_central || "--");
 
   set("arrayTotalPower",fmt(j.arrays?.total?.power_w));
   set("arrayTotalRated",fmt(j.arrays?.total?.rated_w));
   set("arrayTotalEff",one(j.arrays?.total?.efficiency_pct));
+  set("arrayTotalPeak",fmt(j.arrays?.total?.peak_today_w));
+  set("arrayTotalPeakTime",j.arrays?.total?.peak_today_time_central || "--");
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
 
   set("occState",j.occupancy?.state||"--");
