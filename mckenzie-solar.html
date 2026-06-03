@@ -145,6 +145,13 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         <div class="cell"><span class="green">ZERO-SOLAR SCENARIO</span><br><b class="big" id="zeroDays">--</b> days<br><span class="small">at today’s average load</span></div>
         <div><span class="green">SIMILAR UGLY-WEATHER SCENARIO</span><br><b class="big" id="similarDays">--</b> days<br><span class="small">based on <span id="samples">--</span> samples</span></div>
       </div>
+      <hr>
+      <div class="small">
+        <b>Operating Insight:</b>
+        <span id="surviveInsight">Waiting for live solar data.</span>
+        <br>
+        <span id="lastUpdatedCt">Last updated: -- Central Time</span>
+      </div>
     </div>
 
     <div class="card prob">
@@ -175,9 +182,48 @@ function set(id,v){const e=document.getElementById(id); if(e)e.textContent=v;}
 function prob(days,hours){return Math.max(0,Math.min(99,Math.round((Number(days||0)/(hours/24))*100)))}
 function localClock(){
  const d=new Date();
- set("date",d.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"}));
- set("clock",d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"}));
+ set("date",d.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric",timeZone:"America/Chicago"}));
+ set("clock",d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",timeZone:"America/Chicago"}) + " Central Time");
 }
+
+function centralTime(ts){
+ if(!ts) return "-- Central Time";
+ const d = new Date(ts);
+ return d.toLocaleString("en-US",{
+   month:"short",day:"numeric",year:"numeric",
+   hour:"numeric",minute:"2-digit",
+   timeZone:"America/Chicago"
+ }) + " Central Time";
+}
+
+function buildSurvivabilityInsight(j){
+ const load = Number(j.now?.load_w || 0);
+ const solar = Number(j.now?.solar_w || 0);
+ const soc = Number(j.now?.battery_soc || 0);
+ const batt = Number(j.now?.battery_power_w || 0);
+ const cloud = Number(j.weather?.cloud_cover || 0);
+ const occ = String(j.occupancy?.state || "unknown").toLowerCase();
+
+ const charging = batt > 50;
+ const discharging = batt < -50;
+ const net = solar - load;
+
+ let flow = charging
+   ? "Battery is charging from surplus production"
+   : discharging
+     ? "Battery is discharging to support load"
+     : "Battery is near neutral";
+
+ let risk = "Normal operating posture.";
+ if (soc < 30) risk = "Conserve power and avoid discretionary loads.";
+ else if (soc < 50 && cloud >= 80 && discharging) risk = "Cloud cover plus discharge creates a watch condition.";
+ else if (soc >= 80 && charging) risk = "Strong reserve. Good window for flexible loads.";
+ else if (occ.includes("away") && load > 1200) risk = "Away load is elevated. Review unattended loads.";
+ else if (net > 500) risk = "Solar is carrying the load with positive headroom.";
+
+ return `${flow}. Load ${Math.round(load).toLocaleString()}W, solar ${Math.round(solar).toLocaleString()}W, SOC ${Math.round(soc)}%, cloud cover ${Math.round(cloud)}%, occupancy ${occ}. ${risk}`;
+}
+
 async function refresh(){
  try{
   const r=await fetch("solarstatus.json?ts="+Date.now(),{cache:"no-store"});
@@ -223,6 +269,8 @@ async function refresh(){
   set("zeroDays",one(j.survivability?.zero_solar_days));
   set("similarDays",one(j.survivability?.similar_weather_days));
   set("samples",fmt(j.survivability?.samples));
+  set("surviveInsight", buildSurvivabilityInsight(j));
+  set("lastUpdatedCt", "Last updated: " + centralTime(j.timestamp));
   set("p24",p24+"%"); set("p48",p48+"%"); set("p72",p72+"%");
   document.getElementById("b24").style.width=p24+"%";
   document.getElementById("b48").style.width=p48+"%";
