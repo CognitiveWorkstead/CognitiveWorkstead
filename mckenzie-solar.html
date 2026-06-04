@@ -161,7 +161,9 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         Current Output: <b id="arrayCurrentVsPeak">--</b>% of Today's Peak<br>
         Solar Quality: <b id="solarQualityScore">--</b>/100<br>
         Solar Grade: <b id="solarGrade">--</b><br>
-        Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span><br>
+        30-Day Avg Peak: <b id="avgPeak30d">--</b>W<br>
+        Today vs Avg: <b id="todayVsAvgPeak">--</b>%<br>
+        Colby Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span><br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
     </div>
@@ -353,6 +355,12 @@ async function refresh(){
   else if (qualityScore >= 60) solarGrade = "D";
 
   set("solarGrade", solarGrade);
+
+  const peakTrend = j.performance?.peak_trend || {};
+  const avgPeak30d = Number(peakTrend.avg_peak_30d_w || 0);
+  const vsAvgPeak = Number(peakTrend.today_vs_avg_peak_pct || 0);
+  set("avgPeak30d", avgPeak30d > 0 ? fmt(avgPeak30d) : "--");
+  set("todayVsAvgPeak", avgPeak30d > 0 ? (vsAvgPeak > 0 ? "+" + one(vsAvgPeak) : one(vsAvgPeak)) : "--");
 
   set("solarQualityAssessment", qualityAssessment);
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
