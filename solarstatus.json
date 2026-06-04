@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-04T18:41:04.114649+00:00",
-  "timestamp_central": "Jun 4, 2026, 1:41 PM Central Time",
+  "timestamp": "2026-06-04T18:46:02.577086+00:00",
+  "timestamp_central": "Jun 4, 2026, 1:46 PM Central Time",
   "status": "GREEN",
   "now": {
-    "load_w": 446.0,
-    "solar_w": 574.0,
+    "load_w": 540.0,
+    "solar_w": 671.0,
     "battery_soc": 99.0,
     "battery_power_w": 117.0,
     "mode": "Solar/Battery",
@@ -23,9 +23,9 @@
     "reason": "both phones present"
   },
   "today": {
-    "consumed_kwh": 9.22,
-    "produced_kwh": 11.73,
-    "avg_load_w": 493,
+    "consumed_kwh": 9.27,
+    "produced_kwh": 11.79,
+    "avg_load_w": 494,
     "peak_load_w": 7211,
     "peak_solar_w": 4575,
     "lowest_soc": 86
@@ -37,7 +37,7 @@
     "samples": 4730
   },
   "performance": {
-    "actual_solar_w": 574.0,
+    "actual_solar_w": 671.0,
     "similar_avg_solar_w": 351
   },
   "arrays": {
@@ -56,8 +56,8 @@
       "panel_watts": 445,
       "rated_w": 5340,
       "bifacial": true,
-      "power_w": 461,
-      "efficiency_pct": 8.6,
+      "power_w": 314,
+      "efficiency_pct": 5.9,
       "peak_today_w": 2159,
       "peak_today_time_central": "Jun 4, 2026, 10:44 AM Central Time",
       "peak_today_efficiency_pct": 40.4
@@ -76,20 +76,20 @@
       "panel_watts": 435,
       "rated_w": 3480,
       "bifacial": false,
-      "power_w": 524,
-      "efficiency_pct": 15.1,
+      "power_w": 351,
+      "efficiency_pct": 10.1,
       "peak_today_w": 2416,
       "peak_today_time_central": "Jun 4, 2026, 10:44 AM Central Time",
       "peak_today_efficiency_pct": 69.4
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 960,
-      "efficiency_pct": 10.9,
+      "power_w": 658,
+      "efficiency_pct": 7.5,
       "peak_today_w": 4575,
       "peak_today_time_central": "Jun 4, 2026, 10:44 AM Central Time",
       "peak_today_efficiency_pct": 51.9
     },
-    "insight": "Solar production is exceeding load and charging the battery. Battery SOC is at or above 98%, so the BMS/inverter may be tapering charge. Solar output may be demand-limited because the batteries have little room left to store power. Do not use current low output as an array-health indicator. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 10.9% of top-side rating."
+    "insight": "Solar production is exceeding load and charging the battery. Battery SOC is at or above 98%, so the BMS/inverter may be tapering charge. Solar output may be demand-limited because the batteries have little room left to store power. Do not use current low output as an array-health indicator. Array balance appears normal. Total array output is 7.5% of top-side rating."
   }
 }
