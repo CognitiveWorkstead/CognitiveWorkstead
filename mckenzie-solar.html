@@ -157,9 +157,10 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
             <td style="text-align:right"><span id="arrayTotalEff">--</span>%</td>
           </tr>
         </table>
-        Peak Time: <span id="arrayTotalPeakTime">--</span><br>
+        Best Solar Window: <span id="bestSolarWindow">--</span><br>
         Current Output: <b id="arrayCurrentVsPeak">--</b>% of Today's Peak<br>
         Solar Quality: <b id="solarQualityScore">--</b>/100<br>
+        Solar Grade: <b id="solarGrade">--</b><br>
         Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span><br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
@@ -340,6 +341,19 @@ async function refresh(){
   if (socNow >= 98 && currentVsPeak < 35 && totalPeak > 0) qualityAssessment += " Current low output is likely demand-limited, not a clean array-health signal.";
 
   set("solarQualityScore", qualityScore > 0 ? qualityScore : "--");
+
+  const peakTime = j.arrays?.total?.peak_today_time_central || "--";
+  set("bestSolarWindow", peakTime === "--" ? "--" : "Peak around " + peakTime);
+
+  let solarGrade = "F";
+  if (qualityScore >= 95) solarGrade = "A+";
+  else if (qualityScore >= 90) solarGrade = "A";
+  else if (qualityScore >= 80) solarGrade = "B";
+  else if (qualityScore >= 70) solarGrade = "C";
+  else if (qualityScore >= 60) solarGrade = "D";
+
+  set("solarGrade", solarGrade);
+
   set("solarQualityAssessment", qualityAssessment);
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
 
