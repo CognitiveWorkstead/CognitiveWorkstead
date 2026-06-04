@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-04T14:29:29-04:00
+Generated Local Time: 2026-06-04T14:30:27-04:00
 
 Source System: AsusAI /opt/colby
 
@@ -60,40 +60,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-04T14:29:29-04:00
-- SHA256: 236a8af9990a348bff3927ee585c99899ab303a21b361c056f4762d53d94cefd
+- Modified Time: 2026-06-04T14:30:27-04:00
+- SHA256: 0491ba5efe3eec4f5c5e09943849a9dd641eb3de2065653751bb65b707c22f77
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-04T14:29:29-04:00
-- SHA256: 30f4209ad396a491bb60aca1cb92dcf2b1eaf65a4e445817176d1ccf6cd514f0
+- Modified Time: 2026-06-04T14:30:27-04:00
+- SHA256: ba2f5728e816bf2cd26635cdbe1ed31814a404e0df2ed533417bed6413ce55ab
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-04T14:29:29-04:00
-- SHA256: 8cc7b9a2f4c01b81e494e26c43c3672443a5872874610f9d238ff2ea134c3daa
+- Modified Time: 2026-06-04T14:30:27-04:00
+- SHA256: 978c2261b85578eaad30ea695f2f1d86cc441b725b1309255bd8be2c04173ae5
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-04T14:29:29-04:00
-- SHA256: b3ea40c9e124e4f014a6365a7304565fb4d20fb40dd6f2f240e709a40d5e27d0
+- Modified Time: 2026-06-04T14:30:27-04:00
+- SHA256: 86a3fbba7b9a9c9cabf726cf62ac90b6e96ec60bd5fe4a489e8f0f72bd081416
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-04T14:29:29-04:00
-- SHA256: d1be8dd3056a8c6127df44b2c3c2b21915df99354e0bfb5fbd4321637f13b766
+- Modified Time: 2026-06-04T14:30:27-04:00
+- SHA256: 72d9c42f1895fafa7f289151e316eb5fd8ab044f36ff41a264c3f4ccedd48b07
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -124,8 +124,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2024
-- Modified Time: 2026-06-04T14:29:29-04:00
-- SHA256: 4289814ff73ac4ae5e2810849fa96788b9d747562b0b85cc44937e165667ca8b
+- Modified Time: 2026-06-04T14:30:27-04:00
+- SHA256: 0b2873d797d819580eb36811a9d1ffcd911cefa530b7c3b6f66fa5e8b4b33d21
 
 ## Current State
 
@@ -452,7 +452,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-04T14:29:29
+Generated: 2026-06-04T14:30:27
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -590,7 +590,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-04T14:29:29
+Generated: 2026-06-04T14:30:27
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -699,7 +699,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-04T14:29:29
+Generated: 2026-06-04T14:30:27
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -792,7 +792,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-04T14:29:29
+Generated: 2026-06-04T14:30:27
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -855,7 +855,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-04T14:29:29
+Generated: 2026-06-04T14:30:27
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1181,7 +1181,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-04T14:29:29
+Generated: 2026-06-04T14:30:27
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
