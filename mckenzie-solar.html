@@ -143,6 +143,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         Current <b id="arrayTotalPower">--</b>W / <span id="arrayTotalRated">--</span>W
         (<span id="arrayTotalEff">--</span>%) |
         Peak <b id="arrayTotalPeak">--</b>W at <span id="arrayTotalPeakTime">--</span><br>
+        Current vs Peak: <b id="arrayCurrentVsPeak">--</b>%<br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
     </div>
@@ -296,6 +297,9 @@ async function refresh(){
   set("arrayTotalEff",one(j.arrays?.total?.efficiency_pct));
   set("arrayTotalPeak",fmt(j.arrays?.total?.peak_today_w));
   set("arrayTotalPeakTime",j.arrays?.total?.peak_today_time_central || "--");
+  const totalNow = Number(j.arrays?.total?.power_w || 0);
+  const totalPeak = Number(j.arrays?.total?.peak_today_w || 0);
+  set("arrayCurrentVsPeak", totalPeak > 0 ? one((totalNow / totalPeak) * 100) : "--");
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
 
   set("occState",j.occupancy?.state||"--");
