@@ -160,7 +160,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         Status: <b id="colbyBriefStatus">--</b><br>
         Energy Budget: <b id="energyBudget">--</b><br>
         At Current Load: <b id="timeRemaining">--</b><br>
-        Expected Sunrise SOC: <b id="sunriseSoc">--</b><br>
+        Expected Sunrise SOC: <b id="sunriseSoc">--</b> <span id="forecastConfidence"></span><br>
         Primary Risk: <span id="primaryRisk">Waiting for data.</span><br>
         Opportunity Window: <span id="opportunityWindow">Waiting for data.</span><br>
         Recommended Action: <span id="colbyBriefAction">Waiting for data.</span><br>
@@ -394,8 +394,8 @@ async function refresh(){
   const storedKwh = Number(j.survivability?.usable_battery_kwh || 0);
   const loadKw = Math.max(loadNow / 1000.0, 0.05);
   const hoursAtCurrentLoad = storedKwh / loadKw;
-  const overnightHours = 12;
-  const expectedSunriseSoc = Math.max(0, Math.min(100, batterySoc - ((loadKw * overnightHours) / Math.max(storedKwh / Math.max(batterySoc / 100.0, 0.01), 1)) * 100));
+  const expectedSunriseSoc = Number(j.forecast?.expected_sunrise_soc || 0);
+  const forecastConfidence = j.forecast?.confidence || "Unknown";
 
   let energyBudgetText = netWatts >= 0 ? "+" + fmt(netWatts) + "W surplus" : fmt(netWatts) + "W deficit";
   let timeRemainingText = hoursAtCurrentLoad >= 48 ? one(hoursAtCurrentLoad / 24) + " days" : one(hoursAtCurrentLoad) + " hours";
@@ -422,6 +422,7 @@ async function refresh(){
   set("energyBudget", energyBudgetText);
   set("timeRemaining", timeRemainingText);
   set("sunriseSoc", one(expectedSunriseSoc) + "%");
+  set("forecastConfidence", "(" + forecastConfidence + ")");
   set("primaryRisk", primaryRisk);
   set("opportunityWindow", opportunityWindow);
   set("missionScore", missionScore);
