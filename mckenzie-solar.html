@@ -158,8 +158,13 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <h2 style="text-align:center">COLBY MISSION BRIEF</h2>
       <div class="small">
         Status: <b id="colbyBriefStatus">--</b><br>
-        Next Risk: <span id="colbyBriefRisk">Waiting for data.</span><br>
+        Energy Budget: <b id="energyBudget">--</b><br>
+        At Current Load: <b id="timeRemaining">--</b><br>
+        Expected Sunrise SOC: <b id="sunriseSoc">--</b><br>
+        Primary Risk: <span id="primaryRisk">Waiting for data.</span><br>
+        Opportunity Window: <span id="opportunityWindow">Waiting for data.</span><br>
         Recommended Action: <span id="colbyBriefAction">Waiting for data.</span><br>
+        Mission Score: <b id="missionScore">--</b><br>
         <hr>
         Colby Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span>
       </div>
@@ -384,6 +389,42 @@ async function refresh(){
     briefRisk = "High load detected while site appears away.";
     briefAction = "Check HVAC, pumps, appliances, or unexpected 240V loads.";
   }
+
+  const netWatts = solarNow - loadNow;
+  const storedKwh = Number(j.survivability?.usable_battery_kwh || 0);
+  const loadKw = Math.max(loadNow / 1000.0, 0.05);
+  const hoursAtCurrentLoad = storedKwh / loadKw;
+  const overnightHours = 12;
+  const expectedSunriseSoc = Math.max(0, Math.min(100, batterySoc - ((loadKw * overnightHours) / Math.max(storedKwh / Math.max(batterySoc / 100.0, 0.01), 1)) * 100));
+
+  let energyBudgetText = netWatts >= 0 ? "+" + fmt(netWatts) + "W surplus" : fmt(netWatts) + "W deficit";
+  let timeRemainingText = hoursAtCurrentLoad >= 48 ? one(hoursAtCurrentLoad / 24) + " days" : one(hoursAtCurrentLoad) + " hours";
+
+  let primaryRisk = "None identified.";
+  if (batterySoc < 50) primaryRisk = "Battery reserve is the primary risk.";
+  else if (loadNow > 3000) primaryRisk = "High load is the primary risk.";
+  else if (Number(j.weather?.cloud_cover || 0) >= 60 && solarNow < loadNow) primaryRisk = "Cloud cover plus load demand may reduce reserve.";
+  else if (batterySoc >= 98) primaryRisk = "Charge taper may limit solar harvest, but energy risk is low.";
+  else if (netWatts < 0) primaryRisk = "Current load exceeds solar production.";
+
+  let opportunityWindow = "Normal operation.";
+  if (batterySoc >= 95 && netWatts >= 0) opportunityWindow = "Now to sunset: good window for flexible loads.";
+  else if (batterySoc >= 90) opportunityWindow = "Good reserve. Use flexible loads cautiously.";
+  else opportunityWindow = "Limited. Prioritize essential loads.";
+
+  let missionScore = "A";
+  if (batterySoc >= 98 && zeroSolarDays >= 3 && qualityScore >= 90) missionScore = "A+";
+  else if (batterySoc >= 90 && zeroSolarDays >= 2 && qualityScore >= 80) missionScore = "A";
+  else if (batterySoc >= 75 && zeroSolarDays >= 1.5) missionScore = "B";
+  else if (batterySoc >= 55) missionScore = "C";
+  else missionScore = "D";
+
+  set("energyBudget", energyBudgetText);
+  set("timeRemaining", timeRemainingText);
+  set("sunriseSoc", one(expectedSunriseSoc) + "%");
+  set("primaryRisk", primaryRisk);
+  set("opportunityWindow", opportunityWindow);
+  set("missionScore", missionScore);
 
   set("colbyBriefStatus", briefStatus);
   set("colbyBriefRisk", briefRisk);
