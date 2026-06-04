@@ -144,6 +144,8 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         (<span id="arrayTotalEff">--</span>%) |
         Peak <b id="arrayTotalPeak">--</b>W at <span id="arrayTotalPeakTime">--</span><br>
         Current vs Peak: <b id="arrayCurrentVsPeak">--</b>%<br>
+        Solar Quality Today: <b id="solarQualityScore">--</b>/100<br>
+        Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span><br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
     </div>
@@ -299,7 +301,31 @@ async function refresh(){
   set("arrayTotalPeakTime",j.arrays?.total?.peak_today_time_central || "--");
   const totalNow = Number(j.arrays?.total?.power_w || 0);
   const totalPeak = Number(j.arrays?.total?.peak_today_w || 0);
-  set("arrayCurrentVsPeak", totalPeak > 0 ? one((totalNow / totalPeak) * 100) : "--");
+  const totalRated = Number(j.arrays?.total?.rated_w || 0);
+  const socNow = Number(j.now?.battery_soc || 0);
+  const peakEfficiency = totalRated > 0 ? (totalPeak / totalRated) * 100 : 0;
+  const currentVsPeak = totalPeak > 0 ? (totalNow / totalPeak) * 100 : 0;
+
+  set("arrayCurrentVsPeak", totalPeak > 0 ? one(currentVsPeak) : "--");
+
+  let qualityScore = 0;
+  if (peakEfficiency >= 50) qualityScore = 92;
+  else if (peakEfficiency >= 40) qualityScore = 84;
+  else if (peakEfficiency >= 30) qualityScore = 72;
+  else if (peakEfficiency >= 20) qualityScore = 58;
+  else if (peakEfficiency > 0) qualityScore = 40;
+
+  if (socNow >= 98 && totalPeak > 0) qualityScore = Math.max(qualityScore, 88);
+
+  let qualityAssessment = "Insufficient solar data.";
+  if (qualityScore >= 90) qualityAssessment = "Excellent production day. Battery reached charge taper conditions.";
+  else if (qualityScore >= 80) qualityAssessment = "Good production day. Array performance appears healthy.";
+  else if (qualityScore >= 70) qualityAssessment = "Moderate production day. Weather, sun angle, or charge demand may be limiting output.";
+  else if (qualityScore > 0) qualityAssessment = "Weak production day. Review weather, shading, battery demand, and array balance.";
+  if (socNow >= 98 && currentVsPeak < 35 && totalPeak > 0) qualityAssessment += " Current low output is likely demand-limited, not a clean array-health signal.";
+
+  set("solarQualityScore", qualityScore > 0 ? qualityScore : "--");
+  set("solarQualityAssessment", qualityAssessment);
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
 
   set("occState",j.occupancy?.state||"--");
