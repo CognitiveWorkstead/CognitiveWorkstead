@@ -131,20 +131,35 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <hr>
       <div class="small">
         <b>ARRAY PERFORMANCE</b><br>
-        <span id="array1Name">Array 1</span> / <span id="array1Mppt">MPPT1</span>:
-        Current <b id="array1Power">--</b>W / <span id="array1Rated">--</span>W
-        (<span id="array1Eff">--</span>%) |
-        Peak <b id="array1Peak">--</b>W at <span id="array1PeakTime">--</span><br>
-        <span id="array2Name">Array 2</span> / <span id="array2Mppt">MPPT2</span>:
-        Current <b id="array2Power">--</b>W / <span id="array2Rated">--</span>W
-        (<span id="array2Eff">--</span>%) |
-        Peak <b id="array2Peak">--</b>W at <span id="array2PeakTime">--</span><br>
-        Total:
-        Current <b id="arrayTotalPower">--</b>W / <span id="arrayTotalRated">--</span>W
-        (<span id="arrayTotalEff">--</span>%) |
-        Peak <b id="arrayTotalPeak">--</b>W at <span id="arrayTotalPeakTime">--</span><br>
-        Current vs Peak: <b id="arrayCurrentVsPeak">--</b>%<br>
-        Solar Quality Today: <b id="solarQualityScore">--</b>/100<br>
+        <table style="width:100%;border-collapse:collapse;margin-top:6px">
+          <tr>
+            <th style="text-align:left">ARRAY</th>
+            <th style="text-align:right">NOW</th>
+            <th style="text-align:right">PEAK</th>
+            <th style="text-align:right">EFF</th>
+          </tr>
+          <tr>
+            <td>A1 (12×445W BiF)</td>
+            <td style="text-align:right"><b id="array1Power">--</b>W</td>
+            <td style="text-align:right"><b id="array1Peak">--</b>W</td>
+            <td style="text-align:right"><span id="array1Eff">--</span>%</td>
+          </tr>
+          <tr>
+            <td>A2 (8×435W)</td>
+            <td style="text-align:right"><b id="array2Power">--</b>W</td>
+            <td style="text-align:right"><b id="array2Peak">--</b>W</td>
+            <td style="text-align:right"><span id="array2Eff">--</span>%</td>
+          </tr>
+          <tr>
+            <td><b>TOTAL</b></td>
+            <td style="text-align:right"><b id="arrayTotalPower">--</b>W</td>
+            <td style="text-align:right"><b id="arrayTotalPeak">--</b>W</td>
+            <td style="text-align:right"><span id="arrayTotalEff">--</span>%</td>
+          </tr>
+        </table>
+        Peak Time: <span id="arrayTotalPeakTime">--</span><br>
+        Current Output: <b id="arrayCurrentVsPeak">--</b>% of Today's Peak<br>
+        Solar Quality: <b id="solarQualityScore">--</b>/100<br>
         Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span><br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
