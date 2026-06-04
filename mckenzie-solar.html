@@ -163,6 +163,10 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         Solar Grade: <b id="solarGrade">--</b><br>
         30-Day Avg Peak: <b id="avgPeak30d">--</b>W<br>
         Today vs Avg: <b id="todayVsAvgPeak">--</b>%<br>
+        <br><b>COLBY MISSION BRIEF</b><br>
+        Status: <b id="colbyBriefStatus">--</b><br>
+        Next Risk: <span id="colbyBriefRisk">Waiting for data.</span><br>
+        Recommended Action: <span id="colbyBriefAction">Waiting for data.</span><br>
         Colby Assessment: <span id="solarQualityAssessment">Waiting for solar data.</span><br>
         <span id="arrayInsight">Waiting for array data.</span>
       </div>
@@ -361,6 +365,44 @@ async function refresh(){
   const vsAvgPeak = Number(peakTrend.today_vs_avg_peak_pct || 0);
   set("avgPeak30d", avgPeak30d > 0 ? fmt(avgPeak30d) : "--");
   set("todayVsAvgPeak", avgPeak30d > 0 ? (vsAvgPeak > 0 ? "+" + one(vsAvgPeak) : one(vsAvgPeak)) : "--");
+
+  let briefStatus = "Monitor";
+  let briefRisk = "Insufficient data for risk assessment.";
+  let briefAction = "Continue monitoring.";
+
+  const loadNow = Number(j.now?.load_w || 0);
+  const solarNow = Number(j.now?.solar_w || 0);
+  const batterySoc = Number(j.now?.battery_soc || 0);
+  const zeroSolarDays = Number(j.survivability?.zero_solar_days || 0);
+  const occupiedState = String(j.occupancy?.state || "").toLowerCase();
+
+  if (batterySoc >= 90 && zeroSolarDays >= 3 && solarNow >= loadNow) {
+    briefStatus = "Excellent";
+    briefRisk = "No near-term energy risk detected before sunrise.";
+    briefAction = "Safe to run normal and flexible loads.";
+  } else if (batterySoc >= 70 && zeroSolarDays >= 2) {
+    briefStatus = "Strong";
+    briefRisk = "Low energy risk. Monitor overnight load.";
+    briefAction = "Normal operation is safe. Delay heavy discretionary loads if weather worsens.";
+  } else if (batterySoc >= 50) {
+    briefStatus = "Watch";
+    briefRisk = "Moderate reserve. Sustained heavy loads could reduce overnight margin.";
+    briefAction = "Avoid unnecessary high-load devices until solar improves.";
+  } else {
+    briefStatus = "Conserve";
+    briefRisk = "Battery reserve is becoming operationally important.";
+    briefAction = "Reduce discretionary loads and review backup options.";
+  }
+
+  if (occupiedState === "away" && loadNow > 3000) {
+    briefStatus = "Investigate";
+    briefRisk = "High load detected while site appears away.";
+    briefAction = "Check HVAC, pumps, appliances, or unexpected 240V loads.";
+  }
+
+  set("colbyBriefStatus", briefStatus);
+  set("colbyBriefRisk", briefRisk);
+  set("colbyBriefAction", briefAction);
 
   set("solarQualityAssessment", qualityAssessment);
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
