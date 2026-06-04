@@ -364,7 +364,7 @@ async function refresh(){
   if (batterySoc >= 90 && zeroSolarDays >= 3 && solarNow >= loadNow) {
     briefStatus = "Excellent";
     briefRisk = "No near-term energy risk detected before sunrise.";
-    briefAction = "Safe to run normal and flexible loads.";
+    briefAction = "Use surplus solar now: laundry, water heating, cooking, or shop tools. In hot/humid weather, pre-cool living spaces and reduce humidity before evening battery-only hours.";
   } else if (batterySoc >= 70 && zeroSolarDays >= 2) {
     briefStatus = "Strong";
     briefRisk = "Low energy risk. Monitor overnight load.";
