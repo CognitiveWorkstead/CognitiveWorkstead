@@ -539,7 +539,8 @@ setInterval(refresh,900000);
         <div class="forecast-icon">${d.icon || "🌡️"}</div>
         <div class="forecast-dow">${d.day || "--"}</div>
         <div class="forecast-temp">${d.high_f ?? "--"}°/${d.low_f ?? "--"}°</div>
-        <div class="forecast-solar">Solar ${d.solar_opportunity ?? "--"}%</div>
+        <div class="forecast-solar">Hist ${d.solar_opportunity ?? "--"}%</div>
+        <div class="forecast-solar">${d.historical_days_used ?? 0}d used</div>
       </div>
     `).join("");
   }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-05T13:01:15.558150+00:00",
-  "timestamp_central": "Jun 5, 2026, 8:01 AM Central Time",
+  "timestamp": "2026-06-05T13:02:48.385398+00:00",
+  "timestamp_central": "Jun 5, 2026, 8:02 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Morning Ramp",
@@ -34,7 +34,11 @@
           "low_f": 61,
           "precip_in": 0.0,
           "cloud_cover": 17,
-          "solar_opportunity": 83
+          "solar_opportunity": 87,
+          "solar_basis": "forecast model fallback",
+          "historical_days_used": 0,
+          "expected_peak_w": null,
+          "reference_peak_w": 6969
         },
         {
           "day": "Sat",
@@ -44,7 +48,11 @@
           "low_f": 65,
           "precip_in": 0.27,
           "cloud_cover": 94,
-          "solar_opportunity": 0
+          "solar_opportunity": 15,
+          "solar_basis": "forecast model fallback",
+          "historical_days_used": 0,
+          "expected_peak_w": null,
+          "reference_peak_w": 6969
         },
         {
           "day": "Sun",
@@ -54,7 +62,11 @@
           "low_f": 69,
           "precip_in": 0.0,
           "cloud_cover": 99,
-          "solar_opportunity": 1
+          "solar_opportunity": 80,
+          "solar_basis": "historical similar-weather peak",
+          "historical_days_used": 6,
+          "expected_peak_w": 5610,
+          "reference_peak_w": 6969
         },
         {
           "day": "Mon",
@@ -64,7 +76,11 @@
           "low_f": 68,
           "precip_in": 0.0,
           "cloud_cover": 97,
-          "solar_opportunity": 3
+          "solar_opportunity": 80,
+          "solar_basis": "historical similar-weather peak",
+          "historical_days_used": 6,
+          "expected_peak_w": 5610,
+          "reference_peak_w": 6969
         },
         {
           "day": "Tue",
@@ -74,7 +90,11 @@
           "low_f": 70,
           "precip_in": 0.0,
           "cloud_cover": 89,
-          "solar_opportunity": 11
+          "solar_opportunity": 78,
+          "solar_basis": "historical similar-weather peak",
+          "historical_days_used": 7,
+          "expected_peak_w": 5462,
+          "reference_peak_w": 6969
         },
         {
           "day": "Wed",
@@ -84,7 +104,11 @@
           "low_f": 69,
           "precip_in": 0.0,
           "cloud_cover": 34,
-          "solar_opportunity": 66
+          "solar_opportunity": 74,
+          "solar_basis": "historical similar-weather peak",
+          "historical_days_used": 3,
+          "expected_peak_w": 5173,
+          "reference_peak_w": 6969
         },
         {
           "day": "Thu",
@@ -94,7 +118,11 @@
           "low_f": 72,
           "precip_in": 0.0,
           "cloud_cover": 18,
-          "solar_opportunity": 82
+          "solar_opportunity": 86,
+          "solar_basis": "forecast model fallback",
+          "historical_days_used": 0,
+          "expected_peak_w": null,
+          "reference_peak_w": 6969
         }
       ]
     }
@@ -165,8 +193,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 846,
-      "efficiency_pct": 15.8,
+      "power_w": 864,
+      "efficiency_pct": 16.2,
       "peak_today_w": 858,
       "peak_today_time_central": "Jun 5, 2026, 7:58 AM Central Time",
       "peak_today_efficiency_pct": 16.1
@@ -187,15 +215,15 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 805,
-      "efficiency_pct": 23.1,
+      "power_w": 827,
+      "efficiency_pct": 23.8,
       "peak_today_w": 789,
       "peak_today_time_central": "Jun 5, 2026, 7:58 AM Central Time",
       "peak_today_efficiency_pct": 22.7
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 1698,
+      "power_w": 1706,
       "efficiency_pct": 19.3,
       "peak_today_w": 1647,
       "peak_today_time_central": "Jun 5, 2026, 7:58 AM Central Time",
