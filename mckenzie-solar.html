@@ -616,6 +616,8 @@ setInterval(refresh,900000);
 </script>
 
 
+
+
 <script>
 (function(){
   async function colbyProductionTrackingOverlay(){
@@ -657,46 +659,51 @@ setInterval(refresh,900000);
           const rows = Array.from(t.querySelectorAll("tr"));
           if (!rows.length) return;
 
+          // Remove previously injected columns before adding fresh values.
+          rows.forEach(row => {
+            Array.from(row.children).forEach(cell => {
+              const txt = (cell.textContent || "").trim();
+              if (
+                cell.classList.contains("arraySeasonCell") ||
+                cell.classList.contains("arraySeasonHead") ||
+                cell.classList.contains("arrayRecordCell") ||
+                cell.classList.contains("arrayRecordHead") ||
+                cell.classList.contains("arrayMaxCell") ||
+                cell.classList.contains("arrayMaxHead") ||
+                txt === "SEASON BEST" ||
+                txt === "RECORD" ||
+                txt === "MAX"
+              ) {
+                cell.remove();
+              }
+            });
+          });
+
           const header = rows[0];
           const headerText = header.textContent || "";
-          if (headerText.includes("NOW") && headerText.includes("PEAK") && headerText.includes("EFF") && !headerText.includes("SEASON BEST")) {
-            const cells = header.children;
-            if (cells.length >= 3) {
-              const thSeason = document.createElement(cells[0].tagName);
-              thSeason.textContent = "SEASON BEST";
-              thSeason.className = "arraySeasonHead";
-              header.insertBefore(thSeason, cells[cells.length - 1]);
-            }
-          }
+          if (!(headerText.includes("NOW") && headerText.includes("PEAK") && headerText.includes("EFF"))) return;
+
+          const hcells = header.children;
+          const thSeason = document.createElement(hcells[0]?.tagName || "th");
+          thSeason.textContent = "SEASON BEST";
+          thSeason.className = "arraySeasonHead";
+          header.insertBefore(thSeason, hcells[hcells.length - 1]);
 
           rows.slice(1).forEach(row => {
             const txt = row.textContent || "";
-            const rcells = row.children;
-            if (rcells.length >= 4) {
-              rcells[2].classList.add("arrayPeakCell");
-              rcells[rcells.length - 1].classList.add("arrayEffCell");
-            }
-            if (txt.includes("SEASON BEST")) return;
-
             let seasonVal = null;
 
-            if (txt.includes("A1")) {
-              seasonVal = seasonVals.A1;
-            } else if (txt.includes("A2")) {
-              seasonVal = seasonVals.A2;
-            } else if (txt.includes("TOTAL")) {
-              seasonVal = seasonVals.TOTAL;
-            }
+            if (txt.includes("A1")) seasonVal = seasonVals.A1;
+            else if (txt.includes("A2")) seasonVal = seasonVals.A2;
+            else if (txt.includes("TOTAL")) seasonVal = seasonVals.TOTAL;
 
             if (!seasonVal) return;
 
             const cells = row.children;
-            if (cells.length >= 3) {
-              const tdSeason = document.createElement(cells[0].tagName);
-              tdSeason.textContent = `${seasonVal.toLocaleString()}W`;
-              tdSeason.className = "arraySeasonCell";
-              row.insertBefore(tdSeason, cells[cells.length - 1]);
-            }
+            const tdSeason = document.createElement(cells[0]?.tagName || "td");
+            tdSeason.textContent = `${Number(seasonVal).toLocaleString()}W`;
+            tdSeason.className = "arraySeasonCell";
+            row.insertBefore(tdSeason, cells[cells.length - 1]);
           });
         });
       }
