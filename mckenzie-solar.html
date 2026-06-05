@@ -142,6 +142,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <p>Solar State:<br><b class="big" id="solarState">--</b></p>
       <p><span id="solarOperationalMessage">Solar state pending.</span></p>
       <p><span id="historicalModelNote">Historical model pending.</span></p>
+      <p><span id="productionTrackingNote">Production tracking pending.</span></p>
       <hr>
       <div class="small">
         Solar Grade: <b id="solarGrade">--</b><br>
@@ -608,6 +609,87 @@ setInterval(refresh,900000);
 
   colbyArrayEducationOverlay();
   setInterval(colbyArrayEducationOverlay, 900000);
+})();
+</script>
+
+
+<script>
+(function(){
+  async function colbyProductionTrackingOverlay(){
+    try {
+      const r = await fetch("solarstatus.json?prod_track_ts=" + Date.now());
+      const j = await r.json();
+
+      const set = (id, v) => {
+        const e = document.getElementById(id);
+        if (e) e.textContent = (v === null || v === undefined || v === "") ? "--" : v;
+      };
+
+      const p = j.production_tracking || {};
+      if (p.available) {
+        const track = p.tracking_vs_expected_so_far_pct;
+        const sign = track > 0 ? "+" : "";
+        set("productionTrackingNote",
+          `Expected Today: ${p.expected_today_kwh ?? "--"} kWh | Produced So Far: ${p.produced_so_far_kwh ?? "--"} kWh | Tracking: ${track === null ? "--" : sign + track + "%"} | Confidence: ${p.confidence}`
+        );
+      } else {
+        set("productionTrackingNote", "Production Tracking: No historical match yet.");
+      }
+
+      const arrays = j.arrays || {};
+      const maxVals = {
+        "A1": arrays.array_1?.rated_w,
+        "A2": arrays.array_2?.rated_w,
+        "TOTAL": arrays.total?.rated_w
+      };
+
+      const headings = Array.from(document.querySelectorAll("h2,h3,b,strong,div,span"))
+        .filter(e => (e.textContent || "").trim() === "ARRAY PERFORMANCE");
+
+      for (const h of headings) {
+        const card = h.closest("section,div") || document.body;
+        const tables = card.querySelectorAll("table");
+
+        tables.forEach(t => {
+          const rows = Array.from(t.querySelectorAll("tr"));
+          if (!rows.length) return;
+
+          const header = rows[0];
+          const headerText = header.textContent || "";
+          if (headerText.includes("NOW") && headerText.includes("PEAK") && headerText.includes("EFF") && !headerText.includes("MAX")) {
+            const cells = header.children;
+            if (cells.length >= 3) {
+              const th = document.createElement(cells[0].tagName);
+              th.textContent = "MAX";
+              header.insertBefore(th, cells[cells.length - 1]);
+            }
+          }
+
+          rows.slice(1).forEach(row => {
+            const txt = row.textContent || "";
+            if (txt.includes("MAX")) return;
+            let val = null;
+            if (txt.includes("A1")) val = maxVals.A1;
+            else if (txt.includes("A2")) val = maxVals.A2;
+            else if (txt.includes("TOTAL")) val = maxVals.TOTAL;
+            if (!val) return;
+
+            const cells = row.children;
+            if (cells.length >= 3 && !txt.includes(`${val}W`)) {
+              const td = document.createElement(cells[0].tagName);
+              td.textContent = `${val.toLocaleString()}W`;
+              row.insertBefore(td, cells[cells.length - 1]);
+            }
+          });
+        });
+      }
+    } catch(e) {
+      console.log("Production tracking overlay pending", e);
+    }
+  }
+
+  colbyProductionTrackingOverlay();
+  setInterval(colbyProductionTrackingOverlay, 60000);
 })();
 </script>
 
