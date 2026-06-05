@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-04T14:46:55-04:00
+Generated Local Time: 2026-06-05T12:07:43-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -66,7 +66,7 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 1811
-- Modified Time: 2026-05-31T09:15:21-04:00
+- Modified Time: 2026-05-31T08:15:21-05:00
 - SHA256: 61203da21658af4c8985e178e3e9bf9f1968cfa27ae664dfa6de90046573b538
 
 ### Current Priorities
@@ -74,7 +74,7 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 359
-- Modified Time: 2026-05-29T08:40:33-04:00
+- Modified Time: 2026-05-29T07:40:33-05:00
 - SHA256: 8b8c99790fbaace154b8fd19da151c2fc88bfb4b3913ab5f1cb0ed20ea9b662e
 
 ### Goals
@@ -82,71 +82,71 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 389
-- Modified Time: 2026-05-29T09:01:23-04:00
+- Modified Time: 2026-05-29T08:01:23-05:00
 - SHA256: 2c31d511d0645130688e64d449efa72d8ff625165f9b373a46d722ac896ca7e6
 
 ### Current Capabilities Memory
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 6512
-- Modified Time: 2026-06-02T17:44:14-04:00
-- SHA256: 938a7cc085cc594605a01a8107ac7a4f96adbabfc4c6ce87a1fd66826d950ac7
+- Size Bytes: 3204
+- Modified Time: 2026-06-05T12:07:34-05:00
+- SHA256: 5e209839e6dd9ce85aaaf6513041133532b7ea8823e87a1dd2cb94a4353a6bb6
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-04T14:46:55-04:00
-- SHA256: 4860c0a57a1bbe02911fa45295717f1c12bb518c0c301ebcb1f8597044333772
+- Modified Time: 2026-06-05T12:07:42-05:00
+- SHA256: 256a115c99575deaa639f4e90bda651c4207c8242f965b2905d78d2786c7d374
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-04T14:46:55-04:00
-- SHA256: f8b4af7b2b029ece10cb67cf4cc96dff88adab29d2429c0321809216e380478d
+- Modified Time: 2026-06-05T12:07:42-05:00
+- SHA256: 89dd181d1b24ef115fc447bdfdbbae10e4472efc45dceba8f544797ec5d6311e
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-04T14:46:55-04:00
-- SHA256: fc4b23ec04a49a8e5b6c2e2db2758ffcef2cc167da6d50c272197c73a80fd4d3
+- Modified Time: 2026-06-05T12:07:42-05:00
+- SHA256: c03464c4eb6452cc7e23668cddbc2cab6e6ed138e5d0bb98891dc259ca3c5573
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-04T14:46:55-04:00
-- SHA256: 1bca6965b7234b39036099102fc922c574faf2d0e26a50fd94c25f82c6bdbb26
+- Modified Time: 2026-06-05T12:07:43-05:00
+- SHA256: 8da603d3e1c45f32c4de3a7b431d0f86b2ff147d13348c2455d62f061f017d2d
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-04T14:46:55-04:00
-- SHA256: 37afaca8d0c099e94668c75d0c28f94cf872e31c4fe2bd6cee866dbb0c4db386
+- Modified Time: 2026-06-05T12:07:42-05:00
+- SHA256: b61069e55f63962966eb974968ff7fbea657758fa24ec416e25fe8b0dbbbed7a
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
 - Required: True
 - Exists: True
-- Size Bytes: 2177
-- Modified Time: 2026-06-02T17:38:24-04:00
-- SHA256: e9fa303b73318f84117f500d999edbb013447635ea516e536141c6cad2e9b553
+- Size Bytes: 3450
+- Modified Time: 2026-06-05T12:07:34-05:00
+- SHA256: 17da6368ba4cc5f0980bcb42c03465c4c462e0b7af173179398b783792f280d4
 
 ### Constraints
 - Path: /opt/colby/memory/core/constraints.md
 - Required: True
 - Exists: True
 - Size Bytes: 834
-- Modified Time: 2026-05-30T09:01:16-04:00
+- Modified Time: 2026-05-30T08:01:16-05:00
 - SHA256: 139b6d1eb790a694673792c180dcc6e6ca4c57dc01a05adf9774fc5e4288cd03
 
 ### Limitations
@@ -154,7 +154,7 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 1220
-- Modified Time: 2026-06-01T21:19:11-04:00
+- Modified Time: 2026-06-01T20:19:11-05:00
 - SHA256: e52fea43fc7148cc8bdf472782d92d128e43603b238885d756efc86cd26941ce
 
 ### Latest Sync Report
@@ -162,8 +162,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2024
-- Modified Time: 2026-06-04T14:46:55-04:00
-- SHA256: d9e0b9ad7dbc94b1f044b59e5bc42fa9ab5299ebafcf6008b21ef4678c54a103
+- Modified Time: 2026-06-05T12:07:43-05:00
+- SHA256: a9a243e42565189b3ad33f55e118af2d3980974e8b2e1635c8f0ff2325fe3940
 
 ## Current State
 
@@ -321,7 +321,7 @@ Source: `/opt/colby/memory/core/current_capabilities.md`
 
 # Current Capabilities
 
-Generated: 2026-05-31T09:23:41
+Generated: 2026-06-05T12:07:34
 
 Purpose: Give Colby an accurate operational inventory of what exists now.
 
@@ -360,7 +360,7 @@ Purpose: Give Colby an accurate operational inventory of what exists now.
 
 - Current Authority Summary: Operational
   - Path: /opt/colby/reports/decision_engine/current_authority_summary.md
-- After-Action Reports: Operational (1 item(s))
+- After-Action Reports: Operational (4 item(s))
   - Path: /opt/colby/reports/after_action
 - Conversation Exports: Operational (4 item(s))
   - Path: /opt/colby/conversations/exported
@@ -392,105 +392,13 @@ Purpose: Give Colby an accurate operational inventory of what exists now.
 - Colby can validate authority conflicts and load the current authority summary.
 - Colby should not execute self-modifying commands or apply non-task memory promotions yet.
 
-## 2026-06-01 - Context Router v1 Operational
-
-Capability:
-Colby now uses Context Router v1 to reduce prompt overload before sending context to the reasoning model.
-
-What changed:
-- Identity questions now load a reduced identity-focused context package.
-- Project questions now load targeted project context instead of the full memory system.
-- Simple informational questions are expected to receive direct answers without planning sections.
-- Context size for identity questions was reduced from approximately 108,680 bytes / 11,650 words / 4,703 lines to approximately 5,707 bytes / 758 words / 348 lines.
-
-Current routing categories:
-- identity
-- goals
-- project
-- workspace
-- default
-
-Known improvement:
-Context overload was identified as the primary UAT failure driver. Context Router v1 materially improved response relevance and reduced unnecessary prompt content.
-
-Known limitation:
-Routing is still basic. Additional categories are needed for infrastructure, accessibility, military, Cognitive Workstead, operations, and general reasoning.
-
-Governance note:
-AsusAI /opt/colby remains the source of truth. External ChatGPT/COL-B should act as a reasoning layer using routed context packages, not as an automatic write-back system.
-
-
-## 2026-06-01 - User and Relationship Memory Validation Improved
-
-Capability:
-Colby can now use updated per-user profile facts and relationship context more reliably when tested in new Open WebUI chats.
-
-Validated:
-- Greg profile works in Greg context.
-- Mel profile works in Mel context.
-- Mel is recognized as a registered Architect licensed in Alabama and Georgia after promotion into Mel's profile.
-- Greg-Mel relationship context works across chats when the relationship memory is available and validation is performed in a new chat.
-
-Operational Note:
-Open WebUI chat sessions may retain stale prompt or memory context. New-chat validation is required after memory or prompt changes.
-
-
-## 2026-06-02 - McKenzie Solar Data Bridge Planned
-
-Capability:
-Colby has a planned read-only solar data bridge for McKenzie energy data.
-
-Source of Truth:
-The Pi4 SQLite database at /home/cothrang/solar-collector/solar.db is the source of truth for solar analytics.
-
-Architecture:
-Pi4 solar.db -> read-only FastAPI service on Pi4 port 5057 -> AsusAI/Colby tool call -> Colby response.
-
-Boundary:
-Colby must not connect directly to MQTT, write to solar.db, or modify dashboard/GitHub files. The first integration must be read-only API access.
-
-Validation:
-From AsusAI, use:
-curl http://192.168.86.79:5057/solar/now
-
-
-## 2026-06-02 - McKenzie Solar Read-Only API Operational
-
-Capability:
-Colby can query McKenzie solar data through a read-only API wrapper on AsusAI.
-
-API Source:
-Pi4 read-only FastAPI service:
-http://192.168.86.79:5057
-
-AsusAI Tool Wrapper:
-/opt/colby/tools/solar_api_query.py
-
-Supported Queries:
-- status
-- now
-- today
-- history [hours]
-- survivability
-- anomalies
-
-Boundary:
-The wrapper is read-only. It does not connect to MQTT, write to solar.db, modify the dashboard, or modify GitHub Pages files.
-
-Source of Truth:
-The Pi4 SQLite database remains the source of truth:
-Pi4: /home/cothrang/solar-collector/solar.db
-
-Prompt Rule:
-When asked about McKenzie solar, Colby should call the solar API wrapper first and treat returned data as source of truth.
-
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-04T14:46:55
+Generated: 2026-06-05T12:07:42
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -628,7 +536,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-04T14:46:55
+Generated: 2026-06-05T12:07:42
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -737,7 +645,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-04T14:46:55
+Generated: 2026-06-05T12:07:42
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -830,7 +738,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-04T14:46:55
+Generated: 2026-06-05T12:07:43
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -893,7 +801,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-04T14:46:55
+Generated: 2026-06-05T12:07:42
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1123,6 +1031,38 @@ Example Questions:
 - Did load spike while we were away?
 - What should we do before tomorrow's clouds?
 
+
+## 2026-06-05 - McKenzie Solar Dashboard V1 Stable
+
+Status:
+Operationally stable.
+
+Completed:
+- Dashboard generation pipeline restored.
+- Automated GitHub publishing restored.
+- Validation gate added before commit/push.
+- Stale-data detection verified.
+- Production tracking added.
+- Expected-vs-actual solar analytics added.
+- Sunset SOC forecasting added.
+- Survivability forecasting verified.
+- Seasonal-best array tracking added.
+- Battery power reporting corrected.
+- MQTT, occupancy, weather, dashboard generation, validation, and deployment pipelines verified.
+
+Current Capability:
+The McKenzie Solar dashboard now supports real-time solar/battery/load status, historical production intelligence, expected-vs-actual production tracking, projected sunset SOC, survivability forecasts, occupancy awareness, weather awareness, and validation-gated publishing.
+
+Known Boundary:
+Historical Solar Assistant Grafana exports are downsampled and should not be treated as authoritative peak-record data. Live PI4 observed records are the source for season-best tracking going forward.
+
+Next Priorities:
+1. Reolink sky camera integration.
+2. EM16P circuit-level load intelligence.
+3. Visual sky-condition analysis.
+4. Appliance-level attribution.
+5. Solar anomaly detection.
+
 ## Constraints
 
 Source: `/opt/colby/memory/core/constraints.md`
@@ -1219,7 +1159,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-04T14:46:55
+Generated: 2026-06-05T12:07:43
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
