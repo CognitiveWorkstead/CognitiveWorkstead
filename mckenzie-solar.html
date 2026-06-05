@@ -542,8 +542,8 @@ setInterval(refresh,900000);
         <div class="forecast-icon">${d.icon || "🌡️"}</div>
         <div class="forecast-dow">${d.day || "--"}</div>
         <div class="forecast-temp">${d.high_f ?? "--"}°/${d.low_f ?? "--"}°</div>
-        <div class="forecast-solar">Expected: ${j?.historical_model?.expected_solar_kwh ?? "--"} kWh</div>
-        <div class="forecast-solar">Basis: ${j?.historical_model?.historical_basis_days ?? 0}d</div>
+        <div class="forecast-solar">${(d.historical_days_used || 0) > 0 ? `Expected: ${d.expected_solar_kwh ?? "--"} kWh` : "Expected: No Data"}</div>
+        <div class="forecast-solar">Basis: ${d.historical_days_used ?? 0}d</div>
       </div>
     `).join("");
   }
