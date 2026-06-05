@@ -57,6 +57,12 @@ h2{margin:0 0 12px;font-size:22px;color:#e8eeee;letter-spacing:1px}
 .cell:last-child{border-right:0}
 .cell b{font-size:27px}
 hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
+.forecast-strip{display:flex;flex-direction:row;gap:10px;margin-top:18px;overflow-x:auto;padding-bottom:6px}
+.forecast-day{min-width:74px;text-align:center;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:9px 6px}
+.forecast-icon{font-size:26px;line-height:30px}
+.forecast-dow{font-weight:800;font-size:13px;margin-top:3px}
+.forecast-temp{font-weight:800;font-size:15px;margin-top:3px}
+.forecast-solar{font-size:11px;opacity:.9;margin-top:2px}
 .gauge{float:right;width:172px;height:105px;border-radius:172px 172px 0 0;background:conic-gradient(#e43 0 20%,#f4c22d 20% 58%,#86c64b 58% 100%);position:relative;margin:15px 12px 5px 18px}
 .gauge:after{content:"";position:absolute;left:36px;top:36px;width:100px;height:68px;background:#063032;border-radius:100px 100px 0 0}
 .bar{height:24px;background:rgba(255,255,255,.11);border-radius:2px;margin:8px 0 14px}
@@ -107,7 +113,11 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <p><b id="humidity">--</b>% humidity</p>
       <p><b id="cloud">--</b>% cloud cover</p>
       <hr>
-      <small>Class: <span id="weatherClass">--</span></small>
+      <small>Class: <span id="weatherClass">--</span>
+      <div class="forecast-strip" id="weatherForecastStrip">
+        <div class="forecast-day">Forecast pending</div>
+      </div>
+</small>
     </div>
 
     <div class="card today">
@@ -508,6 +518,44 @@ setInterval(refresh,900000);
 
   colbySolarStateOverlay();
   setInterval(colbySolarStateOverlay, 60000);
+})();
+</script>
+
+
+<script>
+(function(){
+  function renderWeatherForecastStrip(j){
+    const box = document.getElementById("weatherForecastStrip");
+    if (!box) return;
+
+    const days = j?.weather?.forecast_7day?.days || [];
+    if (!days.length) {
+      box.innerHTML = '<div class="forecast-day">Forecast pending</div>';
+      return;
+    }
+
+    box.innerHTML = days.map(d => `
+      <div class="forecast-day">
+        <div class="forecast-icon">${d.icon || "🌡️"}</div>
+        <div class="forecast-dow">${d.day || "--"}</div>
+        <div class="forecast-temp">${d.high_f ?? "--"}°/${d.low_f ?? "--"}°</div>
+        <div class="forecast-solar">Solar ${d.solar_opportunity ?? "--"}%</div>
+      </div>
+    `).join("");
+  }
+
+  async function colbyWeatherForecastOverlay(){
+    try {
+      const r = await fetch("solarstatus.json?weather_forecast_ts=" + Date.now());
+      const j = await r.json();
+      renderWeatherForecastStrip(j);
+    } catch(e) {
+      console.log("Weather forecast overlay pending", e);
+    }
+  }
+
+  colbyWeatherForecastOverlay();
+  setInterval(colbyWeatherForecastOverlay, 900000);
 })();
 </script>
 
