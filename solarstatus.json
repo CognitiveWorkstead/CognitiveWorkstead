@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-06-05T06:16:07.798427+00:00",
-  "timestamp_central": "Jun 5, 2026, 1:16 AM Central Time",
+  "timestamp": "2026-06-05T06:31:08.206539+00:00",
+  "timestamp_central": "Jun 5, 2026, 1:31 AM Central Time",
   "status": "GREEN",
   "now": {
-    "load_w": 437.0,
+    "load_w": 427.0,
     "solar_w": 0.0,
     "battery_soc": 89.0,
-    "battery_power_w": -481.0,
+    "battery_power_w": -453.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
   "weather": {
     "temperature_f": 65.8,
     "humidity": 75.0,
-    "cloud_cover": 85.0,
-    "class": "Cloudy"
+    "cloud_cover": 16.0,
+    "class": "Clear"
   },
   "occupancy": {
     "state": "occupied",
@@ -25,9 +25,9 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 4.19,
+    "consumed_kwh": 4.3,
     "produced_kwh": 0.07,
-    "avg_load_w": 669,
+    "avg_load_w": 660,
     "peak_load_w": 7256,
     "peak_solar_w": 165,
     "lowest_soc": 89
@@ -56,7 +56,7 @@
     "expected_overnight_kwh": 4.94,
     "expected_sunrise_soc": 79.2,
     "confidence": "High",
-    "samples": 4036
+    "samples": 4051
   },
   "arrays": {
     "array_1": {
@@ -108,6 +108,6 @@
       "peak_today_time_central": "Jun 4, 2026, 7:00 PM Central Time",
       "peak_today_efficiency_pct": 1.9
     },
-    "insight": "Battery is supplementing solar to support load. Current production appears weather-limited. Array balance appears normal. Total array output is 0.0% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Array output is below expected clear-sky range; check shading, angle, wiring, soiling, or panel conditions if strong sun is visually confirmed. Array balance appears normal. Total array output is 0.0% of top-side rating."
   }
 }
