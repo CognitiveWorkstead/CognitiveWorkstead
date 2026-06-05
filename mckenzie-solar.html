@@ -57,6 +57,9 @@ h2{margin:0 0 12px;font-size:22px;color:#e8eeee;letter-spacing:1px}
 .cell:last-child{border-right:0}
 .cell b{font-size:27px}
 hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
+.arrayMaxHead,.arrayMaxCell{padding-left:18px!important;padding-right:18px!important;text-align:right!important;white-space:nowrap!important;min-width:78px!important}
+.arrayPeakCell{padding-right:18px!important;text-align:right!important;white-space:nowrap!important;min-width:78px!important}
+.arrayEffCell{padding-left:18px!important;text-align:right!important;white-space:nowrap!important;min-width:62px!important}
 .forecast-strip{display:flex;flex-direction:row;gap:8px;margin-top:14px;overflow-x:auto;padding-bottom:6px;max-width:100%}
 .forecast-day{min-width:112px;max-width:126px;text-align:center;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:8px 5px;flex:0 0 auto}
 .forecast-icon{font-size:28px;line-height:30px}
@@ -661,12 +664,18 @@ setInterval(refresh,900000);
             if (cells.length >= 3) {
               const th = document.createElement(cells[0].tagName);
               th.textContent = "MAX";
+              th.className = "arrayMaxHead";
               header.insertBefore(th, cells[cells.length - 1]);
             }
           }
 
           rows.slice(1).forEach(row => {
             const txt = row.textContent || "";
+            const rcells = row.children;
+            if (rcells.length >= 4) {
+              rcells[2].classList.add("arrayPeakCell");
+              rcells[rcells.length - 1].classList.add("arrayEffCell");
+            }
             if (txt.includes("MAX")) return;
             let val = null;
             if (txt.includes("A1")) val = maxVals.A1;
@@ -678,6 +687,7 @@ setInterval(refresh,900000);
             if (cells.length >= 3 && !txt.includes(`${val}W`)) {
               const td = document.createElement(cells[0].tagName);
               td.textContent = `${val.toLocaleString()}W`;
+              td.className = "arrayMaxCell";
               row.insertBefore(td, cells[cells.length - 1]);
             }
           });
