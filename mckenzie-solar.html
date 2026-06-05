@@ -57,12 +57,12 @@ h2{margin:0 0 12px;font-size:22px;color:#e8eeee;letter-spacing:1px}
 .cell:last-child{border-right:0}
 .cell b{font-size:27px}
 hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
-.forecast-strip{display:flex;flex-direction:row;gap:10px;margin-top:18px;overflow-x:auto;padding-bottom:6px}
-.forecast-day{min-width:74px;text-align:center;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:9px 6px}
-.forecast-icon{font-size:26px;line-height:30px}
-.forecast-dow{font-weight:800;font-size:13px;margin-top:3px}
-.forecast-temp{font-weight:800;font-size:15px;margin-top:3px}
-.forecast-solar{font-size:11px;opacity:.9;margin-top:2px}
+.forecast-strip{display:flex;flex-direction:row;gap:6px;margin-top:12px;overflow-x:auto;padding-bottom:4px;max-width:100%}
+.forecast-day{min-width:58px;max-width:64px;text-align:center;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:6px 4px;flex:1}
+.forecast-icon{font-size:20px;line-height:22px}
+.forecast-dow{font-weight:800;font-size:11px;margin-top:2px}
+.forecast-temp{font-weight:800;font-size:11px;margin-top:2px}
+.forecast-solar{font-size:9px;opacity:.9;margin-top:1px}
 .gauge{float:right;width:172px;height:105px;border-radius:172px 172px 0 0;background:conic-gradient(#e43 0 20%,#f4c22d 20% 58%,#86c64b 58% 100%);position:relative;margin:15px 12px 5px 18px}
 .gauge:after{content:"";position:absolute;left:36px;top:36px;width:100px;height:68px;background:#063032;border-radius:100px 100px 0 0}
 .bar{height:24px;background:rgba(255,255,255,.11);border-radius:2px;margin:8px 0 14px}
@@ -556,6 +556,52 @@ setInterval(refresh,900000);
 
   colbyWeatherForecastOverlay();
   setInterval(colbyWeatherForecastOverlay, 900000);
+})();
+</script>
+
+
+<script>
+(function(){
+  async function colbyArrayEducationOverlay(){
+    try {
+      const r = await fetch("solarstatus.json?array_edu_ts=" + Date.now());
+      const j = await r.json();
+      const a1 = j?.arrays?.array_1 || {};
+      const a2 = j?.arrays?.array_2 || {};
+
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let n;
+      while ((n = walker.nextNode())) {
+        if (n.nodeValue.includes("A1 (12×445W BiF)") || n.nodeValue.includes("A1 (12x445W BiF)")) {
+          n.nodeValue = `A1 (12×445W BiF • ${a1.tilt_deg ?? "21.2"}°)`;
+        }
+        if (n.nodeValue.includes("A2 (8×435W)") || n.nodeValue.includes("A2 (8x435W)")) {
+          n.nodeValue = `A2 (8×435W • ${a2.tilt_deg ?? "9.2"}°)`;
+        }
+      }
+
+      const headings = Array.from(document.querySelectorAll("h2,h3,b,strong,div,span"))
+        .filter(e => (e.textContent || "").trim() === "ARRAY PERFORMANCE");
+
+      for (const h of headings) {
+        if (!document.getElementById("arrayCompassNote")) {
+          const note = document.createElement("div");
+          note.id = "arrayCompassNote";
+          note.style.textAlign = "center";
+          note.style.fontSize = "12px";
+          note.style.opacity = ".95";
+          note.style.margin = "2px 0 10px 0";
+          note.innerHTML = `Compass: <b>${a1.azimuth_deg ?? "186"}° S</b> &nbsp; | &nbsp; A1 Tilt: <b>${a1.tilt_deg ?? "21.2"}°</b> &nbsp; A2 Tilt: <b>${a2.tilt_deg ?? "9.2"}°</b>`;
+          h.insertAdjacentElement("afterend", note);
+        }
+      }
+    } catch(e) {
+      console.log("Array education overlay pending", e);
+    }
+  }
+
+  colbyArrayEducationOverlay();
+  setInterval(colbyArrayEducationOverlay, 900000);
 })();
 </script>
 
