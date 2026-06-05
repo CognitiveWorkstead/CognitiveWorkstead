@@ -57,8 +57,7 @@ h2{margin:0 0 12px;font-size:22px;color:#e8eeee;letter-spacing:1px}
 .cell:last-child{border-right:0}
 .cell b{font-size:27px}
 hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
-.arrayRecordHead,.arrayRecordCell{padding-left:18px!important;padding-right:18px!important;text-align:right!important;white-space:nowrap!important;min-width:86px!important}
-.arrayMaxHead,.arrayMaxCell{padding-left:18px!important;padding-right:18px!important;text-align:right!important;white-space:nowrap!important;min-width:78px!important}
+.arraySeasonHead,.arraySeasonCell{padding-left:18px!important;padding-right:18px!important;text-align:right!important;white-space:nowrap!important;min-width:86px!important}
 .arrayPeakCell{padding-right:18px!important;text-align:right!important;white-space:nowrap!important;min-width:78px!important}
 .arrayEffCell{padding-left:18px!important;text-align:right!important;white-space:nowrap!important;min-width:62px!important}
 .forecast-strip{display:flex;flex-direction:row;gap:8px;margin-top:14px;overflow-x:auto;padding-bottom:6px;max-width:100%}
@@ -641,15 +640,10 @@ setInterval(refresh,900000);
       }
 
       const arrays = j.arrays || {};
-      const maxVals = {
-        "A1": arrays.array_1?.rated_w,
-        "A2": arrays.array_2?.rated_w,
-        "TOTAL": arrays.total?.rated_w
-      };
-      const recordVals = {
-        "A1": arrays.array_1?.record_w,
-        "A2": arrays.array_2?.record_w,
-        "TOTAL": arrays.total?.record_w
+      const seasonVals = {
+        "A1": arrays.array_1?.season_best_w,
+        "A2": arrays.array_2?.season_best_w,
+        "TOTAL": arrays.total?.season_best_w
       };
 
       const headings = Array.from(document.querySelectorAll("h2,h3,b,strong,div,span"))
@@ -665,18 +659,13 @@ setInterval(refresh,900000);
 
           const header = rows[0];
           const headerText = header.textContent || "";
-          if (headerText.includes("NOW") && headerText.includes("PEAK") && headerText.includes("EFF") && !headerText.includes("RECORD")) {
+          if (headerText.includes("NOW") && headerText.includes("PEAK") && headerText.includes("EFF") && !headerText.includes("SEASON BEST")) {
             const cells = header.children;
             if (cells.length >= 3) {
-              const thRecord = document.createElement(cells[0].tagName);
-              thRecord.textContent = "RECORD";
-              thRecord.className = "arrayRecordHead";
-              header.insertBefore(thRecord, cells[cells.length - 1]);
-
-              const thMax = document.createElement(cells[0].tagName);
-              thMax.textContent = "MAX";
-              thMax.className = "arrayMaxHead";
-              header.insertBefore(thMax, cells[cells.length - 1]);
+              const thSeason = document.createElement(cells[0].tagName);
+              thSeason.textContent = "SEASON BEST";
+              thSeason.className = "arraySeasonHead";
+              header.insertBefore(thSeason, cells[cells.length - 1]);
             }
           }
 
@@ -687,35 +676,26 @@ setInterval(refresh,900000);
               rcells[2].classList.add("arrayPeakCell");
               rcells[rcells.length - 1].classList.add("arrayEffCell");
             }
-            if (txt.includes("MAX") || txt.includes("RECORD")) return;
+            if (txt.includes("SEASON BEST")) return;
 
-            let maxVal = null;
-            let recordVal = null;
+            let seasonVal = null;
 
             if (txt.includes("A1")) {
-              maxVal = maxVals.A1;
-              recordVal = recordVals.A1;
+              seasonVal = seasonVals.A1;
             } else if (txt.includes("A2")) {
-              maxVal = maxVals.A2;
-              recordVal = recordVals.A2;
+              seasonVal = seasonVals.A2;
             } else if (txt.includes("TOTAL")) {
-              maxVal = maxVals.TOTAL;
-              recordVal = recordVals.TOTAL;
+              seasonVal = seasonVals.TOTAL;
             }
 
-            if (!maxVal) return;
+            if (!seasonVal) return;
 
             const cells = row.children;
             if (cells.length >= 3) {
-              const tdRecord = document.createElement(cells[0].tagName);
-              tdRecord.textContent = recordVal ? `${recordVal.toLocaleString()}W` : "--";
-              tdRecord.className = "arrayRecordCell";
-              row.insertBefore(tdRecord, cells[cells.length - 1]);
-
-              const tdMax = document.createElement(cells[0].tagName);
-              tdMax.textContent = `${maxVal.toLocaleString()}W`;
-              tdMax.className = "arrayMaxCell";
-              row.insertBefore(tdMax, cells[cells.length - 1]);
+              const tdSeason = document.createElement(cells[0].tagName);
+              tdSeason.textContent = `${seasonVal.toLocaleString()}W`;
+              tdSeason.className = "arraySeasonCell";
+              row.insertBefore(tdSeason, cells[cells.length - 1]);
             }
           });
         });
