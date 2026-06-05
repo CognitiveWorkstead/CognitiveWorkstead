@@ -147,6 +147,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <p><span id="historicalModelNote">Historical model pending.</span></p>
       <p><span id="productionTrackingNote">Production tracking pending.</span></p>
       <p><span id="solarIntelligenceNote">Solar intelligence pending.</span></p>
+      <p><span id="sunsetProjectionNote">Sunset SOC projection pending.</span></p>
       <hr>
       <div class="small">
         Solar Grade: <b id="solarGrade">--</b><br>
@@ -512,6 +513,13 @@ setInterval(refresh,900000);
         set("solarIntelligenceNote", `Expected Now: ${intel.expected_now_w ?? "--"}W | Performance: ${intel.performance_pct ?? "--"}% | Variance: ${sign}${intel.variance_pct ?? "--"}% | Basis: ${intel.basis_days ?? 0}d | Confidence: ${intel.confidence}`);
       } else {
         set("solarIntelligenceNote", "Solar Intelligence: No historical match yet.");
+      }
+
+      const sunset = j.sunset_projection || {};
+      if (sunset.available) {
+        set("sunsetProjectionNote", `Projected Sunset SOC: ${sunset.projected_sunset_soc}% | Net Remaining: ${sunset.net_remaining_kwh} kWh | Confidence: ${sunset.confidence}`);
+      } else {
+        set("sunsetProjectionNote", "Projected Sunset SOC: No Data");
       }
 
       if (s.grading_enabled === false || s.peak_established === false) {
