@@ -129,6 +129,8 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <h2 style="text-align:center">SOLAR ANALYTICS</h2>
       <p>Actual solar under current conditions:<br><b class="big" id="actualSolar">--</b>W</p>
       <p>Similar-condition average:<br><b class="big" id="similarAvg">--</b>W</p>
+      <p>Solar State:<br><b class="big" id="solarState">--</b></p>
+      <p><span id="solarOperationalMessage">Solar state pending.</span></p>
       <hr>
       <div class="small">
         Solar Grade: <b id="solarGrade">--</b><br>
@@ -470,5 +472,44 @@ localClock(); refresh();
 setInterval(localClock,30000);
 setInterval(refresh,900000);
 </script>
+
+<script>
+(function(){
+  async function colbySolarStateOverlay(){
+    try {
+      const r = await fetch("solarstatus.json?solar_state_ts=" + Date.now());
+      const j = await r.json();
+      const set = (id, v) => {
+        const e = document.getElementById(id);
+        if (e) e.textContent = (v === null || v === undefined || v === "") ? "--" : v;
+      };
+
+      const s = j.solar || {};
+      set("solarState", s.state || "--");
+      set("solarOperationalMessage", s.operational_message || "--");
+
+      if (s.grading_enabled === false || s.peak_established === false) {
+        if (s.grading_enabled === false) {
+          set("solarGrade", "N/A");
+          set("solarQualityScore", "N/A");
+          set("arrayCurrentVsPeak", "N/A");
+          set("bestSolarWindow", "Solar grading suspended");
+        } else if (s.peak_established === false) {
+          set("solarGrade", "Pending");
+          set("solarQualityScore", "Pending");
+          set("arrayCurrentVsPeak", "Building profile");
+          set("bestSolarWindow", "Building today's profile");
+        }
+      }
+    } catch(e) {
+      console.log("Solar state overlay pending", e);
+    }
+  }
+
+  colbySolarStateOverlay();
+  setInterval(colbySolarStateOverlay, 60000);
+})();
+</script>
+
 </body>
 </html>
