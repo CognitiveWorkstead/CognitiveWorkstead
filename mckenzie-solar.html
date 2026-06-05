@@ -141,6 +141,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <p>Similar-condition average:<br><b class="big" id="similarAvg">--</b>W</p>
       <p>Solar State:<br><b class="big" id="solarState">--</b></p>
       <p><span id="solarOperationalMessage">Solar state pending.</span></p>
+      <p><span id="historicalModelNote">Historical model pending.</span></p>
       <hr>
       <div class="small">
         Solar Grade: <b id="solarGrade">--</b><br>
@@ -497,6 +498,8 @@ setInterval(refresh,900000);
       const s = j.solar || {};
       set("solarState", s.state || "--");
       set("solarOperationalMessage", s.operational_message || "--");
+      const h = j.historical_model || {};
+      set("historicalModelNote", h.available ? `Historical Model: ${h.confidence} confidence, ${h.historical_basis_days} clean days` : "Historical Model: No Data");
 
       if (s.grading_enabled === false || s.peak_established === false) {
         if (s.grading_enabled === false) {
@@ -539,8 +542,8 @@ setInterval(refresh,900000);
         <div class="forecast-icon">${d.icon || "🌡️"}</div>
         <div class="forecast-dow">${d.day || "--"}</div>
         <div class="forecast-temp">${d.high_f ?? "--"}°/${d.low_f ?? "--"}°</div>
-        <div class="forecast-solar">${(d.historical_days_used || 0) > 0 ? `Solar: ${d.solar_opportunity ?? "--"}%` : "Solar: No Data"}</div>
-        <div class="forecast-solar">Historical data used: ${d.historical_days_used ?? 0}d</div>
+        <div class="forecast-solar">Expected: ${j?.historical_model?.expected_solar_kwh ?? "--"} kWh</div>
+        <div class="forecast-solar">Basis: ${j?.historical_model?.historical_basis_days ?? 0}d</div>
       </div>
     `).join("");
   }
