@@ -58,11 +58,11 @@ h2{margin:0 0 12px;font-size:22px;color:#e8eeee;letter-spacing:1px}
 .cell b{font-size:27px}
 hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
 .forecast-strip{display:flex;flex-direction:row;gap:8px;margin-top:14px;overflow-x:auto;padding-bottom:6px;max-width:100%}
-.forecast-day{min-width:78px;max-width:86px;text-align:center;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:8px 5px;flex:0 0 auto}
+.forecast-day{min-width:112px;max-width:126px;text-align:center;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:8px 5px;flex:0 0 auto}
 .forecast-icon{font-size:28px;line-height:30px}
 .forecast-dow{font-weight:800;font-size:13px;margin-top:3px}
 .forecast-temp{font-weight:800;font-size:14px;margin-top:3px}
-.forecast-solar{font-size:11px;opacity:.9;margin-top:2px}
+.forecast-solar{font-size:10px;opacity:.95;margin-top:2px}
 .gauge{float:right;width:172px;height:105px;border-radius:172px 172px 0 0;background:conic-gradient(#e43 0 20%,#f4c22d 20% 58%,#86c64b 58% 100%);position:relative;margin:15px 12px 5px 18px}
 .gauge:after{content:"";position:absolute;left:36px;top:36px;width:100px;height:68px;background:#063032;border-radius:100px 100px 0 0}
 .bar{height:24px;background:rgba(255,255,255,.11);border-radius:2px;margin:8px 0 14px}
@@ -543,7 +543,9 @@ setInterval(refresh,900000);
         <div class="forecast-dow">${d.day || "--"}</div>
         <div class="forecast-temp">${d.high_f ?? "--"}°/${d.low_f ?? "--"}°</div>
         <div class="forecast-solar">${(d.historical_days_used || 0) > 0 ? `Expected: ${d.expected_solar_kwh ?? "--"} kWh` : "Expected: No Data"}</div>
+        <div class="forecast-solar">${(d.historical_days_used || 0) > 0 ? `Range: ${d.expected_solar_kwh_low ?? "--"}-${d.expected_solar_kwh_high ?? "--"}` : ""}</div>
         <div class="forecast-solar">Basis: ${d.historical_days_used ?? 0}d</div>
+        <div class="forecast-solar">Conf: ${d.confidence ?? "No Data"}</div>
       </div>
     `).join("");
   }
