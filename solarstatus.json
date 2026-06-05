@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-05T14:48:15.581196+00:00",
-  "timestamp_central": "Jun 5, 2026, 9:48 AM Central Time",
+  "timestamp": "2026-06-05T15:01:11.667069+00:00",
+  "timestamp_central": "Jun 5, 2026, 10:01 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Morning Ramp",
@@ -11,17 +11,17 @@
     "operational_message": "Solar grading active."
   },
   "now": {
-    "load_w": 1231.0,
-    "solar_w": 3691.0,
-    "battery_soc": 86.0,
-    "battery_power_w": 2386.0,
+    "load_w": 652.0,
+    "solar_w": 4009.0,
+    "battery_soc": 87.0,
+    "battery_power_w": 2691.0,
     "mode": "Solar/Battery",
     "battery_temp_f": 96.1
   },
   "weather": {
-    "temperature_f": 74.7,
-    "humidity": 67.0,
-    "cloud_cover": 14.0,
+    "temperature_f": 78.3,
+    "humidity": 56.0,
+    "cloud_cover": 0.0,
     "class": "Clear",
     "forecast_7day": {
       "source": "Open-Meteo",
@@ -157,18 +157,18 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 11.25,
-    "produced_kwh": 5.83,
-    "avg_load_w": 762,
+    "consumed_kwh": 11.45,
+    "produced_kwh": 6.7,
+    "avg_load_w": 763,
     "peak_load_w": 7781,
-    "peak_solar_w": 4141,
+    "peak_solar_w": 4186,
     "lowest_soc": 83
   },
   "survivability": {
-    "usable_battery_kwh": 43.6,
+    "usable_battery_kwh": 44.1,
     "zero_solar_days": 2.4,
-    "similar_weather_days": 36.3,
-    "samples": 168
+    "similar_weather_days": 36.7,
+    "samples": 92
   },
   "historical_model": {
     "available": true,
@@ -185,32 +185,32 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 8.69,
-    "expected_so_far_kwh": 5.54,
-    "produced_so_far_kwh": 5.83,
-    "tracking_vs_expected_so_far_pct": 5.3,
-    "progress_of_expected_day_pct": 67.1,
-    "historical_basis_days": 37,
-    "confidence": "High",
+    "expected_today_kwh": 9.17,
+    "expected_so_far_kwh": 5.92,
+    "produced_so_far_kwh": 6.7,
+    "tracking_vs_expected_so_far_pct": 13.1,
+    "progress_of_expected_day_pct": 73.0,
+    "historical_basis_days": 25,
+    "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "performance": {
-    "actual_solar_w": 3691.0,
-    "similar_avg_solar_w": 3159,
+    "actual_solar_w": 4009.0,
+    "similar_avg_solar_w": 3824,
     "peak_trend": {
       "days": 11,
-      "today_peak_w": 4141,
-      "avg_peak_30d_w": 5263,
+      "today_peak_w": 4186,
+      "avg_peak_30d_w": 5267,
       "best_peak_30d_w": 6969,
       "worst_peak_30d_w": 3733,
-      "today_vs_avg_peak_pct": -21.3
+      "today_vs_avg_peak_pct": -20.5
     }
   },
   "forecast": {
     "avg_overnight_load_w": 408.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 4.9,
-    "expected_sunrise_soc": 76.3,
+    "expected_sunrise_soc": 77.3,
     "confidence": "High",
     "samples": 4320
   },
@@ -238,12 +238,12 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 1725,
-      "efficiency_pct": 32.3,
-      "peak_today_w": 1967,
-      "record_w": 1967,
-      "peak_today_time_central": "Jun 5, 2026, 9:43 AM Central Time",
-      "peak_today_efficiency_pct": 36.8
+      "power_w": 1893,
+      "efficiency_pct": 35.4,
+      "peak_today_w": 1982,
+      "record_w": 1982,
+      "peak_today_time_central": "Jun 5, 2026, 9:54 AM Central Time",
+      "peak_today_efficiency_pct": 37.1
     },
     "array_2": {
       "label": "Array 2",
@@ -261,22 +261,22 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 1956,
-      "efficiency_pct": 56.2,
-      "peak_today_w": 2174,
-      "record_w": 2174,
-      "peak_today_time_central": "Jun 5, 2026, 9:43 AM Central Time",
-      "peak_today_efficiency_pct": 62.5
+      "power_w": 2085,
+      "efficiency_pct": 59.9,
+      "peak_today_w": 2204,
+      "record_w": 2204,
+      "peak_today_time_central": "Jun 5, 2026, 9:54 AM Central Time",
+      "peak_today_efficiency_pct": 63.3
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 1989,
-      "efficiency_pct": 22.6,
-      "peak_today_w": 4141,
-      "record_w": 4141,
-      "peak_today_time_central": "Jun 5, 2026, 9:43 AM Central Time",
-      "peak_today_efficiency_pct": 47.0
+      "power_w": 3968,
+      "efficiency_pct": 45.0,
+      "peak_today_w": 4186,
+      "record_w": 4186,
+      "peak_today_time_central": "Jun 5, 2026, 9:54 AM Central Time",
+      "peak_today_efficiency_pct": 47.5
     },
-    "insight": "Solar production is exceeding load and charging the battery. Array output is below expected clear-sky range; check shading, angle, wiring, soiling, or panel conditions if strong sun is visually confirmed. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 22.6% of top-side rating."
+    "insight": "Solar production is exceeding load and charging the battery. Array output is within a normal operating band for current conditions. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 45.0% of top-side rating."
   }
 }
