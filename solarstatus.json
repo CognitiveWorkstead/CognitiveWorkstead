@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-06T01:31:11.795028+00:00",
-  "timestamp_central": "Jun 5, 2026, 8:31 PM Central Time",
+  "timestamp": "2026-06-06T01:46:10.648969+00:00",
+  "timestamp_central": "Jun 5, 2026, 8:46 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 410.0,
+    "load_w": 360.0,
     "solar_w": 0.0,
-    "battery_soc": 97.0,
-    "battery_power_w": -436.0,
+    "battery_soc": 96.0,
+    "battery_power_w": -378.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -152,22 +152,22 @@
     "state": "likely_away",
     "probability": 80,
     "label": "Confidence",
-    "reason": "no phones, extended absence 3.3h",
+    "reason": "no phones, extended absence 3.5h",
     "greg_phone_present": 0,
     "mel_phone_present": 0
   },
   "today": {
-    "consumed_kwh": 0.9,
+    "consumed_kwh": 0.99,
     "produced_kwh": 0.05,
-    "avg_load_w": 591,
+    "avg_load_w": 560,
     "peak_load_w": 1149,
     "peak_solar_w": 99,
-    "lowest_soc": 97
+    "lowest_soc": 96
   },
   "survivability": {
-    "usable_battery_kwh": 49.1,
-    "zero_solar_days": 3.5,
-    "similar_weather_days": 2.6,
+    "usable_battery_kwh": 48.6,
+    "zero_solar_days": 3.6,
+    "similar_weather_days": 2.7,
     "samples": 197
   },
   "historical_model": {
@@ -195,21 +195,21 @@
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 11,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 19,
-    "samples": 19,
-    "confidence": "Medium",
-    "matched_cloud": 31.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 97.0,
+    "current_soc": 96.0,
     "projected_sunset_soc": 100.0,
     "hours_to_sunset": 0,
     "remaining_expected_solar_kwh": 7.63,
@@ -223,7 +223,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 4,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 12,
       "today_peak_w": 99,
@@ -237,7 +237,7 @@
     "avg_overnight_load_w": 398.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 4.78,
-    "expected_sunrise_soc": 87.6,
+    "expected_sunrise_soc": 86.6,
     "confidence": "High",
     "samples": 3840
   },
