@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-06T03:16:12.382211+00:00",
-  "timestamp_central": "Jun 5, 2026, 10:16 PM Central Time",
+  "timestamp": "2026-06-06T03:31:13.401496+00:00",
+  "timestamp_central": "Jun 5, 2026, 10:31 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 357.0,
+    "load_w": 359.0,
     "solar_w": 0.0,
     "battery_soc": 95.0,
-    "battery_power_w": -380.0,
+    "battery_power_w": -377.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -50,15 +50,15 @@
           "high_f": 86,
           "low_f": 64,
           "precip_in": 0.0,
-          "cloud_cover": 100,
-          "expected_solar_kwh": 7.34,
+          "cloud_cover": 96,
+          "expected_solar_kwh": 7.22,
           "expected_solar_kwh_low": 1.94,
-          "expected_solar_kwh_high": 8.63,
-          "expected_peak_w": 1689.0,
-          "historical_days_used": 8,
+          "expected_solar_kwh_high": 9.81,
+          "expected_peak_w": 1678.0,
+          "historical_days_used": 9,
           "confidence": "Low",
           "solar_basis": "historical similar-weather daily model using P10/P90 range",
-          "matched_avg_cloud": 88.0
+          "matched_avg_cloud": 86.0
         },
         {
           "day": "Sun",
@@ -152,23 +152,23 @@
     "state": "likely_away",
     "probability": 80,
     "label": "Confidence",
-    "reason": "no phones, extended absence 5.0h",
+    "reason": "no phones, extended absence 5.3h",
     "greg_phone_present": 0,
     "mel_phone_present": 0
   },
   "today": {
-    "consumed_kwh": 1.56,
+    "consumed_kwh": 1.65,
     "produced_kwh": 0.05,
-    "avg_load_w": 479,
+    "avg_load_w": 470,
     "peak_load_w": 1149,
     "peak_solar_w": 99,
     "lowest_soc": 95
   },
   "survivability": {
     "usable_battery_kwh": 48.1,
-    "zero_solar_days": 4.2,
-    "similar_weather_days": 4.3,
-    "samples": 79
+    "zero_solar_days": 4.3,
+    "similar_weather_days": 4.4,
+    "samples": 139
   },
   "historical_model": {
     "available": true,
@@ -234,12 +234,12 @@
     }
   },
   "forecast": {
-    "avg_overnight_load_w": 398.0,
+    "avg_overnight_load_w": 397.0,
     "overnight_hours": 12,
-    "expected_overnight_kwh": 4.78,
+    "expected_overnight_kwh": 4.76,
     "expected_sunrise_soc": 85.6,
     "confidence": "High",
-    "samples": 3856
+    "samples": 3871
   },
   "visual_conditions": {
     "camera_online": false,
