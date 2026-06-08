@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-08T11:01:29.154785+00:00",
-  "timestamp_central": "Jun 8, 2026, 6:01 AM Central Time",
+  "timestamp": "2026-06-08T11:16:29.791673+00:00",
+  "timestamp_central": "Jun 8, 2026, 6:16 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dawn",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dawn conditions."
   },
   "now": {
-    "load_w": 530.0,
-    "solar_w": 65.0,
+    "load_w": 258.0,
+    "solar_w": 77.0,
     "battery_soc": 79.0,
-    "battery_power_w": -554.0,
+    "battery_power_w": -192.0,
     "mode": "Solar/Battery",
     "battery_temp_f": 96.1
   },
@@ -157,9 +157,9 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 7.71,
-    "produced_kwh": 0.07,
-    "avg_load_w": 699,
+    "consumed_kwh": 7.8,
+    "produced_kwh": 0.09,
+    "avg_load_w": 692,
     "peak_load_w": 7415,
     "peak_solar_w": 85,
     "lowest_soc": 79
@@ -167,8 +167,8 @@
   "survivability": {
     "usable_battery_kwh": 40.0,
     "zero_solar_days": 2.4,
-    "similar_weather_days": 3.7,
-    "samples": 820
+    "similar_weather_days": 4.5,
+    "samples": 832
   },
   "historical_model": {
     "available": true,
@@ -187,19 +187,19 @@
     "available": true,
     "expected_today_kwh": 7.04,
     "expected_so_far_kwh": 0.09,
-    "produced_so_far_kwh": 0.07,
-    "tracking_vs_expected_so_far_pct": -22.7,
-    "progress_of_expected_day_pct": 1.0,
+    "produced_so_far_kwh": 0.09,
+    "tracking_vs_expected_so_far_pct": -2.3,
+    "progress_of_expected_day_pct": 1.2,
     "historical_basis_days": 12,
     "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
     "available": true,
-    "actual_now_w": 65,
+    "actual_now_w": 77,
     "expected_now_w": 2001,
-    "performance_pct": 3.2,
-    "variance_pct": -96.8,
+    "performance_pct": 3.8,
+    "variance_pct": -96.2,
     "grade": "F",
     "basis_days": 13,
     "samples": 13,
@@ -210,20 +210,20 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 79.0,
-    "projected_sunset_soc": 78.3,
-    "hours_to_sunset": 13.8,
-    "remaining_expected_solar_kwh": 6.97,
-    "remaining_load_kwh": 7.29,
-    "net_remaining_kwh": -0.32,
+    "projected_sunset_soc": 87.1,
+    "hours_to_sunset": 13.5,
+    "remaining_expected_solar_kwh": 6.95,
+    "remaining_load_kwh": 3.48,
+    "net_remaining_kwh": 3.47,
     "expected_today_kwh": 7.04,
-    "produced_so_far_kwh": 0.07,
+    "produced_so_far_kwh": 0.09,
     "basis_days": 12,
     "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 65.0,
-    "similar_avg_solar_w": 92,
+    "actual_solar_w": 77.0,
+    "similar_avg_solar_w": 137,
     "peak_trend": {
       "days": 14,
       "today_peak_w": 85,
@@ -265,8 +265,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 31,
-      "efficiency_pct": 0.6,
+      "power_w": 41,
+      "efficiency_pct": 0.8,
       "peak_today_w": 41,
       "season_best_w": 2823,
       "all_time_best_w": 2823,
@@ -289,8 +289,8 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 31,
-      "efficiency_pct": 0.9,
+      "power_w": 37,
+      "efficiency_pct": 1.1,
       "peak_today_w": 44,
       "season_best_w": 3147,
       "all_time_best_w": 3147,
@@ -299,14 +299,14 @@
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 65,
-      "efficiency_pct": 0.7,
+      "power_w": 79,
+      "efficiency_pct": 0.9,
       "peak_today_w": 85,
       "season_best_w": 5970,
       "all_time_best_w": 5970,
       "peak_today_time_central": "Jun 7, 2026, 7:10 PM Central Time",
       "peak_today_efficiency_pct": 1.0
     },
-    "insight": "Battery is supplementing solar to support load. Production is tracking sunrise conditions; full solar grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 0.7% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Production is tracking sunrise conditions; full solar grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 0.9% of top-side rating."
   }
 }
