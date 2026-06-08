@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-08T03:16:26.974835+00:00",
-  "timestamp_central": "Jun 7, 2026, 10:16 PM Central Time",
+  "timestamp": "2026-06-08T03:31:26.091369+00:00",
+  "timestamp_central": "Jun 7, 2026, 10:31 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 719.0,
+    "load_w": 612.0,
     "solar_w": 0.0,
     "battery_soc": 87.0,
-    "battery_power_w": -752.0,
+    "battery_power_w": -636.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -33,7 +33,7 @@
           "high_f": 85,
           "low_f": 73,
           "precip_in": 0.0,
-          "cloud_cover": 87,
+          "cloud_cover": 86,
           "expected_solar_kwh": 8.5,
           "expected_solar_kwh_low": 1.95,
           "expected_solar_kwh_high": 10.18,
@@ -150,16 +150,16 @@
   },
   "occupancy": {
     "state": "occupied",
-    "probability": 75,
+    "probability": 100,
     "label": "Probability",
-    "reason": "one phone present",
+    "reason": "both phones present",
     "greg_phone_present": 1,
-    "mel_phone_present": 0
+    "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 3.79,
+    "consumed_kwh": 3.94,
     "produced_kwh": 0.05,
-    "avg_load_w": 1161,
+    "avg_load_w": 1126,
     "peak_load_w": 7415,
     "peak_solar_w": 85,
     "lowest_soc": 87
@@ -167,8 +167,8 @@
   "survivability": {
     "usable_battery_kwh": 44.1,
     "zero_solar_days": 1.6,
-    "similar_weather_days": 3.1,
-    "samples": 682
+    "similar_weather_days": 3.2,
+    "samples": 668
   },
   "historical_model": {
     "available": true,
@@ -234,12 +234,12 @@
     }
   },
   "forecast": {
-    "avg_overnight_load_w": 416.0,
+    "avg_overnight_load_w": 417.0,
     "overnight_hours": 12,
-    "expected_overnight_kwh": 4.99,
+    "expected_overnight_kwh": 5.0,
     "expected_sunrise_soc": 77.1,
     "confidence": "High",
-    "samples": 3856
+    "samples": 3870
   },
   "visual_conditions": {
     "camera_online": false,
