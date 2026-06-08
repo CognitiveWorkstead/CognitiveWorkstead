@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-08T01:31:24.743065+00:00",
-  "timestamp_central": "Jun 7, 2026, 8:31 PM Central Time",
+  "timestamp": "2026-06-08T01:46:27.138860+00:00",
+  "timestamp_central": "Jun 7, 2026, 8:46 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 5365.0,
+    "load_w": 888.0,
     "solar_w": 0.0,
     "battery_soc": 90.0,
-    "battery_power_w": -5512.0,
+    "battery_power_w": -921.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -157,18 +157,18 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 2.34,
+    "consumed_kwh": 2.57,
     "produced_kwh": 0.05,
-    "avg_load_w": 1545,
+    "avg_load_w": 1453,
     "peak_load_w": 7415,
     "peak_solar_w": 85,
     "lowest_soc": 90
   },
   "survivability": {
     "usable_battery_kwh": 45.6,
-    "zero_solar_days": 1.2,
+    "zero_solar_days": 1.3,
     "similar_weather_days": 2.5,
-    "samples": 698
+    "samples": 683
   },
   "historical_model": {
     "available": true,
@@ -195,16 +195,16 @@
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 8,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 19,
-    "samples": 19,
-    "confidence": "Medium",
-    "matched_cloud": 90.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
@@ -223,7 +223,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 2,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 14,
       "today_peak_w": 85,
