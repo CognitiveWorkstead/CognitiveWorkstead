@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-09T14:37:51-05:00
+Generated Local Time: 2026-06-09T14:39:36-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -19,7 +19,7 @@ Operating Boundaries:
 
 Export Validation:
 - Required missing files: 0
-- Source file count: 18
+- Source file count: 20
 
 ## Current Truth Publishing Architecture
 
@@ -60,6 +60,22 @@ Export Validation:
 - https://www.cognitiveworkstead.com/knowledge_transfer.json
 
 ## Source Manifest
+
+### Colby System Architecture
+- Path: /opt/colby/docs/COLBY_SYSTEM_ARCHITECTURE.md
+- Required: True
+- Exists: True
+- Size Bytes: 6460
+- Modified Time: 2026-06-09T14:35:21-05:00
+- SHA256: 9e81eb1011845cca53102a63d5b6d64318a58da6ac20a98ca4ff6aa1732c12c6
+
+### Colby Code Capability Registry
+- Path: /opt/colby/docs/COLBY_CODE_CAPABILITY_REGISTRY.md
+- Required: True
+- Exists: True
+- Size Bytes: 3774
+- Modified Time: 2026-06-09T14:35:21-05:00
+- SHA256: 23fbc1edfcededf068783547a91cae31f7210adf6be89844e0c24be3d1c13238
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -106,40 +122,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: e4e0a8bcad3a2eb58fd56e81a6f310afd9dcf2a7b99ee9926820db63919b1194
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: 5fe62a8457ada53c6e7231c34b8e9bd4290ac852ed675e3300b9c7824c2ccfaa
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: d859c8e35d9940de2fcc4eca74d88ad11e5eeb72ed20146c2dc5c0281c87a420
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: a772076edc96ffa161c7ae0adb5779a76b1767d297ccc1b93722534e2425c054
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: 73695ff2481513d6ae0d8b0d47200eeee8115c40037b0c90718a704a435a3742
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: a4ab9b272a59c64497f533df6dfeb8657da89922daed0c74afbbd3776ab43abb
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: a1b4cbc80447af135c84723c6bb01ed16a6d3717d9ecdeeecac4d71716776122
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: dfc38a51e267b239653f9f541ab448172e071b7e990649ebcb949597f377d3ae
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: 3a56bc82b1ec4109d0cdefdfae3ebceafef24b18e3200826c8ca5bf4f2413011
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: 9784f236e878296050fd489f995780ed4bace1dbac839146977c02c0ac7a638b
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -186,8 +202,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: 09a43728667dfdaab3339bbe2ebbb6548d5d5b9fc1e3f312e9de63d2b664cbd9
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: 261f41c18f1ff60d20b7142e85752a64e067b9ec4bc275a3706988a405d41289
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -202,8 +218,422 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-09T14:37:51-05:00
-- SHA256: 045dcf87778f02e8f79b055dd2f32ba800f321b887b0718e30e35e3a8a2ef79d
+- Modified Time: 2026-06-09T14:39:36-05:00
+- SHA256: 79f44954f275bd8a6038b518edbe9db5410f94a247667d90072c6683ab1480de
+
+## Colby System Architecture
+
+Source: `/opt/colby/docs/COLBY_SYSTEM_ARCHITECTURE.md`
+
+# COLBY SYSTEM ARCHITECTURE
+
+Status: draft doctrine
+Authority: architecture guidance
+Created: 2026-06-09
+Host: ASUSAI
+Scope: Local Colby, Open WebUI Colby, Current Truth export, ChatGPT/COL-B continuity
+
+## Purpose
+
+This document defines how Colby is structured, how evidence flows through the system, and where reasoning should occur.
+
+Colby must not evolve by accidental script accumulation. Each component should have a known layer, authority level, input, output, risk class, and owner boundary.
+
+## Core Principle
+
+Evidence collection, memory, retrieval, reasoning, and action are separate layers.
+
+A script that collects data should not decide what the answer means.
+
+A proxy route should not become the long-term reasoning engine.
+
+A truth transfer file should not be treated as the only local memory authority.
+
+## Architectural Layers
+
+### Layer 1: Evidence Collection
+
+Purpose:
+- Read real systems.
+- Collect facts.
+- Avoid interpretation.
+
+Examples:
+- Home Assistant read-only puller.
+- Solar data pullers.
+- Discovery scripts.
+- API health checks.
+
+Rules:
+- Prefer read-only.
+- Store raw or lightly normalized facts.
+- Do not write durable memory directly.
+- Do not call control endpoints unless explicitly authorized.
+
+### Layer 2: State Normalization
+
+Purpose:
+- Convert raw evidence into structured operational state.
+
+Examples:
+- /home/cothrang/colby-ha/ha_state_snapshot.json
+- solar status JSON files
+- generated daily reports
+- normalized discovery reports
+
+Rules:
+- Preserve timestamps.
+- Preserve source references.
+- Label Central Time when used.
+- Separate McKenzie and RiVi.
+- Do not infer system health without evidence.
+
+### Layer 3: Memory and Knowledge
+
+Purpose:
+- Store durable facts, decisions, constraints, goals, capabilities, and lessons.
+
+Examples:
+- /opt/colby/memory
+- /opt/colby/state
+- /opt/colby/reports
+- approved decisions
+- current priorities
+- capability records
+
+Rules:
+- Stale records must be superseded, not silently erased.
+- Failed experiments must not become durable truth.
+- Observations become candidates before durable memory.
+- Current user instruction outranks memory.
+
+### Layer 4: Retrieval and Context Assembly
+
+Purpose:
+- Select relevant, authority-ranked information for the current question.
+
+Examples:
+- /opt/colby/services/context/relationship_context_loader.py
+- workspace memory search
+- workspace summaries
+- future RAG/context assembler
+
+Rules:
+- Retrieve facts, not conclusions.
+- Enforce authority order.
+- Prefer current operational state over stale planning notes.
+- Include source and timestamp when freshness matters.
+- Avoid brittle keyword routing when a retrieval strategy is possible.
+
+### Layer 5: Reasoning
+
+Purpose:
+- Let the model answer from supplied evidence.
+
+Examples:
+- Open WebUI Colby through colby_proxy.py
+- ChatGPT/COL-B using Current Truth and project context
+- local Ollama model behind Colby proxy
+
+Rules:
+- The model should reason from context.
+- The answer should separate fact, inference, assumption, and recommendation.
+- The model should not invent live system status.
+- The model should not treat stale context as current when newer evidence exists.
+
+### Layer 6: Action
+
+Purpose:
+- Change systems, files, services, devices, automations, or external repositories.
+
+Examples:
+- systemctl restart
+- docker changes
+- Home Assistant service calls
+- GitHub publish
+- memory promotion
+- file edits
+
+Rules:
+- Explicit approval required.
+- Back up before changes.
+- Validate after changes.
+- Log what changed.
+- Prefer scripts/automations with audit trails over uncontrolled model action.
+- Home Assistant remains the sensor/control plane.
+- Colby remains the reasoning/reporting layer unless Greg explicitly authorizes control.
+
+## Authority Order
+
+1. Current user instruction.
+2. Current live operational evidence.
+3. Current Truth sources.
+4. Approved local memory and decisions.
+5. Generated reports.
+6. Historical investigations.
+7. Hypotheses and observations.
+8. Old chat history.
+
+When sources conflict, identify the conflict and prefer the higher authority source.
+
+## Current Truth Role
+
+Current Truth files are transfer artifacts for continuity across ChatGPT/COL-B sessions.
+
+They are not the sole source of local Colby memory.
+
+Current Truth should summarize the best known state from local Colby, but local Colby must still enforce authority order internally.
+
+Files:
+- /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md
+- /opt/colby/export/knowledge_transfer.json
+- /opt/colby/export/current_truth.semantic.sha
+
+Public continuity endpoints:
+- https://www.cognitiveworkstead.com/COLBY_PROJECT_CURRENT_TRUTH.md
+- https://www.cognitiveworkstead.com/knowledge_transfer.json
+
+## Home Assistant Boundary
+
+Home Assistant is active as the operational sensor/control plane.
+
+Colby has read-only HA snapshot access through ASUSAI.
+
+Approved read-only files:
+- /home/cothrang/colby-ha/ha_state_pull.py
+- /home/cothrang/colby-ha/ha_state_snapshot.json
+- /home/cothrang/.config/colby-ha/ha.env
+
+Security:
+- The HA token must never be placed in prompts, Current Truth, GitHub, model memory, logs, or chat transcripts.
+- Colby may summarize facts from the snapshot.
+- Colby must not call HA services unless explicitly approved by Greg.
+- HA control must be approval-gated and auditable.
+
+## McKenzie / RiVi Separation
+
+McKenzie fixed-site operations and RiVi RV Victron operations are separate operational domains.
+
+McKenzie:
+- Fixed site.
+- EG4 / SolarAssistant / Home Assistant bridge.
+- Farm/property operations.
+
+RiVi:
+- RV Victron system.
+- Cerbo GX / MultiPlus / SmartShunt / solar chargers.
+- Dashboard should remain executive/watts-focused unless building a technical dashboard.
+
+Colby must not blend McKenzie conclusions into RiVi or RiVi conclusions into McKenzie without evidence.
+
+## Known Architectural Concern
+
+The current system contains some hardcoded keyword routes.
+
+Hardcoded routes are acceptable only for:
+- safety gating
+- authorization
+- deterministic tool dispatch
+- explicit user-requested commands
+
+Hardcoded routes are not acceptable as the primary reasoning layer.
+
+Future design should move toward:
+- evidence retrieval
+- authority-ranked context assembly
+- model reasoning from supplied facts
+- auditable action approval
+
+## Architecture Inventory Source
+
+Latest generated inventory:
+- /opt/colby/reports/architecture/latest_colby_architecture_inventory.md
+
+This inventory is a discovery report, not doctrine. This document is the doctrine.
+
+## Colby Code Capability Registry
+
+Source: `/opt/colby/docs/COLBY_CODE_CAPABILITY_REGISTRY.md`
+
+# COLBY CODE CAPABILITY REGISTRY
+
+Status: draft doctrine
+Authority: architecture guidance
+Created: 2026-06-09
+Scope: Code monitoring, capability tracking, and memory candidate generation
+
+## Purpose
+
+The Code Capability Registry tracks what Colby code can do, what changed, and whether that change should become memory.
+
+Code changes must create reviewable memory candidates.
+
+Code changes must not automatically update durable memory.
+
+## Core Principle
+
+Implementation is not truth until reviewed.
+
+A code file can exist.
+A script can run.
+A capability can work.
+But Colby should not treat it as durable truth until the change is reviewed, classified, and approved.
+
+## Change Flow
+
+Code file changes
+→ inventory scanner
+→ hash/change registry
+→ capability impact report
+→ memory candidate
+→ Greg review
+→ approved memory update
+→ Current Truth export
+→ ChatGPT/COL-B continuity
+
+## What the Registry Tracks
+
+For every script, service, tool, and important file:
+
+- path
+- component name
+- architecture layer
+- purpose
+- inputs
+- outputs
+- files read
+- files written
+- databases touched
+- network calls
+- external services touched
+- secrets touched
+- called by
+- calls out to
+- risk class
+- last hash
+- last modified time
+- capability exposed
+- operational status
+- known stale notes
+- rollback path
+
+## Risk Classes
+
+### READ_ONLY
+
+Reads files, APIs, or system status.
+Does not modify state.
+
+Examples:
+- HA state puller when using GET-only calls.
+- discovery scripts.
+- inventory scanners.
+
+### WRITES_LOCAL
+
+Writes local reports, generated files, local memory candidates, or local state.
+Does not control systems.
+
+Examples:
+- Current Truth exporter.
+- architecture inventory generator.
+- memory candidate writer.
+
+### WRITES_SYSTEM
+
+Changes services, containers, packages, permissions, system files, prompts, or code.
+
+Examples:
+- patching colby_proxy.py.
+- systemd unit edits.
+- Docker compose changes.
+- service restarts.
+
+### EXTERNAL_CONTROL
+
+Controls external systems or publishes externally.
+
+Examples:
+- GitHub publish.
+- Home Assistant service calls.
+- inverter control.
+- climate control.
+- relay control.
+- external API actions.
+
+## Memory Candidate Rules
+
+The registry may create candidates for:
+- new capability added
+- capability removed
+- capability changed
+- stale memory detected
+- code contradicts memory
+- new risk introduced
+- new external control surface added
+- authority order conflict detected
+
+The registry must not:
+- auto-promote memory
+- delete stale memory
+- overwrite decisions
+- publish Current Truth
+- restart services
+- call Home Assistant services
+
+## Candidate Format
+
+Each candidate should include:
+
+- candidate ID
+- generated time
+- changed files
+- old hash
+- new hash
+- detected capability change
+- evidence
+- affected architecture layer
+- risk class
+- recommended memory update
+- recommended Current Truth update
+- approval status
+- rollback reference
+
+## Approval States
+
+- proposed
+- reviewed
+- approved
+- rejected
+- superseded
+
+Only approved candidates should update durable memory.
+
+## Desired Future Scripts
+
+Suggested future paths:
+
+- /opt/colby/services/architecture/code_inventory_scanner.py
+- /opt/colby/services/architecture/code_change_detector.py
+- /opt/colby/services/architecture/capability_registry_builder.py
+- /opt/colby/services/architecture/memory_candidate_generator.py
+
+Suggested outputs:
+
+- /opt/colby/state/code_registry/code_inventory.json
+- /opt/colby/state/code_registry/code_hashes.json
+- /opt/colby/reports/architecture/code_capability_report.md
+- /opt/colby/learning/review_required/code_change_*.md
+
+## Operating Rule
+
+Every code change should answer:
+
+What changed?
+What capability changed?
+What risk changed?
+What memory might now be stale?
+What memory candidate should be reviewed?
 
 ## Infrastructure Inventory
 
@@ -516,7 +946,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -654,7 +1084,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -763,7 +1193,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -856,7 +1286,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -919,7 +1349,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1736,7 +2166,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -1845,7 +2275,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-09T14:37:51
+Generated: 2026-06-09T14:39:36
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
