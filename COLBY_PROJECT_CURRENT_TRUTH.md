@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-09T14:19:32-05:00
+Generated Local Time: 2026-06-09T14:37:51-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_priorities.md
 - Required: True
 - Exists: True
-- Size Bytes: 359
-- Modified Time: 2026-05-29T07:40:33-05:00
-- SHA256: 8b8c99790fbaace154b8fd19da151c2fc88bfb4b3913ab5f1cb0ed20ea9b662e
+- Size Bytes: 423
+- Modified Time: 2026-06-09T14:25:14-05:00
+- SHA256: b408cc0bfe5041f488093bf9fdd67de58ce7a0eed2d8b121a82738db9684cc61
 
 ### Goals
 - Path: /opt/colby/memory/core/goals.md
@@ -106,40 +106,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: b805afd441418d058fc318f3ab796b98a7c9623c30ef7eaee313cdd162913b7a
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: e4e0a8bcad3a2eb58fd56e81a6f310afd9dcf2a7b99ee9926820db63919b1194
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: 9b08eee2ef7e7593a927fef22f128614bcaf87be4a585d8103a73b3e74f90213
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: d859c8e35d9940de2fcc4eca74d88ad11e5eeb72ed20146c2dc5c0281c87a420
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: 91808fd22385de22a06ec811e9f4f97a90c602888b47a36f4a0d4d00759e716f
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: 73695ff2481513d6ae0d8b0d47200eeee8115c40037b0c90718a704a435a3742
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: d3232a36890f9386aa769ea10ef383a84c1079325390bf8edebdd6522b4f65d0
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: a1b4cbc80447af135c84723c6bb01ed16a6d3717d9ecdeeecac4d71716776122
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: 305e62790a94eb44e3dff4b228a77aa01b2a11d995f8408ee5c7799e740f3154
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: 3a56bc82b1ec4109d0cdefdfae3ebceafef24b18e3200826c8ca5bf4f2413011
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -186,8 +186,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: d346edc87bcf4faa264df2f7f0d22327d36d414be537ab606416bf83263b3676
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: 09a43728667dfdaab3339bbe2ebbb6548d5d5b9fc1e3f312e9de63d2b664cbd9
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -202,8 +202,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-09T14:19:32-05:00
-- SHA256: de33fd0fd3ce1e14d13b31100245c6d41d7ca50873342d85585d78f732d44854
+- Modified Time: 2026-06-09T14:37:51-05:00
+- SHA256: 045dcf87778f02e8f79b055dd2f32ba800f321b887b0718e30e35e3a8a2ef79d
 
 ## Infrastructure Inventory
 
@@ -404,7 +404,7 @@ Deferred:
 Right Turn (on hold)
 
 Deferred:
-Home Assistant rebuild until return to McKenzie.
+Home Assistant read-only Colby integration is active; next priority is proxy/tool wiring and governed summaries.
 
 ## Goals
 
@@ -516,7 +516,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -654,7 +654,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -763,7 +763,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -856,7 +856,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -919,7 +919,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1736,7 +1736,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -1845,7 +1845,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-09T14:19:32
+Generated: 2026-06-09T14:37:51
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
