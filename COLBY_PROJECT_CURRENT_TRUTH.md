@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-09T15:18:44-05:00
+Generated Local Time: 2026-06-09T15:25:11-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -130,48 +130,48 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: 0aa310af62d50069b2d701eb645d305960aeb38226cf67b52f85d42bc7691572
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: 2ba0883e13a68a3b81a52153a9bfe2f45fed39f26af70c6bd96d6f16492ba3b4
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: 03263ce60d3be10e98fed1893f71510a677ca1aeb3fec0bb08262086d333517d
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: 565bc8fc4d1dc56c849dde3c0483c9d7b4e0cbb6e6de44538d1d9fd62e9ac63c
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: 4e76fee176723ba5cf5cfaf587c71e1587d3064a9ddbe30e6a46d951b276b4e0
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: 445b22be6d85eba43b58ae6eab3c231a0975cd74ca96c41979eab83c9461723d
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: f172177909e107ddcfee88f079f7f86122dfc19991fda175b24b928e9916c046
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: a00df88e6c73e51b7a5b68d9c390816c7b50ffaa9c6a62bacedd8942df33fbe5
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: 7d88bdb6dadbede747220a40e4ddf215933e087e497b2b86d485278728df12ca
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: 100d373614ebf274ff73dc279a8108465e8db178b5aad0453af337fcb38b9b2b
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
 - Required: True
 - Exists: True
-- Size Bytes: 4401
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: ec2b11ac580e4a772cab63a4114b7293643eb7e6e771ed8d93b68aaeeacd858d
+- Size Bytes: 5197
+- Modified Time: 2026-06-09T15:25:10-05:00
+- SHA256: 837671428eb0fa8cea7cc3563cefc0b5f659ab14fa4bd2eb89be42fcd4f2b53d
 
 ### Home Assistant Read-Only Access
 - Path: /opt/colby/memory/operational/home_assistant_readonly_colby_access.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: b4837ba7918d159067d024839f8a0a8e8319f3503086943f4163665afe66b954
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: 8a6c5485d00fa7cabf1de5ef38b73dc5dc482a90a0fa437ce33059f7f8a3e9a3
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-09T15:18:44-05:00
-- SHA256: 5bcc365e215cd92afe0d768418c2c7b068f63e6224e7857b612f6fc67667b553
+- Modified Time: 2026-06-09T15:25:11-05:00
+- SHA256: a42648c5ce861cf9cce1701e65bfa9f90eeeedb0634398a0fc069f08efb0f84f
 
 ## Colby System Architecture
 
@@ -1027,7 +1027,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1165,7 +1165,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1274,7 +1274,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1367,7 +1367,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1430,7 +1430,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1713,6 +1713,33 @@ Validation after restore:
 Known follow-up:
 
 - `/solar/anomalies` returns HTTP 500 due to missing `inverter_temp_f` column reference. This does not affect current dashboard or bridge data.
+
+## 2026-06-09 /solar/anomalies endpoint fixed
+
+Status:
+Resolved.
+
+Issue:
+PI4 `/solar/anomalies` returned HTTP 500 because `solar_api.py` queried `inverter_temp_f` from the `energy_analysis` view, but that column exists in `solar_metrics_1min`, not `energy_analysis`.
+
+Fix:
+Updated `/home/cothrang/solar-collector/solar_api.py` so `/solar/anomalies` joins:
+
+- `energy_analysis e`
+- `solar_metrics_1min s`
+
+on `bucket_utc`, then reads `s.inverter_temp_f`.
+
+Validation:
+After restarting `solar-api.service`, the following endpoints returned HTTP 200:
+
+- `/solar/status`
+- `/solar/now`
+- `/solar/bridge`
+- `/solar/anomalies`
+
+Boundary:
+This fix touched only the read-only PI4 solar API. It did not modify MQTT collection, dashboard generation, GitHub publishing, Home Assistant, or solar.db schema.
 
 ## Home Assistant Read-Only Access
 
@@ -2269,7 +2296,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2378,7 +2405,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-09T15:18:44
+Generated: 2026-06-09T15:25:11
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
