@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-09T15:27:32-05:00
+Generated Local Time: 2026-06-09T15:36:11-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -130,48 +130,48 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: d8c454a6a00dd843b07490605752e0ae70e8d4f122e7cbfa145d2aee95d33411
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: e0d67cd31276c541b3d189bc3aee3fe25171b583b105ef217dde5433f7760bd1
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: c416c06c6af365a6ad203700dd100f0234256740b9d294453532ba4cd2bddac7
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: 56c345aa4bb911b8b4d1530e053fd925ded9a4447e169744d318725d55a782e6
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: 332f19f7f66804985a2f9ac5fcb7236b4efc0384a12d1db38648e2b40d4a35ca
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: ea56043f511fd5110ad99ed450df6158d5591f55216a3085884f97aa7839b021
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: 9fa0060a1a1eb2618852606a49239fb2d25aac828c074f4c0f451f785a8cf825
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: 7611506b63666c46f646b4fcb5dd5222b94af2aa1af0132b4e0c7bc901484a07
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: 9eb49a4113822ff3d4c6b3838d23f6be0f617ee2f941907119572803207f1eff
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: ab1dc23faed8a6d68a5bb2a43521dd8db6549d521fe53ff9ab9df308c0ca9f7a
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
 - Required: True
 - Exists: True
-- Size Bytes: 5303
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: 08b4851f079f717c4b4e2218e52796203fae4576fa0f6a93f12d02a63bd4c34f
+- Size Bytes: 7068
+- Modified Time: 2026-06-09T15:35:31-05:00
+- SHA256: 894b4b8ae4ad462632d744f7fb20e45dcb297351af7eb1a9129115a4cb4f2b24
 
 ### Home Assistant Read-Only Access
 - Path: /opt/colby/memory/operational/home_assistant_readonly_colby_access.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: 3724765029e7a5a351853eab480e15f4e55fe184a850a278297488bbda596eac
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: 87babc2b03cf3ff6ba17331beabd9ec6dc8b0d0acb9ca1d614a1ce8ebc4d766e
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-09T15:27:32-05:00
-- SHA256: ed3c289a51d537df6518a3140dd8100928725224f03a70408a09fa6517a439a5
+- Modified Time: 2026-06-09T15:36:11-05:00
+- SHA256: a2895c211bcf2e511aa3d0a092ce7bab73b6f28f6777f2e988f94477ae12c38e
 
 ## Colby System Architecture
 
@@ -1027,7 +1027,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1165,7 +1165,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1274,7 +1274,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1367,7 +1367,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1430,7 +1430,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1742,6 +1742,45 @@ After restarting `solar-api.service`, the following endpoints returned HTTP 200:
 
 Boundary:
 This fix touched only the read-only PI4 solar API. It did not modify MQTT collection, dashboard generation, GitHub publishing, Home Assistant, or solar.db schema.
+
+## 2026-06-09 McKenzie solar live evidence packet guardrails
+
+Status:
+Active candidate architecture.
+
+Tool:
+`/opt/colby/tools/mckenzie_solar_evidence.py`
+
+Purpose:
+Coach Colby to answer McKenzie solar questions from live evidence and Current Truth, not canned responses or stale memory.
+
+Design:
+The tool fetches read-only PI4 solar API data and returns source, timestamp, freshness, and current values.
+
+The tool does not answer user questions directly.
+The tool does not hard-code canned responses.
+The tool does not call Home Assistant services.
+The tool does not access MQTT directly.
+The tool does not store or expose secrets.
+
+Reasoning guardrails:
+- Do not answer current McKenzie solar questions from memory alone.
+- Use live PI4 API evidence when available.
+- Report value, source, Central Time timestamp, and freshness state.
+- If live evidence is stale, missing, or conflicting, say the current state is not verified and identify the source problem.
+- Prefer verified PI4 API live data over public GitHub Pages JSON for current state because GitHub Pages may cache for approximately 10 minutes.
+- Use Home Assistant read-only snapshot as supporting evidence when fresh.
+- Do not infer array faults from low solar without supporting evidence.
+- High battery SOC may indicate charge taper.
+- Weather is supporting evidence only.
+- Keep McKenzie fixed-site solar separate from RiVi RV power.
+
+Best snapshot rule:
+The evidence packet preserves raw `/solar/now` and `/solar/bridge` data. It also creates `best_current_snapshot`.
+
+If `/solar/now` has missing operational fields but `/solar/bridge` has complete current values, `best_current_snapshot` selects `/solar/bridge` and explains why.
+
+This is not a hard-coded answer. It is source quality selection.
 
 ## Home Assistant Read-Only Access
 
@@ -2298,7 +2337,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2407,7 +2446,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-09T15:27:32
+Generated: 2026-06-09T15:36:11
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
