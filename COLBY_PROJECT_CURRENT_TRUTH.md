@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-09T14:39:36-05:00
+Generated Local Time: 2026-06-09T14:46:54-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -19,7 +19,7 @@ Operating Boundaries:
 
 Export Validation:
 - Required missing files: 0
-- Source file count: 20
+- Source file count: 21
 
 ## Current Truth Publishing Architecture
 
@@ -77,6 +77,14 @@ Export Validation:
 - Modified Time: 2026-06-09T14:35:21-05:00
 - SHA256: 23fbc1edfcededf068783547a91cae31f7210adf6be89844e0c24be3d1c13238
 
+### Code Capability Registry Active
+- Path: /opt/colby/memory/operational/code_capability_registry_active.md
+- Required: True
+- Exists: True
+- Size Bytes: 1845
+- Modified Time: 2026-06-09T14:45:51-05:00
+- SHA256: 72bb14daeb4829e4ef488b9a2f45476c1171732db93dd3858eb7da2118f42a5b
+
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
 - Required: False
@@ -122,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: 5fe62a8457ada53c6e7231c34b8e9bd4290ac852ed675e3300b9c7824c2ccfaa
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: 949e9747753fcfe6298c16c1e09427e0c864b6bb3ffb01101e84a7c7ac8a036a
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: a772076edc96ffa161c7ae0adb5779a76b1767d297ccc1b93722534e2425c054
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: b379ee255e66c243d4365ae93d825960db4c9f19fb0e5abb5f952a044daefa45
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: a4ab9b272a59c64497f533df6dfeb8657da89922daed0c74afbbd3776ab43abb
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: f596a011407c0f6f3599b5ba9330900b8d6b7414eb29082385c1bcc665089b10
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: dfc38a51e267b239653f9f541ab448172e071b7e990649ebcb949597f377d3ae
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: d44ede9580306c94ac2439920866f08c5f81720ebdae989f0989e63686229cce
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: 9784f236e878296050fd489f995780ed4bace1dbac839146977c02c0ac7a638b
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: be94362f20f84eacd635b9d802ed66e7af87a0a1069092fcd944678d32b1a935
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -202,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: 261f41c18f1ff60d20b7142e85752a64e067b9ec4bc275a3706988a405d41289
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: fe5cab1617d98ba5a8cc3dedec59583c15e18906ca68c26bc05961551e55f661
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -218,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-09T14:39:36-05:00
-- SHA256: 79f44954f275bd8a6038b518edbe9db5410f94a247667d90072c6683ab1480de
+- Modified Time: 2026-06-09T14:46:54-05:00
+- SHA256: 91a29ede3de74d817592378d44027ccca84867a4353af50d59f752cd6c670e90
 
 ## Colby System Architecture
 
@@ -635,6 +643,79 @@ What risk changed?
 What memory might now be stale?
 What memory candidate should be reviewed?
 
+## Code Capability Registry Active
+
+Source: `/opt/colby/memory/operational/code_capability_registry_active.md`
+
+# Code Capability Registry Active
+
+Status: active
+Approved: 2026-06-09
+Approved by: Greg
+Source Candidate: /opt/colby/learning/review_required/code_change_20260609T1444010500.md
+
+## Confirmed Capability
+
+The Code Capability Registry scanner is active on ASUSAI.
+
+Scanner:
+- /opt/colby/services/architecture/code_capability_scanner.py
+
+State outputs:
+- /opt/colby/state/code_registry/code_inventory.json
+- /opt/colby/state/code_registry/code_hashes.json
+
+Report output:
+- /opt/colby/reports/architecture/code_capability_report.md
+
+Candidate output:
+- /opt/colby/learning/review_required/code_change_*.md
+
+## Operating Boundary
+
+The scanner inventories Colby code, prompts, docs, config, selected tools, and selected Home Assistant read-only support files.
+
+The scanner may write local registry files, local reports, and proposed review candidates.
+
+The scanner must not:
+- promote durable memory automatically
+- publish Current Truth
+- restart services
+- call Home Assistant services
+- control external systems
+- delete stale memory
+- overwrite decisions
+
+## Approval Rule
+
+Code changes may create proposed memory candidates.
+
+Only Greg-approved candidates may become durable memory.
+
+## Current Baseline
+
+Baseline created:
+- 2026-06-09 14:42 Central Time
+
+Scanner v0.2 confirmed:
+- 2026-06-09 14:44 Central Time
+
+The v0.2 scan detected one code change to the scanner itself and created a review candidate, proving the loop works:
+
+code change -> registry detects change -> candidate created -> no auto-promotion
+
+## Architectural Role
+
+Layer:
+- Layer 2/3: Architecture Registry
+
+Purpose:
+- Monitor code and capability-supporting files.
+- Detect capability drift.
+- Create review candidates when implementation changes may affect memory, Current Truth, risk, or architecture.
+
+This subsystem is part of Colby governance, not the reasoning layer.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -946,7 +1027,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1084,7 +1165,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1193,7 +1274,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1286,7 +1367,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1349,7 +1430,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2166,7 +2247,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2275,7 +2356,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-09T14:39:36
+Generated: 2026-06-09T14:46:54
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
