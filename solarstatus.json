@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-09T01:31:35.172287+00:00",
-  "timestamp_central": "Jun 8, 2026, 8:31 PM Central Time",
+  "timestamp": "2026-06-09T01:46:31.312794+00:00",
+  "timestamp_central": "Jun 8, 2026, 8:46 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 837.0,
+    "load_w": 847.0,
     "solar_w": 0.0,
     "battery_soc": 94.0,
-    "battery_power_w": -862.0,
+    "battery_power_w": -875.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -157,18 +157,18 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 1.34,
+    "consumed_kwh": 1.56,
     "produced_kwh": 0.15,
-    "avg_load_w": 887,
+    "avg_load_w": 881,
     "peak_load_w": 1475,
     "peak_solar_w": 391,
     "lowest_soc": 94
   },
   "survivability": {
     "usable_battery_kwh": 47.6,
-    "zero_solar_days": 2.2,
+    "zero_solar_days": 2.3,
     "similar_weather_days": 2.5,
-    "samples": 880
+    "samples": 865
   },
   "historical_model": {
     "available": true,
@@ -195,16 +195,16 @@
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 8,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 19,
-    "samples": 19,
-    "confidence": "Medium",
-    "matched_cloud": 90.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
@@ -223,7 +223,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 3,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 15,
       "today_peak_w": 391,
