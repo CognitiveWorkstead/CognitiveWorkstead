@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-10T09:33:00-05:00
+Generated Local Time: 2026-06-10T09:41:47-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -65,9 +65,9 @@ Export Validation:
 - Path: /opt/colby/docs/COLBY_SYSTEM_ARCHITECTURE.md
 - Required: True
 - Exists: True
-- Size Bytes: 11697
-- Modified Time: 2026-06-10T09:32:59-05:00
-- SHA256: 0c9065d72de46ecefe793e7ed1a07010add813017ebc5e758ee195f9da43d20c
+- Size Bytes: 12991
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: 8686f6c510a3708c5a5e2e82a6c1225bd662eb540a06b260ff7e22e30fb1e02d
 
 ### Colby Code Capability Registry
 - Path: /opt/colby/docs/COLBY_CODE_CAPABILITY_REGISTRY.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-10T09:32:59-05:00
-- SHA256: 1d9872077a532efdd85d22d6afd6b5521bb59cf21d7c8fe72ccfd9a36d4b1142
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: cc58aa2e98f368fc1ddc78afc972e20b46039e039116e31f8e252cfea8e5b92d
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-10T09:32:59-05:00
-- SHA256: 3fa044b4c4ce702f670d109de586010b56dcd3e954767e60624221f07f508d71
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: 565de2a341dc91422a77e86b3394bdd1b3ee293eac4bb3991caabc51cd141a2d
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-10T09:32:59-05:00
-- SHA256: faf40418e48bbe000dbc698bba1f469d342f07aca1610d6f99a8a1e8b0ec9c3d
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: e05576b8c48c00a3f70c9b5b1c2e75d8217d982ef6bf3708460f22d80c0604a6
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-10T09:32:59-05:00
-- SHA256: c74b2e40b3d3b7e78689b6fa82ca3c0ae21a2c443e785f57ab6264f2e0cfe817
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: cb0c6cd1dd5e8a788af71b4899974aa6457d694c0aaddeb7e956472129011bec
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-10T09:32:59-05:00
-- SHA256: 27366a039b07bee739dacb37e2d5e30da2e1dc299d56888630e66beca3bf2cad
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: 99e69df61648baa7f0199a529cda8a31176a03544011cecd567fb5f3c563f285
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-10T09:33:00-05:00
-- SHA256: 4afa7989c0c462beb8eae8a28d135e2c73a745beb27bfa62d840560053d5699f
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: c5343a13011d520fbda6eac0a716d2b77e6e3d4a1e38ca4412100cebfb6b9cff
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-10T09:33:00-05:00
-- SHA256: 9fd85ea3f8520a1af8f5825e3caad5c03f092a3a323a7caa750a333fb4c1c438
+- Modified Time: 2026-06-10T09:41:47-05:00
+- SHA256: ba2721823538c392d677fbf812ebf96ba04eca51341087af236e3c63055aaf48
 
 ## Colby System Architecture
 
@@ -601,6 +601,33 @@ Governance:
 - No Home Assistant write access was added.
 - No Victron control was added.
 - McKenzie fixed-site solar and RiVi RV Victron remain separate systems.
+
+## 2026-06-10 RiVi routing fix
+
+Issue:
+Open WebUI question `What is RiVi doing right now?` initially routed to the McKenzie-only solar evidence path because the phrase `right now` matched the McKenzie current-solar route. The combined McKenzie/RiVi route required both a RiVi/RV/Victron term and an energy metric term, so plain RiVi status questions were missed.
+
+Fix:
+- Updated `/opt/colby/services/proxy/colby_proxy.py`.
+- Added `doing`, `right now`, `now`, and `state` to combined-energy metric trigger terms.
+- Blocked the McKenzie-only current-solar route when the user question contains `rivi`, `rv`, or `victron`.
+- Updated the combined-energy synthesis prompt to use validated RiVi battery direction fields:
+  - `battery_power_direction`
+  - `battery_power_interpretation`
+  - `battery_power_sign_rule`
+
+Validated behavior:
+- Open WebUI now routes `What is RiVi doing right now?` through the combined energy evidence path.
+- Colby correctly answered that RiVi was discharging.
+- Evidence source was `home_assistant_readonly_snapshot_rivi_allowlist`.
+- Freshness state was current.
+- McKenzie and RiVi remain separate systems.
+
+Governance:
+- Routing change only.
+- Read-only evidence access only.
+- No Home Assistant write/service-call access was added.
+- No Victron control was added.
 
 ## Colby Code Capability Registry
 
@@ -1170,7 +1197,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-10T09:32:59
+Generated: 2026-06-10T09:41:47
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1308,7 +1335,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-10T09:32:59
+Generated: 2026-06-10T09:41:47
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1417,7 +1444,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-10T09:32:59
+Generated: 2026-06-10T09:41:47
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1510,7 +1537,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-10T09:32:59
+Generated: 2026-06-10T09:41:47
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1573,7 +1600,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-10T09:32:59
+Generated: 2026-06-10T09:41:47
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2564,7 +2591,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-10T09:33:00
+Generated: 2026-06-10T09:41:47
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2673,7 +2700,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-10T09:33:00
+Generated: 2026-06-10T09:41:47
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
