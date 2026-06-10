@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-10T08:45:42-05:00
+Generated Local Time: 2026-06-10T09:10:07-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -65,9 +65,9 @@ Export Validation:
 - Path: /opt/colby/docs/COLBY_SYSTEM_ARCHITECTURE.md
 - Required: True
 - Exists: True
-- Size Bytes: 7531
-- Modified Time: 2026-06-10T08:45:41-05:00
-- SHA256: 45e3dafabe2abdbaef75869305769e45afbfe345be23772fdc15c66af2a25b37
+- Size Bytes: 10526
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: 8943ac088a7a04d15b6fb114ded1e8b95b6f7e3efdf06fd3537916309049e688
 
 ### Colby Code Capability Registry
 - Path: /opt/colby/docs/COLBY_CODE_CAPABILITY_REGISTRY.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-10T08:45:42-05:00
-- SHA256: e3271ca374496b1caad29ade64595eb8caa9e21f05209f761414883b6159886e
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: 7864977a567ed2ac08f836acf92101184b89ac01552666a051be728fd35b0d5a
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-10T08:45:41-05:00
-- SHA256: 77767290c45a5e83b499483fb9393f0e70a0e14306b2c0ecae7bddfa1beb318a
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: ab7219cdffd601f1554a33eec96e1023b3f8a22c85b9aa52aa3644f4bac5104f
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-10T08:45:42-05:00
-- SHA256: affac3506acee7eb3fcdd36aea9d9bf511994034a7881dc69f595ff8b0329aa9
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: f1f48df44cdb3e63f45be5939bdb2d26dcadd4ae9bb92b0262caf9b05ea49623
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-10T08:45:42-05:00
-- SHA256: d4059e557d4f6af0610454a019a02a7baaad14f5c5a04dae971b1cc880bd52a0
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: 55fead79ea3a9ab312aecc70730380cb3550fcccb9c701bf585057dd3ea94c94
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-10T08:45:41-05:00
-- SHA256: cdab98203070e5d70ffa29eb9d3c0fd7569b7cb2b30f10a4d912f5822fb1c2af
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: 9ba1f2c8340cfb57af7c3eb45d52592ec63921cb6958eb6b7f573f1a71e996eb
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-10T08:45:42-05:00
-- SHA256: bef98aeb619023c1cfebda09b485371428d5b799ce2e9ed4482c47012e77b5f0
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: 0ae3e8b91ba1f20fcf5b865a2943728c86dd90202bdb28e1ae57119d542ad79f
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-10T08:45:42-05:00
-- SHA256: 507845e9081709c2b1df13e42c67ff14db0b63176f526df29b6d6ccba3ce166c
+- Modified Time: 2026-06-10T09:10:07-05:00
+- SHA256: dc16c227273a75c62cc4884da94d8af814e44db40a82b1b03c8ca3a1b12d7c03
 
 ## Colby System Architecture
 
@@ -494,6 +494,84 @@ Known-good requirements:
 
 Change record:
 `4e6df9607453`
+
+## 2026-06-10 Open WebUI upgrade lessons learned
+
+Context:
+Open WebUI was upgraded on ASUSAI from `ghcr.io/open-webui/open-webui:v0.9.5` to `ghcr.io/open-webui/open-webui:v0.9.6`.
+
+Final validated runtime:
+- Container: `open-webui`
+- Image: `ghcr.io/open-webui/open-webui:v0.9.6`
+- Port mapping: `3002 -> 8080`
+- Data volume: `open-webui:/app/backend/data`
+- Host gateway: `host.docker.internal:host-gateway`
+- Docker health: healthy
+- Tool servers reachable from container:
+  - `host.docker.internal:5055`
+  - `host.docker.internal:7077`
+
+Failure modes observed:
+1. Dynamic Docker container reconstruction failed to preserve required runtime settings.
+   - Lost `-p 3002:8080`
+   - Lost `open-webui:/app/backend/data`
+   - Lost `--restart always`
+   - Lost `host.docker.internal:host-gateway`
+2. Missing host gateway caused Open WebUI tool-server DNS errors:
+   - `host.docker.internal:5055`
+   - `host.docker.internal:7077`
+3. After successful upgrade, browser-side stale session/auth state caused old chats to appear unavailable.
+   - Open WebUI returned `401` for valid chat IDs.
+   - Database still contained the chats.
+   - Greg's user still owned the chats.
+   - No database restore was needed.
+
+Correct upgrade doctrine:
+- Do not dynamically reconstruct Open WebUI containers.
+- Use explicit known-good Docker run settings.
+- Always preserve:
+  - `--restart always`
+  - `--add-host=host.docker.internal:host-gateway`
+  - `-p 3002:8080`
+  - `-v open-webui:/app/backend/data`
+  - existing environment file
+- Always back up the Docker volume before upgrade.
+- Keep the prior container renamed and stopped for rollback.
+- Validate before declaring success:
+  - Docker health is healthy.
+  - HTTP root returns 200.
+  - `/api/version` returns expected version.
+  - `host.docker.internal` resolves inside container.
+  - Tool servers return OpenAPI from inside container.
+  - Colby proxy smoke test passes.
+  - Existing chat history opens in browser.
+
+History/auth troubleshooting doctrine:
+- If chat history appears missing after upgrade, do not restore the database first.
+- Check browser/session state first.
+- Inspect Open WebUI logs for `401` versus `404`.
+- `401` against valid chat IDs usually indicates stale auth/session, not lost history.
+- Verify database ownership before any restore:
+  - `user`
+  - `auth`
+  - `chat`
+  - `chat_message`
+- If database contains the chats and user ownership is correct, clear browser site data for `ai.gregcothran.com` and log back in.
+- Database restore is a last resort only when live DB rows are actually missing or corrupt.
+
+Validated resolution:
+- Cleared site data / reset browser session for `ai.gregcothran.com`.
+- Logged back in as Greg.
+- Chat history access was restored.
+- No DB restore was performed.
+
+Rollback references retained temporarily:
+- `open-webui-pre-explicit-v096-20260610_083526`
+- `open-webui-pre-hostgateway-v096-20260610_083845`
+- `open-webui-pre-hostgateway-fix-20260602_142638`
+
+Related change records:
+- `4e6df9607453`
 
 ## Colby Code Capability Registry
 
@@ -1063,7 +1141,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-10T08:45:42
+Generated: 2026-06-10T09:10:07
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1201,7 +1279,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-10T08:45:41
+Generated: 2026-06-10T09:10:07
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1310,7 +1388,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-10T08:45:42
+Generated: 2026-06-10T09:10:07
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1403,7 +1481,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-10T08:45:42
+Generated: 2026-06-10T09:10:07
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1466,7 +1544,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-10T08:45:41
+Generated: 2026-06-10T09:10:07
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2457,7 +2535,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-10T08:45:42
+Generated: 2026-06-10T09:10:07
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2566,7 +2644,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-10T08:45:42
+Generated: 2026-06-10T09:10:07
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
