@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-09T15:53:01-05:00
+Generated Local Time: 2026-06-10T08:08:27-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -130,48 +130,48 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-09T15:53:00-05:00
-- SHA256: fe6bace93e1ea135e46051c25c8773e2a83e8d41a3478135ae3a18a82ecf3581
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: 93a6b6592b2f78497f264fa6e5f7ec6e6302c3f3295665984f330d08b97e8474
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-09T15:53:00-05:00
-- SHA256: 60957f4284611420473e26847972383835e221483b8ab82d8e6cf7685f807b81
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: 3c9f78a78910b357b88a7bc16272e7dc0b3c32a54584e343c1500a0c824665e5
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-09T15:53:00-05:00
-- SHA256: 40e8b3181d8ccdfd8d8e288b8810e2aba47e8201c21371533f6da293177e9ed0
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: 4c9c10e1da943d5dc632ba8f618d4ed2edf83932505cede248cf257875c90dbc
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-09T15:53:00-05:00
-- SHA256: 9bbbb3ec8ffa990c6ee077ab682977786be5f8e18557ae371d02d18fbc551649
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: d631951d0c74f59bfd7fa299c500c17f5e4a7a8238e84a95de8fd2e888e588cc
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-09T15:53:00-05:00
-- SHA256: ec94d22c06290c9c69688bc2d0115a4d40d530c3fafc27c2f963009a5b675590
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: c5de6d1c0f5cf841e817da5d0c97ef0cfffa4cc5df0296ba2d68e7dea912032c
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
 - Required: True
 - Exists: True
-- Size Bytes: 9118
-- Modified Time: 2026-06-09T15:53:00-05:00
-- SHA256: be1f112b1a46cce8c58b4eccbd70fdf8f82ebbae24ae2b15b81613ddfa4c5305
+- Size Bytes: 10901
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: 2da6bbbafd1da26e50701a0da6c1f613062ef5ab64246529e272ebff9e002b87
 
 ### Home Assistant Read-Only Access
 - Path: /opt/colby/memory/operational/home_assistant_readonly_colby_access.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-09T15:53:01-05:00
-- SHA256: 4ab84d8884210c2c298c4beb58af61aa8ef8a7c1fb93e6c19ede3443d69de3e1
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: 5d3ad31cdf177a485870e00febd7251d13815230debdf8c96f632e5f88dfa6ae
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-09T15:53:01-05:00
-- SHA256: b9a2b9c1d1deee45f7ada37e9963461fe2e58b1f1d88d9454602047db2accc9b
+- Modified Time: 2026-06-10T08:08:27-05:00
+- SHA256: e642dcd11119dd3aaec6120a87d392817d2b1f1542cd169b99ff27cc010544b2
 
 ## Colby System Architecture
 
@@ -1027,7 +1027,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-09T15:53:00
+Generated: 2026-06-10T08:08:27
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1165,7 +1165,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-09T15:53:00
+Generated: 2026-06-10T08:08:27
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1274,7 +1274,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-09T15:53:00
+Generated: 2026-06-10T08:08:27
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1367,7 +1367,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-09T15:53:00
+Generated: 2026-06-10T08:08:27
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1430,7 +1430,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-09T15:53:00
+Generated: 2026-06-10T08:08:27
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1820,6 +1820,51 @@ Governance:
 Supersedes:
 - Failed change record `a2b5b576c290`.
 - Partial patch attempts at `20260609_154542` and `20260609_154740`.
+
+## 2026-06-10 Combined McKenzie and RiVi energy evidence routing
+
+Status:
+Operational and validated.
+
+Summary:
+Colby's live OpenAI-compatible proxy on ASUSAI now supports combined current-energy questions across McKenzie fixed-site solar and RiVi RV Victron power while keeping the two systems separate.
+
+Runtime files:
+- `/opt/colby/tools/energy_systems_evidence.py`
+- `/opt/colby/tools/mckenzie_solar_evidence.py`
+- `/home/cothrang/colby-ha/ha_state_pull.py`
+- `/home/cothrang/colby-ha/ha_state_snapshot.json`
+- `/opt/colby/services/proxy/colby_proxy.py`
+
+Behavior:
+- Combined questions mentioning McKenzie and RiVi route through `/opt/colby/tools/energy_systems_evidence.py`.
+- McKenzie current values use the PI4 live solar evidence packet as the preferred current source.
+- RiVi current values use the Home Assistant read-only snapshot allowlist.
+- Answers must keep McKenzie and RiVi separate unless Greg explicitly asks for totals.
+- Answers must include source, Central Time timestamp, and freshness state for each system.
+- RiVi battery power sign convention is not yet validated, so Colby must not infer RiVi charging or discharging from sign alone.
+
+Validated local proxy test:
+Question:
+`What is the current SOC for both McKenzie Solar and RiVi?`
+
+Validated answer included:
+- McKenzie Solar SOC: 62.0%
+- McKenzie source: PI4 solar API live endpoint
+- McKenzie freshness: current
+- RiVi RV Victron SOC: 86.7%
+- RiVi source: Home Assistant read-only snapshot
+- RiVi freshness: current
+
+Governance:
+- This is read-only evidence routing.
+- No Home Assistant service calls are enabled.
+- No device control was added.
+- No MQTT credentials are exposed.
+- McKenzie fixed-site solar and RiVi RV Victron power remain separate operational systems.
+
+Change record:
+`0cb2cd5bc6a5`
 
 ## Home Assistant Read-Only Access
 
@@ -2376,7 +2421,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-09T15:53:01
+Generated: 2026-06-10T08:08:27
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2485,7 +2530,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-09T15:53:01
+Generated: 2026-06-10T08:08:27
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
