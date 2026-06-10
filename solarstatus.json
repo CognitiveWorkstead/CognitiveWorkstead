@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-10T01:16:42.377132+00:00",
-  "timestamp_central": "Jun 9, 2026, 8:16 PM Central Time",
+  "timestamp": "2026-06-10T01:31:39.358693+00:00",
+  "timestamp_central": "Jun 9, 2026, 8:31 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 1478.0,
+    "load_w": 1326.0,
     "solar_w": 0.0,
-    "battery_soc": 80.0,
-    "battery_power_w": -1525.0,
+    "battery_soc": 79.0,
+    "battery_power_w": -1371.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -150,25 +150,25 @@
   },
   "occupancy": {
     "state": "occupied",
-    "probability": 100,
+    "probability": 75,
     "label": "Probability",
-    "reason": "both phones present",
+    "reason": "one phone present",
     "greg_phone_present": 1,
-    "mel_phone_present": 1
+    "mel_phone_present": 0
   },
   "today": {
-    "consumed_kwh": 3.56,
+    "consumed_kwh": 3.91,
     "produced_kwh": 0.08,
-    "avg_load_w": 2813,
+    "avg_load_w": 2575,
     "peak_load_w": 4281,
     "peak_solar_w": 239,
-    "lowest_soc": 80
+    "lowest_soc": 79
   },
   "survivability": {
-    "usable_battery_kwh": 40.5,
+    "usable_battery_kwh": 40.0,
     "zero_solar_days": 0.6,
-    "similar_weather_days": 1.2,
-    "samples": 168
+    "similar_weather_days": 1.6,
+    "samples": 198
   },
   "historical_model": {
     "available": true,
@@ -209,8 +209,8 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 80.0,
-    "projected_sunset_soc": 100.0,
+    "current_soc": 79.0,
+    "projected_sunset_soc": 99.4,
     "hours_to_sunset": 0,
     "remaining_expected_solar_kwh": 8.69,
     "remaining_load_kwh": 0.0,
@@ -223,7 +223,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 10,
+    "similar_avg_solar_w": 4,
     "peak_trend": {
       "days": 16,
       "today_peak_w": 239,
@@ -237,7 +237,7 @@
     "avg_overnight_load_w": 474.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 5.69,
-    "expected_sunrise_soc": 68.8,
+    "expected_sunrise_soc": 67.8,
     "confidence": "High",
     "samples": 3840
   },
