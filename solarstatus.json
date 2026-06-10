@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-10T09:16:46.064927+00:00",
-  "timestamp_central": "Jun 10, 2026, 4:16 AM Central Time",
+  "timestamp": "2026-06-10T09:31:40.301991+00:00",
+  "timestamp_central": "Jun 10, 2026, 4:31 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 649.0,
+    "load_w": 393.0,
     "solar_w": 0.0,
     "battery_soc": 64.0,
-    "battery_power_w": -677.0,
+    "battery_power_w": -417.0,
     "mode": "Battery",
     "battery_temp_f": 96.1
   },
@@ -150,16 +150,16 @@
   },
   "occupancy": {
     "state": "occupied",
-    "probability": 75,
+    "probability": 100,
     "label": "Probability",
-    "reason": "one phone present",
+    "reason": "both phones present",
     "greg_phone_present": 1,
-    "mel_phone_present": 0
+    "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 11.47,
+    "consumed_kwh": 11.61,
     "produced_kwh": 0.08,
-    "avg_load_w": 1238,
+    "avg_load_w": 1220,
     "peak_load_w": 5704,
     "peak_solar_w": 239,
     "lowest_soc": 64
@@ -168,7 +168,7 @@
     "usable_battery_kwh": 32.4,
     "zero_solar_days": 1.1,
     "similar_weather_days": 4.1,
-    "samples": 1076
+    "samples": 1046
   },
   "historical_model": {
     "available": true,
@@ -210,11 +210,11 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 64.0,
-    "projected_sunset_soc": 57.4,
-    "hours_to_sunset": 15.5,
+    "projected_sunset_soc": 67.0,
+    "hours_to_sunset": 15.2,
     "remaining_expected_solar_kwh": 7.26,
-    "remaining_load_kwh": 10.06,
-    "net_remaining_kwh": -2.8,
+    "remaining_load_kwh": 5.99,
+    "net_remaining_kwh": 1.26,
     "expected_today_kwh": 7.34,
     "produced_so_far_kwh": 0.08,
     "basis_days": 8,
@@ -239,7 +239,7 @@
     "expected_overnight_kwh": 6.05,
     "expected_sunrise_soc": 52.1,
     "confidence": "High",
-    "samples": 4216
+    "samples": 4231
   },
   "visual_conditions": {
     "camera_online": false,
