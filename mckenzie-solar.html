@@ -114,7 +114,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       <h2>☁️ WEATHER</h2>
       <div class="big"><span id="temp">--</span>°F</div>
       <p><b id="humidity">--</b>% humidity</p>
-      <p><b id="cloud">--</b>% cloud cover</p>
+      <p id="cloudCoverLine">Estimated Cloud Cover: <b id="cloudEstimated">--</b>% &nbsp;&nbsp;&nbsp; Regional: <b id="cloudRegional">--</b>% &nbsp;&nbsp;&nbsp; McKenzie Sky Cam: <b id="cloudSkycam">--</b>%</p>
       <hr>
       <small>Class: <span id="weatherClass">--</span>
       <div class="forecast-strip" id="weatherForecastStrip">
@@ -296,7 +296,20 @@ async function refresh(){
 
   set("temp",one(j.weather?.temperature_f));
   set("humidity",fmt(j.weather?.humidity));
-  set("cloud",fmt(j.weather?.cloud_cover));
+  const regionalCloud = j.weather?.cloud_cover;
+  const skycamCloud = j.skycam?.cloud_cover_percent ?? j.visual_conditions?.cloud_cover_pct;
+  let estimatedCloud = null;
+  if (regionalCloud !== undefined && regionalCloud !== null && skycamCloud !== undefined && skycamCloud !== null) {
+    estimatedCloud = Math.round((Number(regionalCloud) + Number(skycamCloud)) / 2);
+  } else if (regionalCloud !== undefined && regionalCloud !== null) {
+    estimatedCloud = Math.round(Number(regionalCloud));
+  } else if (skycamCloud !== undefined && skycamCloud !== null) {
+    estimatedCloud = Math.round(Number(skycamCloud));
+  }
+
+  set("cloudEstimated", estimatedCloud === null ? "--" : fmt(estimatedCloud));
+  set("cloudRegional", regionalCloud === undefined || regionalCloud === null ? "--" : fmt(Math.round(Number(regionalCloud))));
+  set("cloudSkycam", skycamCloud === undefined || skycamCloud === null ? "--" : fmt(Math.round(Number(skycamCloud))));
   set("weatherClass",j.weather?.class||"--");
 
   set("consumed",one(j.today?.consumed_kwh));
