@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-10T08:08:27-05:00
+Generated Local Time: 2026-06-10T08:45:42-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -65,9 +65,9 @@ Export Validation:
 - Path: /opt/colby/docs/COLBY_SYSTEM_ARCHITECTURE.md
 - Required: True
 - Exists: True
-- Size Bytes: 6460
-- Modified Time: 2026-06-09T14:35:21-05:00
-- SHA256: 9e81eb1011845cca53102a63d5b6d64318a58da6ac20a98ca4ff6aa1732c12c6
+- Size Bytes: 7531
+- Modified Time: 2026-06-10T08:45:41-05:00
+- SHA256: 45e3dafabe2abdbaef75869305769e45afbfe345be23772fdc15c66af2a25b37
 
 ### Colby Code Capability Registry
 - Path: /opt/colby/docs/COLBY_CODE_CAPABILITY_REGISTRY.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: 93a6b6592b2f78497f264fa6e5f7ec6e6302c3f3295665984f330d08b97e8474
+- Modified Time: 2026-06-10T08:45:42-05:00
+- SHA256: e3271ca374496b1caad29ade64595eb8caa9e21f05209f761414883b6159886e
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: 3c9f78a78910b357b88a7bc16272e7dc0b3c32a54584e343c1500a0c824665e5
+- Modified Time: 2026-06-10T08:45:41-05:00
+- SHA256: 77767290c45a5e83b499483fb9393f0e70a0e14306b2c0ecae7bddfa1beb318a
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: 4c9c10e1da943d5dc632ba8f618d4ed2edf83932505cede248cf257875c90dbc
+- Modified Time: 2026-06-10T08:45:42-05:00
+- SHA256: affac3506acee7eb3fcdd36aea9d9bf511994034a7881dc69f595ff8b0329aa9
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: d631951d0c74f59bfd7fa299c500c17f5e4a7a8238e84a95de8fd2e888e588cc
+- Modified Time: 2026-06-10T08:45:42-05:00
+- SHA256: d4059e557d4f6af0610454a019a02a7baaad14f5c5a04dae971b1cc880bd52a0
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: c5de6d1c0f5cf841e817da5d0c97ef0cfffa4cc5df0296ba2d68e7dea912032c
+- Modified Time: 2026-06-10T08:45:41-05:00
+- SHA256: cdab98203070e5d70ffa29eb9d3c0fd7569b7cb2b30f10a4d912f5822fb1c2af
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: 5d3ad31cdf177a485870e00febd7251d13815230debdf8c96f632e5f88dfa6ae
+- Modified Time: 2026-06-10T08:45:42-05:00
+- SHA256: bef98aeb619023c1cfebda09b485371428d5b799ce2e9ed4482c47012e77b5f0
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: e642dcd11119dd3aaec6120a87d392817d2b1f1542cd169b99ff27cc010544b2
+- Modified Time: 2026-06-10T08:45:42-05:00
+- SHA256: 507845e9081709c2b1df13e42c67ff14db0b63176f526df29b6d6ccba3ce166c
 
 ## Colby System Architecture
 
@@ -458,6 +458,42 @@ Latest generated inventory:
 - /opt/colby/reports/architecture/latest_colby_architecture_inventory.md
 
 This inventory is a discovery report, not doctrine. This document is the doctrine.
+
+## 2026-06-10 Open WebUI v0.9.6 runtime update
+
+Status:
+Operational and validated on ASUSAI.
+
+Runtime facts:
+- Open WebUI container: `open-webui`
+- Image: `ghcr.io/open-webui/open-webui:v0.9.6`
+- Port mapping: `3002 -> 8080`
+- Data volume: `open-webui:/app/backend/data`
+- Host gateway mapping: `host.docker.internal:host-gateway`
+- Local OpenAPI tool servers reachable from Open WebUI container:
+  - `host.docker.internal:5055`
+  - `host.docker.internal:7077`
+
+Validation:
+- Docker health: healthy
+- HTTP root: 200
+- API version: 0.9.6
+- No recent Open WebUI error patterns after host-gateway fix
+- Colby proxy smoke test passed
+- Combined McKenzie/RiVi source selection verified after upgrade
+
+Operational lesson:
+Open WebUI upgrades should use explicit known-good Docker settings instead of dynamic container reconstruction.
+
+Known-good requirements:
+- Preserve `open-webui:/app/backend/data`
+- Preserve environment file
+- Preserve `-p 3002:8080`
+- Preserve `--add-host=host.docker.internal:host-gateway`
+- Preserve `--restart always`
+
+Change record:
+`4e6df9607453`
 
 ## Colby Code Capability Registry
 
@@ -1027,7 +1063,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:42
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1165,7 +1201,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:41
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1274,7 +1310,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:42
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1367,7 +1403,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:42
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1430,7 +1466,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:41
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2421,7 +2457,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:42
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2530,7 +2566,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-10T08:08:27
+Generated: 2026-06-10T08:45:42
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
