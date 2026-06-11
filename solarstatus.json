@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-06-11T01:46:44.921533+00:00",
-  "timestamp_central": "Jun 10, 2026, 8:46 PM Central Time",
+  "timestamp": "2026-06-11T02:01:43.708211+00:00",
+  "timestamp_central": "Jun 10, 2026, 9:01 PM Central Time",
   "status": "GREEN",
   "solar": {
-    "state": "Dusk",
+    "state": "Night",
     "grading_enabled": false,
     "peak_established": false,
     "peak_established_threshold_w": 1764,
     "peak_established_threshold_pct": 20.0,
-    "operational_message": "Solar grading suspended during dusk conditions."
+    "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 1442.0,
+    "load_w": 5868.0,
     "solar_w": 0.0,
-    "battery_soc": 84.0,
-    "battery_power_w": -1475.0,
+    "battery_soc": 83.0,
+    "battery_power_w": -6026.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 81.2,
-    "humidity": 78.0,
-    "cloud_cover": 13.0,
+    "temperature_f": 79.2,
+    "humidity": 80.0,
+    "cloud_cover": 10.0,
     "class": "Clear",
     "forecast_7day": {
       "source": "Open-Meteo",
@@ -176,23 +176,23 @@
     "state": "occupied",
     "probability": 100,
     "label": "Probability",
-    "reason": "both phones present by Wi-Fi fallback",
+    "reason": "HA both persons home; HA presence fresh 13.9m",
     "greg_phone_present": 1,
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 1.71,
+    "consumed_kwh": 2.38,
     "produced_kwh": 0.07,
-    "avg_load_w": 1296,
-    "peak_load_w": 2057,
+    "avg_load_w": 1506,
+    "peak_load_w": 5947,
     "peak_solar_w": 163,
     "lowest_soc": 83
   },
   "survivability": {
-    "usable_battery_kwh": 42.6,
-    "zero_solar_days": 1.4,
-    "similar_weather_days": 2.0,
-    "samples": 240
+    "usable_battery_kwh": 42.1,
+    "zero_solar_days": 1.2,
+    "similar_weather_days": 1.8,
+    "samples": 306
   },
   "historical_model": {
     "available": true,
@@ -233,7 +233,7 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 84.0,
+    "current_soc": 83.0,
     "projected_sunset_soc": 100.0,
     "hours_to_sunset": 0,
     "remaining_expected_solar_kwh": 8.53,
@@ -261,7 +261,7 @@
     "avg_overnight_load_w": 468.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 5.62,
-    "expected_sunrise_soc": 72.9,
+    "expected_sunrise_soc": 71.9,
     "confidence": "High",
     "samples": 3840
   },
@@ -333,6 +333,6 @@
       "peak_today_time_central": "Jun 10, 2026, 7:00 PM Central Time",
       "peak_today_efficiency_pct": 1.8
     },
-    "insight": "Battery is supplementing solar to support load. Solar production is declining normally under dusk conditions; full grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Solar production unavailable by design during night conditions. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
   }
 }
