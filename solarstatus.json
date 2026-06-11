@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-11T09:31:56.452272+00:00",
-  "timestamp_central": "Jun 11, 2026, 4:31 AM Central Time",
+  "timestamp": "2026-06-11T09:46:51.122256+00:00",
+  "timestamp_central": "Jun 11, 2026, 4:46 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -13,8 +13,8 @@
   "now": {
     "load_w": 457.0,
     "solar_w": 0.0,
-    "battery_soc": 69.0,
-    "battery_power_w": -484.0,
+    "battery_soc": 68.0,
+    "battery_power_w": -494.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -25,7 +25,7 @@
     "class": "Clear",
     "forecast_7day": {
       "source": "Open-Meteo",
-      "error": "The read operation timed out",
+      "error": "<urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
       "days": []
     }
   },
@@ -62,18 +62,18 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 9.41,
+    "consumed_kwh": 9.53,
     "produced_kwh": 0.07,
-    "avg_load_w": 1036,
+    "avg_load_w": 1021,
     "peak_load_w": 7695,
     "peak_solar_w": 163,
-    "lowest_soc": 69
+    "lowest_soc": 68
   },
   "survivability": {
-    "usable_battery_kwh": 35.0,
+    "usable_battery_kwh": 34.5,
     "zero_solar_days": 1.4,
-    "similar_weather_days": 3.8,
-    "samples": 62
+    "similar_weather_days": 4.1,
+    "samples": 77
   },
   "historical_model": {
     "available": true,
@@ -114,12 +114,12 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 69.0,
-    "projected_sunset_soc": 74.0,
-    "hours_to_sunset": 15.2,
+    "current_soc": 68.0,
+    "projected_sunset_soc": 73.3,
+    "hours_to_sunset": 15.0,
     "remaining_expected_solar_kwh": 9.1,
-    "remaining_load_kwh": 6.97,
-    "net_remaining_kwh": 2.13,
+    "remaining_load_kwh": 6.86,
+    "net_remaining_kwh": 2.25,
     "expected_today_kwh": 9.17,
     "produced_so_far_kwh": 0.07,
     "basis_days": 25,
@@ -142,9 +142,9 @@
     "avg_overnight_load_w": 494.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 5.93,
-    "expected_sunrise_soc": 57.3,
+    "expected_sunrise_soc": 56.3,
     "confidence": "High",
-    "samples": 4231
+    "samples": 4246
   },
   "visual_conditions": {
     "camera_online": true,
