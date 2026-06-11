@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-11T09:16:50.277708+00:00",
-  "timestamp_central": "Jun 11, 2026, 4:16 AM Central Time",
+  "timestamp": "2026-06-11T09:31:56.452272+00:00",
+  "timestamp_central": "Jun 11, 2026, 4:31 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 450.0,
+    "load_w": 457.0,
     "solar_w": 0.0,
     "battery_soc": 69.0,
-    "battery_power_w": -467.0,
+    "battery_power_w": -484.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -25,7 +25,7 @@
     "class": "Clear",
     "forecast_7day": {
       "source": "Open-Meteo",
-      "error": "<urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "error": "The read operation timed out",
       "days": []
     }
   },
@@ -57,14 +57,14 @@
     "state": "occupied",
     "probability": 100,
     "label": "Probability",
-    "reason": "HA both persons home; HA presence fresh 15.1m",
+    "reason": "HA both persons home; HA presence fresh 14.9m",
     "greg_phone_present": 1,
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 9.3,
+    "consumed_kwh": 9.41,
     "produced_kwh": 0.07,
-    "avg_load_w": 1053,
+    "avg_load_w": 1036,
     "peak_load_w": 7695,
     "peak_solar_w": 163,
     "lowest_soc": 69
@@ -72,8 +72,8 @@
   "survivability": {
     "usable_battery_kwh": 35.0,
     "zero_solar_days": 1.4,
-    "similar_weather_days": 3.2,
-    "samples": 47
+    "similar_weather_days": 3.8,
+    "samples": 62
   },
   "historical_model": {
     "available": true,
@@ -116,7 +116,7 @@
     "available": true,
     "current_soc": 69.0,
     "projected_sunset_soc": 74.0,
-    "hours_to_sunset": 15.5,
+    "hours_to_sunset": 15.2,
     "remaining_expected_solar_kwh": 9.1,
     "remaining_load_kwh": 6.97,
     "net_remaining_kwh": 2.13,
@@ -144,7 +144,7 @@
     "expected_overnight_kwh": 5.93,
     "expected_sunrise_soc": 57.3,
     "confidence": "High",
-    "samples": 4216
+    "samples": 4231
   },
   "visual_conditions": {
     "camera_online": true,
