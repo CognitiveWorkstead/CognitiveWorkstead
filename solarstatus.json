@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-11T01:32:52.547698+00:00",
-  "timestamp_central": "Jun 10, 2026, 8:32 PM Central Time",
+  "timestamp": "2026-06-11T01:46:44.921533+00:00",
+  "timestamp_central": "Jun 10, 2026, 8:46 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 570.0,
+    "load_w": 1442.0,
     "solar_w": 0.0,
     "battery_soc": 84.0,
-    "battery_power_w": -594.0,
+    "battery_power_w": -1475.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -176,23 +176,23 @@
     "state": "occupied",
     "probability": 100,
     "label": "Probability",
-    "reason": "HA both persons home; HA presence fresh 11.6m",
+    "reason": "both phones present by Wi-Fi fallback",
     "greg_phone_present": 1,
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 1.31,
+    "consumed_kwh": 1.71,
     "produced_kwh": 0.07,
-    "avg_load_w": 1224,
-    "peak_load_w": 1696,
+    "avg_load_w": 1296,
+    "peak_load_w": 2057,
     "peak_solar_w": 163,
-    "lowest_soc": 84
+    "lowest_soc": 83
   },
   "survivability": {
     "usable_battery_kwh": 42.6,
     "zero_solar_days": 1.4,
-    "similar_weather_days": 2.1,
-    "samples": 203
+    "similar_weather_days": 2.0,
+    "samples": 240
   },
   "historical_model": {
     "available": true,
@@ -219,16 +219,16 @@
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 11,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 33,
-    "samples": 33,
-    "confidence": "High",
-    "matched_cloud": 9.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
@@ -247,7 +247,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 4,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 17,
       "today_peak_w": 163,
