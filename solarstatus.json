@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-13T19:17:20.561789+00:00",
-  "timestamp_central": "Jun 13, 2026, 2:17 PM Central Time",
+  "timestamp": "2026-06-13T19:32:23.280659+00:00",
+  "timestamp_central": "Jun 13, 2026, 2:32 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Prime Solar",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading active."
   },
   "now": {
-    "load_w": 2015.0,
-    "solar_w": 4482.0,
-    "battery_soc": 85.0,
-    "battery_power_w": 2356.0,
+    "load_w": 2282.0,
+    "solar_w": 4604.0,
+    "battery_soc": 86.0,
+    "battery_power_w": 2192.0,
     "mode": "Solar/Battery",
     "battery_temp_f": 99.3
   },
@@ -151,26 +151,26 @@
   "skycam": {
     "available": true,
     "camera_online": true,
-    "id": 181,
+    "id": 182,
     "camera": "mckenzie-skycam",
     "preset": "working_sky_preset",
     "stream": "h264Preview_02_main",
-    "cloud_cover_percent": 20.0,
-    "confidence": 0.5,
+    "cloud_cover_percent": 30.0,
+    "confidence": 0.75,
     "obstruction_percent": 0.0,
     "sun_glare_flag": false,
     "precipitation_visible_flag": false,
-    "sky_condition": "Slight cloud cover",
-    "visibility_notes": "Slight cloud cover",
-    "analyzed_at_utc": "2026-06-13T19:15:10Z",
-    "analyzed_at_central": "2026-06-13 14:15:10 CDT",
+    "sky_condition": "Sky is mostly clear with scattered clouds",
+    "visibility_notes": "Sky is mostly clear with scattered clouds",
+    "analyzed_at_utc": "2026-06-13T19:30:10Z",
+    "analyzed_at_central": "2026-06-13 14:30:10 CDT",
     "image_path": "mckenzie-skycam-sky-latest.jpg",
     "analysis_image_path": "/home/cothrang/mckenzie-skycam/output/mckenzie-skycam-sky-analysis-640.jpg",
     "model_name": "llava:13b",
     "model_host": "ASUSAI",
     "status": "ok",
     "source_role": "supporting visual evidence only",
-    "created_at_utc": "2026-06-13T19:15:10Z"
+    "created_at_utc": "2026-06-13T19:30:10Z"
   },
   "occupancy": {
     "state": "occupied",
@@ -181,18 +181,18 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 22.46,
-    "produced_kwh": 21.6,
-    "avg_load_w": 1166,
+    "consumed_kwh": 23.01,
+    "produced_kwh": 22.73,
+    "avg_load_w": 1179,
     "peak_load_w": 4053,
     "peak_solar_w": 6065,
     "lowest_soc": 72
   },
   "survivability": {
-    "usable_battery_kwh": 43.1,
+    "usable_battery_kwh": 43.6,
     "zero_solar_days": 1.5,
-    "similar_weather_days": 35.9,
-    "samples": 559
+    "similar_weather_days": 36.3,
+    "samples": 529
   },
   "historical_model": {
     "available": true,
@@ -211,19 +211,19 @@
     "available": true,
     "expected_today_kwh": 8.03,
     "expected_so_far_kwh": 8.0,
-    "produced_so_far_kwh": 21.6,
-    "tracking_vs_expected_so_far_pct": 170.0,
-    "progress_of_expected_day_pct": 269.0,
+    "produced_so_far_kwh": 22.73,
+    "tracking_vs_expected_so_far_pct": 184.2,
+    "progress_of_expected_day_pct": 283.1,
     "historical_basis_days": 29,
     "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
     "available": true,
-    "actual_now_w": 4482,
+    "actual_now_w": 4604,
     "expected_now_w": 867,
-    "performance_pct": 517.0,
-    "variance_pct": 417.0,
+    "performance_pct": 531.0,
+    "variance_pct": 431.0,
     "grade": "A+",
     "basis_days": 24,
     "samples": 24,
@@ -233,21 +233,21 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 85.0,
-    "projected_sunset_soc": 59.0,
-    "hours_to_sunset": 5.5,
+    "current_soc": 86.0,
+    "projected_sunset_soc": 57.9,
+    "hours_to_sunset": 5.2,
     "remaining_expected_solar_kwh": 0,
-    "remaining_load_kwh": 11.08,
-    "net_remaining_kwh": -11.08,
+    "remaining_load_kwh": 11.98,
+    "net_remaining_kwh": -11.98,
     "expected_today_kwh": 8.03,
-    "produced_so_far_kwh": 21.6,
+    "produced_so_far_kwh": 22.73,
     "basis_days": 29,
     "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 4482.0,
-    "similar_avg_solar_w": 1699,
+    "actual_solar_w": 4604.0,
+    "similar_avg_solar_w": 1632,
     "peak_trend": {
       "days": 19,
       "today_peak_w": 6065,
@@ -261,16 +261,16 @@
     "avg_overnight_load_w": 542.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 6.5,
-    "expected_sunrise_soc": 72.2,
+    "expected_sunrise_soc": 73.2,
     "confidence": "High",
     "samples": 4320
   },
   "visual_conditions": {
     "camera_online": true,
-    "cloud_cover_pct": 20.0,
-    "sky_condition": "Slight cloud cover",
-    "image_timestamp": "2026-06-13 14:15:10 CDT",
-    "confidence": 0.5,
+    "cloud_cover_pct": 30.0,
+    "sky_condition": "Sky is mostly clear with scattered clouds",
+    "image_timestamp": "2026-06-13 14:30:10 CDT",
+    "confidence": 0.75,
     "source_role": "supporting visual evidence only"
   },
   "arrays": {
@@ -291,8 +291,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 2116,
-      "efficiency_pct": 39.6,
+      "power_w": 2178,
+      "efficiency_pct": 40.8,
       "peak_today_w": 2848,
       "season_best_w": 2848,
       "all_time_best_w": 2848,
@@ -315,8 +315,8 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 2363,
-      "efficiency_pct": 67.9,
+      "power_w": 2424,
+      "efficiency_pct": 69.7,
       "peak_today_w": 3217,
       "season_best_w": 3217,
       "all_time_best_w": 3217,
@@ -325,14 +325,14 @@
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 4479,
-      "efficiency_pct": 50.8,
+      "power_w": 4600,
+      "efficiency_pct": 52.2,
       "peak_today_w": 6065,
       "season_best_w": 6065,
       "all_time_best_w": 6065,
       "peak_today_time_central": "Jun 13, 2026, 1:24 PM Central Time",
       "peak_today_efficiency_pct": 68.8
     },
-    "insight": "Solar production is exceeding load and charging the battery. Array output is within a normal operating band for current conditions. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 50.8% of top-side rating."
+    "insight": "Solar production is exceeding load and charging the battery. Array output is within a normal operating band for current conditions. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 52.2% of top-side rating."
   }
 }
