@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-14T07:32:36.311235+00:00",
-  "timestamp_central": "Jun 14, 2026, 2:32 AM Central Time",
+  "timestamp": "2026-06-14T07:48:10.474562+00:00",
+  "timestamp_central": "Jun 14, 2026, 2:48 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 574.0,
+    "load_w": 793.0,
     "solar_w": 0.0,
     "battery_soc": 61.0,
-    "battery_power_w": -601.0,
+    "battery_power_w": -809.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -176,14 +176,14 @@
     "state": "occupied",
     "probability": 100,
     "label": "Probability",
-    "reason": "HA both persons home; HA presence fresh 15.1m",
+    "reason": "HA both persons home; HA presence fresh 15.0m",
     "greg_phone_present": 1,
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 9.49,
+    "consumed_kwh": 9.65,
     "produced_kwh": 0.09,
-    "avg_load_w": 1265,
+    "avg_load_w": 1242,
     "peak_load_w": 5791,
     "peak_solar_w": 210,
     "lowest_soc": 61
@@ -191,8 +191,8 @@
   "survivability": {
     "usable_battery_kwh": 30.9,
     "zero_solar_days": 1.0,
-    "similar_weather_days": 3.0,
-    "samples": 1182
+    "similar_weather_days": 3.1,
+    "samples": 1229
   },
   "historical_model": {
     "available": true,
@@ -219,26 +219,26 @@
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 32,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 10,
-    "samples": 10,
-    "confidence": "Medium",
-    "matched_cloud": 93.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
     "available": true,
     "current_soc": 61.0,
-    "projected_sunset_soc": 54.1,
-    "hours_to_sunset": 17.3,
+    "projected_sunset_soc": 45.7,
+    "hours_to_sunset": 17.0,
     "remaining_expected_solar_kwh": 6.95,
-    "remaining_load_kwh": 9.91,
-    "net_remaining_kwh": -2.96,
+    "remaining_load_kwh": 13.48,
+    "net_remaining_kwh": -6.53,
     "expected_today_kwh": 7.04,
     "produced_so_far_kwh": 0.09,
     "basis_days": 12,
@@ -263,7 +263,7 @@
     "expected_overnight_kwh": 6.94,
     "expected_sunrise_soc": 47.3,
     "confidence": "High",
-    "samples": 4110
+    "samples": 4126
   },
   "visual_conditions": {
     "camera_online": true,
