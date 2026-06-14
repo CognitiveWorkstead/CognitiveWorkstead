@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-06-14T01:47:28.678672+00:00",
-  "timestamp_central": "Jun 13, 2026, 8:47 PM Central Time",
+  "timestamp": "2026-06-14T02:02:17.546872+00:00",
+  "timestamp_central": "Jun 13, 2026, 9:02 PM Central Time",
   "status": "GREEN",
   "solar": {
-    "state": "Dusk",
+    "state": "Night",
     "grading_enabled": false,
     "peak_established": false,
     "peak_established_threshold_w": 1764,
     "peak_established_threshold_pct": 20.0,
-    "operational_message": "Solar grading suspended during dusk conditions."
+    "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 5710.0,
+    "load_w": 1348.0,
     "solar_w": 0.0,
-    "battery_soc": 72.0,
-    "battery_power_w": -5862.0,
+    "battery_soc": 71.0,
+    "battery_power_w": -1375.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 81.0,
-    "humidity": 82.0,
-    "cloud_cover": 12.0,
+    "temperature_f": 79.2,
+    "humidity": 84.0,
+    "cloud_cover": 2.0,
     "class": "Clear",
     "forecast_7day": {
       "source": "Open-Meteo",
@@ -176,23 +176,23 @@
     "state": "occupied",
     "probability": 100,
     "label": "Probability",
-    "reason": "HA both persons home; HA presence fresh 15.0m",
+    "reason": "HA both persons home; HA presence fresh 15.1m",
     "greg_phone_present": 1,
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 3.81,
+    "consumed_kwh": 4.63,
     "produced_kwh": 0.09,
-    "avg_load_w": 2154,
+    "avg_load_w": 2296,
     "peak_load_w": 5791,
     "peak_solar_w": 210,
-    "lowest_soc": 72
+    "lowest_soc": 71
   },
   "survivability": {
-    "usable_battery_kwh": 36.5,
+    "usable_battery_kwh": 36.0,
     "zero_solar_days": 0.7,
-    "similar_weather_days": 1.1,
-    "samples": 395
+    "similar_weather_days": 1.0,
+    "samples": 443
   },
   "historical_model": {
     "available": true,
@@ -209,13 +209,13 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 8.6,
-    "expected_so_far_kwh": 8.6,
+    "expected_today_kwh": 8.98,
+    "expected_so_far_kwh": 8.98,
     "produced_so_far_kwh": 0.09,
     "tracking_vs_expected_so_far_pct": -99.0,
     "progress_of_expected_day_pct": 1.0,
-    "historical_basis_days": 34,
-    "confidence": "High",
+    "historical_basis_days": 27,
+    "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
@@ -233,16 +233,16 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 72.0,
-    "projected_sunset_soc": 92.0,
+    "current_soc": 71.0,
+    "projected_sunset_soc": 91.9,
     "hours_to_sunset": 0,
-    "remaining_expected_solar_kwh": 8.51,
+    "remaining_expected_solar_kwh": 8.89,
     "remaining_load_kwh": 0.0,
-    "net_remaining_kwh": 8.51,
-    "expected_today_kwh": 8.6,
+    "net_remaining_kwh": 8.89,
+    "expected_today_kwh": 8.98,
     "produced_so_far_kwh": 0.09,
-    "basis_days": 34,
-    "confidence": "High",
+    "basis_days": 27,
+    "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
@@ -261,7 +261,7 @@
     "avg_overnight_load_w": 560.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 6.72,
-    "expected_sunrise_soc": 58.7,
+    "expected_sunrise_soc": 57.7,
     "confidence": "High",
     "samples": 3840
   },
@@ -333,6 +333,6 @@
       "peak_today_time_central": "Jun 13, 2026, 7:00 PM Central Time",
       "peak_today_efficiency_pct": 2.4
     },
-    "insight": "Battery is supplementing solar to support load. Solar production is declining normally under dusk conditions; full grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Solar production unavailable by design during night conditions. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
   }
 }
