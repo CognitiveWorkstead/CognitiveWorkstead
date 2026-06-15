@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-15T01:32:30.005686+00:00",
-  "timestamp_central": "Jun 14, 2026, 8:32 PM Central Time",
+  "timestamp": "2026-06-15T01:47:34.589135+00:00",
+  "timestamp_central": "Jun 14, 2026, 8:47 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 657.0,
+    "load_w": 1210.0,
     "solar_w": 0.0,
     "battery_soc": 77.0,
-    "battery_power_w": -693.0,
+    "battery_power_w": -1258.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -181,18 +181,18 @@
     "mel_phone_present": 1
   },
   "today": {
-    "consumed_kwh": 1.67,
+    "consumed_kwh": 1.95,
     "produced_kwh": 0.09,
-    "avg_load_w": 1099,
-    "peak_load_w": 1609,
+    "avg_load_w": 1103,
+    "peak_load_w": 3076,
     "peak_solar_w": 193,
     "lowest_soc": 77
   },
   "survivability": {
     "usable_battery_kwh": 39.0,
     "zero_solar_days": 1.5,
-    "similar_weather_days": 1.1,
-    "samples": 250
+    "similar_weather_days": 1.2,
+    "samples": 273
   },
   "historical_model": {
     "available": true,
@@ -219,16 +219,16 @@
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 12,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 31,
-    "samples": 31,
-    "confidence": "High",
-    "matched_cloud": 8.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
@@ -247,7 +247,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 8,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 21,
       "today_peak_w": 193,
