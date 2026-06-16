@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-16T02:17:47.570844+00:00",
-  "timestamp_central": "Jun 15, 2026, 9:17 PM Central Time",
+  "timestamp": "2026-06-16T02:32:54.452251+00:00",
+  "timestamp_central": "Jun 15, 2026, 9:32 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 680.0,
+    "load_w": 661.0,
     "solar_w": 0.0,
     "battery_soc": 61.0,
-    "battery_power_w": -723.0,
+    "battery_power_w": -687.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -173,17 +173,17 @@
     "created_at_utc": "2026-06-16T00:45:10Z"
   },
   "occupancy": {
-    "state": "occupied",
-    "probability": 75,
-    "label": "Probability",
-    "reason": "HA one person home; HA presence fresh 15.1m",
-    "greg_phone_present": 1,
+    "state": "away",
+    "probability": 95,
+    "label": "Confidence",
+    "reason": "HA both persons away; HA presence fresh 14.9m",
+    "greg_phone_present": 0,
     "mel_phone_present": 0
   },
   "today": {
-    "consumed_kwh": 1.65,
+    "consumed_kwh": 1.82,
     "produced_kwh": 0.07,
-    "avg_load_w": 728,
+    "avg_load_w": 722,
     "peak_load_w": 2939,
     "peak_solar_w": 161,
     "lowest_soc": 61
@@ -191,8 +191,8 @@
   "survivability": {
     "usable_battery_kwh": 30.9,
     "zero_solar_days": 1.8,
-    "similar_weather_days": 1.6,
-    "samples": 866
+    "similar_weather_days": 1.7,
+    "samples": 881
   },
   "historical_model": {
     "available": true,
