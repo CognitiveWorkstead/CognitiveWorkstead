@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-10T09:41:47-05:00
+Generated Local Time: 2026-06-16T16:05:56-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 1845
-- Modified Time: 2026-06-09T14:45:51-05:00
-- SHA256: 72bb14daeb4829e4ef488b9a2f45476c1171732db93dd3858eb7da2118f42a5b
+- Size Bytes: 2874
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: 5457348a7ce801ac3ec0d82e2bdb8eeff925844a662bc8f736937bf1bf6cc645
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 2475
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: cc58aa2e98f368fc1ddc78afc972e20b46039e039116e31f8e252cfea8e5b92d
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: 78bc10dfbb57b7e730cf8833f016e043017b66925666d1e36ab72561d34ace20
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: 565de2a341dc91422a77e86b3394bdd1b3ee293eac4bb3991caabc51cd141a2d
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: 334c40a072c76faea69d0ab70eab3e749d772a54bca9bae9271e475471ccf712
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2120
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: e05576b8c48c00a3f70c9b5b1c2e75d8217d982ef6bf3708460f22d80c0604a6
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: 5fffd0d6fb5ad8abbb76da3dc3332e8f372b051ec2b682b9d11d89de50c50afa
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: cb0c6cd1dd5e8a788af71b4899974aa6457d694c0aaddeb7e956472129011bec
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: 970a11362025faf8b54c18b1aad87190330ab71054286016e1b1f63dbc9c420e
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: 99e69df61648baa7f0199a529cda8a31176a03544011cecd567fb5f3c563f285
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: d5c952822c4c289a2fe6ffdcbc0b635f42449496c61f8296fd8f5d50dd14cf47
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -210,8 +210,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5369
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: c5343a13011d520fbda6eac0a716d2b77e6e3d4a1e38ca4412100cebfb6b9cff
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: d7a4880542fde45eaee50ed664ee77bbef4dcd110dcd1fe93e76835557bbda1a
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -226,8 +226,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-10T09:41:47-05:00
-- SHA256: ba2721823538c392d677fbf812ebf96ba04eca51341087af236e3c63055aaf48
+- Modified Time: 2026-06-16T16:05:56-05:00
+- SHA256: d79aef894cb9cec6a52d8db48e52d24e984a8db6f35dca24bf304bad98b59df9
 
 ## Colby System Architecture
 
@@ -886,6 +886,37 @@ Purpose:
 
 This subsystem is part of Colby governance, not the reasoning layer.
 
+## OpenAI API / COLBY CLI Integration
+
+Status: Operational  
+Date Confirmed: 2026-06-16  
+Host: ASUSAI  
+
+ASUSAI has working OpenAI API access through a dedicated Python virtual environment at:
+
+`/opt/colby/openai/venv`
+
+The GPT-5 Responses API connectivity was verified with:
+
+`/opt/colby/openai/test_gpt.py`
+
+A global command-line wrapper is operational at:
+
+`/usr/local/bin/colby`
+
+Purpose:
+- Provide targeted OpenAI API access from ASUSAI.
+- Support future COLBY automation, agent workflows, executive review, and command-line reasoning.
+- Keep ChatGPT Business as the primary human executive interface.
+- Use OpenAI API selectively for high-value automation, not bulk chat replacement.
+- Control API costs with low monthly limits and usage monitoring.
+
+Architecture note:
+- ChatGPT Business, OpenAI API, and ASUSAI local models are separate layers.
+- ChatGPT Business remains the main interactive interface.
+- OpenAI API is the automation and agent layer.
+- ASUSAI local models remain the preferred bulk-processing layer.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1197,7 +1228,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1335,7 +1366,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1444,7 +1475,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1537,7 +1568,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1600,7 +1631,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2591,7 +2622,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2700,7 +2731,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-10T09:41:47
+Generated: 2026-06-16T16:05:56
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
