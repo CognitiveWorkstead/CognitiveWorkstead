@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-16T07:02:46.976702+00:00",
-  "timestamp_central": "Jun 16, 2026, 2:02 AM Central Time",
+  "timestamp": "2026-06-16T07:17:44.820067+00:00",
+  "timestamp_central": "Jun 16, 2026, 2:17 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,10 +11,10 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 696.0,
+    "load_w": 444.0,
     "solar_w": 0.0,
     "battery_soc": 55.0,
-    "battery_power_w": -723.0,
+    "battery_power_w": -477.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -176,14 +176,14 @@
     "state": "occupied",
     "probability": 75,
     "label": "Probability",
-    "reason": "HA one person home; HA presence fresh 15.0m",
+    "reason": "HA one person home; HA presence fresh 15.1m",
     "greg_phone_present": 1,
     "mel_phone_present": 0
   },
   "today": {
-    "consumed_kwh": 4.54,
+    "consumed_kwh": 4.65,
     "produced_kwh": 0.07,
-    "avg_load_w": 647,
+    "avg_load_w": 641,
     "peak_load_w": 2939,
     "peak_solar_w": 161,
     "lowest_soc": 55
@@ -191,8 +191,8 @@
   "survivability": {
     "usable_battery_kwh": 27.9,
     "zero_solar_days": 1.8,
-    "similar_weather_days": 2.5,
-    "samples": 1139
+    "similar_weather_days": 2.6,
+    "samples": 1169
   },
   "historical_model": {
     "available": true,
@@ -234,11 +234,11 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 55.0,
-    "projected_sunset_soc": 43.1,
-    "hours_to_sunset": 17.8,
+    "projected_sunset_soc": 53.8,
+    "hours_to_sunset": 17.5,
     "remaining_expected_solar_kwh": 7.27,
-    "remaining_load_kwh": 12.35,
-    "net_remaining_kwh": -5.08,
+    "remaining_load_kwh": 7.77,
+    "net_remaining_kwh": -0.5,
     "expected_today_kwh": 7.34,
     "produced_so_far_kwh": 0.07,
     "basis_days": 8,
@@ -263,7 +263,7 @@
     "expected_overnight_kwh": 8.1,
     "expected_sunrise_soc": 39.0,
     "confidence": "High",
-    "samples": 4081
+    "samples": 4096
   },
   "visual_conditions": {
     "camera_online": true,
