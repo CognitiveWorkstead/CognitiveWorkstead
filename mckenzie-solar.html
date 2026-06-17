@@ -143,15 +143,17 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
 
     <div class="card today">
       <h2 style="text-align:center">TODAY'S ENERGY</h2>
-      <div class="row">
+      <div class="row" style="grid-template-columns:repeat(4,1fr)">
         <div class="cell">Consumed<br><b id="consumed">--</b> kWh</div>
-        <div class="cell">Produced<br><b id="produced">--</b> kWh</div>
+        <div class="cell">Solar<br><b id="produced">--</b> kWh</div>
+        <div class="cell">Generator<br><b id="generatorKwh">--</b> kWh</div>
         <div>Avg Load<br><b id="avgLoad">--</b>W</div>
       </div>
       <hr>
-      <div class="row">
+      <div class="row" style="grid-template-columns:repeat(4,1fr)">
         <div class="cell">Peak Load<br><b id="peakLoad">--</b>W</div>
         <div class="cell">Peak Solar<br><b id="peakSolar">--</b>W</div>
+        <div class="cell">Peak Generator<br><b id="peakGenerator">--</b>W</div>
         <div>Lowest SOC<br><b id="lowSoc">--</b>%</div>
       </div>
     </div>
@@ -351,9 +353,11 @@ async function refresh(){
 
   set("consumed",one(j.today?.consumed_kwh));
   set("produced",one(j.today?.produced_kwh));
+  set("generatorKwh",one(j.today?.generator_kwh));
   set("avgLoad",fmt(j.today?.avg_load_w));
   set("peakLoad",fmt(j.today?.peak_load_w));
   set("peakSolar",fmt(j.today?.peak_solar_w));
+  set("peakGenerator",fmt(j.today?.peak_generator_w));
   set("lowSoc",fmt(j.today?.lowest_soc));
 
   set("actualSolar",fmt(j.performance?.actual_solar_w));
