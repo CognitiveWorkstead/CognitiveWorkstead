@@ -50,6 +50,11 @@ h2{margin:0 0 12px;font-size:22px;color:#e8eeee;letter-spacing:1px}
 .today{grid-column:3/5;background:rgba(8,25,43,.86);min-height:210px}
 .performance{grid-column:5/7;background:rgba(7,50,52,.86);min-height:210px}
 .occupancy{text-align:center}
+
+.occTable{width:100%;font-size:12px;line-height:1.2;margin-top:4px;border-collapse:collapse}
+.occTable th,.occTable td{padding:1px 3px;text-align:center}
+.occTable td:first-child,.occTable th:first-child{text-align:left}
+.occAge{font-size:10px;margin-top:3px;line-height:1.2}
 .arrayperf{grid-column:1/4;background:rgba(7,50,52,.86);min-height:250px}
 .mission{grid-column:4/7;background:rgba(8,24,37,.88);min-height:250px}
 .survive{grid-column:1/5;background:rgba(7,27,25,.88);min-height:225px}
@@ -108,10 +113,11 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
   <section class="grid">
     <div class="card metric"><div class="icon">🏠</div><h2>LOAD</h2><div class="big"><span id="load">--</span><small>W</small></div><div class="spark"></div></div>
     <div class="card metric"><div class="icon">☀️</div><h2>SOLAR</h2><div class="big"><span id="solar">--</span><small>W</small></div><div class="spark"></div></div>
+    <div class="card metric"><div class="icon">⚡</div><h2>GENERATOR</h2><div class="big"><span id="generator">--</span><small>W</small></div><div class="spark"></div></div>
     <div class="card metric"><div class="icon">🔋</div><h2>BATTERY</h2><div class="big green"><span id="soc">--</span>%</div><div class="small"><span id="batteryPower">--</span>W <span id="chargeState">Charging</span><br>Stored Energy<br><b id="batteryStoredEnergy">--</b> kWh</div></div>
-    <div class="card metric"><div class="icon">🔌</div><h2>MODE</h2><div class="big green" style="font-size:28px" id="mode">Solar/Battery</div></div>
+    <div class="card metric"><div class="icon">🔌</div><h2>MODE</h2><div class="big green" style="font-size:24px" id="mode">Solar/Battery</div></div>
     <div class="card metric"><div class="icon">🌡️</div><h2>BATTERY TEMP</h2><div class="big green"><span id="batTemp">--</span>°F</div><div class="spark"></div></div>
-    <div class="card metric occupancy"><div class="icon">👥</div><h2>OCCUPANCY</h2><div class="big green" id="occState">--</div><div class="small"><table style="width:100%;font-size:13px;line-height:1.25;margin-top:4px"><tr><th></th><th>Wi-Fi</th><th>HA</th></tr><tr><td>Greg</td><td id="gregWifi">--</td><td id="gregHa">--</td></tr><tr><td>Mel</td><td id="melWifi">--</td><td id="melHa">--</td></tr></table><div style="font-size:11px;margin-top:4px">Wi-Fi: <span id="wifiAge">--</span> | HA: <span id="haAge">--</span></div><span id="occLabel">Confidence</span>: <b id="occProb">--</b>%</div></div>
+    <div class="card metric occupancy"><div class="icon">👥</div><h2>OCCUPANCY</h2><div class="big green" id="occState">--</div><div class="small"><table class="occTable"><tr><th></th><th>Wi-Fi</th><th>HA</th></tr><tr><td>Greg</td><td id="gregWifi">--</td><td id="gregHa">--</td></tr><tr><td>Mel</td><td id="melWifi">--</td><td id="melHa">--</td></tr></table><div class="occAge">Wi-Fi: <span id="wifiAge">--</span><br>HA: <span id="haAge">--</span></div><span id="occLabel">Confidence</span>: <b id="occProb">--</b>%</div></div>
 
     <div class="card weather">
       <h2>☁️ WEATHER</h2>
@@ -134,19 +140,22 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
       </div>
 </small>
     </div>
-
     <div class="card today">
-      <h2 style="text-align:center">TODAY'S ENERGY</h2>
-      <div class="row">
+      <h2 style="text-align:center">TODAY&#39;S ENERGY</h2>
+      <div class="row" style="grid-template-columns:repeat(4,1fr)">
         <div class="cell">Consumed<br><b id="consumed">--</b> kWh</div>
-        <div class="cell">Produced<br><b id="produced">--</b> kWh</div>
+        <div class="cell">Solar<br><b id="produced">--</b> kWh</div>
+        <div class="cell">Generator<br><b id="generatorKwh">--</b> kWh</div>
         <div>Avg Load<br><b id="avgLoad">--</b>W</div>
       </div>
       <hr>
-      <div class="row">
+      <div class="row" style="grid-template-columns:repeat(4,1fr)">
         <div class="cell">Peak Load<br><b id="peakLoad">--</b>W</div>
         <div class="cell">Peak Solar<br><b id="peakSolar">--</b>W</div>
+        <div class="cell">Peak Generator<br><b id="peakGenerator">--</b>W</div>
         <div>Lowest SOC<br><b id="lowSoc">--</b>%</div>
+      </div>
+    </div>
       </div>
     </div>
 
@@ -315,10 +324,11 @@ async function refresh(){
 
   set("load",fmt(j.now?.load_w));
   set("solar",fmt(j.now?.solar_w));
+  set("generator",fmt(j.now?.generator_w));
   set("soc",fmt(j.now?.battery_soc));
   set("batteryPower",fmt(Math.abs(j.now?.battery_power_w||0)));
   set("chargeState",(j.now?.battery_power_w||0)>=0 ? "Charging" : "Discharging");
-  set("mode",j.now?.mode||"Solar/Battery");
+  set("mode",String(j.now?.mode||"Solar/Battery").replaceAll("Grid","Generator"));
   set("batTemp",one(j.now?.battery_temp_f||j.battery_temp_f||93));
 
   set("temp",one(j.weather?.temperature_f));
@@ -344,9 +354,11 @@ async function refresh(){
 
   set("consumed",one(j.today?.consumed_kwh));
   set("produced",one(j.today?.produced_kwh));
+  set("generatorKwh",one(j.today?.generator_kwh));
   set("avgLoad",fmt(j.today?.avg_load_w));
   set("peakLoad",fmt(j.today?.peak_load_w));
   set("peakSolar",fmt(j.today?.peak_solar_w));
+  set("peakGenerator",fmt(j.today?.peak_generator_w));
   set("lowSoc",fmt(j.today?.lowest_soc));
 
   set("actualSolar",fmt(j.performance?.actual_solar_w));
