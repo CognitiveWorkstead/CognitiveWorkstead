@@ -259,6 +259,7 @@ function ageLabel(ts){
  const hrs = Math.round(mins / 60);
  return hrs + "h old";
 }
+function ageText(ts){return ageLabel(ts);}
 function presenceSourceLabel(j){
  const reason = String(j.occupancy?.reason || "").toLowerCase();
  if(reason.includes("ha ")) return "HA";
