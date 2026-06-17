@@ -111,7 +111,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
     <div class="card metric"><div class="icon">🔋</div><h2>BATTERY</h2><div class="big green"><span id="soc">--</span>%</div><div class="small"><span id="batteryPower">--</span>W <span id="chargeState">Charging</span><br>Stored Energy<br><b id="batteryStoredEnergy">--</b> kWh</div></div>
     <div class="card metric"><div class="icon">🔌</div><h2>MODE</h2><div class="big green" style="font-size:28px" id="mode">Solar/Battery</div></div>
     <div class="card metric"><div class="icon">🌡️</div><h2>BATTERY TEMP</h2><div class="big green"><span id="batTemp">--</span>°F</div><div class="spark"></div></div>
-    <div class="card metric occupancy"><div class="icon">👥</div><h2>OCCUPANCY</h2><div class="big green" id="occState">--</div><div class="small">Greg: <span id="gregPresence">--</span><br>Mel: <span id="melPresence">--</span><br><span id="occLabel">Confidence</span>: <b id="occProb">--</b>%</div></div>
+    <div class="card metric occupancy"><div class="icon">👥</div><h2>OCCUPANCY</h2><div class="big green" id="occState">--</div><div class="small"><table style="width:100%;font-size:13px;line-height:1.25;margin-top:4px"><tr><th></th><th>Wi-Fi</th><th>HA</th></tr><tr><td>Greg</td><td id="gregWifi">--</td><td id="gregHa">--</td></tr><tr><td>Mel</td><td id="melWifi">--</td><td id="melHa">--</td></tr></table><div style="font-size:11px;margin-top:4px">Wi-Fi: <span id="wifiAge">--</span> | HA: <span id="haAge">--</span></div><span id="occLabel">Confidence</span>: <b id="occProb">--</b>%</div></div>
 
     <div class="card weather">
       <h2>☁️ WEATHER</h2>
@@ -500,8 +500,12 @@ async function refresh(){
   set("occProb",fmt(j.occupancy?.probability));
   set("occLabel",j.occupancy?.label || (j.occupancy?.state==="occupied" ? "Probability" : "Confidence"));
   set("occReason",j.occupancy?.reason || "phone presence model");
-  set("gregPresence",Number(j.occupancy?.greg_phone_present || 0) === 1 ? "Present" : "Away");
-  set("melPresence",Number(j.occupancy?.mel_phone_present || 0) === 1 ? "Present" : "Away");
+  set("gregWifi",j.occupancy?.sources?.wifi?.greg || "--");
+  set("melWifi",j.occupancy?.sources?.wifi?.mel || "--");
+  set("gregHa",j.occupancy?.sources?.ha?.greg || "--");
+  set("melHa",j.occupancy?.sources?.ha?.mel || "--");
+  set("wifiAge",ageText(j.occupancy?.sources?.wifi?.timestamp));
+  set("haAge",ageText(j.occupancy?.sources?.ha?.timestamp));
 
   const days=Number(j.survivability?.similar_weather_days||0);
   const p24=prob(days,24),p48=prob(days,48),p72=prob(days,72);
