@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-17T20:18:38.721823+00:00",
-  "timestamp_central": "Jun 17, 2026, 3:18 PM Central Time",
+  "timestamp": "2026-06-17T20:33:42.648108+00:00",
+  "timestamp_central": "Jun 17, 2026, 3:33 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Afternoon Decline",
@@ -11,19 +11,19 @@
     "operational_message": "Solar grading active."
   },
   "now": {
-    "load_w": 466.0,
-    "solar_w": 1503.0,
-    "generator_w": 5148,
-    "battery_soc": 65.0,
-    "battery_power_w": 5976.0,
+    "load_w": 618.0,
+    "solar_w": 2141.0,
+    "generator_w": 5190,
+    "battery_soc": 67.0,
+    "battery_power_w": 6601.0,
     "mode": "Solar/Grid",
     "battery_temp_f": 96.1
   },
   "weather": {
-    "temperature_f": 86.0,
-    "humidity": 68.0,
-    "cloud_cover": 97.0,
-    "class": "Cloudy",
+    "temperature_f": 79.7,
+    "humidity": 87.0,
+    "cloud_cover": 91.0,
+    "class": "Solid overcast / Alabama soup",
     "forecast_7day": {
       "source": "Open-Meteo",
       "days": [
@@ -48,7 +48,7 @@
           "day": "Thu",
           "date": "6/18",
           "icon": "\u26c8\ufe0f",
-          "high_f": 80,
+          "high_f": 81,
           "low_f": 72,
           "precip_in": 1.6,
           "cloud_cover": 99,
@@ -177,18 +177,18 @@
     "state": "occupied",
     "probability": 75,
     "label": "Probability",
-    "reason": "HA one person home; HA presence fresh 15.1m",
+    "reason": "HA one person home; HA presence fresh 15.0m",
     "greg_phone_present": 1,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-17T20:16:36.940337+00:00",
+        "timestamp": "2026-06-17T20:31:40.084918+00:00",
         "greg": "Present",
-        "mel": "Present",
+        "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-06-17T20:16:39.089639Z",
+        "timestamp": "2026-06-17T20:31:40.321355Z",
         "greg": "Home",
         "mel": "Away",
         "greg_raw": "home",
@@ -198,9 +198,9 @@
     }
   },
   "today": {
-    "consumed_kwh": 11.1,
-    "produced_kwh": 7.16,
-    "generator_kwh": 18.66,
+    "consumed_kwh": 11.25,
+    "produced_kwh": 7.6,
+    "generator_kwh": 20.03,
     "avg_load_w": 555,
     "peak_load_w": 3126,
     "peak_solar_w": 3567,
@@ -208,10 +208,10 @@
     "lowest_soc": 32
   },
   "survivability": {
-    "usable_battery_kwh": 32.9,
+    "usable_battery_kwh": 33.9,
     "zero_solar_days": 2.5,
-    "similar_weather_days": 27.4,
-    "samples": 893
+    "similar_weather_days": 28.3,
+    "samples": 624
   },
   "historical_model": {
     "available": true,
@@ -228,18 +228,18 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 7.22,
-    "expected_so_far_kwh": 7.2,
-    "produced_so_far_kwh": 7.16,
-    "tracking_vs_expected_so_far_pct": -0.6,
-    "progress_of_expected_day_pct": 99.2,
-    "historical_basis_days": 9,
-    "confidence": "Low",
+    "expected_today_kwh": 7.31,
+    "expected_so_far_kwh": 7.29,
+    "produced_so_far_kwh": 7.6,
+    "tracking_vs_expected_so_far_pct": 4.3,
+    "progress_of_expected_day_pct": 104.0,
+    "historical_basis_days": 16,
+    "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
     "available": false,
-    "actual_now_w": 1503,
+    "actual_now_w": 2141,
     "expected_now_w": null,
     "performance_pct": null,
     "variance_pct": null,
@@ -252,21 +252,21 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 65.0,
-    "projected_sunset_soc": 60.2,
-    "hours_to_sunset": 4.5,
-    "remaining_expected_solar_kwh": 0.06,
-    "remaining_load_kwh": 2.1,
-    "net_remaining_kwh": -2.04,
-    "expected_today_kwh": 7.22,
-    "produced_so_far_kwh": 7.16,
-    "basis_days": 9,
-    "confidence": "Low",
+    "current_soc": 67.0,
+    "projected_sunset_soc": 60.8,
+    "hours_to_sunset": 4.2,
+    "remaining_expected_solar_kwh": 0,
+    "remaining_load_kwh": 2.63,
+    "net_remaining_kwh": -2.63,
+    "expected_today_kwh": 7.31,
+    "produced_so_far_kwh": 7.6,
+    "basis_days": 16,
+    "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 1503.0,
-    "similar_avg_solar_w": 1354,
+    "actual_solar_w": 2141.0,
+    "similar_avg_solar_w": 1324,
     "peak_trend": {
       "days": 23,
       "today_peak_w": 3567,
@@ -280,7 +280,7 @@
     "avg_overnight_load_w": 667.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 8.0,
-    "expected_sunrise_soc": 49.2,
+    "expected_sunrise_soc": 51.2,
     "confidence": "High",
     "samples": 4320
   },
@@ -310,8 +310,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 686,
-      "efficiency_pct": 12.8,
+      "power_w": 1156,
+      "efficiency_pct": 21.6,
       "peak_today_w": 1676,
       "season_best_w": 3115,
       "all_time_best_w": 3115,
@@ -334,8 +334,8 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 755,
-      "efficiency_pct": 21.7,
+      "power_w": 1336,
+      "efficiency_pct": 38.4,
       "peak_today_w": 1891,
       "season_best_w": 3505,
       "all_time_best_w": 3505,
@@ -344,14 +344,14 @@
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 1433,
-      "efficiency_pct": 16.2,
+      "power_w": 2578,
+      "efficiency_pct": 29.2,
       "peak_today_w": 3567,
       "season_best_w": 6620,
       "all_time_best_w": 6620,
       "peak_today_time_central": "Jun 17, 2026, 12:20 PM Central Time",
       "peak_today_efficiency_pct": 40.4
     },
-    "insight": "Solar production is exceeding load and charging the battery. Current production appears weather-limited. MPPT balance check deferred until stronger production is available. Total array output is 16.2% of top-side rating."
+    "insight": "Solar production is exceeding load and charging the battery. Current production appears weather-limited. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 29.2% of top-side rating."
   }
 }
