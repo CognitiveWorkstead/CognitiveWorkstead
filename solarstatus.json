@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-20T20:36:38.630770+00:00",
-  "timestamp_central": "Jun 20, 2026, 3:36 PM Central Time",
+  "timestamp": "2026-06-20T20:51:36.200668+00:00",
+  "timestamp_central": "Jun 20, 2026, 3:51 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Afternoon Decline",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading active."
   },
   "now": {
-    "load_w": 614.0,
-    "solar_w": 964.0,
+    "load_w": 527.0,
+    "solar_w": 302.0,
     "generator_w": 0,
     "battery_soc": 98.0,
-    "battery_power_w": 332.0,
+    "battery_power_w": -245.0,
     "mode": "Solar/Battery",
     "battery_temp_f": 99.3
   },
@@ -30,11 +30,11 @@
         {
           "day": "Sat",
           "date": "6/20",
-          "icon": "\ud83c\udf27\ufe0f",
-          "high_f": 85,
+          "icon": "\u26c5",
+          "high_f": 86,
           "low_f": 68,
-          "precip_in": 0.04,
-          "cloud_cover": 78,
+          "precip_in": 0.0,
+          "cloud_cover": 76,
           "expected_solar_kwh": 8.28,
           "expected_solar_kwh_low": 1.96,
           "expected_solar_kwh_high": 10.31,
@@ -49,17 +49,17 @@
           "date": "6/21",
           "icon": "\u26c8\ufe0f",
           "high_f": 83,
-          "low_f": 71,
+          "low_f": 72,
           "precip_in": 1.52,
-          "cloud_cover": 92,
-          "expected_solar_kwh": 6.97,
-          "expected_solar_kwh_low": 1.95,
+          "cloud_cover": 94,
+          "expected_solar_kwh": 7.04,
+          "expected_solar_kwh_low": 1.94,
           "expected_solar_kwh_high": 9.81,
-          "expected_peak_w": 1620.0,
-          "historical_days_used": 13,
+          "expected_peak_w": 1629.0,
+          "historical_days_used": 12,
           "confidence": "Medium",
           "solar_basis": "historical similar-weather daily model using P10/P90 range",
-          "matched_avg_cloud": 81.0
+          "matched_avg_cloud": 82.0
         },
         {
           "day": "Mon",
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.4m",
+    "reason": "HA both persons away; HA presence fresh 15.2m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-20T20:32:12.096005+00:00",
+        "timestamp": "2026-06-20T20:47:24.393002+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-06-20T20:32:12.371928Z",
+        "timestamp": "2026-06-20T20:47:24.800553Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 9.9,
-    "produced_kwh": 6.45,
+    "consumed_kwh": 10.04,
+    "produced_kwh": 6.55,
     "generator_kwh": 6.87,
-    "avg_load_w": 483,
+    "avg_load_w": 484,
     "peak_load_w": 6386,
     "peak_solar_w": 2797,
     "peak_generator_w": 6216,
@@ -211,7 +211,7 @@
     "usable_battery_kwh": 49.7,
     "zero_solar_days": 4.3,
     "similar_weather_days": 41.4,
-    "samples": 608
+    "samples": 653
   },
   "historical_model": {
     "available": true,
@@ -230,16 +230,16 @@
     "available": true,
     "expected_today_kwh": 7.34,
     "expected_so_far_kwh": 7.32,
-    "produced_so_far_kwh": 6.45,
-    "tracking_vs_expected_so_far_pct": -11.9,
-    "progress_of_expected_day_pct": 87.9,
+    "produced_so_far_kwh": 6.55,
+    "tracking_vs_expected_so_far_pct": -10.5,
+    "progress_of_expected_day_pct": 89.2,
     "historical_basis_days": 8,
     "confidence": "Low",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
     "available": false,
-    "actual_now_w": 964,
+    "actual_now_w": 302,
     "expected_now_w": null,
     "performance_pct": null,
     "variance_pct": null,
@@ -253,20 +253,20 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 98.0,
-    "projected_sunset_soc": 94.0,
-    "hours_to_sunset": 4.2,
-    "remaining_expected_solar_kwh": 0.89,
-    "remaining_load_kwh": 2.61,
-    "net_remaining_kwh": -1.72,
+    "projected_sunset_soc": 94.9,
+    "hours_to_sunset": 4.0,
+    "remaining_expected_solar_kwh": 0.79,
+    "remaining_load_kwh": 2.11,
+    "net_remaining_kwh": -1.32,
     "expected_today_kwh": 7.34,
-    "produced_so_far_kwh": 6.45,
+    "produced_so_far_kwh": 6.55,
     "basis_days": 8,
     "confidence": "Low",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 964.0,
-    "similar_avg_solar_w": 953,
+    "actual_solar_w": 302.0,
+    "similar_avg_solar_w": 1016,
     "peak_trend": {
       "days": 26,
       "today_peak_w": 2797,
@@ -310,8 +310,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 355,
-      "efficiency_pct": 6.6,
+      "power_w": 204,
+      "efficiency_pct": 3.8,
       "peak_today_w": 1292,
       "season_best_w": 3115,
       "all_time_best_w": 3115,
@@ -334,8 +334,8 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 355,
-      "efficiency_pct": 10.2,
+      "power_w": 217,
+      "efficiency_pct": 6.2,
       "peak_today_w": 1505,
       "season_best_w": 3505,
       "all_time_best_w": 3505,
@@ -344,14 +344,14 @@
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 574,
-      "efficiency_pct": 6.5,
+      "power_w": 418,
+      "efficiency_pct": 4.7,
       "peak_today_w": 2797,
       "season_best_w": 6620,
       "all_time_best_w": 6620,
       "peak_today_time_central": "Jun 20, 2026, 8:52 AM Central Time",
       "peak_today_efficiency_pct": 31.7
     },
-    "insight": "Battery flow is near neutral. Current production appears weather-limited. MPPT balance check deferred until stronger production is available. Total array output is 6.5% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Current production appears weather-limited. MPPT balance check deferred until stronger production is available. Total array output is 4.7% of top-side rating."
   }
 }
