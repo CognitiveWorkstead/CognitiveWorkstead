@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-06-21T06:06:03.876674+00:00",
-  "timestamp_central": "Jun 21, 2026, 1:06 AM Central Time",
-  "status": "RED",
+  "timestamp": "2026-06-21T06:21:19.052316+00:00",
+  "timestamp_central": "Jun 21, 2026, 1:21 AM Central Time",
+  "status": "GREEN",
   "solar": {
     "state": "Night",
     "grading_enabled": false,
@@ -11,13 +11,13 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 225.0,
+    "load_w": 221.0,
     "solar_w": 0.0,
     "generator_w": 0,
-    "battery_soc": null,
-    "battery_power_w": null,
+    "battery_soc": 96.0,
+    "battery_power_w": -238.0,
     "mode": "Battery",
-    "battery_temp_f": 32.0
+    "battery_temp_f": 99.3
   },
   "weather": {
     "temperature_f": 73.7,
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.1m",
+    "reason": "HA both persons away; HA presence fresh 14.7m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-21T06:02:19.763998+00:00",
+        "timestamp": "2026-06-21T06:17:04.192169+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-06-21T06:02:20.830838Z",
+        "timestamp": "2026-06-21T06:17:04.627514Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,20 +198,20 @@
     }
   },
   "today": {
-    "consumed_kwh": 1.36,
+    "consumed_kwh": 1.41,
     "produced_kwh": 0.17,
     "generator_kwh": 0,
-    "avg_load_w": 226,
+    "avg_load_w": 225,
     "peak_load_w": 796,
     "peak_solar_w": 480,
     "peak_generator_w": 0,
     "lowest_soc": 96
   },
   "survivability": {
-    "usable_battery_kwh": 0.0,
-    "zero_solar_days": 0.0,
-    "similar_weather_days": 0.0,
-    "samples": 1367
+    "usable_battery_kwh": 48.6,
+    "zero_solar_days": 9.0,
+    "similar_weather_days": 4.3,
+    "samples": 1414
   },
   "historical_model": {
     "available": true,
@@ -252,12 +252,12 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 0.0,
-    "projected_sunset_soc": 6.6,
-    "hours_to_sunset": 18.8,
+    "current_soc": 96.0,
+    "projected_sunset_soc": 100.0,
+    "hours_to_sunset": 18.5,
     "remaining_expected_solar_kwh": 7.05,
-    "remaining_load_kwh": 4.22,
-    "net_remaining_kwh": 2.83,
+    "remaining_load_kwh": 4.09,
+    "net_remaining_kwh": 2.96,
     "expected_today_kwh": 7.22,
     "produced_so_far_kwh": 0.17,
     "basis_days": 9,
@@ -277,12 +277,12 @@
     }
   },
   "forecast": {
-    "avg_overnight_load_w": 557.0,
+    "avg_overnight_load_w": 556.0,
     "overnight_hours": 12,
-    "expected_overnight_kwh": 6.68,
-    "expected_sunrise_soc": 0.0,
+    "expected_overnight_kwh": 6.67,
+    "expected_sunrise_soc": 82.8,
     "confidence": "High",
-    "samples": 4021
+    "samples": 4036
   },
   "visual_conditions": {
     "camera_online": true,
@@ -352,6 +352,6 @@
       "peak_today_time_central": "Jun 20, 2026, 7:00 PM Central Time",
       "peak_today_efficiency_pct": 5.4
     },
-    "insight": "Battery flow is near neutral. Solar production unavailable by design during night conditions. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Solar production unavailable by design during night conditions. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
   }
 }
