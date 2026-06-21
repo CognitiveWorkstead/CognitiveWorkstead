@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T15:47:05-05:00
+Generated Local Time: 2026-06-21T15:54:06-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 16622
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 5bf71935822b6a23ee8e240221d79d0c24006d8fbc605746bc05655d3e7937dc
+- Size Bytes: 16951
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 843d94eea6898e2a44eb758cd896cbb7c234d00e7ffbb297c0654f04b9e3af9d
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -121,49 +121,49 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 16780
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 30541f722d4e0f3f7db8ed0c0a5dbad05bc41ae2d2e0395e5883d4e62917af68
+- Size Bytes: 17109
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 1eb751d682fa503f478ff9b4980c59ec22db68dcdb20dd847901bcf900afe33a
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2478
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: ec991895aa61c212b7c63dccbc063de0e2183192dbb3cf91fa056e4940544e95
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 71c5928f336a1a1a41462dbdfd50269985915442b6abaa089c4222c644a14f84
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 16729a94839e4d5b79dce0274ed22beafa0c1f0e02e5471cceb09f69b75fed01
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 74b918d066368d90d144288e85fa35f5e8ec62eb1528a73e7ec9baef5651ba98
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2115
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 660518ac2eb3c532ec8fa1305fbe6d1917154f49717ee3ceb8fac12d3ace719e
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: c1da2355304464e30d456e10747237b75a908aea164bc213eccf3ec4a4cd57d7
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1673
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 25f97455c548aa8f971edfd8ad1f631df347561dba63d96629432d8f46877def
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: f4cec43e6c2bf6faad97839447bc053790ffd469a0cc2e52a381f82c342adc5c
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 4df1476db97d78d8feab2b8c54ed040d1439766c0e98a63bfeee53e3512cd77c
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 496576cac2647b5a878a91f02c4d15809854d38ebe3932fb31a26dfec7add90f
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 2111
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: f5cb26bf77a8487a1f00d68cf43d3dec03abe7deddca520b25989d8a35776f54
+- Size Bytes: 2305
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: d60fecf61b4a767f80568e65f98045a07d9011e1f1bdb128320619af66565aae
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 18284
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 2140f271598cf3a967b44098e2136179835e48997e557df4734443b188403e5e
+- Size Bytes: 18478
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: df9144f47cb375e4fd4fd9acee99644f6a8788964e49b58a5a9e33e9b5bc9d34
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8284
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 386d402c2e0b1083c7ab720e453d3af60b0fc8378e28a75731a854385a5aa37a
+- Size Bytes: 8372
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 058a7f27c656804bc38999d14ff13ba6bb93077559928036d7de3f2d3991b296
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
 - Size Bytes: 4101
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 54391fcde468f96a7dc24a0d6fc74cb65b593bea1a3a119ac7c6455f34cd5377
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: 5cede2e621f794bb38e5b3f11dc11b9b02333625b92eb494120e6ec0a3d97fb6
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -257,9 +257,9 @@ Export Validation:
 - Path: /opt/colby/reports/personas/current_persona_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 678
-- Modified Time: 2026-06-21T15:16:04-05:00
-- SHA256: afd3b6d39744fb06a510018810ba8511d5cd596ea96263525b22e523dccfb7b0
+- Size Bytes: 771
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: fda85000bb4a67db0c5b64319c8259e4182fb0d45db01853daa43dc9e4db9758
 
 ### Persona Route Audit
 - Path: /opt/colby/reports/personas/persona_route_audit.md
@@ -298,8 +298,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 4738
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: db0c98d3bef609770a1b91683d60231db11266ec0be5dfb403ee0a537c9f7be7
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: cfb22ca8f64432464702ef6100c0080976c8ad065649842626aa78d81bb2933e
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T15:47:05-05:00
-- SHA256: 28d0f4c8c18f3c89ca0db85d3f02c8922c50f8a45edf7c137131f10b2b25dc42
+- Modified Time: 2026-06-21T15:54:06-05:00
+- SHA256: d749826cf873c772f5f4b36f470b7e36f5c640221a5894c6467976b4c6240129
 
 ## Colby System Architecture
 
@@ -1244,6 +1244,12 @@ Registry:
 - Write-capable Codex jobs require `COLBY_GOVERNED_ACTION_APPROVED=Greg` and `--allow-write`.
 - Codex is a supervised engineering tool for Colby; it is not a replacement for Colby's private ASUSAI runtime, memory, services, or governance.
 
+## OpenWebUI Persona Integration Phase 4
+- Recorded: 2026-06-21T15:54:06-05:00
+- Status: `pass_no_upstream_change_required`.
+- Report: `/opt/colby/reports/openwebui_persona_config_review.md`.
+- Read-only OpenWebUI configuration review completed without Docker restart, service change, proxy change, or private content exposure.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1792,13 +1798,19 @@ Impact:
 - Write-capable Codex jobs require `COLBY_GOVERNED_ACTION_APPROVED=Greg` and `--allow-write`.
 - Codex is a supervised engineering tool for Colby; it is not a replacement for Colby's private ASUSAI runtime, memory, services, or governance.
 
+## OpenWebUI Persona Integration Phase 4
+- Recorded: 2026-06-21T15:54:06-05:00
+- Status: `pass_no_upstream_change_required`.
+- Report: `/opt/colby/reports/openwebui_persona_config_review.md`.
+- Read-only OpenWebUI configuration review completed without Docker restart, service change, proxy change, or private content exposure.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1936,7 +1948,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2045,7 +2057,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2138,7 +2150,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2201,7 +2213,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2902,76 +2914,30 @@ Generated: 2026-06-21T05:57:22-05:00
 - Proposal mode: active.
 - Execution mode: approval-gated.
 
+## OpenWebUI Persona Integration Phase 4
+
+- Recorded: 2026-06-21T15:54:06-05:00
+- Status: `pass_no_upstream_change_required`.
+- Report: `/opt/colby/reports/openwebui_persona_config_review.md`.
+
 ## Governed Action Audit Log
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T15:47:05-05:00
+Generated: 2026-06-21T15:54:06-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 45
-- Decisions: {'approved': 31, 'approval_required': 14}
-- Risk classes: {'WRITES_LOCAL': 25, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 14}
-- Action classes: {'local_write': 22, 'system_write': 6, 'memory_promotion': 3, 'publish': 13, 'external_control': 1}
-- Status: {'validated': 28, 'denied': 14, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1}
+- Events: 47
+- Decisions: {'approved': 32, 'approval_required': 15}
+- Risk classes: {'WRITES_LOCAL': 26, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
+- Action classes: {'local_write': 23, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
+- Status: {'validated': 29, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1}
 
 ## Recent Events
-
-### Persona route audit install
-
-- Event ID: `gaa_645357feb9a146b0`
-- Occurred: 2026-06-21T07:09:55-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/persona_route_audit_20260621_070955`
-- Memory updated: `True`
-- Publish status: `local_current_truth_only`
-- Current Truth semantic SHA256: `f34fe2c67878b8034a7c2ea0e6ee0d1f30a0bdbafcfbb84b885958a63bc54c22`
-
-Touched paths:
-- `/opt/colby/services/personas/persona_route_audit.py`
-- `/opt/colby/reports/personas/persona_route_audit.md`
-- `/opt/colby/reports/personas/persona_route_audit.json`
-
-Validations:
-- private_content_printed: `False`
-- route_audit: `PASS`
-
-Notes:
-- Completed Phase 1 OpenWebUI Persona Integration read-only route audit.
-
-### Persona memory isolation contract install
-
-- Event ID: `gaa_ee6264f3662b55bd`
-- Occurred: 2026-06-21T07:13:02-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/persona_memory_isolation_contract_20260621_071302`
-- Memory updated: `True`
-- Publish status: `local_current_truth_only`
-- Current Truth semantic SHA256: `da53d64b3d337806e2551c70efcee81ffbf3300b859b8fcdd72b37138da69e46`
-
-Touched paths:
-- `/opt/colby/services/personas/persona_memory_isolation_contract.py`
-- `/opt/colby/reports/personas/persona_memory_isolation_contract.md`
-- `/opt/colby/reports/personas/persona_memory_isolation_contract.json`
-
-Validations:
-- memory_isolation_contract: `PASS`
-- private_content_printed: `False`
-
-Notes:
-- Completed Phase 2 OpenWebUI Persona Integration memory isolation contract.
 
 ### Current Truth publish denied-event closeout
 
@@ -3479,20 +3445,77 @@ Validations:
 Notes:
 - Colby can prepare Codex job proposals; execution remains Greg-approved and governed.
 
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_a52edb841a40a5bc`
+- Occurred: 2026-06-21T15:51:35-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `435f391efe3e8d45aff095cb2ca2a72b3981ca39f2c7bbfbb0e0c3c8ca19acb2`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Complete OpenWebUI Persona Integration Phase 4 configuration review
+
+- Event ID: `gaa_a22e532c02b2cfe4`
+- Occurred: 2026-06-21T15:54:06-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/openwebui_phase4_config_review_20260621_155350`
+- Memory updated: `True`
+- Publish status: `ready_to_publish`
+- Current Truth semantic SHA256: `435f391efe3e8d45aff095cb2ca2a72b3981ca39f2c7bbfbb0e0c3c8ca19acb2`
+
+Touched paths:
+- `/opt/colby/services/openwebui/openwebui_phase4_config_review.py`
+- `/opt/colby/reports/openwebui_persona_config_review.md`
+- `/opt/colby/reports/openwebui_persona_config_review.json`
+- `/opt/colby/memory/projects/openwebui_persona_integration.md`
+- `/opt/colby/memory/milestones/openwebui_persona_integration.md`
+
+Validations:
+- host_proxy_ok: `True`
+- phase4_review: `pass_no_upstream_change_required`
+
+Notes:
+- Read-only OpenWebUI Phase 4 review completed; Phase 5 remains governed and approval-gated.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T15:47:05-05:00
+Generated: 2026-06-21T15:54:06-05:00
 
 ## Overview
 
-- Audit events: 45
-- Approved actions: 31
-- Approval-required decisions: 14
-- Denied or blocked actions: 15
+- Audit events: 47
+- Approved actions: 32
+- Approval-required decisions: 15
+- Denied or blocked actions: 16
 - Approval-surface items: 27
 - Current items needing Greg: 20
 
@@ -3512,6 +3535,7 @@ Generated: 2026-06-21T15:47:05-05:00
 
 ## Recent Denied Or Blocked Actions
 
+- 2026-06-21T15:51:35-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
 - 2026-06-21T15:34:27-05:00 | Enable PI500 Tailscale subnet route acceptance | approved / blocked | system_write / WRITES_SYSTEM | paths: /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.md, /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.json, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/core/infrastructure_inventory.md
 - 2026-06-21T14:51:31-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
 - 2026-06-21T13:51:18-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
@@ -3519,10 +3543,10 @@ Generated: 2026-06-21T15:47:05-05:00
 - 2026-06-21T11:51:08-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
 - 2026-06-21T10:51:04-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
 - 2026-06-21T09:50:54-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
-- 2026-06-21T08:50:51-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
 
 ## Recent Approved Actions
 
+- 2026-06-21T15:54:06-05:00 | Complete OpenWebUI Persona Integration Phase 4 configuration review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/openwebui/openwebui_phase4_config_review.py, /opt/colby/reports/openwebui_persona_config_review.md, /opt/colby/reports/openwebui_persona_config_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, +1 more
 - 2026-06-21T15:47:05-05:00 | Install Colby Codex Bridge | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/codex/colby_codex_bridge.py, /opt/colby/reports/codex/COLBY_CODEX_BRIDGE.md, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/operational/code_capability_registry_active.md
 - 2026-06-21T15:39:51-05:00 | Close PI500 route blockers after direct PI4 Tailscale success | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/reports/cos/pi500_route_blocker_closeout.md, /opt/colby/reports/cos/pi500_route_blocker_closeout.json, /opt/colby/memory/core/current_capabilities.md, +1 more
 - 2026-06-21T15:37:55-05:00 | Install PI4 direct Tailscale access | approved / validated | system_write / WRITES_SYSTEM | paths: /opt/colby/reports/cos/pi4_direct_tailscale_access.md, /opt/colby/reports/cos/pi4_direct_tailscale_access.json, /home/cothrang/.ssh/config, /opt/colby/memory/core/current_capabilities.md, +1 more
@@ -3530,10 +3554,10 @@ Generated: 2026-06-21T15:47:05-05:00
 - 2026-06-21T15:32:49-05:00 | Grant PI500 PI4 access parity partial | approved / partial_blocked | external_control / EXTERNAL_CONTROL | paths: /opt/colby/reports/cos/pi500_pi4_access_parity.md, /opt/colby/reports/cos/pi500_pi4_access_parity.json, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/core/infrastructure_inventory.md
 - 2026-06-21T15:22:11-05:00 | Phase 3 Current Truth closeout publish | approved / ready_to_publish | publish / EXTERNAL_CONTROL | paths: /opt/colby/reports/cos/phase3_current_truth_closeout_publish.md, /opt/colby/reports/cos/phase3_current_truth_closeout_publish.json, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/operational/code_capability_registry_active.md, +1 more
 - 2026-06-21T15:20:57-05:00 | Current Truth publish retry after Phase 3 completed | approved / validated | publish / EXTERNAL_CONTROL | paths: /opt/colby/reports/cos/current_truth_publish_retry_after_phase3.md, /opt/colby/reports/cos/current_truth_publish_retry_after_phase3.json, /opt/colby/state/cos/cos_status.json
-- 2026-06-21T15:16:04-05:00 | Proxy persona route validation install | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/personas/proxy_persona_route_validation.py, /opt/colby/reports/personas/proxy_persona_route_validation.md, /opt/colby/reports/personas/proxy_persona_route_validation.json
 
 ## Needs Greg
 
+- Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Enable PI500 Tailscale subnet route acceptance | WRITES_SYSTEM | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
@@ -3543,7 +3567,6 @@ Generated: 2026-06-21T15:47:05-05:00
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
-- Memory promoter apply blocked without approval | WRITES_LOCAL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - colby_proxy.py | EXTERNAL_CONTROL | approval_surface_review | Capability is in the approval-required surface and must not execute without Greg approval.
 - memory_promoter.py | EXTERNAL_CONTROL | approval_surface_review | Capability is in the approval-required surface and must not execute without Greg approval.
 
@@ -3565,7 +3588,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T15:47:05-05:00
+Generated: 2026-06-21T15:54:06-05:00
 
 ## Conversation Policy
 
@@ -3589,7 +3612,7 @@ Do not offer when:
 - Approval-required items: 0
 - Top priority: Open WebUI Persona Integration
 - Dashboard needs-Greg count: 20
-- Dashboard denied/blocked count: 15
+- Dashboard denied/blocked count: 16
 
 ## Agenda Items
 
@@ -4327,7 +4350,7 @@ Source: `/opt/colby/reports/personas/current_persona_status.md`
 # Current Persona Status
 
 Generated:
-2026-06-21T15:16:04-05:00
+2026-06-21T15:54:06-05:00
 
 Registered Personas:
 - Greg / colby-greg
@@ -4345,9 +4368,10 @@ Completed Phases:
 - Phase 1 read-only persona route audit passed.
 - Phase 2 persona memory isolation contract passed.
 - Phase 3 proxy route validation passed.
+- Phase 4 OpenWebUI configuration review completed.
 
 Current Phase:
-Phase 4 pending: OpenWebUI configuration review.
+Phase 5 pending: Controlled implementation only if Greg approves the Phase 4 change plan.
 
 Governance:
 Normal read-only chat routing is allowed. System control, memory writes, publishing, external-control actions, and OpenWebUI/proxy changes remain governed and approval-gated.
@@ -4977,7 +5001,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -4990,7 +5014,7 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - Approval-required items: 0
 - Top priority: Open WebUI Persona Integration
 - Dashboard needs-Greg count: 20
-- Dashboard denied/blocked count: 15
+- Dashboard denied/blocked count: 16
 - Priority: 78
 - Approval required: False
 - Risk class: none
@@ -5233,7 +5257,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T15:47:05
+Generated: 2026-06-21T15:54:06
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
@@ -5314,7 +5338,7 @@ WROTE: /opt/colby/reports/executive/current_day_summary.md
 - OK: /opt/colby/reports/projects/current_critical_path.md (1673 bytes)
 - OK: /opt/colby/reports/projects/current_project_impact.md (2393 bytes)
 - OK: /opt/colby/reports/executive/current_day_summary.md (4738 bytes)
-- OK: /opt/colby/reports/personas/current_persona_status.md (678 bytes)
+- OK: /opt/colby/reports/personas/current_persona_status.md (771 bytes)
 
 ## Sync Summary
 
