@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-06-21T01:51:38.176657+00:00",
-  "timestamp_central": "Jun 20, 2026, 8:51 PM Central Time",
+  "timestamp": "2026-06-21T02:05:50.667260+00:00",
+  "timestamp_central": "Jun 20, 2026, 9:05 PM Central Time",
   "status": "GREEN",
   "solar": {
-    "state": "Dusk",
+    "state": "Night",
     "grading_enabled": false,
     "peak_established": false,
     "peak_established_threshold_w": 1764,
     "peak_established_threshold_pct": 20.0,
-    "operational_message": "Solar grading suspended during dusk conditions."
+    "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 163.0,
+    "load_w": 223.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 97.0,
-    "battery_power_w": -174.0,
+    "battery_power_w": -244.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 76.1,
-    "humidity": 93.0,
-    "cloud_cover": 48.0,
+    "temperature_f": 74.9,
+    "humidity": 95.0,
+    "cloud_cover": 59.0,
     "class": "Partly cloudy",
     "forecast_7day": {
       "source": "Open-Meteo",
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.0m",
+    "reason": "HA both persons away; HA presence fresh 14.9m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-21T01:47:16.816637+00:00",
+        "timestamp": "2026-06-21T02:02:14.099974+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-06-21T01:47:17.148900Z",
+        "timestamp": "2026-06-21T02:02:14.515764Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 0.43,
+    "consumed_kwh": 0.51,
     "produced_kwh": 0.17,
     "generator_kwh": 0,
-    "avg_load_w": 244,
+    "avg_load_w": 255,
     "peak_load_w": 790,
     "peak_solar_w": 480,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 49.1,
-    "zero_solar_days": 8.4,
-    "similar_weather_days": 2.1,
-    "samples": 513
+    "zero_solar_days": 8.0,
+    "similar_weather_days": 2.2,
+    "samples": 408
   },
   "historical_model": {
     "available": true,
@@ -228,13 +228,13 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 8.02,
-    "expected_so_far_kwh": 8.02,
+    "expected_today_kwh": 8.07,
+    "expected_so_far_kwh": 8.07,
     "produced_so_far_kwh": 0.17,
     "tracking_vs_expected_so_far_pct": -97.9,
     "progress_of_expected_day_pct": 2.1,
-    "historical_basis_days": 36,
-    "confidence": "High",
+    "historical_basis_days": 29,
+    "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
@@ -255,13 +255,13 @@
     "current_soc": 97.0,
     "projected_sunset_soc": 100.0,
     "hours_to_sunset": 0,
-    "remaining_expected_solar_kwh": 7.85,
+    "remaining_expected_solar_kwh": 7.9,
     "remaining_load_kwh": 0.0,
-    "net_remaining_kwh": 7.85,
-    "expected_today_kwh": 8.02,
+    "net_remaining_kwh": 7.9,
+    "expected_today_kwh": 8.07,
     "produced_so_far_kwh": 0.17,
-    "basis_days": 36,
-    "confidence": "High",
+    "basis_days": 29,
+    "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
@@ -352,6 +352,6 @@
       "peak_today_time_central": "Jun 20, 2026, 7:00 PM Central Time",
       "peak_today_efficiency_pct": 5.4
     },
-    "insight": "Battery is supplementing solar to support load. Solar production is declining normally under dusk conditions; full grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Solar production unavailable by design during night conditions. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
   }
 }
