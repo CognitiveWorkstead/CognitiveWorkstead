@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T16:42:22-05:00
+Generated Local Time: 2026-06-21T16:44:35-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,17 +81,17 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 19846
-- Modified Time: 2026-06-21T16:42:20-05:00
-- SHA256: e3b4efeec555849e6c0cbcc222af5617c5ff795b9e5521d927ccf99726faa5ec
+- Size Bytes: 20036
+- Modified Time: 2026-06-21T16:44:34-05:00
+- SHA256: 33071aec8bbf063aa1ede6bba5b5b676c55e996bd629c4a472e307750d3a8a8b
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
 - Required: False
 - Exists: True
-- Size Bytes: 4684
-- Modified Time: 2026-06-21T16:42:20-05:00
-- SHA256: 23c8ce5887484e1722c1a6dd80edb09c4a85ada3743fa7f617dfb542e2631692
+- Size Bytes: 4912
+- Modified Time: 2026-06-21T16:44:34-05:00
+- SHA256: 6daaf34e6ae062c259b63ac26fc3eee449d50db186e28ffaaeae8b8bd3aff830
 
 ### Current State
 - Path: /opt/colby/state/current_state.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 3152
-- Modified Time: 2026-06-21T16:42:21-05:00
-- SHA256: e87e2351caff39d585197932f8f2cb57f9600af4f6e164835387196130682c23
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: d51d1d6ffec2ea4ef68f5a112018b8c61a66622609cba858fe84a90594eb4e9a
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2863
-- Modified Time: 2026-06-21T16:42:21-05:00
-- SHA256: 264d4dd87513edf7768a33815974165eefff6e5b1a2c88900732bb2240c4f30b
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: 357ac6275a05aaddc3e32752f1ab0dcfe985604d42c4bb1f33c3a4e83c32a859
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2434
-- Modified Time: 2026-06-21T16:42:21-05:00
-- SHA256: 36a99605670dadd7177b7c7141394f232756614cdbfa1b23ee85fe4af755df88
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: 803da000fdbd4fd149ad92346c5dfb7686c1b15cc214252f0a523f30f14a43ea
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1893
-- Modified Time: 2026-06-21T16:42:21-05:00
-- SHA256: 47a218fb9910381ac32424085580992f769e88a405669809fb711410898e4fed
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: a0b3a2e85de429f97f87867140b2830defc5b3a3fcae1e8047768d47f714b3bf
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5914
-- Modified Time: 2026-06-21T16:42:21-05:00
-- SHA256: 8fea1541869fa178b1688c0a77a6b0b0887048d77b4e09544ce12bc0f5ea24f5
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: cb33612d3d744fe1b187a34e98e2aeec457270b68b0d7aacd4eeb7f11700b113
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 4965
-- Modified Time: 2026-06-21T16:42:20-05:00
-- SHA256: 8fe4db714948396451e560f6254348cb25cbc9625dd4d29e77c7a2980b3fe243
+- Size Bytes: 5113
+- Modified Time: 2026-06-21T16:44:34-05:00
+- SHA256: 444874c073798baab16c21e95c5a85eea7fda711c5d4092512383d89825cacb7
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 21616
-- Modified Time: 2026-06-21T16:42:20-05:00
-- SHA256: fc91f72d0df03b2a91f964be37cbf594d16a70ff30538c75bb9defff1ead87d8
+- Size Bytes: 21752
+- Modified Time: 2026-06-21T16:44:34-05:00
+- SHA256: 3ce8b349c63b76707d4c6b237ea9939f4f0326bb35da46903c375b357a320855
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8445
-- Modified Time: 2026-06-21T16:42:20-05:00
-- SHA256: ee9fe74de53207b56d33ceb7cb75a73f0f0297202c428d4ecd81de5e44addadf
+- Size Bytes: 8450
+- Modified Time: 2026-06-21T16:44:34-05:00
+- SHA256: bceb39ae4ca5e40e91d82e3482a19670a2d7a60c10d78070f55b3d38dcd4c526
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
 - Size Bytes: 2078
-- Modified Time: 2026-06-21T16:42:20-05:00
-- SHA256: 3bde9ffa700e18cd2361d849c00e21907c4bdbc716382f2c444692b111f0bad0
+- Modified Time: 2026-06-21T16:44:34-05:00
+- SHA256: 2c0f8b5c3565312b6ee14964c5b085a4cc1707552eab907126c9f37d0048f6d4
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -298,8 +298,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 4652
-- Modified Time: 2026-06-21T16:42:22-05:00
-- SHA256: cc8a58f01aba75542299672c4fd931ed6667ea06e1247d7322dd50dbf0d30a72
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: 89523eec1d6e40f5c85cdf7f6fdba02f754c5cfe9a419f587aa883c321067ee7
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T16:42:22-05:00
-- SHA256: 0c7e3adb07e0279f1800059b8b915773f84d0df0002d3ccbff7bb2cbce312f82
+- Modified Time: 2026-06-21T16:44:35-05:00
+- SHA256: a06898d12cdce5674d65c5f051bcf46ad05679b6b31ec7d794c456b8b176a9fa
 
 ## Colby System Architecture
 
@@ -1304,6 +1304,10 @@ Registry:
 - Use single-command SSH/API paths where inventory status is ready or partial.
 - Do not use Telnet unless Greg approves a specific legacy exception.
 
+## SSH Alias Inventory Rule
+- Updated: 2026-06-21T16:44:34-05:00
+- When probing SSH aliases from governed sudo scripts, use `ssh -F /home/cothrang/.ssh/config` so aliases remain available.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1434,6 +1438,11 @@ Known Functions:
 - Report: `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`.
 - ASUSAI local staged scripts remain the primary control pattern.
 - PI4/PI500/GCSnapDragon/Home Assistant are tracked by readiness in the inventory report.
+
+## Remote Access Inventory SSH Config Repair
+- Updated: 2026-06-21T16:44:34-05:00
+- Remote access inventory now uses `/home/cothrang/.ssh/config` explicitly during sudo runs.
+- Ready: `6`; partial: `0`; blocked/not ready: `2`.
 
 ## Current State
 
@@ -1940,7 +1949,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T16:42:21
+Generated: 2026-06-21T16:44:35
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -2087,7 +2096,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T16:42:21
+Generated: 2026-06-21T16:44:35
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2201,7 +2210,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T16:42:21
+Generated: 2026-06-21T16:44:35
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2298,7 +2307,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T16:42:21
+Generated: 2026-06-21T16:44:35
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2356,7 +2365,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T16:42:21
+Generated: 2026-06-21T16:44:35
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -3152,6 +3161,10 @@ Generated: 2026-06-21T05:57:22-05:00
 - Partial surfaces: `0`
 - Blocked/not ready surfaces: `3`
 - Report: `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`
+## Remote Access Inventory SSH Config Repair
+- Updated: 2026-06-21T16:44:34-05:00
+- Status: PASS
+- Ready: `6`; partial: `0`; blocked/not ready: `2`
 
 ## Governed Action Audit Log
 
@@ -3159,46 +3172,18 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T16:42:20-05:00
+Generated: 2026-06-21T16:44:34-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 59
-- Decisions: {'approved': 43, 'approval_required': 16}
-- Risk classes: {'WRITES_LOCAL': 38, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
-- Action classes: {'local_write': 35, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
-- Status: {'validated': 40, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
+- Events: 60
+- Decisions: {'approved': 44, 'approval_required': 16}
+- Risk classes: {'WRITES_LOCAL': 39, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
+- Action classes: {'local_write': 36, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
+- Status: {'validated': 41, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
 
 ## Recent Events
-
-### Phase 3 Current Truth closeout publish
-
-- Event ID: `gaa_f8fba6d33a77ccec`
-- Occurred: 2026-06-21T15:22:11-05:00
-- Decision: `approved`
-- Action class: `publish`
-- Risk class: `EXTERNAL_CONTROL`
-- Status: `ready_to_publish`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/phase3_current_truth_closeout_publish_20260621_152211`
-- Memory updated: `True`
-- Publish status: `ready_to_publish`
-- Current Truth semantic SHA256: `23eaab0ba76963fe9a4d703e882416cd01e401d7e4fb8b3a7f1dcb4a5ef3c81f`
-
-Touched paths:
-- `/opt/colby/reports/cos/phase3_current_truth_closeout_publish.md`
-- `/opt/colby/reports/cos/phase3_current_truth_closeout_publish.json`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-- `/opt/colby/state/cos/cos_status.json`
-
-Validations:
-- phase3_local_validation: `PASS`
-- prior_publish: `PASS_PUBLISHED`
-
-Notes:
-- Recorded before publish so the closeout event is included in the public Current Truth without creating a post-publish delta.
 
 ### Grant PI500 PI4 access parity partial
 
@@ -3761,18 +3746,46 @@ Notes:
 - Inventory used read-only SSH/TCP/HTTP probes.
 - Telnet is not recommended unless a specific legacy exception is approved.
 
+### Repair remote access inventory SSH config handling
+
+- Event ID: `gaa_bd9ab0777db53ba0`
+- Occurred: 2026-06-21T16:44:34-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/remote_access_inventory_ssh_config_repair_20260621_164425`
+- Memory updated: `True`
+- Publish status: `pending`
+- Current Truth semantic SHA256: `4a42bee14a328b4141f1068f5f28ee1d577bac6393b8e0654db5918a6fa9d45a`
+
+Touched paths:
+- `/opt/colby/reports/cos/remote_access_control_inventory.json`
+- `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`
+- `/opt/colby/state/cos/cos_status.json`
+- `/opt/colby/reports/cos/COS_STATUS.md`
+- `/opt/colby/memory/core/infrastructure_inventory.md`
+- `/opt/colby/memory/operational/code_capability_registry_active.md`
+
+Validations:
+- summary: `{'blocked_or_not_ready_count': 2, 'partial_count': 0, 'preferred_pattern': 'single-command scripts through Tailscale SSH/API; no Telnet unless forced by legacy device', 'ready_count': 6, 'surface_count': 8}`
+
+Notes:
+- The first inventory ran under sudo and did not use Greg's SSH alias config.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T16:42:20-05:00
+Generated: 2026-06-21T16:44:34-05:00
 
 ## Overview
 
-- Audit events: 59
-- Approved actions: 43
+- Audit events: 60
+- Approved actions: 44
 - Approval-required decisions: 16
 - Denied or blocked actions: 17
 - Approval-surface items: 27
@@ -3805,6 +3818,7 @@ Generated: 2026-06-21T16:42:20-05:00
 
 ## Recent Approved Actions
 
+- 2026-06-21T16:44:34-05:00 | Repair remote access inventory SSH config handling | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +2 more
 - 2026-06-21T16:42:20-05:00 | Install remote access control inventory | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, /opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md, /opt/colby/reports/cos/remote_execution_control_plan.json, +5 more
 - 2026-06-21T16:38:33-05:00 | Repair Right Turn housekeeping generator closeout handling | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/cos/housekeeping_agenda.py, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md
 - 2026-06-21T16:37:25-05:00 | Finalize Right Turn historical-only closeout | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/right_turn_historical_only_scan.json, /opt/colby/reports/cos/RIGHT_TURN_HISTORICAL_ONLY_SCAN.md, /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/memory/core/current_capabilities.md, +3 more
@@ -3812,7 +3826,6 @@ Generated: 2026-06-21T16:42:20-05:00
 - 2026-06-21T16:23:02-05:00 | Install debug-only route context trace | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/context/relationship_context_loader.py, /opt/colby/reports/cos/route_context_trace_report.json, /opt/colby/reports/cos/route_context_trace_report.md, /opt/colby/memory/core/current_capabilities.md, +3 more
 - 2026-06-21T16:20:44-05:00 | Triage and restrict /home/cothrang/server.key | approved / validated | local_write / WRITES_LOCAL | paths: /home/cothrang/server.key, /opt/colby/reports/security/server_key_triage.json, /opt/colby/reports/security/SERVER_KEY_TRIAGE.md, /opt/colby/memory/core/infrastructure_inventory.md, +3 more
 - 2026-06-21T16:13:03-05:00 | Close out travel-safe Current Truth publishing route | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/memory/core/infrastructure_inventory.md, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/operational/code_capability_registry_active.md, +2 more
-- 2026-06-21T16:07:15-05:00 | Install Current Truth Health generated service | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/cos/current_truth_health.py, /opt/colby/reports/cos/current_truth_health.md, /opt/colby/reports/cos/current_truth_health.json, /opt/colby/memory/core/current_capabilities.md, +1 more
 
 ## Needs Greg
 
@@ -3847,7 +3860,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T16:42:20-05:00
+Generated: 2026-06-21T16:44:34-05:00
 
 ## Conversation Policy
 
@@ -5207,7 +5220,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T16:42:22
+Generated: 2026-06-21T16:44:35
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5258,8 +5271,8 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - /opt/colby/reports/cos/COS_STATUS.md
-- /opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md
 - /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md
+- /opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md
 - /opt/colby/reports/cos/RIGHT_TURN_HISTORICAL_ONLY_SCAN.md
 - /opt/colby/reports/cos/route_context_trace_report.md
 - /opt/colby/reports/cos/pi500_route_blocker_closeout.md
@@ -5463,7 +5476,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T16:42:22
+Generated: 2026-06-21T16:44:35
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
