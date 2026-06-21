@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T06:50:27-05:00
+Generated Local Time: 2026-06-21T06:52:54-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 11782
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 0de12591e881af633c3e1572028611174999551a6e1a902bcf571af23d45cbcc
+- Size Bytes: 12185
+- Modified Time: 2026-06-21T06:52:53-05:00
+- SHA256: 3fa0b5265c00ea8c954cdc9c6332e786237cb9d06c984074dbad0e12c642cdd4
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -121,49 +121,49 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 10697
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: d017cfa69a18c912401f48b855f5235176d7b8120743a3d9a5c8e21f2122eae6
+- Size Bytes: 11100
+- Modified Time: 2026-06-21T06:52:53-05:00
+- SHA256: 7e38b24f326a23e02b9c4c4dd69684393c3659c4acb489f45da76e80c00a8853
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2478
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: bc6e744eaf3336a978838c65184e37b21b9e86bb5dcbbb159525ff49f437448c
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: 32266d700982058618fba658a4607cb457cab21a6ae348774242b93b3cf48d61
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: a6f35b7a49f2a29d2b852bf29afe8434eba7e060f30b3e5a0c3322a95921a947
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: a7736fdf942e3b958d344adf277fc0ca99105e41786ad47a2245f56d68b70134
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2115
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 936ec7392665fda7ad74a29b01b71fe08654e12f6d70a4779b4171334a0a2079
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: 16c1a287f0dc7bf5efc0a90ca957fdc906bf5f68b29f226193cdfa130e47a8e4
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 3acd91fd9365e13f561ad0bf4704fc9de26a70177d7023dc200b6035ef47ec88
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: c21baa4f727ac37108592c9065b468532e10a1526a89f812d9e8e6029dc65897
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 13337a59d64a7aca51aa29473bb259cb5c69f19eea7041b9c27606fc2c9b87da
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: 35d4815c76e252f1485860e32479195fc822402070a9eabaea526563f083a17a
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 1089
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: ae1f97c25b6bdb376b26bbcbbc8d7b551e81d7cd360d83d871f8635920bd3197
+- Size Bytes: 1036
+- Modified Time: 2026-06-21T06:52:53-05:00
+- SHA256: f40ecc5a03b3477271dc9dbe01a3ee0905e8f2e86aba12ff86cdb6c89e706d43
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 16786
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 068cdd4b25ff32e8d75acc9c6fa003a0334cbe4bbdb6da599786be65e87c620f
+- Size Bytes: 17627
+- Modified Time: 2026-06-21T06:52:53-05:00
+- SHA256: 1a15930e58d84353eddd3f729f31e4a82569c81f37e85a6846d10ee153740921
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 6891
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 2d0b4eebbb95c39943f9ca353fec0a8edadc63986d7c438279181c8b1fae7321
+- Size Bytes: 6981
+- Modified Time: 2026-06-21T06:52:53-05:00
+- SHA256: 050d92d43f1e1ba6f04b9846a91d2a0c9414cdd9963984d61fe4665ed9055d1b
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
-- Size Bytes: 7690
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 0ebff0214b3ec29a55714dbc39440c9cf96a9e9669e42e39cc00dc77f6e7337a
+- Size Bytes: 6819
+- Modified Time: 2026-06-21T06:52:53-05:00
+- SHA256: 7ba0e69e79fd9ca95dcec252c344467c0f88d77a094548cad3fec8ede75b9f03
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -249,9 +249,9 @@ Export Validation:
 - Path: /opt/colby/reports/executive/current_day_summary.md
 - Required: False
 - Exists: True
-- Size Bytes: 4822
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: 6682158c835a77249d0e67cb902cd7be785692f5e0f25bb7f86f6c96cc813409
+- Size Bytes: 4698
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: d2b91c8c1ed1a26c4be7f3739482d03853a1a9d50a69af5d0f4511b2697e0f7d
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -266,8 +266,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T06:50:27-05:00
-- SHA256: e2b44221e7ecab0fc553f121e7db223446bbc5b989d10168eff0212f67defe8c
+- Modified Time: 2026-06-21T06:52:54-05:00
+- SHA256: 33c69e4909c89946c7d4d79aabed5583a7b029989d668e9b7182d63659d9ab7b
 
 ## Colby System Architecture
 
@@ -1114,6 +1114,12 @@ Registry:
 - Durable hypothesis creation requires --apply plus COLBY_GOVERNED_ACTION_APPROVED=Greg.
 - This converts the prior blunt block into a safer two-step model: read-only proposal generation first, governed memory promotion second.
 
+## 2026-06-21 Memory Promotion Proposal Review
+- Reviewed the first memory_promoter.py proposal-only batch.
+- Proposal mode scanned records safely, but no candidates were approved for hypothesis creation.
+- Rationale: candidates were already represented by stronger Current Truth/memory sources or were too generic.
+- Memory promoter remains useful in proposal mode; apply mode remains approval-gated.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1528,13 +1534,19 @@ Impact:
 - Durable hypothesis creation requires --apply plus COLBY_GOVERNED_ACTION_APPROVED=Greg.
 - This converts the prior blunt block into a safer two-step model: read-only proposal generation first, governed memory promotion second.
 
+## 2026-06-21 Memory Promotion Proposal Review
+- Reviewed the first memory_promoter.py proposal-only batch.
+- Proposal mode scanned records safely, but no candidates were approved for hypothesis creation.
+- Rationale: candidates were already represented by stronger Current Truth/memory sources or were too generic.
+- Memory promoter remains useful in proposal mode; apply mode remains approval-gated.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1672,7 +1684,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1781,7 +1793,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1874,7 +1886,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1937,7 +1949,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2586,11 +2598,11 @@ Generated: 2026-06-21T05:57:22-05:00
 - current_truth_cos_sections: active
 - housekeeping_publish_priority_repair: active
 - memory_promoter_two_step: active
+- memory_promotion_proposal_review: reviewed
 - fresh_context_correction: present
 
 ## Next Actions
 
-- Use memory promoter proposal mode for review; require Greg approval before applying hypotheses.
 - Use Housekeeping Agenda to offer Greg pending governance, memory, stale-context, and COS cleanup items at natural pauses.
 - Use governed action dashboard as the first source for approval, denial, blocked-action, and needs-Greg status.
 - Convert current_truth_health into a generated service/report.
@@ -2602,16 +2614,16 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T06:50:27-05:00
+Generated: 2026-06-21T06:52:53-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 19
-- Decisions: {'approved': 13, 'approval_required': 6}
-- Risk classes: {'WRITES_LOCAL': 13, 'WRITES_SYSTEM': 3, 'EXTERNAL_CONTROL': 3}
-- Action classes: {'local_write': 10, 'system_write': 3, 'memory_promotion': 3, 'publish': 3}
-- Status: {'validated': 13, 'denied': 6}
+- Events: 20
+- Decisions: {'approved': 14, 'approval_required': 6}
+- Risk classes: {'WRITES_LOCAL': 14, 'WRITES_SYSTEM': 3, 'EXTERNAL_CONTROL': 3}
+- Action classes: {'local_write': 11, 'system_write': 3, 'memory_promotion': 3, 'publish': 3}
+- Status: {'validated': 14, 'denied': 6}
 
 ## Recent Events
 
@@ -3144,18 +3156,44 @@ Validations:
 Notes:
 - Installed two-step memory promoter: proposal-only by default, apply requires approval.
 
+### Memory promotion proposal review
+
+- Event ID: `gaa_f4ec56a5d8b64900`
+- Occurred: 2026-06-21T06:52:53-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/memory_promotion_proposal_review_20260621_065253`
+- Memory updated: `True`
+- Publish status: `local_current_truth_only`
+- Current Truth semantic SHA256: `c6e6d27e0a8d73fea1792cac3f4ddcde2d5b5025819f1c121d4406a6e6d1ebc0`
+
+Touched paths:
+- `/opt/colby/reports/cos/memory_promotion_proposal_review.json`
+- `/opt/colby/reports/cos/MEMORY_PROMOTION_PROPOSAL_REVIEW.md`
+- `/opt/colby/services/cos/housekeeping_agenda.py`
+
+Validations:
+- approved_for_apply: `0`
+- proposals_reviewed: `5`
+
+Notes:
+- Reviewed memory promoter proposals; no hypothesis apply approved from this batch.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T06:50:27-05:00
+Generated: 2026-06-21T06:52:53-05:00
 
 ## Overview
 
-- Audit events: 19
-- Approved actions: 13
+- Audit events: 20
+- Approved actions: 14
 - Approval-required decisions: 6
 - Denied or blocked actions: 6
 - Approval-surface items: 27
@@ -3186,6 +3224,7 @@ Generated: 2026-06-21T06:50:27-05:00
 
 ## Recent Approved Actions
 
+- 2026-06-21T06:52:53-05:00 | Memory promotion proposal review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/memory_promotion_proposal_review.json, /opt/colby/reports/cos/MEMORY_PROMOTION_PROPOSAL_REVIEW.md, /opt/colby/services/cos/housekeeping_agenda.py
 - 2026-06-21T06:50:27-05:00 | Memory promoter two-step governance install | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/memory_router/memory_promoter.py, /opt/colby/state/cos/cos_status.json
 - 2026-06-21T06:47:59-05:00 | Housekeeping publish priority repair | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/cos/housekeeping_agenda.py, /opt/colby/state/cos/housekeeping_agenda.json, /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - 2026-06-21T06:46:25-05:00 | Current Truth COS section export repair and publish | approved / validated | publish / EXTERNAL_CONTROL | paths: /opt/colby/services/export/current_truth_export.py, /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json, /opt/colby/export/last_published.semantic.sha
@@ -3193,7 +3232,6 @@ Generated: 2026-06-21T06:50:27-05:00
 - 2026-06-21T06:35:50-05:00 | Governed action dashboard install | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/cos/governed_action_dashboard.py, /opt/colby/state/cos/governed_action_dashboard.json, /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md, /opt/colby/services/context/relationship_context_loader.py
 - 2026-06-21T06:30:56-05:00 | Governed audit wiring install | approved / validated | system_write / WRITES_SYSTEM | paths: /opt/colby/services/cos/governed_action_audit_recorder.py, /opt/colby/services/cos/record_governed_action.sh, /opt/colby/services/proxy/colby_proxy.py, /opt/colby/services/memory_router/memory_promoter.py, +2 more
 - 2026-06-21T06:22:34-05:00 | Fresh context correction | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/context/relationship_context_loader.py, /opt/colby/services/reporting/executive_daily_review.py, /opt/colby/memory/core/current_priorities.md, /opt/colby/memory/users/greg/corrections.md
-- 2026-06-21T06:12:30-05:00 | Governed proxy restart and classifier repair | approved / validated | system_write / WRITES_SYSTEM | paths: /opt/colby/services/cos/action_preflight.py, colby-proxy.service
 
 ## Needs Greg
 
@@ -3228,7 +3266,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T06:50:27-05:00
+Generated: 2026-06-21T06:52:53-05:00
 
 ## Conversation Policy
 
@@ -3248,26 +3286,15 @@ Do not offer when:
 
 ## Summary
 
-- Agenda items: 14
-- Approval-required items: 8
-- Top priority: Memory promoter apply blocked without approval
+- Agenda items: 12
+- Approval-required items: 6
+- Top priority: Proxy preflight denied: colby_proxy.py
 - Dashboard needs-Greg count: 18
 - Dashboard denied/blocked count: 6
 
 ## Agenda Items
 
-### 1. Memory promoter apply blocked without approval
-
-- Priority: 100
-- Category: governance_denied_action
-- Approval required: True
-- Risk class: WRITES_LOCAL
-- Context: Decision approval_required / status denied; action class memory_promotion; risk WRITES_LOCAL.
-- Recommendation: Ask Greg whether to approve, keep gated, retire, or split into read-only preflight.
-- Options: approve_with_marker, keep_gated, retire, split_read_only_preflight
-- Source: /opt/colby/state/cos/governed_action_dashboard.json
-
-### 2. Proxy preflight denied: colby_proxy.py
+### 1. Proxy preflight denied: colby_proxy.py
 
 - Priority: 100
 - Category: governance_denied_action
@@ -3278,7 +3305,7 @@ Do not offer when:
 - Options: approve_with_marker, keep_gated, retire, split_read_only_preflight
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
 
-### 3. Memory promoter apply blocked without approval
+### 2. Memory promoter apply blocked without approval
 
 - Priority: 90
 - Category: approval_surface
@@ -3289,7 +3316,7 @@ Do not offer when:
 - Options: approve, keep_gated, retire, defer_for_design
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
 
-### 4. Memory promoter blocked without approval
+### 3. Memory promoter blocked without approval
 
 - Priority: 90
 - Category: approval_surface
@@ -3300,7 +3327,7 @@ Do not offer when:
 - Options: approve, keep_gated, retire, defer_for_design
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
 
-### 5. Memory update apply blocked without approval
+### 4. Memory update apply blocked without approval
 
 - Priority: 90
 - Category: approval_surface
@@ -3311,7 +3338,7 @@ Do not offer when:
 - Options: approve, keep_gated, retire, defer_for_design
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
 
-### 6. Proxy preflight denied: colby_proxy.py
+### 5. Proxy preflight denied: colby_proxy.py
 
 - Priority: 90
 - Category: approval_surface
@@ -3322,7 +3349,7 @@ Do not offer when:
 - Options: approve, keep_gated, retire, defer_for_design
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
 
-### 7. colby_proxy.py
+### 6. colby_proxy.py
 
 - Priority: 82
 - Category: approval_surface
@@ -3333,18 +3360,7 @@ Do not offer when:
 - Options: approve, keep_gated, retire, defer_for_design
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
 
-### 8. memory_promoter.py
-
-- Priority: 82
-- Category: approval_surface
-- Approval required: True
-- Risk class: EXTERNAL_CONTROL
-- Context: Capability is in the approval-required surface and must not execute without Greg approval.
-- Recommendation: Classify this item as approve, keep gated, retire, or defer for design.
-- Options: approve, keep_gated, retire, defer_for_design
-- Source: /opt/colby/state/cos/governed_action_dashboard.json
-
-### 9. Open WebUI Persona Integration
+### 7. Open WebUI Persona Integration
 
 - Priority: 78
 - Category: critical_path
@@ -3355,7 +3371,7 @@ Do not offer when:
 - Options: plan_next, defer, split_dependencies
 - Source: /opt/colby/reports/projects/current_critical_path.md
 
-### 10. Home Assistant Multi-Site Architecture
+### 8. Home Assistant Multi-Site Architecture
 
 - Priority: 68
 - Category: blocked_project
@@ -3366,7 +3382,7 @@ Do not offer when:
 - Options: keep_visible, defer_until_unblocked, review_unblock_criteria
 - Source: /opt/colby/reports/projects/current_critical_path.md
 
-### 11. Convert current_truth_health into a generated service/report.
+### 9. Convert current_truth_health into a generated service/report.
 
 - Priority: 58
 - Category: cos_next_action
@@ -3377,7 +3393,7 @@ Do not offer when:
 - Options: schedule_next, defer, retire
 - Source: /opt/colby/state/cos/cos_status.json
 
-### 12. Wire route_context_trace into a debug-only context loader mode.
+### 10. Wire route_context_trace into a debug-only context loader mode.
 
 - Priority: 58
 - Category: cos_next_action
@@ -3388,7 +3404,7 @@ Do not offer when:
 - Options: schedule_next, defer, retire
 - Source: /opt/colby/state/cos/cos_status.json
 
-### 13. Keep Right Turn historical only
+### 11. Keep Right Turn historical only
 
 - Priority: 55
 - Category: stale_context
@@ -3399,7 +3415,7 @@ Do not offer when:
 - Options: keep_correction, scan_for_remaining_references
 - Source: /opt/colby/memory/users/greg/corrections.md
 
-### 14. Advance Cognitive Operating System build
+### 12. Advance Cognitive Operating System build
 
 - Priority: 50
 - Category: strategic_priority
@@ -3417,6 +3433,7 @@ Do not offer when:
 - critical_path: /opt/colby/reports/projects/current_critical_path.md
 - current_priorities: /opt/colby/memory/core/current_priorities.md
 - greg_corrections: /opt/colby/memory/users/greg/corrections.md
+- memory_promotion_review: /opt/colby/reports/cos/memory_promotion_proposal_review.json
 
 ## Approval Required Capability Review
 
@@ -4223,7 +4240,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -4233,33 +4250,33 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - If Greg says yes: Walk agenda_items in descending priority. For each item, give context, why it matters, recommendation, and the available decision options. Stop when Greg pauses or redirects.
 - When Greg asks what is next, what is pending, what is blocked, or what needs approval.
 - After a task changes Colby's reasoning, capabilities, governance, memory, Current Truth, or project state.
-- Approval-required items: 8
-- Top priority: Memory promoter apply blocked without approval
+- Approval-required items: 6
+- Top priority: Proxy preflight denied: colby_proxy.py
 - Dashboard needs-Greg count: 18
 - Dashboard denied/blocked count: 6
-- 1. Memory promoter apply blocked without approval
+- 1. Proxy preflight denied: colby_proxy.py
 - Priority: 100
 - Approval required: True
-- Risk class: WRITES_LOCAL
-- Context: Decision approval_required / status denied; action class memory_promotion; risk WRITES_LOCAL.
+- Risk class: WRITES_SYSTEM
+- Context: Decision approval_required / status denied; action class system_write; risk WRITES_SYSTEM.
 - Recommendation: Ask Greg whether to approve, keep gated, retire, or split into read-only preflight.
 - Options: approve_with_marker, keep_gated, retire, split_read_only_preflight
 - Source: /opt/colby/state/cos/governed_action_dashboard.json
-- 2. Proxy preflight denied: colby_proxy.py
-- Risk class: WRITES_SYSTEM
-- Context: Decision approval_required / status denied; action class system_write; risk WRITES_SYSTEM.
-- 3. Memory promoter apply blocked without approval
+- 2. Memory promoter apply blocked without approval
 - Priority: 90
 - Category: approval_surface
+- Risk class: WRITES_LOCAL
 - Context: Recent governed action was blocked before execution and needs explicit approval to proceed.
-- 4. Memory promoter blocked without approval
-- 5. Memory update apply blocked without approval
-- 6. Proxy preflight denied: colby_proxy.py
-- 7. colby_proxy.py
+- 3. Memory promoter blocked without approval
+- 4. Memory update apply blocked without approval
+- 5. Proxy preflight denied: colby_proxy.py
+- 6. colby_proxy.py
 - Priority: 82
 - Risk class: EXTERNAL_CONTROL
 - Context: Capability is in the approval-required surface and must not execute without Greg approval.
 - Priority: 78
+- Approval required: False
+- Risk class: none
 
 ## Interpretation
 
@@ -4273,6 +4290,7 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - /opt/colby/reports/cos/COS_STATUS.md
+- /opt/colby/reports/cos/MEMORY_PROMOTION_PROPOSAL_REVIEW.md
 - /opt/colby/reports/cos/FRESH_CONTEXT_CORRECTION.md
 - /opt/colby/reports/cos/GOVERNED_PROXY_RESTART.md
 - /opt/colby/reports/cos/GOVERNED_ACTION_PREFLIGHT_ENFORCEMENT.md
@@ -4280,7 +4298,6 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - /opt/colby/reports/cos/approval_required_capability_review.md
 - /opt/colby/reports/cos/COS_CAPABILITY_REGISTRY_V2.md
 - /opt/colby/reports/cos/cos_capability_classification_report.md
-- /opt/colby/reports/cos/project_metadata_normalization_report.md
 - /opt/colby/reports/projects/current_project_impact.md
 - /opt/colby/reports/projects/current_critical_path.md
 - /opt/colby/reports/projects/current_dependency_status.md
@@ -4479,7 +4496,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T06:50:27
+Generated: 2026-06-21T06:52:54
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
@@ -4559,7 +4576,7 @@ WROTE: /opt/colby/reports/executive/current_day_summary.md
 - OK: /opt/colby/reports/projects/current_dependency_status.md (2115 bytes)
 - OK: /opt/colby/reports/projects/current_critical_path.md (1677 bytes)
 - OK: /opt/colby/reports/projects/current_project_impact.md (2393 bytes)
-- OK: /opt/colby/reports/executive/current_day_summary.md (4822 bytes)
+- OK: /opt/colby/reports/executive/current_day_summary.md (4698 bytes)
 - OK: /opt/colby/reports/personas/current_persona_status.md (112 bytes)
 
 ## Sync Summary
