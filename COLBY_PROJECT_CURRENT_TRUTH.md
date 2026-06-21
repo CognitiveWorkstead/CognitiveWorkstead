@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T16:23:03-05:00
+Generated Local Time: 2026-06-21T16:27:38-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,17 +81,17 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 18915
-- Modified Time: 2026-06-21T16:23:02-05:00
-- SHA256: 60bece2bb72cfdf4fd7303e8717d19c54d738df530ebdb2e221aab4e801c5ee2
+- Size Bytes: 19320
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: 3db1a1c772f2d427c07ea2ed4ed681ab50b615ef2b1d66dbd126c8f74ef203b7
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
 - Required: False
 - Exists: True
-- Size Bytes: 3991
-- Modified Time: 2026-06-21T16:20:44-05:00
-- SHA256: b4dc5afd2e65ead77fd30baf7e3f20a289a9cd4e3b31f24db730d3ea75f1e086
+- Size Bytes: 4384
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: 3b8c15e8aa3ca17ec7f6f2e2003e672a31e6a58604fddbfce0a440e590f3530a
 
 ### Current State
 - Path: /opt/colby/state/current_state.md
@@ -121,49 +121,49 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 18630
-- Modified Time: 2026-06-21T16:23:02-05:00
-- SHA256: c953430b0a888e98d4b089f26f73a90312c2b63b19d25b5635519f2443b9baec
+- Size Bytes: 19000
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: 08dde6e03658fb2634272d0d5dc61a0adfbf9ad06fc36c2d8f46972771626f35
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2640
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: f3bc9dae74264954ac1bf5df1490dae2241cd3fc7e5ed38703796225ddb7bf7a
+- Size Bytes: 3152
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: 8b314b808f21fc1dd64e3c23bbc7d8b77222e8be77d06a50db26a7a313b02e48
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2701
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: 50474ff630abb474401aefb47a98e9b38ed049818def42a8022976542c93ea54
+- Size Bytes: 2863
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: d91c4072ccae7bf807c9094cf7ee1666ec4d88c4bd12f8fa3bd43a5e987de52c
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2143
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: dd21827f69647ce9c6c2396d1160f9b45de41d83c008faa55d9963702414e4fc
+- Size Bytes: 2434
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: 124a10be4ee5d32e1f08d3e8d7909b5a584a1731169cd0e315847599b57be152
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
-- Size Bytes: 1509
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: b18d0ee6989fec0a8aecaa262f4aec5ee759eab70cca66e1962b0440cbc1124a
+- Size Bytes: 1893
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: 61476258de44f3b193c06fd4492b7f53eaa2df458d4ba1112b8bf171e43c42a0
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 5030
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: 216fabf5dd504b017295e0e7e3ae75db229500e2f60683558943d5c867f1f1c5
+- Size Bytes: 5914
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: 61ce9e9ea5dff6cf2bd8a61662cac08e0dad53429a0484036fc3e96f2531567a
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 4042
-- Modified Time: 2026-06-21T16:23:02-05:00
-- SHA256: d0799f066929cfdb2e2c1cd12f1dbd10ae6295e33c6f5878844052935124edb7
+- Size Bytes: 4347
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: c2d38249669547a220ed6486927e4f022d0ca8b7a7eef5d3c7fce9bc2afb2a35
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 20418
-- Modified Time: 2026-06-21T16:23:02-05:00
-- SHA256: f6b6b2f1d4c38f335daa82c833e9420924dfbbed79648d6410d6dc01818ebf9f
+- Size Bytes: 20798
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: 2346f2973d529a0782f81755c866e95911a88715dad5e64ea8b0b62ea6b2e9ef
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8725
-- Modified Time: 2026-06-21T16:23:02-05:00
-- SHA256: a055b247635b3f0154b1085b47664b648aebb6774a49ebf3edbedc908c1fb80b
+- Size Bytes: 8719
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: 16a8423d63735ea6f4970e0be34a2b0e9067a7231f184b701097625a6ad3b973
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
-- Size Bytes: 2958
-- Modified Time: 2026-06-21T16:23:02-05:00
-- SHA256: 286598fd8da8cbb5a159ce99e9143f4caa7f7a0135bddd640f9529de82c32489
+- Size Bytes: 2497
+- Modified Time: 2026-06-21T16:27:37-05:00
+- SHA256: f52b8471c6c1c6ba815519de2760d837c9b69547a44c5bf735840d1b1b5d2b85
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -297,9 +297,9 @@ Export Validation:
 - Path: /opt/colby/reports/executive/current_day_summary.md
 - Required: False
 - Exists: True
-- Size Bytes: 4620
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: 5e426b31ceccdcb215859510191e129af9b0798a39c56ca697369d2a07b0aa84
+- Size Bytes: 4646
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: 11c1ef5ac325ed4ff6e3814c61b40861d3b9eded22302a530217eaf6ec15c2a8
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T16:23:03-05:00
-- SHA256: 1b7277c000f16993e2040aa90e7a49efdef11d21667aa60ce294da4d1b61ae57
+- Modified Time: 2026-06-21T16:27:38-05:00
+- SHA256: 628cf646885c27316d95334ba98fea03632296ea7143e3f1286783dc76021f3d
 
 ## Colby System Architecture
 
@@ -1287,6 +1287,12 @@ Registry:
 - Normal context loader behavior remains unchanged unless the debug flag is provided.
 - Report: `/opt/colby/reports/cos/route_context_trace_report.md`.
 
+## Single-Command Remote Execution Pattern
+- Updated: 2026-06-21T16:27:37-05:00
+- Continue using staged scripts in `/home/cothrang` with one command from Greg for governed operations.
+- For remote hosts, prefer SSH over Tailscale aliases and explicit keys.
+- For Home Assistant, prefer authenticated API/read-only diagnostics for inventory and status; write/control operations require governed approval.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1405,6 +1411,12 @@ Known Functions:
 - PEM marker detected: `False`.
 - Permissions were restricted to `cothrang:cothrang` with mode `0600`.
 - Report: `/opt/colby/reports/security/SERVER_KEY_TRIAGE.md`.
+
+## Remote Execution Control Model
+- Updated: 2026-06-21T16:27:37-05:00
+- Preferred control path is Tailscale plus SSH/API with single-command staged scripts.
+- Telnet is not preferred because it lacks modern authentication/security unless constrained by a specific legacy device.
+- UI control may be useful when available, but repeatable scripts/API calls are preferred for Colby operations.
 
 ## Current State
 
@@ -1887,13 +1899,19 @@ Impact:
 - Debug mode returns route, authorization, authority tier, source paths, freshness metadata, and counts only.
 - Debug mode does not include raw memory content and does not call live tools.
 
+## Home Assistant Remote Work Unblocked
+- Updated: 2026-06-21T16:27:37-05:00
+- Home Assistant Multi-Site Architecture is no longer fully blocked by physical return to McKenzie.
+- Remote read-only architecture, inventory, dashboard/entity review, and planning may proceed now.
+- Physical/on-site work and write/control changes remain governed and require Greg approval.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1902,7 +1920,7 @@ Project Count: 5
 ## Executive Summary
 
 - Active Projects: 2
-- Deferred Projects: 1
+- Deferred Projects: 0
 
 ## Projects
 
@@ -1953,24 +1971,32 @@ Next Actions:
 ### Home Assistant Multi-Site Architecture
 
 - Source File: /opt/colby/memory/projects/home_assistant_multi_site.md
-- Status: Deferred
-- Priority: Medium
-- Phase: Planning
-- Completion: 10%
+- Status: Remote Work Unblocked
+- Priority: High
+- Phase: Remote architecture and inventory
+- Completion: 20%
 - Owner: Greg
 
 Depends On:
-- Return to McKenzie
+- Tailscale connectivity for remote work
+- Greg approval for write/control actions
+- McKenzie presence only for physical/on-site changes
 
 Blocks:
-- Solar Assistant Integration
-- MQTT Architecture
+- Solar Assistant Integration hardening
+- MQTT Architecture hardening
+- Voice Layer
+- Multi-site monitoring
 
 Supports:
 - Infrastructure Automation
+- McKenzie operations
+- Cognitive Operating System live-status context
 
 Next Actions:
-- Resume after relocation
+- Build a read-only Home Assistant access and entity inventory snapshot.
+- Map safe single-command execution paths for ASUSAI, PI4, PI500, Home Assistant, and GCSnapDragon.
+- Keep physical/on-site McKenzie changes gated until Greg approves them explicitly.
 
 ### McKenzie Solar Data Bridge
 
@@ -2032,7 +2058,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2042,7 +2068,7 @@ Milestone Registry Count: 4
 
 - Colby Cognitive Operating System: 56% complete (5/9); next: Dependency Awareness
 - Conversation Intelligence: 92% complete (11/12); next: Autonomous Project Updates
-- Home Assistant Multi-Site Architecture: 17% complete (1/6); next: MQTT Architecture
+- Home Assistant Multi-Site Architecture: 18% complete (2/11); next: MQTT Architecture
 - Open WebUI Persona Integration: 0% complete (0/0); next: None. All milestones complete.
 
 ## Projects
@@ -2097,14 +2123,15 @@ Remaining:
 ### Home Assistant Multi-Site Architecture
 
 - Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
-- Completed Milestones: 1
-- Remaining Milestones: 5
-- Total Milestones: 6
-- Calculated Completion: 17%
+- Completed Milestones: 2
+- Remaining Milestones: 9
+- Total Milestones: 11
+- Calculated Completion: 18%
 - Next Milestone: MQTT Architecture
 
 Completed:
 - Initial Architecture
+- Remote Access / Architecture Work Unblocked
 
 Remaining:
 - MQTT Architecture
@@ -2112,6 +2139,10 @@ Remaining:
 - Multi-Site Connectivity
 - Voice Layer
 - Production Deployment
+- Remote Read-Only Entity Inventory
+- Remote Execution Control Plan
+- MQTT Architecture Review
+- Voice Layer Plan
 
 ### Open WebUI Persona Integration
 
@@ -2141,7 +2172,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2173,16 +2204,22 @@ Project Count: 5
   - Open WebUI Persona Integration
 
 ### Home Assistant Multi-Site Architecture
-- Status: Deferred
-- Phase: Planning
-- Completion: 10%
+- Status: Remote Work Unblocked
+- Phase: Remote architecture and inventory
+- Completion: 20%
 - Depends On:
-  - Return to McKenzie (external or not registered)
+  - Tailscale connectivity for remote work (external or not registered)
+  - Greg approval for write/control actions (external or not registered)
+  - McKenzie presence only for physical/on-site changes (external or not registered)
 - Blocks:
-  - Solar Assistant Integration
-  - MQTT Architecture
+  - Solar Assistant Integration hardening
+  - MQTT Architecture hardening
+  - Voice Layer
+  - Multi-site monitoring
 - Supports:
   - Infrastructure Automation
+  - McKenzie operations
+  - Cognitive Operating System live-status context
 
 ### McKenzie Solar Data Bridge
 - Status: Active
@@ -2212,13 +2249,11 @@ Project Count: 5
 
 ## Blocked / Deferred Signals
 
-- Home Assistant Multi-Site Architecture is deferred.
-  - Dependency: Return to McKenzie
-  - Blocks: Solar Assistant Integration, MQTT Architecture
+- No deferred projects found.
 
 ## Critical Path Signals
 
-- Home Assistant Multi-Site Architecture blocks: Solar Assistant Integration, MQTT Architecture
+- Home Assistant Multi-Site Architecture blocks: Solar Assistant Integration hardening, MQTT Architecture hardening, Voice Layer, Multi-site monitoring
 - Conversation Intelligence remains a critical path dependency for Open WebUI Persona Integration.
 - Home Assistant Multi-Site Architecture remains dependent on return to McKenzie.
 
@@ -2234,7 +2269,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2243,18 +2278,18 @@ Blocker Registry Count: 2
 ## Home Assistant Multi-Site Architecture
 
 - Source File: /opt/colby/memory/blockers/home_assistant_multi_site.md
-- Status: Blocked
-- Priority: Medium
-- Risk: Low
-- Impact: Solar Assistant, MQTT, and Voice remain deferred
+- Status: Partially Unblocked
+- Priority: High
+- Risk: Medium
+- Impact: Remote planning and validation can proceed now; physical McKenzie changes remain gated.
 
 Blocked By:
-- Return to McKenzie
+- Physical/on-site McKenzie work remains blocked until Greg is at McKenzie or explicitly approves remote changes with validated access.
 
 Unblock Criteria:
-- Return to McKenzie completed
-- Infrastructure available
-- Home Assistant rebuild approved
+- Remote read-only Home Assistant access available through Tailscale/browser/API.
+- Architecture planning, entity inventory, dashboard review, MQTT review, and documentation may proceed remotely.
+- Physical device changes, destructive HA changes, credential rotation, add-on restarts, and production write actions require explicit governed approval.
 
 ## Open WebUI Persona Integration
 
@@ -2272,8 +2307,7 @@ Unblock Criteria:
 
 ## Executive Summary
 
-Blocked Projects: 1
-- Home Assistant Multi-Site Architecture
+Blocked Projects: 0
 
 ## Recommended Critical-Path Focus
 
@@ -2293,16 +2327,16 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
-Capability Count: 27
+Capability Count: 32
 
 ## Summary
 
-- Operational Capabilities: 17
-- Planned Capabilities: 10
+- Operational Capabilities: 18
+- Planned Capabilities: 14
 
 ## Operational Capabilities
 
@@ -2391,6 +2425,11 @@ Capability Count: 27
 - Project: Home Assistant Multi-Site Architecture
 - Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
 
+### Remote Access / Architecture Work Unblocked
+- Status: Operational
+- Project: Home Assistant Multi-Site Architecture
+- Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
+
 ## Planned Capabilities
 
 ### Dependency Awareness
@@ -2439,6 +2478,26 @@ Capability Count: 27
 - Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
 
 ### Production Deployment
+- Status: Planned
+- Project: Home Assistant Multi-Site Architecture
+- Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
+
+### Remote Read-Only Entity Inventory
+- Status: Planned
+- Project: Home Assistant Multi-Site Architecture
+- Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
+
+### Remote Execution Control Plan
+- Status: Planned
+- Project: Home Assistant Multi-Site Architecture
+- Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
+
+### MQTT Architecture Review
+- Status: Planned
+- Project: Home Assistant Multi-Site Architecture
+- Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
+
+### Voice Layer Plan
 - Status: Planned
 - Project: Home Assistant Multi-Site Architecture
 - Source File: /opt/colby/memory/milestones/home_assistant_multi_site.md
@@ -3042,6 +3101,12 @@ Generated: 2026-06-21T05:57:22-05:00
 - Normal context loader output unchanged.
 - Debug mode: `/opt/colby/services/context/relationship_context_loader.py --debug-trace <user> [workspace] [question]`
 - Safety: metadata only; no raw private memory content; no live tool calls.
+## Home Assistant Remote Work Unblocked
+- Updated: 2026-06-21T16:27:37-05:00
+- Status: PASS
+- HA architecture/read-only inventory work can proceed remotely.
+- Physical McKenzie work and HA write/control operations remain governed.
+- Control plan: `/opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md`
 
 ## Governed Action Audit Log
 
@@ -3049,47 +3114,18 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T16:23:02-05:00
+Generated: 2026-06-21T16:27:37-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 55
-- Decisions: {'approved': 39, 'approval_required': 16}
-- Risk classes: {'WRITES_LOCAL': 34, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
-- Action classes: {'local_write': 31, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
-- Status: {'validated': 36, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
+- Events: 56
+- Decisions: {'approved': 40, 'approval_required': 16}
+- Risk classes: {'WRITES_LOCAL': 35, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
+- Action classes: {'local_write': 32, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
+- Status: {'validated': 37, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
 
 ## Recent Events
-
-### Current Truth publish blocked without approval
-
-- Event ID: `gaa_9f28f2ed96a58385`
-- Occurred: 2026-06-21T14:51:31-05:00
-- Decision: `approval_required`
-- Action class: `publish`
-- Risk class: `EXTERNAL_CONTROL`
-- Status: `denied`
-- Approved by: `None`
-- Backup: `None`
-- Memory updated: `False`
-- Publish status: `blocked_before_publish`
-- Current Truth semantic SHA256: `e9ee7d07eeaa298d6d492ff99c1191a05e944c3237d8e77c1c52f71be40f1449`
-
-Touched paths:
-- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
-- `/opt/colby/export/knowledge_transfer.json`
-
-Validations:
-- action_executed: `NO`
-- git_push: `NO`
-- preflight: `PASS`
-- remote_copy: `NO`
-- required_contract: `governed_action_required`
-
-Notes:
-- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
-- No publish log, remote copy, commit, or push should occur before approval.
 
 ### Phase 3 proxy service ready
 
@@ -3635,18 +3671,51 @@ Notes:
 - Debug mode is opt-in only.
 - The trace includes paths, route, authorization, freshness, and counts, but not raw memory content.
 
+### Unblock Home Assistant remote work and define remote control plan
+
+- Event ID: `gaa_1df4e504c8cdfbd1`
+- Occurred: 2026-06-21T16:27:37-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/home_assistant_remote_unblock_20260621_162737`
+- Memory updated: `True`
+- Publish status: `pending`
+- Current Truth semantic SHA256: `7889a0580624c758aebcec002db57a9a67ff41a16f5a4748c637895b3854ab6c`
+
+Touched paths:
+- `/opt/colby/memory/projects/home_assistant_multi_site.md`
+- `/opt/colby/memory/blockers/home_assistant_multi_site.md`
+- `/opt/colby/memory/milestones/home_assistant_multi_site.md`
+- `/opt/colby/memory/dependencies/home_assistant_multi_site.md`
+- `/opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md`
+- `/opt/colby/reports/cos/remote_execution_control_plan.json`
+- `/opt/colby/state/cos/cos_status.json`
+- `/opt/colby/reports/cos/COS_STATUS.md`
+
+Validations:
+- ha_blocker_split: `PASS`
+- physical_work_remains_gated: `PASS`
+- remote_work_unblocked: `PASS`
+
+Notes:
+- Greg clarified Home Assistant is running and reachable remotely.
+- Return to McKenzie is no longer a hard blocker for remote planning/read-only work.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T16:23:02-05:00
+Generated: 2026-06-21T16:27:37-05:00
 
 ## Overview
 
-- Audit events: 55
-- Approved actions: 39
+- Audit events: 56
+- Approved actions: 40
 - Approval-required decisions: 16
 - Denied or blocked actions: 17
 - Approval-surface items: 27
@@ -3679,6 +3748,7 @@ Generated: 2026-06-21T16:23:02-05:00
 
 ## Recent Approved Actions
 
+- 2026-06-21T16:27:37-05:00 | Unblock Home Assistant remote work and define remote control plan | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/memory/projects/home_assistant_multi_site.md, /opt/colby/memory/blockers/home_assistant_multi_site.md, /opt/colby/memory/milestones/home_assistant_multi_site.md, /opt/colby/memory/dependencies/home_assistant_multi_site.md, +4 more
 - 2026-06-21T16:23:02-05:00 | Install debug-only route context trace | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/context/relationship_context_loader.py, /opt/colby/reports/cos/route_context_trace_report.json, /opt/colby/reports/cos/route_context_trace_report.md, /opt/colby/memory/core/current_capabilities.md, +3 more
 - 2026-06-21T16:20:44-05:00 | Triage and restrict /home/cothrang/server.key | approved / validated | local_write / WRITES_LOCAL | paths: /home/cothrang/server.key, /opt/colby/reports/security/server_key_triage.json, /opt/colby/reports/security/SERVER_KEY_TRIAGE.md, /opt/colby/memory/core/infrastructure_inventory.md, +3 more
 - 2026-06-21T16:13:03-05:00 | Close out travel-safe Current Truth publishing route | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/memory/core/infrastructure_inventory.md, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/operational/code_capability_registry_active.md, +2 more
@@ -3686,7 +3756,6 @@ Generated: 2026-06-21T16:23:02-05:00
 - 2026-06-21T16:03:02-05:00 | Close OpenWebUI Persona Integration as operational | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/memory/projects/openwebui_persona_integration.md, /opt/colby/memory/blockers/openwebui_persona_integration.md, /opt/colby/memory/milestones/openwebui_persona_integration.md, /opt/colby/reports/personas/current_persona_status.md, +2 more
 - 2026-06-21T16:00:30-05:00 | Complete OpenWebUI Persona Integration Production Readiness Review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/personas/openwebui_persona_production_readiness_review.md, /opt/colby/reports/personas/openwebui_persona_production_readiness_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, /opt/colby/memory/milestones/openwebui_persona_integration.md, +1 more
 - 2026-06-21T15:57:07-05:00 | Complete OpenWebUI Persona Integration Production Readiness Review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/personas/openwebui_persona_production_readiness_review.md, /opt/colby/reports/personas/openwebui_persona_production_readiness_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, /opt/colby/memory/milestones/openwebui_persona_integration.md, +1 more
-- 2026-06-21T15:54:06-05:00 | Complete OpenWebUI Persona Integration Phase 4 configuration review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/openwebui/openwebui_phase4_config_review.py, /opt/colby/reports/openwebui_persona_config_review.md, /opt/colby/reports/openwebui_persona_config_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, +1 more
 
 ## Needs Greg
 
@@ -3721,7 +3790,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T16:23:02-05:00
+Generated: 2026-06-21T16:27:37-05:00
 
 ## Conversation Policy
 
@@ -3741,26 +3810,15 @@ Do not offer when:
 
 ## Summary
 
-- Agenda items: 3
+- Agenda items: 2
 - Approval-required items: 0
-- Top priority: Home Assistant Multi-Site Architecture
+- Top priority: Keep Right Turn historical only
 - Dashboard needs-Greg count: 20
 - Dashboard denied/blocked count: 17
 
 ## Agenda Items
 
-### 1. Home Assistant Multi-Site Architecture
-
-- Priority: 68
-- Category: blocked_project
-- Approval required: False
-- Risk class: none
-- Context: Blocked by - Return to McKenzie. Impact: Solar Assistant, MQTT, and Voice remain deferred
-- Recommendation: Keep visible, but do not prioritize ahead of unblock criteria.
-- Options: keep_visible, defer_until_unblocked, review_unblock_criteria
-- Source: /opt/colby/reports/projects/current_critical_path.md
-
-### 2. Keep Right Turn historical only
+### 1. Keep Right Turn historical only
 
 - Priority: 55
 - Category: stale_context
@@ -3771,7 +3829,7 @@ Do not offer when:
 - Options: keep_correction, scan_for_remaining_references
 - Source: /opt/colby/memory/users/greg/corrections.md
 
-### 3. Advance Cognitive Operating System build
+### 2. Advance Cognitive Operating System build
 
 - Priority: 50
 - Category: strategic_priority
@@ -5103,7 +5161,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5126,20 +5184,20 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - When Greg asks what is next, what is pending, what is blocked, or what needs approval.
 - After a task changes Colby's reasoning, capabilities, governance, memory, Current Truth, or project state.
 - Approval-required items: 0
-- Top priority: Home Assistant Multi-Site Architecture
 - Dashboard needs-Greg count: 20
 - Dashboard denied/blocked count: 17
-- Priority: 68
-- Category: blocked_project
+- Priority: 55
 - Approval required: False
 - Risk class: none
-- Context: Blocked by - Return to McKenzie. Impact: Solar Assistant, MQTT, and Voice remain deferred
-- Options: keep_visible, defer_until_unblocked, review_unblock_criteria
-- Source: /opt/colby/reports/projects/current_critical_path.md
-- Priority: 55
 - Recommendation: Keep the correction active and remove any remaining current-priority references if rediscovered.
 - Source: /opt/colby/memory/users/greg/corrections.md
 - Priority: 50
+- Category: strategic_priority
+- Context: Current priority 3 is building Colby into a cognitive operating system.
+- Source: /opt/colby/memory/core/current_priorities.md
+- governed_action_dashboard: /opt/colby/state/cos/governed_action_dashboard.json
+- cos_status: /opt/colby/state/cos/cos_status.json
+- critical_path: /opt/colby/reports/projects/current_critical_path.md
 
 ## Interpretation
 
@@ -5154,13 +5212,13 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - /opt/colby/reports/cos/COS_STATUS.md
+- /opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md
 - /opt/colby/reports/cos/route_context_trace_report.md
 - /opt/colby/reports/cos/pi500_route_blocker_closeout.md
 - /opt/colby/reports/cos/pi4_direct_tailscale_access.md
 - /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.md
 - /opt/colby/reports/cos/pi500_pi4_access_parity.md
 - /opt/colby/reports/cos/phase3_current_truth_closeout_publish.md
-- /opt/colby/reports/cos/current_truth_publish_retry_after_phase3.md
 - /opt/colby/reports/projects/current_project_impact.md
 - /opt/colby/reports/projects/current_critical_path.md
 - /opt/colby/reports/projects/current_dependency_status.md
@@ -5179,11 +5237,11 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - /opt/colby/memory/workspaces/cognitive_workstead/assumptions.md
 - /opt/colby/memory/workspaces/cognitive_workstead/goals.md
 - /opt/colby/memory/workspaces/cognitive_workstead/README.md
+- /opt/colby/memory/projects/home_assistant_multi_site.md
 - /opt/colby/memory/projects/openwebui_persona_integration.md
 - /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
 - /opt/colby/memory/projects/conversation_intelligence.md
 - /opt/colby/memory/projects/colby_cognitive_operating_system.md
-- /opt/colby/memory/projects/home_assistant_multi_site.md
 - /opt/colby/memory/core/current_capabilities.md
 - /opt/colby/memory/operational/code_capability_registry_active.md
 - /opt/colby/memory/core/current_priorities.md
@@ -5359,7 +5417,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T16:23:03
+Generated: 2026-06-21T16:27:38
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
@@ -5381,9 +5439,9 @@ WROTE: /opt/colby/reports/projects/current_milestone_status.md
 - Stdout:
 ```
 WROTE: /opt/colby/reports/capabilities/current_capability_status.md
-CAPABILITY_COUNT=27
-OPERATIONAL_COUNT=17
-PLANNED_COUNT=10
+CAPABILITY_COUNT=32
+OPERATIONAL_COUNT=18
+PLANNED_COUNT=14
 ```
 
 ### project_status
@@ -5433,13 +5491,13 @@ WROTE: /opt/colby/reports/executive/current_day_summary.md
 
 ## Output Validation
 
-- OK: /opt/colby/reports/projects/current_milestone_status.md (2701 bytes)
-- OK: /opt/colby/reports/capabilities/current_capability_status.md (5030 bytes)
-- OK: /opt/colby/reports/projects/current_project_status.md (2640 bytes)
-- OK: /opt/colby/reports/projects/current_dependency_status.md (2143 bytes)
-- OK: /opt/colby/reports/projects/current_critical_path.md (1509 bytes)
-- OK: /opt/colby/reports/projects/current_project_impact.md (2552 bytes)
-- OK: /opt/colby/reports/executive/current_day_summary.md (4620 bytes)
+- OK: /opt/colby/reports/projects/current_milestone_status.md (2863 bytes)
+- OK: /opt/colby/reports/capabilities/current_capability_status.md (5914 bytes)
+- OK: /opt/colby/reports/projects/current_project_status.md (3152 bytes)
+- OK: /opt/colby/reports/projects/current_dependency_status.md (2434 bytes)
+- OK: /opt/colby/reports/projects/current_critical_path.md (1893 bytes)
+- OK: /opt/colby/reports/projects/current_project_impact.md (2819 bytes)
+- OK: /opt/colby/reports/executive/current_day_summary.md (4646 bytes)
 - OK: /opt/colby/reports/personas/current_persona_status.md (860 bytes)
 
 ## Sync Summary
