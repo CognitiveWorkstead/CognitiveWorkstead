@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-21T18:06:52.820321+00:00",
-  "timestamp_central": "Jun 21, 2026, 1:06 PM Central Time",
+  "timestamp": "2026-06-21T18:21:28.847605+00:00",
+  "timestamp_central": "Jun 21, 2026, 1:21 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Prime Solar",
@@ -11,8 +11,8 @@
     "operational_message": "Solar grading active."
   },
   "now": {
-    "load_w": 388.0,
-    "solar_w": 515.0,
+    "load_w": 404.0,
+    "solar_w": 530.0,
     "generator_w": 0,
     "battery_soc": 99.0,
     "battery_power_w": 117.0,
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.0m",
+    "reason": "HA both persons away; HA presence fresh 14.9m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-21T18:02:16.140922+00:00",
+        "timestamp": "2026-06-21T18:17:09.745332+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-06-21T18:02:16.447400Z",
+        "timestamp": "2026-06-21T18:17:10.781389Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 4.55,
-    "produced_kwh": 6.61,
+    "consumed_kwh": 4.68,
+    "produced_kwh": 6.77,
     "generator_kwh": 0,
-    "avg_load_w": 252,
+    "avg_load_w": 256,
     "peak_load_w": 1203,
     "peak_solar_w": 5829,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 50.2,
-    "zero_solar_days": 8.3,
+    "zero_solar_days": 8.2,
     "similar_weather_days": 41.8,
-    "samples": 1138
+    "samples": 1140
   },
   "historical_model": {
     "available": true,
@@ -230,19 +230,19 @@
     "available": true,
     "expected_today_kwh": 8.36,
     "expected_so_far_kwh": 8.33,
-    "produced_so_far_kwh": 6.61,
-    "tracking_vs_expected_so_far_pct": -20.7,
-    "progress_of_expected_day_pct": 79.0,
+    "produced_so_far_kwh": 6.77,
+    "tracking_vs_expected_so_far_pct": -18.7,
+    "progress_of_expected_day_pct": 81.0,
     "historical_basis_days": 23,
     "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
     "available": true,
-    "actual_now_w": 515,
+    "actual_now_w": 530,
     "expected_now_w": 934,
-    "performance_pct": 55.1,
-    "variance_pct": -44.9,
+    "performance_pct": 56.7,
+    "variance_pct": -43.3,
     "grade": "D",
     "basis_days": 31,
     "samples": 31,
@@ -253,20 +253,20 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 99.0,
-    "projected_sunset_soc": 97.0,
-    "hours_to_sunset": 6.8,
-    "remaining_expected_solar_kwh": 1.75,
-    "remaining_load_kwh": 2.62,
-    "net_remaining_kwh": -0.87,
+    "projected_sunset_soc": 96.6,
+    "hours_to_sunset": 6.5,
+    "remaining_expected_solar_kwh": 1.59,
+    "remaining_load_kwh": 2.63,
+    "net_remaining_kwh": -1.04,
     "expected_today_kwh": 8.36,
-    "produced_so_far_kwh": 6.61,
+    "produced_so_far_kwh": 6.77,
     "basis_days": 23,
     "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 515.0,
-    "similar_avg_solar_w": 1533,
+    "actual_solar_w": 530.0,
+    "similar_avg_solar_w": 1453,
     "peak_trend": {
       "days": 27,
       "today_peak_w": 5829,
@@ -310,8 +310,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 398,
-      "efficiency_pct": 7.5,
+      "power_w": 475,
+      "efficiency_pct": 8.9,
       "peak_today_w": 2564,
       "season_best_w": 3115,
       "all_time_best_w": 3115,
@@ -334,8 +334,8 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 445,
-      "efficiency_pct": 12.8,
+      "power_w": 458,
+      "efficiency_pct": 13.2,
       "peak_today_w": 3286,
       "season_best_w": 3505,
       "all_time_best_w": 3505,
@@ -344,14 +344,14 @@
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 819,
-      "efficiency_pct": 9.3,
+      "power_w": 815,
+      "efficiency_pct": 9.2,
       "peak_today_w": 5829,
       "season_best_w": 6620,
       "all_time_best_w": 6620,
       "peak_today_time_central": "Jun 21, 2026, 11:04 AM Central Time",
       "peak_today_efficiency_pct": 66.1
     },
-    "insight": "Solar production is exceeding load and charging the battery. Battery SOC is at or above 98%, so the BMS/inverter may be tapering charge. Solar output may be demand-limited because the batteries have little room left to store power. Do not use current low output as an array-health indicator. MPPT balance check deferred until stronger production is available. Total array output is 9.3% of top-side rating."
+    "insight": "Solar production is exceeding load and charging the battery. Battery SOC is at or above 98%, so the BMS/inverter may be tapering charge. Solar output may be demand-limited because the batteries have little room left to store power. Do not use current low output as an array-health indicator. MPPT balance check deferred until stronger production is available. Total array output is 9.2% of top-side rating."
   }
 }
