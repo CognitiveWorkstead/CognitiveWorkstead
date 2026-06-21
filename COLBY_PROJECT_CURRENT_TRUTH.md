@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T16:00:30-05:00
+Generated Local Time: 2026-06-21T16:03:03-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 17267
-- Modified Time: 2026-06-21T15:57:07-05:00
-- SHA256: 7852ee837db780d32799092b6742dc99bc48625ea24fcdb0a3668b71eebf5f7f
+- Size Bytes: 17478
+- Modified Time: 2026-06-21T16:03:02-05:00
+- SHA256: 6fb48d80225d3f9f91aab6e2171b65ef7758fc1640fe37414bd4b4bf27f47c80
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -121,49 +121,49 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 17425
-- Modified Time: 2026-06-21T15:57:07-05:00
-- SHA256: 8d9c1d07ea6a55ff7fecd7feed859352351a42e87db186765ebb95ca653fa847
+- Size Bytes: 17636
+- Modified Time: 2026-06-21T16:03:02-05:00
+- SHA256: 5268136590aa6d27cd9d0e929acc1558185eab4a547e2d4e98a9c3409865e75b
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2478
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: c2571bbcf1248d87744e0199bd2b204a251457aac179d9da7ae484dae16c4c19
+- Size Bytes: 2640
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: 6e8e7dcc284350449a62ba01579c57ca793c5916c6434c41517f972721fbd4cd
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 9629ec144bcd5596990eb7835afcb71d9536ef36f52015a6a9c5cec5e9522a4a
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: 6fdf06bd1fca68380466b93d8a1486643a5ba3734282bf373f3e1f0291e62749
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2115
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 23c00b9143ca8c80ae3a0a6501eb62e4e30106a8e022cc56e37e44a09fb48345
+- Size Bytes: 2143
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: 7e4d8ceb2ddb1c416fe5c3e2595494efd1ae534f2d29e9d0984f2385a9abd91a
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
-- Size Bytes: 1673
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: a825c252fc4063e3c04b9dff1e886a5cb176263fe1f7119bbb236e616db92f53
+- Size Bytes: 1509
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: dc07a2bb61dd691cb828c7672f12d4544387d965f4eb5188802dade48273b8a6
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 37d4333c6feeabc021fe1b4b9c1e5314d926573fb6b4df70ca987da4a5736b9f
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: fb0bef09742e327e90ec7e620762c3bffc2fe0e02bf73efc98a109fc4b3fca96
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 2559
-- Modified Time: 2026-06-21T15:57:07-05:00
-- SHA256: 304bada413012c6053604b7eb6d6df122cbc26f81cc12da5bb5c3d2467b02d2a
+- Size Bytes: 2680
+- Modified Time: 2026-06-21T16:03:02-05:00
+- SHA256: 0ab83018bf28b9b5053fcee9c0cce2dc635d7d80db60c4567c6148de2b759b2c
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 18942
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 2496611b0c42913a5b0815221a4841b251c0556a3880cddccaaa857c215068e5
+- Size Bytes: 19204
+- Modified Time: 2026-06-21T16:03:02-05:00
+- SHA256: 7ee014402b152747991f2104ae3d6b0bbd6ba9ab2bb9ba33e0ba650f218af61a
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8559
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 2305231e27ed94cde75ac87a137319390d949fbccba0385060be55afb03f3512
+- Size Bytes: 8602
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: 3b4bacef0699b25dd3b6658c9447c1fc9c302d13384b33f5993ece091f1e5ed5
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
-- Size Bytes: 4101
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 4ef102e7a0b1e18a8e60733bd042886b83c9e362268ad5bbd894c080fe7d1110
+- Size Bytes: 3668
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: 324b875f0f6c5785f876fc27e5ea427b11c00c05b6b6efd3f30684b83ba68c28
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -257,9 +257,9 @@ Export Validation:
 - Path: /opt/colby/reports/personas/current_persona_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 876
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: c78bdfd0c9d648122fbccc1046617a154a05a50ab3130c61de771873cd444ee5
+- Size Bytes: 860
+- Modified Time: 2026-06-21T16:03:02-05:00
+- SHA256: 444dbe344efd2f61e12fd3e3a0601c03fd30d0a526ba284df80809e402ab53ad
 
 ### Persona Route Audit
 - Path: /opt/colby/reports/personas/persona_route_audit.md
@@ -297,9 +297,9 @@ Export Validation:
 - Path: /opt/colby/reports/executive/current_day_summary.md
 - Required: False
 - Exists: True
-- Size Bytes: 4738
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: 3fc0fef836b8d52fcb3d33f5016de067f44e357b231dc6d89fcfbc4458f16b45
+- Size Bytes: 4791
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: c719dcae9495e79c89b0927e6b860b3b8220e310c874b9f2ab374bb60adedbe7
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T16:00:30-05:00
-- SHA256: c360345858684c39acbbbc4cb6edaebb535b38811ceb11e4e8907a877ffcefc0
+- Modified Time: 2026-06-21T16:03:03-05:00
+- SHA256: 9ff5e872ad20ddbd70146137f41f010402e04cce9d197bf37b7ad9707c3d2ce5
 
 ## Colby System Architecture
 
@@ -1257,6 +1257,12 @@ Registry:
 - Phase 5 upstream implementation is not required by the current review.
 - Report: `/opt/colby/reports/personas/openwebui_persona_production_readiness_review.md`.
 
+## OpenWebUI Persona Project Closeout
+- Recorded: 2026-06-21T16:03:02-05:00
+- Status: Operational.
+- Completion: 100%.
+- Phase 5 implementation is future-only if new requirements create a governed change need.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1818,13 +1824,19 @@ Impact:
 - Phase 5 upstream implementation is not required by the current review.
 - Report: `/opt/colby/reports/personas/openwebui_persona_production_readiness_review.md`.
 
+## OpenWebUI Persona Project Closeout
+- Recorded: 2026-06-21T16:03:02-05:00
+- Status: Operational.
+- Completion: 100%.
+- Phase 5 implementation is future-only if new requirements create a governed change need.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1832,7 +1844,7 @@ Project Count: 5
 
 ## Executive Summary
 
-- Active Projects: 3
+- Active Projects: 2
 - Deferred Projects: 1
 
 ## Projects
@@ -1927,10 +1939,10 @@ Next Actions:
 ### Open WebUI Persona Integration
 
 - Source File: /opt/colby/memory/projects/openwebui_persona_integration.md
-- Status: Active
+- Status: Operational
 - Priority: High
-- Phase: Planning
-- Completion: 0%
+- Phase: Production Readiness Complete
+- Completion: 100%
 - Owner: Greg
 
 Depends On:
@@ -1947,8 +1959,9 @@ Supports:
 - Multi-user Colby deployment
 
 Next Actions:
-- Build Persona Memory Isolation
-- Build Persona Authority Boundaries
+- Use OpenWebUI personas normally
+- Track OpenWebUI tool-server DNS cleanup separately if tool endpoints are needed
+- Reopen Phase 5 only if future requirements introduce a governed implementation change
 
 ## Operating Interpretation
 
@@ -1962,7 +1975,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2071,7 +2084,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2126,9 +2139,9 @@ Project Count: 5
   - None
 
 ### Open WebUI Persona Integration
-- Status: Active
-- Phase: Planning
-- Completion: 0%
+- Status: Operational
+- Phase: Production Readiness Complete
+- Completion: 100%
 - Depends On:
   - Conversation Intelligence (known project)
 - Blocks:
@@ -2164,7 +2177,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2189,20 +2202,16 @@ Unblock Criteria:
 ## Open WebUI Persona Integration
 
 - Source File: /opt/colby/memory/blockers/openwebui_persona_integration.md
-- Status: Unblocked
-- Priority: High
+- Status: Complete
+- Priority: None
 - Risk: Medium
-- Impact: Controlled implementation planning is active
+- Impact: Production-ready for governed read-only persona model routing
 
 Blocked By:
 - None
 
 Unblock Criteria:
-- Review Generator operational
-- Review Validator operational
-- Promotion Candidate Builder operational
-- Authority Validator operational
-- Conversation Intelligence project approved complete
+- Completed
 
 ## Executive Summary
 
@@ -2227,7 +2236,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -2941,53 +2950,30 @@ Generated: 2026-06-21T05:57:22-05:00
 - Phase 5 implementation required: false.
 - Report: `/opt/colby/reports/personas/openwebui_persona_production_readiness_review.md`.
 
+## OpenWebUI Persona Project Closeout
+
+- Recorded: 2026-06-21T16:03:02-05:00
+- Status: Operational.
+- Completion: 100%.
+
 ## Governed Action Audit Log
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T16:00:30-05:00
+Generated: 2026-06-21T16:03:03-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 49
-- Decisions: {'approved': 34, 'approval_required': 15}
-- Risk classes: {'WRITES_LOCAL': 28, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
-- Action classes: {'local_write': 25, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
-- Status: {'validated': 31, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1}
+- Events: 50
+- Decisions: {'approved': 35, 'approval_required': 15}
+- Risk classes: {'WRITES_LOCAL': 29, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 15}
+- Action classes: {'local_write': 26, 'system_write': 6, 'memory_promotion': 3, 'publish': 14, 'external_control': 1}
+- Status: {'validated': 32, 'denied': 15, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1}
 
 ## Recent Events
-
-### Current Truth publish blocked without approval
-
-- Event ID: `gaa_4925f5bfc55fd15e`
-- Occurred: 2026-06-21T08:50:51-05:00
-- Decision: `approval_required`
-- Action class: `publish`
-- Risk class: `EXTERNAL_CONTROL`
-- Status: `denied`
-- Approved by: `None`
-- Backup: `None`
-- Memory updated: `False`
-- Publish status: `blocked_before_publish`
-- Current Truth semantic SHA256: `e9ee7d07eeaa298d6d492ff99c1191a05e944c3237d8e77c1c52f71be40f1449`
-
-Touched paths:
-- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
-- `/opt/colby/export/knowledge_transfer.json`
-
-Validations:
-- action_executed: `NO`
-- git_push: `NO`
-- preflight: `PASS`
-- remote_copy: `NO`
-- required_contract: `governed_action_required`
-
-Notes:
-- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
-- No publish log, remote copy, commit, or push should occur before approval.
 
 ### Current Truth publish blocked without approval
 
@@ -3525,18 +3511,47 @@ Validations:
 Notes:
 - OpenWebUI Persona Integration passed production readiness for governed read-only persona routing.
 
+### Close OpenWebUI Persona Integration as operational
+
+- Event ID: `gaa_1a08a798b5d1c633`
+- Occurred: 2026-06-21T16:03:02-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/openwebui_persona_project_closeout_20260621_160302`
+- Memory updated: `True`
+- Publish status: `ready_to_publish`
+- Current Truth semantic SHA256: `6f2eb8c753f90b47b307ab7a376574a4f6dda3b937001ba51734180ee5e249a7`
+
+Touched paths:
+- `/opt/colby/memory/projects/openwebui_persona_integration.md`
+- `/opt/colby/memory/blockers/openwebui_persona_integration.md`
+- `/opt/colby/memory/milestones/openwebui_persona_integration.md`
+- `/opt/colby/reports/personas/current_persona_status.md`
+- `/opt/colby/reports/personas/openwebui_persona_project_closeout.md`
+- `/opt/colby/reports/personas/openwebui_persona_project_closeout.json`
+
+Validations:
+- critical_path_removed: `PASS`
+- openwebui_persona_status: `operational`
+
+Notes:
+- Project closed as operational; Phase 5 remains future-only if new requirements require governed implementation.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T16:00:30-05:00
+Generated: 2026-06-21T16:03:03-05:00
 
 ## Overview
 
-- Audit events: 49
-- Approved actions: 34
+- Audit events: 50
+- Approved actions: 35
 - Approval-required decisions: 15
 - Denied or blocked actions: 16
 - Approval-surface items: 27
@@ -3569,6 +3584,7 @@ Generated: 2026-06-21T16:00:30-05:00
 
 ## Recent Approved Actions
 
+- 2026-06-21T16:03:02-05:00 | Close OpenWebUI Persona Integration as operational | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/memory/projects/openwebui_persona_integration.md, /opt/colby/memory/blockers/openwebui_persona_integration.md, /opt/colby/memory/milestones/openwebui_persona_integration.md, /opt/colby/reports/personas/current_persona_status.md, +2 more
 - 2026-06-21T16:00:30-05:00 | Complete OpenWebUI Persona Integration Production Readiness Review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/personas/openwebui_persona_production_readiness_review.md, /opt/colby/reports/personas/openwebui_persona_production_readiness_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, /opt/colby/memory/milestones/openwebui_persona_integration.md, +1 more
 - 2026-06-21T15:57:07-05:00 | Complete OpenWebUI Persona Integration Production Readiness Review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/personas/openwebui_persona_production_readiness_review.md, /opt/colby/reports/personas/openwebui_persona_production_readiness_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, /opt/colby/memory/milestones/openwebui_persona_integration.md, +1 more
 - 2026-06-21T15:54:06-05:00 | Complete OpenWebUI Persona Integration Phase 4 configuration review | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/openwebui/openwebui_phase4_config_review.py, /opt/colby/reports/openwebui_persona_config_review.md, /opt/colby/reports/openwebui_persona_config_review.json, /opt/colby/memory/projects/openwebui_persona_integration.md, +1 more
@@ -3576,7 +3592,6 @@ Generated: 2026-06-21T16:00:30-05:00
 - 2026-06-21T15:39:51-05:00 | Close PI500 route blockers after direct PI4 Tailscale success | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/reports/cos/pi500_route_blocker_closeout.md, /opt/colby/reports/cos/pi500_route_blocker_closeout.json, /opt/colby/memory/core/current_capabilities.md, +1 more
 - 2026-06-21T15:37:55-05:00 | Install PI4 direct Tailscale access | approved / validated | system_write / WRITES_SYSTEM | paths: /opt/colby/reports/cos/pi4_direct_tailscale_access.md, /opt/colby/reports/cos/pi4_direct_tailscale_access.json, /home/cothrang/.ssh/config, /opt/colby/memory/core/current_capabilities.md, +1 more
 - 2026-06-21T15:34:27-05:00 | Enable PI500 Tailscale subnet route acceptance | approved / blocked | system_write / WRITES_SYSTEM | paths: /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.md, /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.json, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/core/infrastructure_inventory.md
-- 2026-06-21T15:32:49-05:00 | Grant PI500 PI4 access parity partial | approved / partial_blocked | external_control / EXTERNAL_CONTROL | paths: /opt/colby/reports/cos/pi500_pi4_access_parity.md, /opt/colby/reports/cos/pi500_pi4_access_parity.json, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/core/infrastructure_inventory.md
 
 ## Needs Greg
 
@@ -3611,7 +3626,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T16:00:30-05:00
+Generated: 2026-06-21T16:03:03-05:00
 
 ## Conversation Policy
 
@@ -3631,26 +3646,15 @@ Do not offer when:
 
 ## Summary
 
-- Agenda items: 6
+- Agenda items: 5
 - Approval-required items: 0
-- Top priority: Open WebUI Persona Integration
+- Top priority: Home Assistant Multi-Site Architecture
 - Dashboard needs-Greg count: 20
 - Dashboard denied/blocked count: 16
 
 ## Agenda Items
 
-### 1. Open WebUI Persona Integration
-
-- Priority: 78
-- Category: critical_path
-- Approval required: False
-- Risk class: none
-- Context: Unblocked high-priority lane. Impact: Controlled implementation planning is active
-- Recommendation: Convert this into a controlled implementation plan after governance housekeeping is clear.
-- Options: plan_next, defer, split_dependencies
-- Source: /opt/colby/reports/projects/current_critical_path.md
-
-### 2. Home Assistant Multi-Site Architecture
+### 1. Home Assistant Multi-Site Architecture
 
 - Priority: 68
 - Category: blocked_project
@@ -3661,7 +3665,7 @@ Do not offer when:
 - Options: keep_visible, defer_until_unblocked, review_unblock_criteria
 - Source: /opt/colby/reports/projects/current_critical_path.md
 
-### 3. Convert current_truth_health into a generated service/report.
+### 2. Convert current_truth_health into a generated service/report.
 
 - Priority: 58
 - Category: cos_next_action
@@ -3672,7 +3676,7 @@ Do not offer when:
 - Options: schedule_next, defer, retire
 - Source: /opt/colby/state/cos/cos_status.json
 
-### 4. Wire route_context_trace into a debug-only context loader mode.
+### 3. Wire route_context_trace into a debug-only context loader mode.
 
 - Priority: 58
 - Category: cos_next_action
@@ -3683,7 +3687,7 @@ Do not offer when:
 - Options: schedule_next, defer, retire
 - Source: /opt/colby/state/cos/cos_status.json
 
-### 5. Keep Right Turn historical only
+### 4. Keep Right Turn historical only
 
 - Priority: 55
 - Category: stale_context
@@ -3694,7 +3698,7 @@ Do not offer when:
 - Options: keep_correction, scan_for_remaining_references
 - Source: /opt/colby/memory/users/greg/corrections.md
 
-### 6. Advance Cognitive Operating System build
+### 5. Advance Cognitive Operating System build
 
 - Priority: 50
 - Category: strategic_priority
@@ -4373,7 +4377,7 @@ Source: `/opt/colby/reports/personas/current_persona_status.md`
 # Current Persona Status
 
 Generated:
-2026-06-21T16:00:30-05:00
+2026-06-21T16:03:02-05:00
 
 Registered Personas:
 - Greg / colby-greg
@@ -4385,7 +4389,7 @@ Persona Count:
 4
 
 Integration Status:
-OpenWebUI Persona Integration is production-ready for governed read-only persona model routing.
+Operational for governed read-only persona model routing.
 
 Completed Phases:
 - Phase 1 read-only persona route audit passed.
@@ -4393,9 +4397,10 @@ Completed Phases:
 - Phase 3 proxy route validation passed.
 - Phase 4 OpenWebUI configuration review passed.
 - Production Readiness Review passed.
+- Project Closeout completed.
 
 Current Phase:
-Operational. Phase 5 controlled implementation is not required unless future requirements introduce an OpenWebUI/proxy change.
+Operational. Phase 5 controlled implementation is future-only if new requirements introduce an OpenWebUI/proxy change.
 
 Governance:
 Normal read-only chat routing is allowed. System control, memory writes, publishing, external-control actions, and OpenWebUI/proxy changes remain governed and approval-gated.
@@ -5025,7 +5030,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5036,19 +5041,16 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - When Greg asks what is next, what is pending, what is blocked, or what needs approval.
 - After a task changes Colby's reasoning, capabilities, governance, memory, Current Truth, or project state.
 - Approval-required items: 0
-- Top priority: Open WebUI Persona Integration
+- Top priority: Home Assistant Multi-Site Architecture
 - Dashboard needs-Greg count: 20
 - Dashboard denied/blocked count: 16
-- Priority: 78
-- Approval required: False
-- Risk class: none
-- Context: Unblocked high-priority lane. Impact: Controlled implementation planning is active
-- Options: plan_next, defer, split_dependencies
-- Source: /opt/colby/reports/projects/current_critical_path.md
 - Priority: 68
 - Category: blocked_project
+- Approval required: False
+- Risk class: none
 - Context: Blocked by - Return to McKenzie. Impact: Solar Assistant, MQTT, and Voice remain deferred
 - Options: keep_visible, defer_until_unblocked, review_unblock_criteria
+- Source: /opt/colby/reports/projects/current_critical_path.md
 - Priority: 58
 - Category: cos_next_action
 - Context: Open COS next action from cos_status.
@@ -5062,6 +5064,9 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - Category: strategic_priority
 - Context: Current priority 3 is building Colby into a cognitive operating system.
 - Source: /opt/colby/memory/core/current_priorities.md
+- governed_action_dashboard: /opt/colby/state/cos/governed_action_dashboard.json
+- cos_status: /opt/colby/state/cos/cos_status.json
+- critical_path: /opt/colby/reports/projects/current_critical_path.md
 
 ## Interpretation
 
@@ -5281,7 +5286,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T16:00:30
+Generated: 2026-06-21T16:03:03
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
@@ -5357,12 +5362,12 @@ WROTE: /opt/colby/reports/executive/current_day_summary.md
 
 - OK: /opt/colby/reports/projects/current_milestone_status.md (2701 bytes)
 - OK: /opt/colby/reports/capabilities/current_capability_status.md (5030 bytes)
-- OK: /opt/colby/reports/projects/current_project_status.md (2478 bytes)
-- OK: /opt/colby/reports/projects/current_dependency_status.md (2115 bytes)
-- OK: /opt/colby/reports/projects/current_critical_path.md (1673 bytes)
-- OK: /opt/colby/reports/projects/current_project_impact.md (2393 bytes)
-- OK: /opt/colby/reports/executive/current_day_summary.md (4738 bytes)
-- OK: /opt/colby/reports/personas/current_persona_status.md (876 bytes)
+- OK: /opt/colby/reports/projects/current_project_status.md (2640 bytes)
+- OK: /opt/colby/reports/projects/current_dependency_status.md (2143 bytes)
+- OK: /opt/colby/reports/projects/current_critical_path.md (1509 bytes)
+- OK: /opt/colby/reports/projects/current_project_impact.md (2552 bytes)
+- OK: /opt/colby/reports/executive/current_day_summary.md (4791 bytes)
+- OK: /opt/colby/reports/personas/current_persona_status.md (860 bytes)
 
 ## Sync Summary
 
