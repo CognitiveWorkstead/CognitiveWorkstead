@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T17:10:52-05:00
+Generated Local Time: 2026-06-21T17:17:19-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 20988
-- Modified Time: 2026-06-21T17:10:51-05:00
-- SHA256: 08a14f2684dd549fdb667fce11d981f9b846e5337d19ad6acdab5eaeb9fb62a2
+- Size Bytes: 21317
+- Modified Time: 2026-06-21T17:17:17-05:00
+- SHA256: 01e44a2e69da66c0d55a9b513da566ed9a4a3a771808cafd76fd3162be1b0f81
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -121,49 +121,49 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 20041
-- Modified Time: 2026-06-21T17:10:51-05:00
-- SHA256: 8212f18db11625100b44431238be2708311889243313b0c3de397381dc5d470f
+- Size Bytes: 20376
+- Modified Time: 2026-06-21T17:17:17-05:00
+- SHA256: f5ae51f4ed075ea6e692a6a7665b4529e62091047097d7a592c41aa217124acc
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 3152
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: bdae6d4ec175ac2315cc0b1d494be76b720cb610dc12150f58c720d61ea08e66
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: 57117b9fbcb3b2c9e47f5c40ed39524f06279c5ac4025d912c53b8f3d5d482ce
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2863
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: b55cec0b198d480089e23e65dd968ec50be8218dd75f41a1e9fed9be57619428
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: 9ef506dcdb8fdfaecd4fb9044f3b39d187e03aeaa90f1aad4b872a07f13b7dab
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2434
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: 8297e6094245a1f018949a141a126e964a4f8f754575711f20ea28a257f096ba
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: fe10a81e9877920bac1520e21fb0bf2aec506710bdaef2fbabe56d23066e53c3
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1893
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: 5ef913cd7c6eb55a25b3ff20132c47153868d390181d2a9fd14998af63f4e0e4
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: 4cf6729519e829ad73d9ef4a4f3bd949a7c1734d51c7dbaedf2bfcb831525056
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5914
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: fb0af0da5a953b6efcbd5a7ea9f7513d4c2863f6e92c4daf278c3f61f6cedaf6
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: 210a5c4a487b9c0d35637e056ad9534d92be84c2fe8f1ef11c213c4c08cff1a5
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 5719
-- Modified Time: 2026-06-21T17:10:51-05:00
-- SHA256: c8ad62f33a81fa5fbe07407eeadcf33a62c702603d3a3d07900efc4a4241bb75
+- Size Bytes: 5946
+- Modified Time: 2026-06-21T17:17:17-05:00
+- SHA256: e0b1f4f3316196bcbdc4e12ef54f7284eee1cc3031de172b181a6847a320f723
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 22530
-- Modified Time: 2026-06-21T17:10:51-05:00
-- SHA256: bb91c0d34ece4c4d8f4bd3ff85bcc69a964a96a322f6978911e564cb3bd0b978
+- Size Bytes: 23501
+- Modified Time: 2026-06-21T17:17:18-05:00
+- SHA256: 03a2686e15af138a18a79cae54678fbd0534d7bd4d3c5f1365adf33967c8ed95
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8431
-- Modified Time: 2026-06-21T17:10:51-05:00
-- SHA256: 2cea1862ce47868cbcc2f95d4f6b87f2e67f52cedf324233f0690082c9d4c8d6
+- Size Bytes: 8386
+- Modified Time: 2026-06-21T17:17:18-05:00
+- SHA256: 160eac6f9c1c7ba45fd3f0a4b0f2c74e40655e5d5613de7dce7a25249473a6f6
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
 - Size Bytes: 2078
-- Modified Time: 2026-06-21T17:10:51-05:00
-- SHA256: 358b040b8d44c781a713af7cdd0fa9ec304d3971d261e3459a9704594056bb83
+- Modified Time: 2026-06-21T17:17:18-05:00
+- SHA256: 7c6c70f3a9a745a2ad514a389d7a03481d58eae5bac950667a036c763842f2d5
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -298,8 +298,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 4650
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: 3095e991873ca231b43b17fd08c7b33b605963cf6dda0820805132da11c62f28
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: c5ae2cdca9fc37053ce766b239dcdaa25f7226c0e9445abec61c6518bdbe698f
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T17:10:52-05:00
-- SHA256: 9c65262f5c52cfef04d2a0cf074b9d8d8ec111155f30be1683cbb5b14cb4b613
+- Modified Time: 2026-06-21T17:17:19-05:00
+- SHA256: 02ee72a716f0333c74a293ef04380119494b9ca60a3ce5d3159335f320d4472d
 
 ## Colby System Architecture
 
@@ -1324,6 +1324,12 @@ Registry:
 - Reports may record token presence, file path, mode, and API probe status only.
 - HA writes/service calls remain governed and require explicit Greg approval.
 
+## Home Assistant Dashboard Governance
+- Updated: 2026-06-21T17:17:17-05:00
+- HA dashboard work should start as a proposal and read-only audit.
+- Creating or editing HA dashboards is a write action and requires Greg approval.
+- Prefer native HA dashboards/cards first; approve custom frontend dependencies separately if needed.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1984,13 +1990,19 @@ Impact:
 - Use ASUSAI as the primary Colby HA API client for read-only inventory/status work.
 - API ready at audit time: `True`.
 
+## Home Assistant Read-Only Inventory Capability
+- Updated: 2026-06-21T17:17:17-05:00
+- Colby can use ASUSAI's HA token path for read-only Home Assistant entity/service/event inventory.
+- Token values must remain unprinted and unpublished.
+- HA writes, dashboard creation, service calls, restarts, and config changes remain governed.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -2137,7 +2149,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2251,7 +2263,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2348,7 +2360,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2406,7 +2418,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -3219,6 +3231,12 @@ Generated: 2026-06-21T05:57:22-05:00
 - ASUSAI API ready: `True`
 - Token values printed: `False`
 - Report: `/opt/colby/reports/cos/HOME_ASSISTANT_API_TOKEN_ACCESS_AUDIT.md`
+## Home Assistant Read-Only Audit
+- Updated: 2026-06-21T17:17:17-05:00
+- Status: PASS
+- Total entities: `798`
+- Unavailable/unknown entities: `96`
+- Report: `/opt/colby/reports/home_assistant/HOME_ASSISTANT_READ_ONLY_AUDIT.md`
 
 ## Governed Action Audit Log
 
@@ -3226,47 +3244,18 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T17:10:51-05:00
+Generated: 2026-06-21T17:17:18-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 64
-- Decisions: {'approved': 47, 'approval_required': 17}
-- Risk classes: {'WRITES_LOCAL': 42, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 16}
-- Action classes: {'local_write': 39, 'system_write': 6, 'memory_promotion': 3, 'publish': 15, 'external_control': 1}
-- Status: {'validated': 44, 'denied': 16, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
+- Events: 65
+- Decisions: {'approved': 48, 'approval_required': 17}
+- Risk classes: {'WRITES_LOCAL': 43, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 16}
+- Action classes: {'local_write': 40, 'system_write': 6, 'memory_promotion': 3, 'publish': 15, 'external_control': 1}
+- Status: {'validated': 45, 'denied': 16, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
 
 ## Recent Events
-
-### Install Colby Codex Bridge
-
-- Event ID: `gaa_3e253bd8476b11d5`
-- Occurred: 2026-06-21T15:47:05-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/colby_codex_bridge_20260621_154705`
-- Memory updated: `True`
-- Publish status: `ready_to_publish`
-- Current Truth semantic SHA256: `43ad5eda592b903336348969e0cc56c5b536741dc0a3a50339f75148ced0a481`
-
-Touched paths:
-- `/opt/colby/services/codex/colby_codex_bridge.py`
-- `/opt/colby/reports/codex/COLBY_CODEX_BRIDGE.md`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-
-Validations:
-- bridge_syntax: `PASS`
-- codex_cli_present: `PASS`
-- proposal_mode: `PASS`
-- unapproved_run_block: `PASS`
-
-Notes:
-- Colby can prepare Codex job proposals; execution remains Greg-approved and governed.
 
 ### Current Truth publish blocked without approval
 
@@ -3837,18 +3826,50 @@ Notes:
 - ASUSAI token path was checked without printing token values.
 - GCSnapDragon remains uninspected until Windows remoting/SSH is enabled.
 
+### Run Home Assistant read-only API audit
+
+- Event ID: `gaa_766631954c9903de`
+- Occurred: 2026-06-21T17:17:18-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/home_assistant_read_only_audit_20260621_171717`
+- Memory updated: `True`
+- Publish status: `pending`
+- Current Truth semantic SHA256: `a0887b6b908ce8286dbd6cf6f36d83bb05e394b7571d03bc1b9e39b87c60f216`
+
+Touched paths:
+- `/opt/colby/reports/home_assistant/home_assistant_read_only_audit.json`
+- `/opt/colby/reports/home_assistant/HOME_ASSISTANT_READ_ONLY_AUDIT.md`
+- `/opt/colby/state/cos/cos_status.json`
+- `/opt/colby/reports/cos/COS_STATUS.md`
+- `/opt/colby/memory/core/current_capabilities.md`
+- `/opt/colby/memory/operational/code_capability_registry_active.md`
+- `/opt/colby/memory/projects/home_assistant_multi_site.md`
+
+Validations:
+- entity_summary: `{'domain_counts': {'alarm_control_panel': 1, 'assist_satellite': 2, 'automation': 2, 'binary_sensor': 20, 'button': 10, 'camera': 2, 'climate': 2, 'conversation': 3, 'device_tracker': 2, 'event': 3, 'light': 4, 'media_player': 12, 'notify': 2, 'number': 49, 'person': 2, 'remote': 2, 'select': 48, 'sensor': 551, 'siren': 1, 'stt': 1, 'sun': 1, 'switch': 45, 'time': 5, 'todo': 1, 'tts': 2, 'update': 22, 'wake_word': 1, 'weather': 1, 'zone': 1}, 'total_entities': 798, 'unavailable_or_unknown_count': 96, 'unavailable_or_unknown_domain_counts': {'assist_satellite': 1, 'binary_sensor': 6, 'button': 8, 'camera': 2, 'event': 2, 'light': 2, 'media_player': 7, 'number': 10, 'remote': 2, 'select': 8, 'sensor': 28, 'siren': 1, 'stt': 1, 'switch': 15, 'update': 2, 'wake_word': 1}}`
+- ha_read_only_api: `PASS`
+- token_values_printed: `False`
+
+Notes:
+- Audit used read-only HA REST API GET endpoints.
+- Dashboard creation remains a governed HA write action.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T17:10:51-05:00
+Generated: 2026-06-21T17:17:18-05:00
 
 ## Overview
 
-- Audit events: 64
-- Approved actions: 47
+- Audit events: 65
+- Approved actions: 48
 - Approval-required decisions: 17
 - Denied or blocked actions: 18
 - Approval-surface items: 27
@@ -3881,6 +3902,7 @@ Generated: 2026-06-21T17:10:51-05:00
 
 ## Recent Approved Actions
 
+- 2026-06-21T17:17:18-05:00 | Run Home Assistant read-only API audit | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/home_assistant/home_assistant_read_only_audit.json, /opt/colby/reports/home_assistant/HOME_ASSISTANT_READ_ONLY_AUDIT.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +3 more
 - 2026-06-21T17:10:51-05:00 | Audit Home Assistant API token access | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/home_assistant_api_token_access_audit.json, /opt/colby/reports/cos/HOME_ASSISTANT_API_TOKEN_ACCESS_AUDIT.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +3 more
 - 2026-06-21T17:03:48-05:00 | Close out PI4 inventory direct Tailscale repair after JSON tail cleanup | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, +2 more
 - 2026-06-21T16:56:03-05:00 | Repair PI500 inventory explicit SSH identity | approved / validated | local_write / WRITES_LOCAL | paths: /root/.ssh/known_hosts, /home/cothrang/.ssh/known_hosts, /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, +2 more
@@ -3888,7 +3910,6 @@ Generated: 2026-06-21T17:10:51-05:00
 - 2026-06-21T16:42:20-05:00 | Install remote access control inventory | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, /opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md, /opt/colby/reports/cos/remote_execution_control_plan.json, +5 more
 - 2026-06-21T16:38:33-05:00 | Repair Right Turn housekeeping generator closeout handling | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/cos/housekeeping_agenda.py, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md
 - 2026-06-21T16:37:25-05:00 | Finalize Right Turn historical-only closeout | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/right_turn_historical_only_scan.json, /opt/colby/reports/cos/RIGHT_TURN_HISTORICAL_ONLY_SCAN.md, /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/memory/core/current_capabilities.md, +3 more
-- 2026-06-21T16:27:37-05:00 | Unblock Home Assistant remote work and define remote control plan | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/memory/projects/home_assistant_multi_site.md, /opt/colby/memory/blockers/home_assistant_multi_site.md, /opt/colby/memory/milestones/home_assistant_multi_site.md, /opt/colby/memory/dependencies/home_assistant_multi_site.md, +4 more
 
 ## Needs Greg
 
@@ -3923,7 +3944,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T17:10:51-05:00
+Generated: 2026-06-21T17:17:18-05:00
 
 ## Conversation Policy
 
@@ -5283,7 +5304,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5539,7 +5560,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T17:10:52
+Generated: 2026-06-21T17:17:19
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
