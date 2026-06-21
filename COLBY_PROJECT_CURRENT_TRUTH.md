@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-16T16:20:34-05:00
+Generated Local Time: 2026-06-21T05:50:11-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 3903
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: 6473e0d4e83e841f6bea1a009a586acca4c5765b6197d5e9765f64fd27a8cf48
+- Size Bytes: 4806
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: cf820d8c2eba0b6e65caef2e4af14546fcf122c8956f3d3461b4d2bb675a658c
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -121,57 +121,57 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 3204
-- Modified Time: 2026-06-05T12:07:34-05:00
-- SHA256: 5e209839e6dd9ce85aaaf6513041133532b7ea8823e87a1dd2cb94a4353a6bb6
+- Size Bytes: 3792
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: 586cf56cc50a8af5e413eeb8495d5c36c17802f408b29af755c371bd32f93f64
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2475
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: 6cb7c4b3818a1f5fae26381436a325ad05ae5e27bb088312117659fb049b8248
+- Size Bytes: 2478
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: aa5e401191973266c6e61ea12e41be81aa816fd5be5c0f51c1591c47e473aa87
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2701
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: e1d8e5640d3166bc1aebf1ef7c5e437d1d325d21d333c2ab67a445e4814f8141
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: 95abbcadfcfb36e66716238b92046952ff58643e755d84e854cda12c8a6a20c5
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
-- Size Bytes: 2120
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: 0747b21295b496bc0a5d203e67685ebd7f1932551234aacb57f4a26dbe6f4253
+- Size Bytes: 2115
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: b17c9709e6581a4001a723ee4aeb70696dd216ab53c81ae838f2ef18c38a7f82
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1677
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: 98fec14a02b84457e70bb36db7c6276ef4e925acf636e98cb44422cfb72d7082
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: ab37a134a2671e8d4ad9ebe92e463893387776803bd2e01a04e2bae5e2fc606a
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5030
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: 65f673e5980e00e029a644f36e2bc0b7f55860f464e64cf8375e60873320e6a7
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: 3d90f88e25b48b1860fdbc391b47ea2db873b9f0887280a84d7134460aad3d81
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
 - Required: True
 - Exists: True
-- Size Bytes: 10901
-- Modified Time: 2026-06-10T08:08:27-05:00
-- SHA256: 2da6bbbafd1da26e50701a0da6c1f613062ef5ab64246529e272ebff9e002b87
+- Size Bytes: 10967
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: ef44e460590f8ca79e1414277067aa843a0de39bbff1b28d7fb48f59d31992fe
 
 ### Home Assistant Read-Only Access
 - Path: /opt/colby/memory/operational/home_assistant_readonly_colby_access.md
@@ -209,25 +209,25 @@ Export Validation:
 - Path: /opt/colby/reports/executive/current_day_summary.md
 - Required: False
 - Exists: True
-- Size Bytes: 5369
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: dd185b888ce182948faf7d9ffec9061b5d37ef935d2fd8d380ae4f5688e1fdcf
+- Size Bytes: 5432
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: 2019cba66f8762272bc5b928fa13750680112ee5541609e9a52f2dbe5ac180de
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
 - Required: False
 - Exists: True
 - Size Bytes: 4096
-- Modified Time: 2026-06-05T13:17:17-05:00
-- SHA256: e2e36caeee9a4353d7c1fa9be494f070419a40b6bd3b2421f4e39c2bc6513ceb
+- Modified Time: 2026-06-16T16:23:20-05:00
+- SHA256: a5ae4a62f10d8fe43e0552c296315e047c1ecc55183b5971db0ba787190cecec
 
 ### Latest Sync Report
 - Path: /opt/colby/reports/sync/latest_sync.md
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-16T16:20:34-05:00
-- SHA256: 0687126b38b8bc41e7771001434f1437b8858154e821e7020914a8052d5b682c
+- Modified Time: 2026-06-21T05:50:11-05:00
+- SHA256: c63ffc80fb587fa6bfa213b89be56f509a6fbeb1ee6adfd5502e13caf5e12243
 
 ## Colby System Architecture
 
@@ -949,6 +949,30 @@ Architecture note:
 - OpenAI API is the automation and agent layer.
 - ASUSAI local models remain the preferred bulk-processing layer.
 
+
+## 2026-06-21 COS Control Plane Registry v2
+
+Status: Approved by Greg for promotion.
+
+Colby now has a reviewable COS control-plane registry prototype promoted into the local Colby tree.
+
+Artifacts:
+- /opt/colby/state/cos/cos_capability_registry_v2.json
+- /opt/colby/reports/cos/COS_CAPABILITY_REGISTRY_V2.md
+- /opt/colby/state/cos/cos_status.json
+- /opt/colby/reports/cos/COS_STATUS.md
+
+Confirmed prototype results:
+- 150 capability/source entries.
+- 23 approval-required entries.
+- 84 unclassified or unknown entries requiring future triage.
+- Current Truth local export PASS at time of review.
+- Persona boundary report passed workspace and public-user checks.
+- Route trace prototype does not expose private content and does not call live tools.
+
+Operating rule:
+Capability-impacting changes must update durable Colby memory and be reflected in Current Truth before the work is considered complete.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -1254,13 +1278,34 @@ Purpose: Give Colby an accurate operational inventory of what exists now.
 - Colby can validate authority conflicts and load the current authority summary.
 - Colby should not execute self-modifying commands or apply non-task memory promotions yet.
 
+## 2026-06-21 COS Control Plane
+
+Status: Operational prototype promoted after Greg approval.
+
+New capabilities:
+- COS Capability Registry v2 prototype.
+- Current Truth health report.
+- Persona/workspace boundary test report.
+- Safe route/context trace prototype.
+- Evidence packet schema.
+- Governed action schema.
+- COS status object.
+
+Primary locations:
+- /opt/colby/state/cos
+- /opt/colby/reports/cos
+- /opt/colby/services/cos
+
+Boundary:
+These are control-plane and reporting capabilities. They do not grant autonomous write/control authority. Governed action remains approval-gated.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -1268,7 +1313,7 @@ Project Count: 5
 
 ## Executive Summary
 
-- Active Projects: 2
+- Active Projects: 3
 - Deferred Projects: 1
 
 ## Projects
@@ -1339,14 +1384,14 @@ Supports:
 Next Actions:
 - Resume after relocation
 
-### Unnamed Project
+### McKenzie Solar Data Bridge
 
 - Source File: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
-- Status: Planned
+- Status: Active
 - Priority: High
 - Phase: Read-only API foundation
-- Completion: Unknown
-- Owner: Unknown
+- Completion: 60%
+- Owner: Greg
 
 Depends On:
 - None listed.
@@ -1398,7 +1443,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -1507,7 +1552,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -1550,10 +1595,10 @@ Project Count: 5
 - Supports:
   - Infrastructure Automation
 
-### mckenzie_solar_data_bridge
-- Status: Planned
+### McKenzie Solar Data Bridge
+- Status: Active
 - Phase: Read-only API foundation
-- Completion: Unknown
+- Completion: 60%
 - Depends On:
   - None
 - Blocks:
@@ -1600,7 +1645,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -1663,7 +1708,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -1826,14 +1871,23 @@ Source: `/opt/colby/memory/projects/mckenzie_solar_data_bridge.md`
 
 # Project: McKenzie Solar Data Bridge
 
+Project:
+McKenzie Solar Data Bridge
+
 Status:
-Planned
+Active
 
 Priority:
 High
 
+Owner:
+Greg
+
 Phase:
 Read-only API foundation
+
+Completion:
+60%
 
 Objective:
 Allow Colby to answer questions about McKenzie solar, battery, load, survivability, anomalies, and operating status using read-only data from the Pi4 solar SQLite database.
@@ -2654,7 +2708,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -2705,11 +2759,12 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - /opt/colby/reports/after_action/after_action_20260605_120636_mckenzie_solar_v1_stable.md
 - /opt/colby/reports/after_action/after_action_20260605_120734_mckenzie_solar_v1_stable.md
 - /opt/colby/reports/investigations/investigation_20260605_131717_mckenzie_solar_daylight_0w_dashboard_event_forensic_investigation.md
+- /opt/colby/reports/investigations/manual_memory_migration.md
 - /opt/colby/memory/workspaces/cognitive_workstead/README.md
-- /opt/colby/memory/workspaces/cognitive_workstead/decisions.md
 - /opt/colby/memory/workspaces/cognitive_workstead/goals.md
 - /opt/colby/memory/workspaces/cognitive_workstead/assumptions.md
 - /opt/colby/memory/workspaces/cognitive_workstead/milestones.md
+- /opt/colby/memory/workspaces/cognitive_workstead/decisions.md
 - /opt/colby/memory/projects/colby_cognitive_operating_system.md
 - /opt/colby/memory/projects/home_assistant_multi_site.md
 - /opt/colby/memory/projects/conversation_intelligence.md
@@ -2757,13 +2812,141 @@ Perform hardening review, design locking/serialization, and add validator guardr
 Status:
 recorded
 
+----- /opt/colby/reports/investigations/manual_memory_migration.md -----
+## Manual Memory Migration Entry
+
+- Timestamp: 2026-06-16 16:25:56 CDT
+- Source: remember command
+
+```text
+Memory migration chunk 2 — move legacy AI server / Open WebUI setup history to COLBY Current Truth, not ChatGPT memory.
+
+Preserve these historical details in COLBY Current Truth or project records:
+- Open WebUI setup and reset history.
+- Ollama exposure/configuration history.
+- ai.gregcothran.com setup and routing notes.
+- Speedify endpoint planning.
+- Cloudflare and NGINX dashboard planning.
+- O365 SSO preference notes.
+- Historical model preload/model selection notes.
+- RTX 4090 planning history.
+- ASUSAI reload planning history.
+- Self-healing pipeline design history.
+- React + FastAPI dashboard planning.
+- External-drive full-system snapshot planning.
+
+Classification:
+- Preserve in COLBY Current Truth.
+- Remove from ChatGPT memory after verification.
+- Treat only current confirmed ASUSAI facts as live operational truth.
+- Current confirmed ASUSAI fact: ASUSAI uses RTX 3090 and now has working COLBY CLI/OpenAI API access.
+```
+
+## Manual Memory Migration Entry
+
+- Timestamp: 2026-06-16 16:27:35 CDT
+- Source: remember command
+
+```text
+Memory migration chunk 3 — move historical Raspberry Pi / cluster infrastructure details to COLBY Current Truth, not ChatGPT memory.
+
+Preserve these historical details in COLBY Current Truth or project records:
+- Raspberry Pi cluster inventories, node names, node IPs, and historical roles.
+- Jetson Orin Nano and Jetson Nano setup history.
+- k3s, Rancher, Kubernetes, Slurm, and Raspberry Pi standardization history.
+- Drobo/NAS log storage paths and historical backup planning.
+- Historical OneDrive log storage ideas.
+- Historical VPN planning for vpn.gregcothran.com.
+- Old cluster-wide log collection plans.
+- Legacy node snapshot procedures.
+- Retired or superseded network devices and cluster hardware.
+
+Classification:
+- Preserve in COLBY Current Truth.
+- Remove from ChatGPT memory after verification.
+- Treat this as historical lab infrastructure unless current evidence confirms it is part of active McKenzie operations.
+```
+
+## Manual Memory Migration Entry
+
+- Timestamp: 2026-06-16 16:28:15 CDT
+- Source: remember command
+
+```text
+Memory migration chunk 4 — move completed Home Assistant troubleshooting artifacts to COLBY Current Truth, not ChatGPT memory.
+
+Preserve these historical details in COLBY Current Truth or project records:
+- Home Assistant MQTT setup troubleshooting history.
+- Solar Assistant to Home Assistant MQTT bridge setup history.
+- Mosquitto bridge configuration history.
+- HA UI terminology corrections, including Apps instead of Add-ons.
+- Home Assistant MQTT reconfigure screen behavior and reset issue.
+- Home Assistant local voice setup history.
+- Whisper, Piper, and openWakeWord local voice architecture notes.
+- HA Assist exposed-entity cleanup history.
+- Battery SOC notification setup history.
+- Sonos integration setup history.
+- Home Assistant Voice Preview Edition setup notes.
+
+Classification:
+- Preserve in COLBY Current Truth.
+- Remove from ChatGPT memory after verification.
+- Keep only the current confirmed Home Assistant architecture in ChatGPT memory.
+- Current confirmed architecture: SolarAssistant MQTT bridges into HA Mosquitto; HA MQTT integration remains pointed at core-mosquitto; local voice uses Whisper, Piper, openWakeWord, and HA conversation agent.
+```
+
+## Manual Memory Migration Entry
+
+- Timestamp: 2026-06-16 16:39:59 CDT
+- Source: remember command
+
+```text
+ChatGPT Memory Full Archive Export — 2026-06-16
+
+Purpose:
+Preserve useful ChatGPT memory content inside COLBY Current Truth before clearing ChatGPT memory.
+
+Disposition:
+- Preserve this archive in COLBY.
+- After verification, Greg may delete all ChatGPT saved memories.
+- Rebuild ChatGPT memory afterward using only a curated core set.
+- Treat archived operational details as historical unless Current Truth or live evidence confirms they are current.
+
+Major categories archived:
+- Greg identity, preferences, writing style, command style, and decision preferences.
+- Cognitive Workstead mission, Greg/Mel roles, outreach history, grant positioning, and public messaging rules.
+- COL-B / Colby / ASUSAI / COS architecture, governance rules, audit requirements, rollback requirements, and Current Truth workflow.
+- ASUSAI AI server history, Open WebUI, Ollama, Grafana, Node Exporter, Speedify, Cloudflare, NGINX, dashboard, backup, and self-healing pipeline plans.
+- Current confirmed ASUSAI fact: ASUSAI uses RTX 3090 and has working COLBY CLI/OpenAI API access.
+- PI4 / McKenzie Solar collector and GitHub Pages publishing role.
+- McKenzie Solar architecture, SolarAssistant, EG4 18kPV, MPPT mapping, Central Time rules, and live-data authority rules.
+- Home Assistant architecture, SolarAssistant MQTT bridge, Mosquitto, local voice stack, HA terminology corrections, and known UI workflow notes.
+- Refoss EM16 Pro mapping, validation history, CT channel notes, and panel mapping notes.
+- RiVi/RV solar, Victron, battery bank, dashboard, and Total AC derivation notes.
+- Historical Raspberry Pi, Jetson, k3s, Rancher, Slurm, Drobo, NAS, VPN, logging, and standardization details.
+- Recipes and family recipe collection references.
+- USAFR profile, rank, duty title, Maxwell/Gunter assignment, and military writing defaults.
+- Professional writing, resumes, IAM ebook, cover letters, and outreach preferences.
+- Future project concepts including Autonomous MSP Operations, AI log anomaly detection, electrical system design, and vapor fuel concept.
+
+Governance:
+- ChatGPT memory should only retain durable strategic facts expected to matter for 6+ months.
+- Operational details belong in COLBY Current Truth, reports, project records, or logs.
+- Do not re-add obsolete troubleshooting artifacts to ChatGPT memory.
+- Do not blend historical lab infrastructure with live McKenzie operations.
+- For McKenzie Solar, use live bridge/API data as source of truth.
+
+Source:
+This archive was based on Greg’s exported/pasted ChatGPT memory list uploaded as Pasted text.txt during the 2026-06-16 cleanup session.
+```
+
 ## Latest Sync Report
 
 Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-16T16:20:34
+Generated: 2026-06-21T05:50:11
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
@@ -2839,11 +3022,11 @@ WROTE: /opt/colby/reports/executive/current_day_summary.md
 
 - OK: /opt/colby/reports/projects/current_milestone_status.md (2701 bytes)
 - OK: /opt/colby/reports/capabilities/current_capability_status.md (5030 bytes)
-- OK: /opt/colby/reports/projects/current_project_status.md (2475 bytes)
-- OK: /opt/colby/reports/projects/current_dependency_status.md (2120 bytes)
+- OK: /opt/colby/reports/projects/current_project_status.md (2478 bytes)
+- OK: /opt/colby/reports/projects/current_dependency_status.md (2115 bytes)
 - OK: /opt/colby/reports/projects/current_critical_path.md (1677 bytes)
 - OK: /opt/colby/reports/projects/current_project_impact.md (2393 bytes)
-- OK: /opt/colby/reports/executive/current_day_summary.md (5369 bytes)
+- OK: /opt/colby/reports/executive/current_day_summary.md (5432 bytes)
 - OK: /opt/colby/reports/personas/current_persona_status.md (112 bytes)
 
 ## Sync Summary
