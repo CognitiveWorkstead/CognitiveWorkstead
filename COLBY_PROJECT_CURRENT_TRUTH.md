@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T16:56:04-05:00
+Generated Local Time: 2026-06-21T17:03:50-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,17 +81,17 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 20240
-- Modified Time: 2026-06-21T16:56:03-05:00
-- SHA256: afaa1ecb54ff9ef815074d43fe80cbdc01c6aa519d0ea6be9e9d4038e545f904
+- Size Bytes: 20722
+- Modified Time: 2026-06-21T17:03:48-05:00
+- SHA256: 8782415c6a47914c97e2a07d8d462ae8b2c7eb6e122fd2c384d2e32ceaaf6164
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
 - Required: False
 - Exists: True
-- Size Bytes: 5165
-- Modified Time: 2026-06-21T16:56:03-05:00
-- SHA256: 8285704c417d21d89a2ce1b2f3a5c4534f78ab14b97a3a092f5be8e3af5ac490
+- Size Bytes: 5755
+- Modified Time: 2026-06-21T17:03:48-05:00
+- SHA256: df492ca42c6f74d93ca607a2d83b4ce43c4154a24615bb0a18d075430321e810
 
 ### Current State
 - Path: /opt/colby/state/current_state.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 3152
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: a65c8ce2ab72b86fb185f9a3b3532d98d1ccc704c36711736a9ba904154b3c4e
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: 036e7e4321653c9ebb3e72dce9f08db06ca692d66bae0d8abfb17129b0c55669
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2863
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: 795fba6e39b407864d0c257c5b9cfc780c88901aee0beb85a5cc65b7a739f3c8
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: a900ca2c26654e6dd47a5006c21acd6ce988d197ec06b1a0fb0c5aadfd36d437
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2434
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: 10b78d270dbb70312018b3c9760549704dd4e94caf767e69f645dd20497d17be
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: 38c7f40c3ab8cfcafc4b55b35303d4e05fa92f586d7a01e342c4c7a61a6019c3
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1893
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: 6036dafab89d6c9be404c9f2495da80fdb9649200f0aa3fb6745d9e299b8bd18
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: fb6725dc373c38975cfe72694b0faea380bde8feab3641a5511bb5842d0d5bb7
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5914
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: fcb9f0d1573e5cf728483129a9120adbc1c74a41de184f23ccad5eeaa8506acd
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: da361544b6bd0246ec5e8e376698d9ab9711cc75f30dba6e8a1cb1c873800747
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 5254
-- Modified Time: 2026-06-21T16:56:03-05:00
-- SHA256: bdd041d9b7aab52d1ca73e4f25e44e985354f06a356c4c98139a747775ab7dfb
+- Size Bytes: 5460
+- Modified Time: 2026-06-21T17:03:48-05:00
+- SHA256: e5ad9865d1405f220adb6679515a321d7c05525ad0ef289c189eaf23655a9a3c
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 21793
-- Modified Time: 2026-06-21T16:56:03-05:00
-- SHA256: 0502a524e72397dadd44fe6e1f1caef71f50c462918a69ca59f1919b4183c967
+- Size Bytes: 22246
+- Modified Time: 2026-06-21T17:03:48-05:00
+- SHA256: 39b1f022db10e94006d4b3156b47c14371406791620aa5f79f2349e55a6a990c
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8436
-- Modified Time: 2026-06-21T16:56:03-05:00
-- SHA256: a2c23ed4550f240ef8143a7ae39a613479a779bed93d80e15af66c9236698412
+- Size Bytes: 8442
+- Modified Time: 2026-06-21T17:03:48-05:00
+- SHA256: 0ce2615cca50bb47072e2ddc9fb9e31a90055aaf386add6f1019400b26b24ae9
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
 - Size Bytes: 2078
-- Modified Time: 2026-06-21T16:56:03-05:00
-- SHA256: ca2b77a8a2435161291b9f42e8f11331a358daddc33ccfbb1da176a342f8efb8
+- Modified Time: 2026-06-21T17:03:48-05:00
+- SHA256: e359e1e348f475175e34bfe141c39ad4542fb89a36239856cb1b42267a7479d6
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -298,8 +298,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 4652
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: 44707691e17e8d4cc00b1e85d851c8393283428cfe92cb05b97cd810883d5502
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: 794734e23935d84ec5fec30f34bf13bf4e302babbb85a563fc83fc99f75cd0a5
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T16:56:04-05:00
-- SHA256: 5675d7291ac0ca718d3289da4b10210908dedc88f424af1e9855584c8030e74c
+- Modified Time: 2026-06-21T17:03:50-05:00
+- SHA256: 0cb10fd5df8e8ba28ebf273f79bae32f53240c5c9572b15b632d334318bf7e62
 
 ## Colby System Architecture
 
@@ -1308,7 +1308,15 @@ Registry:
 - Updated: 2026-06-21T16:44:34-05:00
 - When probing SSH aliases from governed sudo scripts, use `ssh -F /home/cothrang/.ssh/config` so aliases remain available.\n\n## SSH Explicit Identity Rule
 - Updated: 2026-06-21T16:56:03-05:00
-- Governed sudo scripts that use SSH aliases must pass both `-F /home/cothrang/.ssh/config` and `-i /home/cothrang/.ssh/id_ed25519`.\n
+- Governed sudo scripts that use SSH aliases must pass both `-F /home/cothrang/.ssh/config` and `-i /home/cothrang/.ssh/id_ed25519`.\n\n\n## PI4 Direct Tailscale Probe Rule
+- Updated: 2026-06-21T16:58:59-05:00
+- Prefer direct PI4 Tailscale endpoint `100.114.132.97` for governed inventory/publish checks when alias behavior is inconsistent.\n
+
+## Remote Inventory Sudo SSH Rule
+- Updated: 2026-06-21T17:03:48-05:00
+- Sudo-launched SSH probes must use absolute identity paths.
+- PI4 inventory uses direct Tailscale endpoint `100.114.132.97`.
+- PI500 inventory uses explicit identity `/home/cothrang/.ssh/id_ed25519`.
 
 ## Infrastructure Inventory
 
@@ -1447,7 +1455,16 @@ Known Functions:
 - Ready: `6`; partial: `0`; blocked/not ready: `2`.\n\n## PI500 Explicit Identity Repair
 - Updated: 2026-06-21T16:56:03-05:00
 - Remote inventory SSH probes now pass `-i /home/cothrang/.ssh/id_ed25519` explicitly so sudo/root does not expand `~` to `/root`.
-- Ready surfaces: `6`; blocked/not ready: `2`.\n
+- Ready surfaces: `6`; blocked/not ready: `2`.\n\n\n## PI4 Direct Tailscale Inventory Rule
+- Updated: 2026-06-21T16:58:59-05:00
+- PI4 inventory validation uses direct Tailscale IP `100.114.132.97`, matching the Current Truth publisher route.
+- Ready surfaces: `7`; blocked/not ready: `1`.\n
+
+## Remote Access Inventory Final State
+- Updated: 2026-06-21T17:03:48-05:00
+- Remote access inventory shows `7` ready surfaces and `1` blocked/not ready surface.
+- Ready: ASUSAI local, PI4 direct Tailscale SSH, PI500 Tailscale SSH, Home Assistant HTTP surface, Colby proxy, OpenWebUI, Grafana.
+- Blocked/not ready: GCSnapDragon SSH/remote shell.
 
 ## Current State
 
@@ -1954,7 +1971,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -2101,7 +2118,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2215,7 +2232,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2312,7 +2329,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2370,7 +2387,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -3170,6 +3187,12 @@ Generated: 2026-06-21T05:57:22-05:00
 - Updated: 2026-06-21T16:44:34-05:00
 - Status: PASS
 - Ready: `6`; partial: `0`; blocked/not ready: `2`\n## PI500 Explicit SSH Identity Repair\n- Updated: 2026-06-21T16:56:03-05:00\n- Status: PASS\n- Ready surfaces: `6`; blocked/not ready: `2`\n
+## Remote Access Inventory Final Closeout
+- Updated: 2026-06-21T17:03:48-05:00
+- Status: PASS
+- Ready surfaces: `7`
+- Blocked/not ready surfaces: `1`
+- Remaining blocked surface: GCSnapDragon SSH/remoting
 
 ## Governed Action Audit Log
 
@@ -3177,47 +3200,18 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T16:56:03-05:00
+Generated: 2026-06-21T17:03:48-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 62
-- Decisions: {'approved': 45, 'approval_required': 17}
-- Risk classes: {'WRITES_LOCAL': 40, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 16}
-- Action classes: {'local_write': 37, 'system_write': 6, 'memory_promotion': 3, 'publish': 15, 'external_control': 1}
-- Status: {'validated': 42, 'denied': 16, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
+- Events: 63
+- Decisions: {'approved': 46, 'approval_required': 17}
+- Risk classes: {'WRITES_LOCAL': 41, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 16}
+- Action classes: {'local_write': 38, 'system_write': 6, 'memory_promotion': 3, 'publish': 15, 'external_control': 1}
+- Status: {'validated': 43, 'denied': 16, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
 
 ## Recent Events
-
-### Install PI4 direct Tailscale access
-
-- Event ID: `gaa_012c0cefb1f62a94`
-- Occurred: 2026-06-21T15:37:55-05:00
-- Decision: `approved`
-- Action class: `system_write`
-- Risk class: `WRITES_SYSTEM`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/pi4_direct_tailscale_access_20260621_153552`
-- Memory updated: `True`
-- Publish status: `local_current_truth_regenerated`
-- Current Truth semantic SHA256: `25c5cd534e367802ec7985550c1eeedd3e383a1aaf8c2917a4cf34ad4b627eb1`
-
-Touched paths:
-- `/opt/colby/reports/cos/pi4_direct_tailscale_access.md`
-- `/opt/colby/reports/cos/pi4_direct_tailscale_access.json`
-- `/home/cothrang/.ssh/config`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/core/infrastructure_inventory.md`
-
-Validations:
-- asusai_to_pi4_lan_ssh: `PASS`
-- asusai_to_pi4_tailscale_ssh: `PASS`
-- pi500_to_pi4_tailscale_ssh: `pass`
-
-Notes:
-- Direct PI4 Tailscale path avoids travel WiFi/home LAN subnet overlap.
 
 ### Close PI500 route blockers after direct PI4 Tailscale success
 
@@ -3781,18 +3775,51 @@ Validations:
 Notes:
 - No remote writes were performed on PI500; the repair uses explicit identity for sudo-launched SSH.
 
+### Close out PI4 inventory direct Tailscale repair after JSON tail cleanup
+
+- Event ID: `gaa_79450541d174fd5f`
+- Occurred: 2026-06-21T17:03:48-05:00
+- Decision: `approved`
+- Action class: `local_write`
+- Risk class: `WRITES_LOCAL`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/pi4_inventory_closeout_json_tail_20260621_170348`
+- Memory updated: `True`
+- Publish status: `pending`
+- Current Truth semantic SHA256: `ebd47bf60c3af0e2c5df8fb6152789fd57867d2487dc396f8fe0372883e9b2bd`
+
+Touched paths:
+- `/opt/colby/state/cos/cos_status.json`
+- `/opt/colby/reports/cos/COS_STATUS.md`
+- `/opt/colby/reports/cos/remote_access_control_inventory.json`
+- `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`
+- `/opt/colby/memory/core/infrastructure_inventory.md`
+- `/opt/colby/memory/operational/code_capability_registry_active.md`
+
+Validations:
+- cos_status_json: `PASS`
+- gcsnapdragon_remaining_blocked: `PASS`
+- pi4_ready: `PASS`
+- pi500_ready: `PASS`
+- remote_inventory_summary: `{'blocked_or_not_ready_count': 1, 'partial_count': 0, 'preferred_pattern': 'single-command scripts through Tailscale SSH/API; PI4 uses direct Tailscale IP; no Telnet unless forced by legacy device', 'ready_count': 7, 'surface_count': 8}`
+
+Notes:
+- Previous failure was caused by a literal trailing \n after the JSON document.
+- Inventory already showed PI4 ready via direct Tailscale endpoint before closeout.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T16:56:03-05:00
+Generated: 2026-06-21T17:03:48-05:00
 
 ## Overview
 
-- Audit events: 62
-- Approved actions: 45
+- Audit events: 63
+- Approved actions: 46
 - Approval-required decisions: 17
 - Denied or blocked actions: 18
 - Approval-surface items: 27
@@ -3800,11 +3827,11 @@ Generated: 2026-06-21T16:56:03-05:00
 
 ## Current Controls
 
-- preflight_policy_installed: not confirmed
-- preflight_enforcement_installed: not confirmed
-- audit_log_installed: not confirmed
-- fresh_context_correction_installed: not confirmed
-- approval_surface_review_installed: not confirmed
+- preflight_policy_installed: active
+- preflight_enforcement_installed: active
+- audit_log_installed: active
+- fresh_context_correction_installed: active
+- approval_surface_review_installed: active
 
 ## Approval Surface
 
@@ -3825,6 +3852,7 @@ Generated: 2026-06-21T16:56:03-05:00
 
 ## Recent Approved Actions
 
+- 2026-06-21T17:03:48-05:00 | Close out PI4 inventory direct Tailscale repair after JSON tail cleanup | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, +2 more
 - 2026-06-21T16:56:03-05:00 | Repair PI500 inventory explicit SSH identity | approved / validated | local_write / WRITES_LOCAL | paths: /root/.ssh/known_hosts, /home/cothrang/.ssh/known_hosts, /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, +2 more
 - 2026-06-21T16:44:34-05:00 | Repair remote access inventory SSH config handling | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +2 more
 - 2026-06-21T16:42:20-05:00 | Install remote access control inventory | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, /opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md, /opt/colby/reports/cos/remote_execution_control_plan.json, +5 more
@@ -3832,7 +3860,6 @@ Generated: 2026-06-21T16:56:03-05:00
 - 2026-06-21T16:37:25-05:00 | Finalize Right Turn historical-only closeout | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/right_turn_historical_only_scan.json, /opt/colby/reports/cos/RIGHT_TURN_HISTORICAL_ONLY_SCAN.md, /opt/colby/reports/cos/housekeeping_closeouts.json, /opt/colby/memory/core/current_capabilities.md, +3 more
 - 2026-06-21T16:27:37-05:00 | Unblock Home Assistant remote work and define remote control plan | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/memory/projects/home_assistant_multi_site.md, /opt/colby/memory/blockers/home_assistant_multi_site.md, /opt/colby/memory/milestones/home_assistant_multi_site.md, /opt/colby/memory/dependencies/home_assistant_multi_site.md, +4 more
 - 2026-06-21T16:23:02-05:00 | Install debug-only route context trace | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/services/context/relationship_context_loader.py, /opt/colby/reports/cos/route_context_trace_report.json, /opt/colby/reports/cos/route_context_trace_report.md, /opt/colby/memory/core/current_capabilities.md, +3 more
-- 2026-06-21T16:20:44-05:00 | Triage and restrict /home/cothrang/server.key | approved / validated | local_write / WRITES_LOCAL | paths: /home/cothrang/server.key, /opt/colby/reports/security/server_key_triage.json, /opt/colby/reports/security/SERVER_KEY_TRIAGE.md, /opt/colby/memory/core/infrastructure_inventory.md, +3 more
 
 ## Needs Greg
 
@@ -3867,7 +3894,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T16:56:03-05:00
+Generated: 2026-06-21T17:03:48-05:00
 
 ## Conversation Policy
 
@@ -5227,7 +5254,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5483,7 +5510,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T16:56:04
+Generated: 2026-06-21T17:03:50
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
