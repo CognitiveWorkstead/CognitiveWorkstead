@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-22T10:20:53.123734+00:00",
-  "timestamp_central": "Jun 22, 2026, 5:20 AM Central Time",
+  "timestamp": "2026-06-22T10:36:39.489268+00:00",
+  "timestamp_central": "Jun 22, 2026, 5:36 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dawn",
@@ -11,12 +11,12 @@
     "operational_message": "Solar grading suspended during dawn conditions."
   },
   "now": {
-    "load_w": 222.0,
-    "solar_w": 0.0,
+    "load_w": 198.0,
+    "solar_w": 36.0,
     "generator_w": 0,
     "battery_soc": 90.0,
-    "battery_power_w": -240.0,
-    "mode": "Battery",
+    "battery_power_w": -183.0,
+    "mode": "Solar/Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 14.9m",
+    "reason": "HA both persons away; HA presence fresh 15.3m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-22T10:16:52.403488+00:00",
+        "timestamp": "2026-06-22T10:32:10.995630+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-06-22T10:16:52.763705Z",
+        "timestamp": "2026-06-22T10:32:11.279486Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 2.73,
+    "consumed_kwh": 2.78,
     "produced_kwh": 0.05,
     "generator_kwh": 0,
-    "avg_load_w": 266,
+    "avg_load_w": 264,
     "peak_load_w": 1328,
     "peak_solar_w": 56,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 45.6,
-    "zero_solar_days": 7.1,
-    "similar_weather_days": 4.4,
-    "samples": 1804
+    "zero_solar_days": 7.2,
+    "similar_weather_days": 4.5,
+    "samples": 1774
   },
   "historical_model": {
     "available": true,
@@ -231,33 +231,33 @@
     "expected_today_kwh": 8.28,
     "expected_so_far_kwh": 0.09,
     "produced_so_far_kwh": 0.05,
-    "tracking_vs_expected_so_far_pct": -44.1,
+    "tracking_vs_expected_so_far_pct": -42.2,
     "progress_of_expected_day_pct": 0.6,
     "historical_basis_days": 24,
     "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": false,
-    "actual_now_w": 0,
-    "expected_now_w": null,
-    "performance_pct": null,
-    "variance_pct": null,
-    "grade": "N/A",
-    "basis_days": 0,
-    "samples": 0,
-    "confidence": "No Data",
-    "matched_cloud": null,
+    "available": true,
+    "actual_now_w": 36,
+    "expected_now_w": 1837,
+    "performance_pct": 2.0,
+    "variance_pct": -98.0,
+    "grade": "F",
+    "basis_days": 22,
+    "samples": 22,
+    "confidence": "Medium",
+    "matched_cloud": 77.0,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
     "available": true,
     "current_soc": 90.0,
     "projected_sunset_soc": 100.0,
-    "hours_to_sunset": 14.5,
+    "hours_to_sunset": 14.2,
     "remaining_expected_solar_kwh": 8.23,
-    "remaining_load_kwh": 3.22,
-    "net_remaining_kwh": 5.01,
+    "remaining_load_kwh": 2.82,
+    "net_remaining_kwh": 5.41,
     "expected_today_kwh": 8.28,
     "produced_so_far_kwh": 0.05,
     "basis_days": 24,
@@ -265,8 +265,8 @@
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 0,
-    "similar_avg_solar_w": 13,
+    "actual_solar_w": 36.0,
+    "similar_avg_solar_w": 27,
     "peak_trend": {
       "days": 28,
       "today_peak_w": 56,
@@ -277,12 +277,12 @@
     }
   },
   "forecast": {
-    "avg_overnight_load_w": 482.0,
+    "avg_overnight_load_w": 481.0,
     "overnight_hours": 12,
-    "expected_overnight_kwh": 5.78,
+    "expected_overnight_kwh": 5.77,
     "expected_sunrise_soc": 78.6,
     "confidence": "High",
-    "samples": 4276
+    "samples": 4291
   },
   "visual_conditions": {
     "camera_online": true,
