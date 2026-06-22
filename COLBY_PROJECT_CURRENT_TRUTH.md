@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-21T17:37:16-05:00
+Generated Local Time: 2026-06-22T06:32:00-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -81,9 +81,9 @@ Export Validation:
 - Path: /opt/colby/memory/operational/code_capability_registry_active.md
 - Required: True
 - Exists: True
-- Size Bytes: 22213
-- Modified Time: 2026-06-21T17:37:14-05:00
-- SHA256: 05eda30db40a0c799bcee8596542e2bce909554e62e4ead39a7caa49bd3d24ae
+- Size Bytes: 22496
+- Modified Time: 2026-06-22T06:31:59-05:00
+- SHA256: 0e3904e3cefabca8284730a125e2bbb5c03a1bd77ca216b0a36a6f47f669479c
 
 ### Infrastructure Inventory
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
@@ -121,49 +121,49 @@ Export Validation:
 - Path: /opt/colby/memory/core/current_capabilities.md
 - Required: True
 - Exists: True
-- Size Bytes: 21385
-- Modified Time: 2026-06-21T17:37:14-05:00
-- SHA256: f98ca3fcc5b5bb63eb8bfe4c9de54ba3144bd46b50f2d0a72cbadd543300d848
+- Size Bytes: 21694
+- Modified Time: 2026-06-22T06:31:59-05:00
+- SHA256: fc686e311c2260e391f5d326a9943aa87f92686926d3e17ceda3fbf4e7266d73
 
 ### Current Project Status
 - Path: /opt/colby/reports/projects/current_project_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 3152
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: c9821b4243b77a22930c6197acf43f99acf1f7e628209e3e7441c8a4b0767bf5
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: 99c7d3a825f7ba4235f19d9ab8e4156e66f4d5eca0cabbb3bf64264aa19b364e
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2863
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: 9fbf587f2a9530c6540d8c64e09a45e0065c7ff61bff1568d91b6d646775e493
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: 44549123273b67eac3bdb25c3fe18bc0751c9307962deb226d4243d981a78f36
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2434
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: 7ac8f24dcb66768b19d93f3ebb5f625bd32990d2df5baa0f7b3d90ba7fa0b94f
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: c0ccea64e9c23e304c7d66675bfde5633f713139b4cae043845146a2d41c244b
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1893
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: f823bcc28eb4af3d26bf32e307e1a53f1f82ebccb97ca7a461f07be030a70844
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: 72a35336bb2eb9db993a5916a21e9e3897019bf28e98d54e9fe79a838e33d629
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5914
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: 0f9c22ff1cf35fe5a7f50c2bffcab71abb0eb1170c55502ab5af609b0fc55d69
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: f7d3e5b5cb1ca9c60c301563c5b97aed79cecb1b2c09f52ffe05d5c16b9c07e2
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -201,33 +201,33 @@ Export Validation:
 - Path: /opt/colby/reports/cos/COS_STATUS.md
 - Required: True
 - Exists: True
-- Size Bytes: 6741
-- Modified Time: 2026-06-21T17:37:14-05:00
-- SHA256: 421f1579c2dadf14abf1a909f21f37ddada6ba4ee55cb1bf08de9214a355c79b
+- Size Bytes: 6999
+- Modified Time: 2026-06-22T06:31:59-05:00
+- SHA256: 4790cdd9afe997ab5579d026bfab5cde5bbba4f2d49bf150799e63cdf01a21dc
 
 ### Governed Action Audit Log
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md
 - Required: True
 - Exists: True
-- Size Bytes: 26283
-- Modified Time: 2026-06-21T17:37:14-05:00
-- SHA256: 769c8745df6560b40c5f134a2eaf28f5a5125c639594a29284af35513dee1215
+- Size Bytes: 23643
+- Modified Time: 2026-06-22T06:31:59-05:00
+- SHA256: a1cc91c3cef00bb7f59620656be21571d8a7a89007e86d241a47056489cc0eb1
 
 ### Governed Action Dashboard
 - Path: /opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md
 - Required: True
 - Exists: True
-- Size Bytes: 8685
-- Modified Time: 2026-06-21T17:37:14-05:00
-- SHA256: 30f4e8a2c2ad9b973ce47f48cda1f199bc2796d183926b329b1ea2bab0c28637
+- Size Bytes: 8435
+- Modified Time: 2026-06-22T06:31:59-05:00
+- SHA256: 0f8d01d449e2a6a17d4f65ec73b0e01bc46da291bbb6a6024bdc7365e4e3a18b
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
 - Required: True
 - Exists: True
 - Size Bytes: 2078
-- Modified Time: 2026-06-21T17:37:14-05:00
-- SHA256: 51d8f9b2d4a972b9eef778db66fad0f593b397327d1b644fe1c25ee0fd60c99b
+- Modified Time: 2026-06-22T06:31:59-05:00
+- SHA256: 2b56d16d073b541b8c35222419e1de8390d13eda5e328f18cf5bea84803be558
 
 ### Approval Required Capability Review
 - Path: /opt/colby/reports/cos/approval_required_capability_review.md
@@ -298,8 +298,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 4650
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: 6a940cd0e92c19727d7839eef8e079f7954403495fbd413a68d1c26dc84aeaad
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: 2300d3b63ab86ce7bea1d608910a5639f1cd96bc0c6284dc9a8074f51795f64b
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-21T17:37:16-05:00
-- SHA256: 3ea91d7be214cddb18c2192af882af29ce36dacca5238f7535a0eccd63958507
+- Modified Time: 2026-06-22T06:32:00-05:00
+- SHA256: bbb7deac81eb3140f4c352cd4f5d248f4115cbaa9d9d94e1a17dc1f45a3273fc
 
 ## Colby System Architecture
 
@@ -1347,6 +1347,12 @@ Registry:
 - Native-card visual dashboard writes are governed HA writes.
 - HACS, card-mod, kiosk mode, custom button cards, custom CSS, and HA-served image assets require separate approval.
 
+## COL-B Web Dashboard Service Boundary
+- Updated: 2026-06-22T06:31:59-05:00
+- `colby-dashboard.service` serves the custom dashboard on `127.0.0.1:5062`.
+- nginx exposes it at `/colby-dashboard/` on `ai.gregcothran.com`.
+- The dashboard API must never print or expose the HA token.
+
 ## Infrastructure Inventory
 
 Source: `/opt/colby/memory/core/infrastructure_inventory.md`
@@ -2031,13 +2037,19 @@ Impact:
 - The dashboard uses dark views, dense live tiles, gauges, history graphs, and Jinja-powered mission brief markdown.
 - Custom HA frontend dependencies/assets remain a separate approval-required phase.
 
+## COL-B Final Web Dashboard Capability
+- Updated: 2026-06-22T06:31:59-05:00
+- Colby can operate a custom ASUSAI-hosted visual dashboard backed by Home Assistant API data.
+- Home Assistant can embed the dashboard through a native iframe dashboard.
+- Service, nginx, and HA embed writes are governed actions.
+
 ## Current Project Status
 
 Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -2184,7 +2196,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2298,7 +2310,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2395,7 +2407,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2453,7 +2465,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -3294,6 +3306,12 @@ Generated: 2026-06-21T05:57:22-05:00
 - Views saved: `5`
 - Unique entities saved: `37`
 - Report: `/opt/colby/reports/home_assistant/COLBY_HA_EXECUTIVE_VISUAL_DASHBOARD_RESULT.md`
+## COL-B Final Web Dashboard
+- Updated: 2026-06-22T06:31:59-05:00
+- Status: PASS
+- Public URL: `https://ai.gregcothran.com/colby-dashboard/`
+- HA dashboard path: `colby-final`
+- Report: `/opt/colby/reports/home_assistant/COLBY_FINAL_WEB_DASHBOARD_RESULT.md`
 
 ## Governed Action Audit Log
 
@@ -3301,438 +3319,18 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_AUDIT_LOG.md`
 
 # Governed Action Audit Log
 
-Generated: 2026-06-21T17:37:14-05:00
+Generated: 2026-06-22T06:31:59-05:00
 Source: /opt/colby/state/cos/governed_action_audit_log.jsonl
 
 ## Summary
 
-- Events: 68
-- Decisions: {'approved': 51, 'approval_required': 17}
-- Risk classes: {'WRITES_LOCAL': 44, 'WRITES_SYSTEM': 6, 'EXTERNAL_CONTROL': 18}
-- Action classes: {'local_write': 41, 'system_write': 6, 'memory_promotion': 3, 'publish': 15, 'external_control': 3}
-- Status: {'validated': 48, 'denied': 16, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
+- Events: 82
+- Decisions: {'approved': 52, 'approval_required': 30}
+- Risk classes: {'WRITES_LOCAL': 44, 'WRITES_SYSTEM': 7, 'EXTERNAL_CONTROL': 31}
+- Action classes: {'local_write': 41, 'system_write': 7, 'memory_promotion': 3, 'publish': 28, 'external_control': 3}
+- Status: {'validated': 49, 'denied': 29, 'ready_to_publish': 1, 'partial_blocked': 1, 'blocked': 1, 'approved_completed': 1}
 
 ## Recent Events
-
-### Complete OpenWebUI Persona Integration Production Readiness Review
-
-- Event ID: `gaa_ea391ad8d5b3fd49`
-- Occurred: 2026-06-21T16:00:30-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/openwebui_persona_prr_20260621_160029`
-- Memory updated: `True`
-- Publish status: `ready_to_publish`
-- Current Truth semantic SHA256: `8a214f12507ec6a5b0e8c41a63617b07d1404ebae0b39e637293e72df96eed81`
-
-Touched paths:
-- `/opt/colby/reports/personas/openwebui_persona_production_readiness_review.md`
-- `/opt/colby/reports/personas/openwebui_persona_production_readiness_review.json`
-- `/opt/colby/memory/projects/openwebui_persona_integration.md`
-- `/opt/colby/memory/milestones/openwebui_persona_integration.md`
-- `/opt/colby/reports/personas/current_persona_status.md`
-
-Validations:
-- phase5_required: `false`
-- production_readiness: `production_ready_read_only`
-
-Notes:
-- OpenWebUI Persona Integration passed production readiness for governed read-only persona routing.
-
-### Close OpenWebUI Persona Integration as operational
-
-- Event ID: `gaa_1a08a798b5d1c633`
-- Occurred: 2026-06-21T16:03:02-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/openwebui_persona_project_closeout_20260621_160302`
-- Memory updated: `True`
-- Publish status: `ready_to_publish`
-- Current Truth semantic SHA256: `6f2eb8c753f90b47b307ab7a376574a4f6dda3b937001ba51734180ee5e249a7`
-
-Touched paths:
-- `/opt/colby/memory/projects/openwebui_persona_integration.md`
-- `/opt/colby/memory/blockers/openwebui_persona_integration.md`
-- `/opt/colby/memory/milestones/openwebui_persona_integration.md`
-- `/opt/colby/reports/personas/current_persona_status.md`
-- `/opt/colby/reports/personas/openwebui_persona_project_closeout.md`
-- `/opt/colby/reports/personas/openwebui_persona_project_closeout.json`
-
-Validations:
-- critical_path_removed: `PASS`
-- openwebui_persona_status: `operational`
-
-Notes:
-- Project closed as operational; Phase 5 remains future-only if new requirements require governed implementation.
-
-### Install Current Truth Health generated service
-
-- Event ID: `gaa_9a5d50d6c5137e02`
-- Occurred: 2026-06-21T16:07:15-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/current_truth_health_service_20260621_160714`
-- Memory updated: `True`
-- Publish status: `ready_to_publish`
-- Current Truth semantic SHA256: `b73fb3f0d43835ba4cd9e387684821e32c08cba68bd81ffd6c5d2603ddd8919a`
-
-Touched paths:
-- `/opt/colby/services/cos/current_truth_health.py`
-- `/opt/colby/reports/cos/current_truth_health.md`
-- `/opt/colby/reports/cos/current_truth_health.json`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-
-Validations:
-- current_truth_health: `PASS`
-- json_valid: `PASS`
-
-Notes:
-- Promoted Current Truth health from prototype into repeatable generated service/report.
-
-### Repair Current Truth publisher PI4 route
-
-- Event ID: `gaa_e99ea2ac25e3c8ed`
-- Occurred: 2026-06-21T16:11:03-05:00
-- Decision: `approval_required`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `approved_completed`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/current_truth_publisher_pi4_tailscale_20260621_161051`
-- Memory updated: `True`
-- Publish status: `pending_retry`
-- Current Truth semantic SHA256: `cb9307867e3619a96a9ec821c1dd8229ded71670f072dd9cd6b134a20834dac8`
-
-Touched paths:
-- `/opt/colby/services/export/publish_current_truth.sh`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-- `/opt/colby/memory/core/infrastructure_inventory.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- pi4_tailscale_ssh: `PASS`
-- publisher_syntax: `PASS`
-
-Notes:
-- The prior publish failed after host-key repair because sudo/root did not use Greg's normal SSH identity and the publisher still targeted PI4 by LAN IP.
-- The publisher now uses PI4 Tailscale IP 100.114.132.97 and explicit identity /home/cothrang/.ssh/id_ed25519.
-
-### Close out travel-safe Current Truth publishing route
-
-- Event ID: `gaa_02294c5f982d975e`
-- Occurred: 2026-06-21T16:13:03-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/travel_safe_current_truth_publish_closeout_20260621_161302`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `ee1cbc55633e1a141ba42d13311c1b1e523c41ec79caef1dc63295c970d07471`
-
-Touched paths:
-- `/opt/colby/reports/cos/housekeeping_closeouts.json`
-- `/opt/colby/memory/core/infrastructure_inventory.md`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- pi4_tailscale_ssh: `PASS`
-- publisher_tailscale_first: `PASS`
-
-Notes:
-- Greg travels frequently, so Colby infrastructure access must use Tailscale-first routing when available.
-- Current Truth publishing is closed out as travel-safe through PI4 Tailscale endpoint 100.114.132.97.
-
-### Triage and restrict /home/cothrang/server.key
-
-- Event ID: `gaa_7e494a3d5907cb3b`
-- Occurred: 2026-06-21T16:20:44-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/server_key_security_triage_20260621_162044`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `4c2f918829a9c40d1f2276f4024fbc6fdd2a61911dd706e5c5bd3b01596d6165`
-
-Touched paths:
-- `/home/cothrang/server.key`
-- `/opt/colby/reports/security/server_key_triage.json`
-- `/opt/colby/reports/security/SERVER_KEY_TRIAGE.md`
-- `/opt/colby/memory/core/infrastructure_inventory.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- content_not_printed: `PASS`
-- permissions_restricted: `PASS`
-- server_key_status: `restricted_small_text_no_private_marker`
-
-Notes:
-- File contents were not printed.
-- The file was restricted to owner-only permissions instead of being deleted.
-
-### Install debug-only route context trace
-
-- Event ID: `gaa_094d6c42bdb41140`
-- Occurred: 2026-06-21T16:23:02-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/debug_route_context_trace_20260621_162301`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `5779b37c76aaa9ba17e2776850e7498e436ad01775dde63672682e1c908362e3`
-
-Touched paths:
-- `/opt/colby/services/context/relationship_context_loader.py`
-- `/opt/colby/reports/cos/route_context_trace_report.json`
-- `/opt/colby/reports/cos/route_context_trace_report.md`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- debug_trace_metadata_only: `PASS`
-- normal_mode_unchanged: `PASS`
-- syntax: `PASS`
-- unauthorized_case: `PASS`
-
-Notes:
-- Debug mode is opt-in only.
-- The trace includes paths, route, authorization, freshness, and counts, but not raw memory content.
-
-### Unblock Home Assistant remote work and define remote control plan
-
-- Event ID: `gaa_1df4e504c8cdfbd1`
-- Occurred: 2026-06-21T16:27:37-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/home_assistant_remote_unblock_20260621_162737`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `7889a0580624c758aebcec002db57a9a67ff41a16f5a4748c637895b3854ab6c`
-
-Touched paths:
-- `/opt/colby/memory/projects/home_assistant_multi_site.md`
-- `/opt/colby/memory/blockers/home_assistant_multi_site.md`
-- `/opt/colby/memory/milestones/home_assistant_multi_site.md`
-- `/opt/colby/memory/dependencies/home_assistant_multi_site.md`
-- `/opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md`
-- `/opt/colby/reports/cos/remote_execution_control_plan.json`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- ha_blocker_split: `PASS`
-- physical_work_remains_gated: `PASS`
-- remote_work_unblocked: `PASS`
-
-Notes:
-- Greg clarified Home Assistant is running and reachable remotely.
-- Return to McKenzie is no longer a hard blocker for remote planning/read-only work.
-
-### Finalize Right Turn historical-only closeout
-
-- Event ID: `gaa_325ee7ff4fd1d769`
-- Occurred: 2026-06-21T16:37:25-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/right_turn_historical_only_final_20260621_163720`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `de16b0e8ddf2d1dd8f6929e1bab91bc9285728c04a79ef0ce3203a7f624ac20e`
-
-Touched paths:
-- `/opt/colby/reports/cos/right_turn_historical_only_scan.json`
-- `/opt/colby/reports/cos/RIGHT_TURN_HISTORICAL_ONLY_SCAN.md`
-- `/opt/colby/reports/cos/housekeeping_closeouts.json`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- active_current_risk_count: `0`
-- archive_aware_classification: `PASS`
-- housekeeping_closeout_recorded: `PASS`
-
-Notes:
-- Right Turn remains historical-only.
-- No files were deleted.
-
-### Repair Right Turn housekeeping generator closeout handling
-
-- Event ID: `gaa_b3d1a958f4c0a1b8`
-- Occurred: 2026-06-21T16:38:33-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/right_turn_housekeeping_generator_repair_20260621_163833`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `71f0aaf9f3cd6d61ed076b6cb9fe2a2eb3ea342a16d2e2309135a2d72fb5b9ac`
-
-Touched paths:
-- `/opt/colby/services/cos/housekeeping_agenda.py`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- right_turn_housekeeping_closed: `PASS`
-- syntax: `PASS`
-
-Notes:
-- The prior closeout was recorded correctly, but the stale-context branch did not consult closeouts.
-
-### Install remote access control inventory
-
-- Event ID: `gaa_7b42792a5be60869`
-- Occurred: 2026-06-21T16:42:20-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/remote_access_control_inventory_20260621_164219`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `7db33aedee7a3ba43b3db98dce7303afb238eae723cd49f0e0ae5b61c05a5a89`
-
-Touched paths:
-- `/opt/colby/reports/cos/remote_access_control_inventory.json`
-- `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`
-- `/opt/colby/reports/cos/REMOTE_EXECUTION_CONTROL_PLAN.md`
-- `/opt/colby/reports/cos/remote_execution_control_plan.json`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-- `/opt/colby/memory/core/current_capabilities.md`
-- `/opt/colby/memory/core/infrastructure_inventory.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-
-Validations:
-- read_only_probe: `PASS`
-- summary: `{'blocked_or_not_ready_count': 3, 'partial_count': 0, 'preferred_pattern': 'single-command scripts through Tailscale SSH/API; no Telnet unless forced by legacy device', 'ready_count': 5, 'surface_count': 8}`
-
-Notes:
-- Inventory used read-only SSH/TCP/HTTP probes.
-- Telnet is not recommended unless a specific legacy exception is approved.
-
-### Repair remote access inventory SSH config handling
-
-- Event ID: `gaa_bd9ab0777db53ba0`
-- Occurred: 2026-06-21T16:44:34-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/remote_access_inventory_ssh_config_repair_20260621_164425`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `4a42bee14a328b4141f1068f5f28ee1d577bac6393b8e0654db5918a6fa9d45a`
-
-Touched paths:
-- `/opt/colby/reports/cos/remote_access_control_inventory.json`
-- `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-- `/opt/colby/memory/core/infrastructure_inventory.md`
-- `/opt/colby/memory/operational/code_capability_registry_active.md`
-
-Validations:
-- summary: `{'blocked_or_not_ready_count': 2, 'partial_count': 0, 'preferred_pattern': 'single-command scripts through Tailscale SSH/API; no Telnet unless forced by legacy device', 'ready_count': 6, 'surface_count': 8}`
-
-Notes:
-- The first inventory ran under sudo and did not use Greg's SSH alias config.
-
-### Current Truth publish blocked without approval
-
-- Event ID: `gaa_220e7acfab6f38db`
-- Occurred: 2026-06-21T16:51:38-05:00
-- Decision: `approval_required`
-- Action class: `publish`
-- Risk class: `EXTERNAL_CONTROL`
-- Status: `denied`
-- Approved by: `None`
-- Backup: `None`
-- Memory updated: `False`
-- Publish status: `blocked_before_publish`
-- Current Truth semantic SHA256: `6b739600e6935a9dbbec9687837fe646c941437fc0cf3256c490d7652a36f9d5`
-
-Touched paths:
-- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
-- `/opt/colby/export/knowledge_transfer.json`
-
-Validations:
-- action_executed: `NO`
-- git_push: `NO`
-- preflight: `PASS`
-- remote_copy: `NO`
-- required_contract: `governed_action_required`
-
-Notes:
-- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
-- No publish log, remote copy, commit, or push should occur before approval.
-
-### Repair PI500 inventory explicit SSH identity
-
-- Event ID: `gaa_d6b7a6106807c869`
-- Occurred: 2026-06-21T16:56:03-05:00
-- Decision: `approved`
-- Action class: `local_write`
-- Risk class: `WRITES_LOCAL`
-- Status: `validated`
-- Approved by: `Greg`
-- Backup: `/opt/colby/backups/pi500_inventory_explicit_identity_20260621_165538`
-- Memory updated: `True`
-- Publish status: `pending`
-- Current Truth semantic SHA256: `6b739600e6935a9dbbec9687837fe646c941437fc0cf3256c490d7652a36f9d5`
-
-Touched paths:
-- `/root/.ssh/known_hosts`
-- `/home/cothrang/.ssh/known_hosts`
-- `/opt/colby/reports/cos/remote_access_control_inventory.json`
-- `/opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md`
-- `/opt/colby/state/cos/cos_status.json`
-- `/opt/colby/reports/cos/COS_STATUS.md`
-
-Validations:
-- pi500_ssh: `PASS`
-- summary: `{'blocked_or_not_ready_count': 2, 'partial_count': 0, 'preferred_pattern': 'single-command scripts through Tailscale SSH/API; no Telnet unless forced by legacy device', 'ready_count': 6, 'surface_count': 8}`
-
-Notes:
-- No remote writes were performed on PI500; the repair uses explicit identity for sudo-launched SSH.
 
 ### Close out PI4 inventory direct Tailscale repair after JSON tail cleanup
 
@@ -3937,20 +3535,436 @@ Notes:
 - Kept prior colby-command-center dashboard intact as fallback.
 - Closer parity with concept image requires custom styling/assets phase.
 
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_327f1f7cdd906a58`
+- Occurred: 2026-06-21T17:51:48-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_d601280867ad25ae`
+- Occurred: 2026-06-21T18:51:54-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_512e9fb50c698814`
+- Occurred: 2026-06-21T19:52:14-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_e0d7ae8c87b76094`
+- Occurred: 2026-06-21T20:52:24-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_c469c60bc5c6067c`
+- Occurred: 2026-06-21T21:52:40-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_bce940d5a2aefb4f`
+- Occurred: 2026-06-21T22:52:53-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_5522d225f7d0d631`
+- Occurred: 2026-06-21T23:52:54-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_c4d1cdf88fbfc920`
+- Occurred: 2026-06-22T00:53:03-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_3730dce564b558ab`
+- Occurred: 2026-06-22T01:53:04-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_3bad0bbebd502290`
+- Occurred: 2026-06-22T02:53:13-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_e9251e7a0d26a861`
+- Occurred: 2026-06-22T03:53:38-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_f6ffe09149e23086`
+- Occurred: 2026-06-22T04:53:38-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Current Truth publish blocked without approval
+
+- Event ID: `gaa_cd54a672e2e642fc`
+- Occurred: 2026-06-22T05:53:46-05:00
+- Decision: `approval_required`
+- Action class: `publish`
+- Risk class: `EXTERNAL_CONTROL`
+- Status: `denied`
+- Approved by: `None`
+- Backup: `None`
+- Memory updated: `False`
+- Publish status: `blocked_before_publish`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md`
+- `/opt/colby/export/knowledge_transfer.json`
+
+Validations:
+- action_executed: `NO`
+- git_push: `NO`
+- preflight: `PASS`
+- remote_copy: `NO`
+- required_contract: `governed_action_required`
+
+Notes:
+- Blocked because COLBY_GOVERNED_ACTION_APPROVED=Greg was not present.
+- No publish log, remote copy, commit, or push should occur before approval.
+
+### Install COL-B Final ASUSAI-hosted web dashboard and HA embed
+
+- Event ID: `gaa_69c2a85f4f24ee59`
+- Occurred: 2026-06-22T06:31:59-05:00
+- Decision: `approved`
+- Action class: `system_write`
+- Risk class: `WRITES_SYSTEM`
+- Status: `validated`
+- Approved by: `Greg`
+- Backup: `/opt/colby/backups/colby_final_web_dashboard_20260622_063156`
+- Memory updated: `True`
+- Publish status: `pending`
+- Current Truth semantic SHA256: `427a540befa4b07c8ba0d2f954dcf3b09400f665a333c9a41505a947022c23b8`
+
+Touched paths:
+- `/opt/colby/services/web_dashboard/colby_web_dashboard.py`
+- `/opt/colby/services/web_dashboard/static/index.html`
+- `/etc/systemd/system/colby-dashboard.service`
+- `/etc/nginx/sites-available/openwebui.conf`
+- `Home Assistant Lovelace dashboard: colby-final`
+- `/opt/colby/reports/home_assistant/colby_final_web_dashboard_result.json`
+- `/opt/colby/reports/home_assistant/COLBY_FINAL_WEB_DASHBOARD_RESULT.md`
+- `/opt/colby/state/cos/cos_status.json`
+- `/opt/colby/reports/cos/COS_STATUS.md`
+- `/opt/colby/memory/core/current_capabilities.md`
+- `/opt/colby/memory/projects/home_assistant_multi_site.md`
+- `/opt/colby/memory/operational/code_capability_registry_active.md`
+
+Validations:
+- colby_dashboard_service: `PASS`
+- ha_iframe_embed: `PASS`
+- nginx_route: `PASS`
+- result: `{'ha_dashboard': 'colby-final', 'public_url': 'https://ai.gregcothran.com/colby-dashboard/', 'status': 'pass'}`
+- token_values_printed: `False`
+
+Notes:
+- Final visual product is a custom ASUSAI web surface embedded into HA.
+- No HACS/custom HA frontend dependency installed in this pass.
+
 ## Governed Action Dashboard
 
 Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-21T17:37:14-05:00
+Generated: 2026-06-22T06:31:59-05:00
 
 ## Overview
 
-- Audit events: 68
-- Approved actions: 51
-- Approval-required decisions: 17
-- Denied or blocked actions: 18
+- Audit events: 82
+- Approved actions: 52
+- Approval-required decisions: 30
+- Denied or blocked actions: 31
 - Approval-surface items: 27
 - Current items needing Greg: 20
 
@@ -3970,17 +3984,18 @@ Generated: 2026-06-21T17:37:14-05:00
 
 ## Recent Denied Or Blocked Actions
 
-- 2026-06-21T16:51:38-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
-- 2026-06-21T16:11:03-05:00 | Repair Current Truth publisher PI4 route | approval_required / approved_completed | local_write / WRITES_LOCAL | paths: /opt/colby/services/export/publish_current_truth.sh, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/operational/code_capability_registry_active.md, /opt/colby/memory/core/infrastructure_inventory.md, +2 more
-- 2026-06-21T15:51:35-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
-- 2026-06-21T15:34:27-05:00 | Enable PI500 Tailscale subnet route acceptance | approved / blocked | system_write / WRITES_SYSTEM | paths: /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.md, /opt/colby/reports/cos/pi500_tailscale_subnet_route_acceptance.json, /opt/colby/memory/core/current_capabilities.md, /opt/colby/memory/core/infrastructure_inventory.md
-- 2026-06-21T14:51:31-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
-- 2026-06-21T13:51:18-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
-- 2026-06-21T12:51:14-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
-- 2026-06-21T11:51:08-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-22T05:53:46-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-22T04:53:38-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-22T03:53:38-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-22T02:53:13-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-22T01:53:04-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-22T00:53:03-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-21T23:52:54-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
+- 2026-06-21T22:52:53-05:00 | Current Truth publish blocked without approval | approval_required / denied | publish / EXTERNAL_CONTROL | paths: /opt/colby/export/COLBY_PROJECT_CURRENT_TRUTH.md, /opt/colby/export/knowledge_transfer.json
 
 ## Recent Approved Actions
 
+- 2026-06-22T06:31:59-05:00 | Install COL-B Final ASUSAI-hosted web dashboard and HA embed | approved / validated | system_write / WRITES_SYSTEM | paths: /opt/colby/services/web_dashboard/colby_web_dashboard.py, /opt/colby/services/web_dashboard/static/index.html, /etc/systemd/system/colby-dashboard.service, /etc/nginx/sites-available/openwebui.conf, +8 more
 - 2026-06-21T17:37:14-05:00 | Create/update experimental COL-B Executive visual Home Assistant dashboard | approved / validated | external_control / EXTERNAL_CONTROL | paths: Home Assistant Lovelace dashboard: colby-executive, /opt/colby/reports/home_assistant/colby_ha_executive_visual_dashboard_plan.json, /opt/colby/reports/home_assistant/COLBY_HA_EXECUTIVE_VISUAL_DASHBOARD_PLAN.md, /opt/colby/reports/home_assistant/colby_ha_executive_visual_dashboard_result.json, +6 more
 - 2026-06-21T17:28:11-05:00 | Create/update COL-B Home Assistant Command Center dashboard | approved / validated | external_control / EXTERNAL_CONTROL | paths: Home Assistant Lovelace dashboard: colby-command-center, /opt/colby/reports/home_assistant/colby_ha_command_center_dashboard_plan.json, /opt/colby/reports/home_assistant/COLBY_HA_COMMAND_CENTER_DASHBOARD_PLAN.md, /opt/colby/reports/home_assistant/colby_ha_command_center_dashboard_result.json, +6 more
 - 2026-06-21T17:22:15-05:00 | Generate read-only Home Assistant COL-B dashboard blueprint | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/home_assistant/colby_ha_dashboard_blueprint.json, /opt/colby/reports/home_assistant/COLBY_HA_DASHBOARD_BLUEPRINT.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +3 more
@@ -3988,14 +4003,13 @@ Generated: 2026-06-21T17:37:14-05:00
 - 2026-06-21T17:10:51-05:00 | Audit Home Assistant API token access | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/home_assistant_api_token_access_audit.json, /opt/colby/reports/cos/HOME_ASSISTANT_API_TOKEN_ACCESS_AUDIT.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +3 more
 - 2026-06-21T17:03:48-05:00 | Close out PI4 inventory direct Tailscale repair after JSON tail cleanup | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, +2 more
 - 2026-06-21T16:56:03-05:00 | Repair PI500 inventory explicit SSH identity | approved / validated | local_write / WRITES_LOCAL | paths: /root/.ssh/known_hosts, /home/cothrang/.ssh/known_hosts, /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, +2 more
-- 2026-06-21T16:44:34-05:00 | Repair remote access inventory SSH config handling | approved / validated | local_write / WRITES_LOCAL | paths: /opt/colby/reports/cos/remote_access_control_inventory.json, /opt/colby/reports/cos/REMOTE_ACCESS_CONTROL_INVENTORY.md, /opt/colby/state/cos/cos_status.json, /opt/colby/reports/cos/COS_STATUS.md, +2 more
 
 ## Needs Greg
 
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
-- Repair Current Truth publisher PI4 route | WRITES_LOCAL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
-- Enable PI500 Tailscale subnet route acceptance | WRITES_SYSTEM | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
+- Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
+- Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
 - Current Truth publish blocked without approval | EXTERNAL_CONTROL | recent_denied_action | Recent governed action was blocked before execution and needs explicit approval to proceed.
@@ -4023,7 +4037,7 @@ Source: `/opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md`
 
 # Housekeeping Agenda
 
-Generated: 2026-06-21T17:37:14-05:00
+Generated: 2026-06-22T06:31:59-05:00
 
 ## Conversation Policy
 
@@ -4047,7 +4061,7 @@ Do not offer when:
 - Approval-required items: 0
 - Top priority: Advance Cognitive Operating System build
 - Dashboard needs-Greg count: 20
-- Dashboard denied/blocked count: 18
+- Dashboard denied/blocked count: 31
 
 ## Agenda Items
 
@@ -5383,7 +5397,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5408,7 +5422,7 @@ Capture recent accomplishments, discoveries, risks, and next actions so Colby an
 - Approval-required items: 0
 - Top priority: Advance Cognitive Operating System build
 - Dashboard needs-Greg count: 20
-- Dashboard denied/blocked count: 18
+- Dashboard denied/blocked count: 31
 - Priority: 50
 - Category: strategic_priority
 - Approval required: False
@@ -5639,7 +5653,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-21T17:37:16
+Generated: 2026-06-22T06:32:00
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
