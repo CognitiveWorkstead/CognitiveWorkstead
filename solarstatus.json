@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-24T02:08:10.136618+00:00",
-  "timestamp_central": "Jun 23, 2026, 9:08 PM Central Time",
+  "timestamp": "2026-06-24T02:23:44.123025+00:00",
+  "timestamp_central": "Jun 23, 2026, 9:23 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 1498.0,
+    "load_w": 1071.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 78.0,
-    "battery_power_w": -1538.0,
+    "battery_power_w": -1114.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -177,31 +177,31 @@
     "state": "occupied",
     "probability": 100,
     "label": "Probability",
-    "reason": "HA both persons home; HA presence fresh 14.2m",
+    "reason": "HA both persons home; HA presence fresh 16.0m",
     "greg_phone_present": 1,
     "mel_phone_present": 1,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-24T02:02:35.317513+00:00",
+        "timestamp": "2026-06-24T02:18:32.771034+00:00",
         "greg": "Present",
         "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-06-24T02:02:35.677901Z",
-        "greg": "Home",
+        "timestamp": "2026-06-24T02:18:33.090192Z",
+        "greg": "Away",
         "mel": "Home",
-        "greg_raw": "home",
+        "greg_raw": "not_home",
         "mel_raw": "home",
         "state": "occupied"
       }
     }
   },
   "today": {
-    "consumed_kwh": 7.61,
+    "consumed_kwh": 7.92,
     "produced_kwh": 0.09,
     "generator_kwh": 0,
-    "avg_load_w": 3773,
+    "avg_load_w": 3493,
     "peak_load_w": 7478,
     "peak_solar_w": 164,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 39.5,
-    "zero_solar_days": 0.4,
-    "similar_weather_days": 1.7,
-    "samples": 593
+    "zero_solar_days": 0.5,
+    "similar_weather_days": 1.8,
+    "samples": 620
   },
   "historical_model": {
     "available": true,
