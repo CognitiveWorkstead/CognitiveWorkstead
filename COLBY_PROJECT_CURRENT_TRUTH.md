@@ -1,6 +1,6 @@
 # COLBY PROJECT CURRENT TRUTH
 
-Generated Local Time: 2026-06-25T14:44:52-05:00
+Generated Local Time: 2026-06-25T15:05:00-05:00
 
 Source System: AsusAI /opt/colby
 
@@ -89,33 +89,33 @@ Export Validation:
 - Path: /opt/colby/memory/core/infrastructure_inventory.md
 - Required: False
 - Exists: True
-- Size Bytes: 6986
-- Modified Time: 2026-06-25T09:41:33-05:00
-- SHA256: c73cb7551f63aff83c542d8285d71e33b89880b1e20c9afbaa5a6313a2f0b388
+- Size Bytes: 7388
+- Modified Time: 2026-06-25T15:04:29-05:00
+- SHA256: abbb0c276fc8d009674b965c84541d837595e5e84d94175fbdf89b125ae357a5
 
 ### Current State
 - Path: /opt/colby/state/current_state.md
 - Required: True
 - Exists: True
-- Size Bytes: 1811
-- Modified Time: 2026-05-31T08:15:21-05:00
-- SHA256: 61203da21658af4c8985e178e3e9bf9f1968cfa27ae664dfa6de90046573b538
+- Size Bytes: 2329
+- Modified Time: 2026-06-25T15:04:29-05:00
+- SHA256: 0d71933c224048eed8559915d04ea52b955b655b609c70789ad5930b4e54fee4
 
 ### Current Priorities
 - Path: /opt/colby/memory/core/current_priorities.md
 - Required: True
 - Exists: True
-- Size Bytes: 391
-- Modified Time: 2026-06-21T06:22:34-05:00
-- SHA256: 71124a6ebc0bc3344f50ded113cce49675849f32604cee0921d28526bcd27066
+- Size Bytes: 871
+- Modified Time: 2026-06-25T15:04:29-05:00
+- SHA256: d1a365979ff9af761357fbd6a4acbfe55f77c5dbe04b7b3a905b59db17d7a21b
 
 ### Goals
 - Path: /opt/colby/memory/core/goals.md
 - Required: True
 - Exists: True
-- Size Bytes: 389
-- Modified Time: 2026-05-29T08:01:23-05:00
-- SHA256: 2c31d511d0645130688e64d449efa72d8ff625165f9b373a46d722ac896ca7e6
+- Size Bytes: 560
+- Modified Time: 2026-06-25T15:04:29-05:00
+- SHA256: 5330d55189d6f460e6a1c8667eeb7fc19f0863079e286dc22eec54d3d2d2537b
 
 ### Current Capabilities Memory
 - Path: /opt/colby/memory/core/current_capabilities.md
@@ -130,40 +130,40 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 3152
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: 47b4bbba239b4496f6e8742b1d0847bd4d618eb6fc070da12b1009781dc883db
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: 58865dd0202e8ec8a8f0cbf616142b28113f1bfaaef370d33bf714c3f69d3484
 
 ### Current Milestone Status
 - Path: /opt/colby/reports/projects/current_milestone_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2863
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: c744c78b6009e1f0b2ff1624b0589f56f8bdb0defd17b7d031c64551d80293e9
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: 38f28f76d610f72fe7823f54728ce5a6d22a66521e6d70810a386454eb4ceedf
 
 ### Current Dependency Status
 - Path: /opt/colby/reports/projects/current_dependency_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 2434
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: a484fe68c28552aa20e1ca3c3953cc67cdc5dbe78280d4f8fee2b0542d6c35b5
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: 3dcfaffd10887c33b0a22f570238762c220cf4b65f2eab1f5eb8870eafbd619a
 
 ### Current Critical Path
 - Path: /opt/colby/reports/projects/current_critical_path.md
 - Required: True
 - Exists: True
 - Size Bytes: 1893
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: 41746793dbb7cfb1b99c59214071d82af4e30b83e00a5dbdb05853e66ae8ae5b
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: ab514db4ee2f2dd3866c498968e08ff94744a677ffb42900245a08907bf1f628
 
 ### Current Capability Status
 - Path: /opt/colby/reports/capabilities/current_capability_status.md
 - Required: True
 - Exists: True
 - Size Bytes: 5914
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: 297e59f0bfd769184ec9ac139c1e3a45208f39772cab86b47176af7e94d88552
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: 921212f92835c651c100953895e32b5ad63a02984052d5f940bf53de3bc3ee86
 
 ### McKenzie Solar Data Bridge
 - Path: /opt/colby/memory/projects/mckenzie_solar_data_bridge.md
@@ -218,8 +218,8 @@ Export Validation:
 - Required: True
 - Exists: True
 - Size Bytes: 7325
-- Modified Time: 2026-06-25T14:39:32-05:00
-- SHA256: 75bac732546b588545a34f17d860ab7357642322522585f21e7e3f9089250c15
+- Modified Time: 2026-06-25T14:45:08-05:00
+- SHA256: 20b21476a4aa7abe81d2d651fe87c72d3d68c3ac3a2ae43d0eb0b2c68a69d286
 
 ### Housekeeping Agenda
 - Path: /opt/colby/reports/cos/HOUSEKEEPING_AGENDA.md
@@ -298,8 +298,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 5110
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: 8042c65f6d763b8051c1beeef72cb45dc218dea551c915a416e424d5749b1a42
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: 5588b2f5b8a9431ab7fda1f5fb20e1fab29fbd9a5a5f8bb641dfec9bd9b287fe
 
 ### Recent Investigations
 - Path: /opt/colby/reports/investigations
@@ -314,8 +314,8 @@ Export Validation:
 - Required: False
 - Exists: True
 - Size Bytes: 2294
-- Modified Time: 2026-06-25T14:44:52-05:00
-- SHA256: 086d935853fa6e322149382252e59eb90a409e448335e3475e0109c59e7b2e95
+- Modified Time: 2026-06-25T15:05:00-05:00
+- SHA256: 983d9a6d9dd643ae9f76a2a8a6c9bc215be1551726c861855083908402bdb657
 
 ## Colby System Architecture
 
@@ -1410,6 +1410,13 @@ Governance:
 - Greg corrections to hostnames, IPs, roles, or device identity should update this file.
 - Current Truth should export this file.
 
+## Current Operating Base
+
+- Greg and Mel are based at McKenzie.
+- Colby operates from AsusAI to support Cognitive Workstead development, infrastructure management, and AI operations.
+- Colby's operational scope includes multiple Raspberry Pi nodes and the Jetson Orin Nano cluster.
+- Hardware-specific claims about individual Pi or Jetson nodes should be validated from live inventory before action.
+
 ## ASUSAI
 
 Role:
@@ -1583,84 +1590,86 @@ Source: `/opt/colby/state/current_state.md`
 # Current State
 
 Date:
-2026-05-31
+2026-06-25
 
 Phase:
-Foundation Build - Conversation Intelligence Layer
+McKenzie operating baseline and Colby setup repair.
+
+Operating Base:
+Greg and Mel are based at McKenzie.
+
+Colby Host:
+AsusAI.
+
+Colby Role:
+Support Cognitive Workstead development, infrastructure management, and AI operations across Raspberry Pi nodes and the Jetson Orin Nano cluster.
 
 Memory:
-Operational
+Operational.
 
 Observation Router:
-Operational
+Operational.
 
 Memory Search:
-Operational
+Operational.
 
 Reflection Engine:
-Operational
+Operational.
 
 Memory Promotion Engine:
-Operational
+Operational with governed approval required for durable writes.
 
 Journal:
-Operational
+Operational.
 
-Hermes:
-Installed
-Operational
-
-Letta:
-Not Installed
+Local Reasoning Runtime:
+Ollama through the Colby OpenAI-compatible proxy.
 
 Home Assistant:
-Deferred
+Read-only Colby access is active.
 
-Solar Assistant:
-Deferred
+Solar Assistant / McKenzie Solar:
+Active through HA Mosquitto bridge and Pi4 read-only solar API.
 
 Open WebUI:
-Operational
+Operational.
 
 Context Loader:
-Operational
+Operational.
 
 ask_colby:
-Operational
+Operational.
 
 Conversation Inventory:
-Operational
+Operational.
 
 Conversation Exporter:
-Operational
+Operational.
 
 External ChatGPT Import Staging:
-Operational
+Operational.
 
 External ChatGPT Import Review:
-Operational
+Operational.
 
 Decision/Lesson Retrieval:
-Operational
+Operational.
 
 Primary Focus:
-Build the conversation review generator for exported OpenWebUI markdown conversations.
+Complete migrated Colby setup, verify reasoning surfaces, and keep Current Truth aligned with the McKenzie operating baseline.
 
 Current Approved Next Step:
-Create a review-only generator that reads exported conversation markdown and creates candidate files for manual review.
+Continue step-by-step setup with highest-access prerequisites first, while preserving governed action approval for writes, publishes, service control, and external control.
 
 Current Guardrails:
 - Do not auto-promote conversation content into memory.
-- Do not modify Colby proxy unless required.
-- Do not modify OpenWebUI unless required.
+- Do not modify Colby proxy unless required and approved.
+- Do not modify OpenWebUI unless required and approved.
 - Do not replace the current file-based memory system.
 - Back up before edits.
 - Prefer read-only discovery before modification.
 - Keep changes reversible.
-
-Deferred Focus:
-Open WebUI persona integration is deferred until conversation intelligence review workflow is proven.
-
+- Keep McKenzie fixed-site systems and RiVi systems separate unless evidence explicitly joins them.
 ## Latest After-Action: Governed conversation learning pipeline
 
 Timestamp:
@@ -1679,7 +1688,7 @@ Source: `/opt/colby/memory/core/current_priorities.md`
 # Current Priorities
 
 Priority 1
-Move permanently to McKenzie.
+Stabilize Colby and Cognitive Workstead operations from the McKenzie operating base.
 
 Priority 2
 Develop Cognitive Workstead.
@@ -1688,13 +1697,22 @@ Priority 3
 Build Colby into a cognitive operating system.
 
 Priority 4
-Establish sustainable retirement income.
+Manage and improve infrastructure across AsusAI, Raspberry Pi nodes, and the Jetson Orin Nano cluster.
 
 Priority 5
-Automate repetitive operational tasks.
+Establish sustainable retirement income.
 
-Deferred:
-Home Assistant read-only Colby integration is active; next priority is proxy/tool wiring and governed summaries.
+Priority 6
+Automate repetitive operational tasks only after evidence, validation, and governance are reliable.
+
+Priority 7
+Preserve institutional knowledge.
+
+Current setup focus:
+Colby is being re-established after migration. Continue setup step-by-step, starting with access paths that unlock the rest of the work.
+
+Operational note:
+Home Assistant read-only Colby integration and McKenzie solar evidence are active. Prompt/tool polish and governed summaries remain next setup work.
 
 ## Goals
 
@@ -1703,7 +1721,7 @@ Source: `/opt/colby/memory/core/goals.md`
 # Active Goals
 
 Priority 1
-Permanent move to McKenzie.
+Operate from McKenzie and stabilize the McKenzie-based Cognitive Workstead environment.
 
 Priority 2
 Build Cognitive Workstead.
@@ -1715,13 +1733,13 @@ Priority 4
 Create sustainable retirement income.
 
 Priority 5
-Increase automation and reduce repetitive work.
+Increase automation and reduce repetitive work after evidence and validation are reliable.
 
 Priority 6
 Preserve institutional knowledge.
 
 Priority 7
-Integrate AI with infrastructure, energy systems, and operations.
+Integrate AI with infrastructure, energy systems, and operations across AsusAI, Raspberry Pi nodes, and the Jetson Orin Nano cluster.
 
 ## Current Capabilities Memory
 
@@ -2160,7 +2178,7 @@ Source: `/opt/colby/reports/projects/current_project_status.md`
 
 # Current Project Status
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose: Summarize authoritative project registry files for Colby planning and dependency reasoning.
 
@@ -2307,7 +2325,7 @@ Source: `/opt/colby/reports/projects/current_milestone_status.md`
 
 # Current Milestone Status
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose: Calculate project progress from milestone registry files.
 
@@ -2421,7 +2439,7 @@ Source: `/opt/colby/reports/projects/current_dependency_status.md`
 
 # Current Dependency Status
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose: Map project dependencies, blockers, supported outcomes, and critical-path signals.
 
@@ -2518,7 +2536,7 @@ Source: `/opt/colby/reports/projects/current_critical_path.md`
 
 # Current Critical Path
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose: Identify blocked projects, unblock criteria, impact, and recommended critical-path focus.
 
@@ -2576,7 +2594,7 @@ Source: `/opt/colby/reports/capabilities/current_capability_status.md`
 
 # Current Capability Status
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose: Inventory operational and planned capabilities from milestone registries.
 
@@ -4056,7 +4074,7 @@ Source: `/opt/colby/reports/cos/GOVERNED_ACTION_DASHBOARD.md`
 
 # Governed Action Dashboard
 
-Generated: 2026-06-25T14:39:32-05:00
+Generated: 2026-06-25T14:45:08-05:00
 
 ## Overview
 
@@ -5496,7 +5514,7 @@ Source: `/opt/colby/reports/executive/current_day_summary.md`
 
 # Executive Daily Review
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose:
 Capture recent accomplishments, discoveries, risks, and next actions so Colby and external Current Truth consumers can reason from recent work instead of relying only on hard-coded reports.
@@ -5752,7 +5770,7 @@ Source: `/opt/colby/reports/sync/latest_sync.md`
 
 # Auto-Sync Report
 
-Generated: 2026-06-25T14:44:52
+Generated: 2026-06-25T15:05:00
 
 Purpose: Regenerate and validate derived reports after approved registry changes.
 
