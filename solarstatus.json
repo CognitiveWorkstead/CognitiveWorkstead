@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-25T01:10:14.142616+00:00",
-  "timestamp_central": "Jun 24, 2026, 8:10 PM Central Time",
+  "timestamp": "2026-06-25T01:23:50.703439+00:00",
+  "timestamp_central": "Jun 24, 2026, 8:23 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,12 +11,12 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 861.0,
-    "solar_w": 42.0,
+    "load_w": 881.0,
+    "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 87.0,
-    "battery_power_w": -887.0,
-    "mode": "Solar/Battery",
+    "battery_power_w": -914.0,
+    "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
@@ -177,18 +177,18 @@
     "state": "occupied",
     "probability": 75,
     "label": "Probability",
-    "reason": "HA one person home; HA presence fresh 16.1m",
+    "reason": "HA one person home; HA presence fresh 13.9m",
     "greg_phone_present": 0,
     "mel_phone_present": 1,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-25T01:03:45.955614+00:00",
+        "timestamp": "2026-06-25T01:17:43.016971+00:00",
         "greg": "Present",
-        "mel": "Present",
+        "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-06-25T01:03:46.237828Z",
+        "timestamp": "2026-06-25T01:17:43.405235Z",
         "greg": "Away",
         "mel": "Home",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 0.89,
+    "consumed_kwh": 1.1,
     "produced_kwh": 0.08,
     "generator_kwh": 0,
-    "avg_load_w": 872,
+    "avg_load_w": 871,
     "peak_load_w": 909,
     "peak_solar_w": 114,
     "peak_generator_w": 0,
@@ -210,8 +210,8 @@
   "survivability": {
     "usable_battery_kwh": 44.1,
     "zero_solar_days": 2.1,
-    "similar_weather_days": 1.2,
-    "samples": 612
+    "similar_weather_days": 1.3,
+    "samples": 628
   },
   "historical_model": {
     "available": true,
@@ -239,11 +239,11 @@
   },
   "solar_intelligence": {
     "available": true,
-    "actual_now_w": 42,
+    "actual_now_w": 0,
     "expected_now_w": 11,
-    "performance_pct": 381.8,
-    "variance_pct": 281.8,
-    "grade": "A+",
+    "performance_pct": 0.0,
+    "variance_pct": -100.0,
+    "grade": "F",
     "basis_days": 20,
     "samples": 20,
     "confidence": "Medium",
@@ -265,8 +265,8 @@
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 42.0,
-    "similar_avg_solar_w": 33,
+    "actual_solar_w": 0,
+    "similar_avg_solar_w": 17,
     "peak_trend": {
       "days": 31,
       "today_peak_w": 114,
