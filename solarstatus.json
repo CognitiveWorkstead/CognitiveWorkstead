@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-30T12:17:35.386975+00:00",
-  "timestamp_central": "Jun 30, 2026, 7:17 AM Central Time",
+  "timestamp": "2026-06-30T12:32:33.297473+00:00",
+  "timestamp_central": "Jun 30, 2026, 7:32 AM Central Time",
   "status": "YELLOW",
   "solar": {
     "state": "Dawn",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during dawn conditions."
   },
   "now": {
-    "load_w": 569.0,
-    "solar_w": 423.0,
+    "load_w": 1397.0,
+    "solar_w": 575.0,
     "generator_w": 0,
     "battery_soc": 32.0,
-    "battery_power_w": -160.0,
+    "battery_power_w": -880.0,
     "mode": "Solar/Battery",
     "battery_temp_f": 99.3
   },
@@ -175,20 +175,20 @@
   },
   "occupancy": {
     "state": "occupied",
-    "probability": 75,
+    "probability": 100,
     "label": "Probability",
-    "reason": "HA one person home; HA presence fresh 15.0m",
-    "greg_phone_present": 0,
+    "reason": "HA both persons home; HA presence fresh 15.0m",
+    "greg_phone_present": 1,
     "mel_phone_present": 1,
     "sources": {
       "wifi": {
-        "timestamp": "2026-06-30T12:15:09.998306+00:00",
+        "timestamp": "2026-06-30T12:30:07.411597+00:00",
         "greg": "Present",
         "mel": "Present",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-06-30T12:15:10.179692Z",
+        "timestamp": "2026-06-30T12:30:07.634405Z",
         "greg": "Home",
         "mel": "Home",
         "greg_raw": "home",
@@ -198,12 +198,12 @@
     }
   },
   "today": {
-    "consumed_kwh": 14.01,
-    "produced_kwh": 0.32,
+    "consumed_kwh": 14.23,
+    "produced_kwh": 0.44,
     "generator_kwh": 0,
-    "avg_load_w": 1152,
+    "avg_load_w": 1146,
     "peak_load_w": 3017,
-    "peak_solar_w": 424,
+    "peak_solar_w": 575,
     "peak_generator_w": 0,
     "lowest_soc": 32
   },
@@ -211,7 +211,7 @@
     "usable_battery_kwh": 16.2,
     "zero_solar_days": 0.6,
     "similar_weather_days": 13.5,
-    "samples": 556
+    "samples": 547
   },
   "historical_model": {
     "available": true,
@@ -230,19 +230,19 @@
     "available": true,
     "expected_today_kwh": 9.17,
     "expected_so_far_kwh": 5.92,
-    "produced_so_far_kwh": 0.32,
-    "tracking_vs_expected_so_far_pct": -94.7,
-    "progress_of_expected_day_pct": 3.4,
+    "produced_so_far_kwh": 0.44,
+    "tracking_vs_expected_so_far_pct": -92.5,
+    "progress_of_expected_day_pct": 4.8,
     "historical_basis_days": 25,
     "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
     "available": true,
-    "actual_now_w": 423,
+    "actual_now_w": 575,
     "expected_now_w": 1954,
-    "performance_pct": 21.6,
-    "variance_pct": -78.4,
+    "performance_pct": 29.4,
+    "variance_pct": -70.6,
     "grade": "F",
     "basis_days": 31,
     "samples": 31,
@@ -253,26 +253,26 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 32.0,
-    "projected_sunset_soc": 36.0,
-    "hours_to_sunset": 12.5,
-    "remaining_expected_solar_kwh": 8.85,
-    "remaining_load_kwh": 7.13,
-    "net_remaining_kwh": 1.72,
+    "projected_sunset_soc": 12.2,
+    "hours_to_sunset": 12.3,
+    "remaining_expected_solar_kwh": 8.73,
+    "remaining_load_kwh": 17.16,
+    "net_remaining_kwh": -8.43,
     "expected_today_kwh": 9.17,
-    "produced_so_far_kwh": 0.32,
+    "produced_so_far_kwh": 0.44,
     "basis_days": 25,
     "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
-    "actual_solar_w": 423.0,
-    "similar_avg_solar_w": 575,
+    "actual_solar_w": 575.0,
+    "similar_avg_solar_w": 731,
     "peak_trend": {
       "days": 29,
-      "today_peak_w": 424,
-      "avg_peak_30d_w": 4908,
+      "today_peak_w": 575,
+      "avg_peak_30d_w": 4914,
       "best_peak_30d_w": 6620,
-      "worst_peak_30d_w": 424,
+      "worst_peak_30d_w": 575,
       "today_vs_avg_peak_pct": 0.0
     }
   },
@@ -310,13 +310,13 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 160,
-      "efficiency_pct": 3.0,
-      "peak_today_w": 154,
+      "power_w": 231,
+      "efficiency_pct": 4.3,
+      "peak_today_w": 220,
       "season_best_w": 3115,
       "all_time_best_w": 3115,
-      "peak_today_time_central": "Jun 30, 2026, 7:13 AM Central Time",
-      "peak_today_efficiency_pct": 2.9
+      "peak_today_time_central": "Jun 30, 2026, 7:28 AM Central Time",
+      "peak_today_efficiency_pct": 4.1
     },
     "array_2": {
       "label": "Array 2",
@@ -334,24 +334,24 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 279,
-      "efficiency_pct": 8.0,
-      "peak_today_w": 272,
+      "power_w": 366,
+      "efficiency_pct": 10.5,
+      "peak_today_w": 355,
       "season_best_w": 3505,
       "all_time_best_w": 3505,
-      "peak_today_time_central": "Jun 30, 2026, 7:12 AM Central Time",
-      "peak_today_efficiency_pct": 7.8
+      "peak_today_time_central": "Jun 30, 2026, 7:28 AM Central Time",
+      "peak_today_efficiency_pct": 10.2
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 451,
-      "efficiency_pct": 5.1,
-      "peak_today_w": 424,
+      "power_w": 602,
+      "efficiency_pct": 6.8,
+      "peak_today_w": 575,
       "season_best_w": 6620,
       "all_time_best_w": 6620,
-      "peak_today_time_central": "Jun 30, 2026, 7:12 AM Central Time",
-      "peak_today_efficiency_pct": 4.8
+      "peak_today_time_central": "Jun 30, 2026, 7:28 AM Central Time",
+      "peak_today_efficiency_pct": 6.5
     },
-    "insight": "Battery is supplementing solar to support load. Production is tracking sunrise conditions; full solar grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 5.1% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Production is tracking sunrise conditions; full solar grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 6.8% of top-side rating."
   }
 }
