@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-04T01:47:51.825247+00:00",
-  "timestamp_central": "Jul 3, 2026, 8:47 PM Central Time",
+  "timestamp": "2026-07-04T02:02:53.576242+00:00",
+  "timestamp_central": "Jul 3, 2026, 9:02 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 1816.0,
+    "load_w": 1692.0,
     "solar_w": 0.0,
     "generator_w": 0,
-    "battery_soc": 73.0,
-    "battery_power_w": -1853.0,
+    "battery_soc": 72.0,
+    "battery_power_w": -1727.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -63,36 +63,36 @@
     "mel_phone_present": 1,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-04T01:45:05.039915+00:00",
+        "timestamp": "2026-07-04T02:00:06.606656+00:00",
         "greg": "Present",
-        "mel": "Away",
+        "mel": "Present",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-04T01:45:05.231772Z",
-        "greg": "Home",
+        "timestamp": "2026-07-04T02:00:06.857893Z",
+        "greg": "Away",
         "mel": "Home",
-        "greg_raw": "home",
+        "greg_raw": "not_home",
         "mel_raw": "home",
         "state": "occupied"
       }
     }
   },
   "today": {
-    "consumed_kwh": 2.33,
+    "consumed_kwh": 2.82,
     "produced_kwh": 0.08,
     "generator_kwh": 0,
-    "avg_load_w": 1347,
-    "peak_load_w": 3205,
+    "avg_load_w": 1421,
+    "peak_load_w": 3910,
     "peak_solar_w": 194,
     "peak_generator_w": 0,
-    "lowest_soc": 73
+    "lowest_soc": 72
   },
   "survivability": {
-    "usable_battery_kwh": 37.0,
+    "usable_battery_kwh": 36.5,
     "zero_solar_days": 1.1,
-    "similar_weather_days": 1.5,
-    "samples": 747
+    "similar_weather_days": 1.4,
+    "samples": 730
   },
   "historical_model": {
     "available": true,
@@ -133,8 +133,8 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 73.0,
-    "projected_sunset_soc": 88.7,
+    "current_soc": 72.0,
+    "projected_sunset_soc": 87.7,
     "hours_to_sunset": 0,
     "remaining_expected_solar_kwh": 6.67,
     "remaining_load_kwh": 0.0,
@@ -147,7 +147,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 1,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 29,
       "today_peak_w": 194,
@@ -161,7 +161,7 @@
     "avg_overnight_load_w": 790.0,
     "overnight_hours": 12,
     "expected_overnight_kwh": 9.48,
-    "expected_sunrise_soc": 54.3,
+    "expected_sunrise_soc": 53.3,
     "confidence": "High",
     "samples": 2400
   },
