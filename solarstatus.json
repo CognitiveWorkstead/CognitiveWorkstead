@@ -1,29 +1,29 @@
 {
-  "timestamp": "2026-07-04T02:02:53.576242+00:00",
-  "timestamp_central": "Jul 3, 2026, 9:02 PM Central Time",
+  "timestamp": "2026-07-04T02:17:54.021618+00:00",
+  "timestamp_central": "Jul 3, 2026, 9:17 PM Central Time",
   "status": "GREEN",
   "solar": {
-    "state": "Dusk",
+    "state": "Night",
     "grading_enabled": false,
     "peak_established": false,
     "peak_established_threshold_w": 1764,
     "peak_established_threshold_pct": 20.0,
-    "operational_message": "Solar grading suspended during dusk conditions."
+    "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 1692.0,
+    "load_w": 1470.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 72.0,
-    "battery_power_w": -1727.0,
+    "battery_power_w": -1506.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 83.2,
+    "temperature_f": 82.2,
     "humidity": 68.0,
-    "cloud_cover": 87.0,
-    "class": "Cloudy",
+    "cloud_cover": 57.0,
+    "class": "Partly cloudy",
     "forecast_7day": {
       "source": "Open-Meteo",
       "error": "<urlopen error _ssl.c:975: The handshake operation timed out>",
@@ -56,20 +56,20 @@
   },
   "occupancy": {
     "state": "occupied",
-    "probability": 100,
+    "probability": 75,
     "label": "Probability",
-    "reason": "HA both persons home; HA presence fresh 15.0m",
-    "greg_phone_present": 1,
+    "reason": "HA one person home; HA presence fresh 15.0m",
+    "greg_phone_present": 0,
     "mel_phone_present": 1,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-04T02:00:06.606656+00:00",
+        "timestamp": "2026-07-04T02:15:07.680161+00:00",
         "greg": "Present",
         "mel": "Present",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-04T02:00:06.857893Z",
+        "timestamp": "2026-07-04T02:15:07.928515Z",
         "greg": "Away",
         "mel": "Home",
         "greg_raw": "not_home",
@@ -79,10 +79,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 2.82,
+    "consumed_kwh": 3.18,
     "produced_kwh": 0.08,
     "generator_kwh": 0,
-    "avg_load_w": 1421,
+    "avg_load_w": 1425,
     "peak_load_w": 3910,
     "peak_solar_w": 194,
     "peak_generator_w": 0,
@@ -91,8 +91,8 @@
   "survivability": {
     "usable_battery_kwh": 36.5,
     "zero_solar_days": 1.1,
-    "similar_weather_days": 1.4,
-    "samples": 730
+    "similar_weather_days": 1.6,
+    "samples": 378
   },
   "historical_model": {
     "available": true,
@@ -109,13 +109,13 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 6.75,
-    "expected_so_far_kwh": 6.75,
+    "expected_today_kwh": 7.26,
+    "expected_so_far_kwh": 7.26,
     "produced_so_far_kwh": 0.08,
-    "tracking_vs_expected_so_far_pct": -98.9,
-    "progress_of_expected_day_pct": 1.1,
-    "historical_basis_days": 12,
-    "confidence": "Medium",
+    "tracking_vs_expected_so_far_pct": -99.0,
+    "progress_of_expected_day_pct": 1.0,
+    "historical_basis_days": 31,
+    "confidence": "High",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
@@ -134,15 +134,15 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 72.0,
-    "projected_sunset_soc": 87.7,
+    "projected_sunset_soc": 88.9,
     "hours_to_sunset": 0,
-    "remaining_expected_solar_kwh": 6.67,
+    "remaining_expected_solar_kwh": 7.18,
     "remaining_load_kwh": 0.0,
-    "net_remaining_kwh": 6.67,
-    "expected_today_kwh": 6.75,
+    "net_remaining_kwh": 7.18,
+    "expected_today_kwh": 7.26,
     "produced_so_far_kwh": 0.08,
-    "basis_days": 12,
-    "confidence": "Medium",
+    "basis_days": 31,
+    "confidence": "High",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
@@ -233,6 +233,6 @@
       "peak_today_time_central": "Jul 3, 2026, 7:00 PM Central Time",
       "peak_today_efficiency_pct": 2.2
     },
-    "insight": "Battery is supplementing solar to support load. Solar production is declining normally under dusk conditions; full grading is deferred. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
+    "insight": "Battery is supplementing solar to support load. Solar production unavailable by design during night conditions. MPPT balance check deferred until stronger production is available. Total array output is 0.0% of top-side rating."
   }
 }
