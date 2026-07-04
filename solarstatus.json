@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-04T17:02:48.463618+00:00",
-  "timestamp_central": "Jul 4, 2026, 12:02 PM Central Time",
+  "timestamp": "2026-07-04T17:18:06.299345+00:00",
+  "timestamp_central": "Jul 4, 2026, 12:18 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Prime Solar",
@@ -174,21 +174,21 @@
     "created_at_utc": "2026-06-17T00:45:10Z"
   },
   "occupancy": {
-    "state": "occupied",
-    "probability": 75,
-    "label": "Probability",
-    "reason": "HA one person home; HA presence fresh 15.0m",
+    "state": "away_short",
+    "probability": 50,
+    "label": "Confidence",
+    "reason": "no phones by Wi-Fi fallback, short absence 0.2h",
     "greg_phone_present": 0,
-    "mel_phone_present": 1,
+    "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-04T17:00:05.558612+00:00",
-        "greg": "Present",
-        "mel": "Present",
-        "state": "occupied"
+        "timestamp": "2026-07-04T17:15:05.227094+00:00",
+        "greg": "Away",
+        "mel": "Away",
+        "state": "away"
       },
       "ha": {
-        "timestamp": "2026-07-04T16:45:05.359823Z",
+        "timestamp": "2026-07-04T17:15:05.409730Z",
         "greg": "Away",
         "mel": "Home",
         "greg_raw": "not_home",
@@ -310,8 +310,8 @@
       "tilt_deg": 21.2,
       "azimuth_deg": 186,
       "bifacial": true,
-      "power_w": 2533,
-      "efficiency_pct": 47.4,
+      "power_w": 548,
+      "efficiency_pct": 10.3,
       "peak_today_w": 2591,
       "season_best_w": 3115,
       "all_time_best_w": 3115,
@@ -334,8 +334,8 @@
       "tilt_deg": 9.2,
       "azimuth_deg": 186,
       "bifacial": false,
-      "power_w": 2876,
-      "efficiency_pct": 82.6,
+      "power_w": 582,
+      "efficiency_pct": 16.7,
       "peak_today_w": 2935,
       "season_best_w": 3505,
       "all_time_best_w": 3505,
@@ -344,14 +344,14 @@
     },
     "total": {
       "rated_w": 8820,
-      "power_w": 5409,
-      "efficiency_pct": 61.3,
+      "power_w": 1184,
+      "efficiency_pct": 13.4,
       "peak_today_w": 5526,
       "season_best_w": 6620,
       "all_time_best_w": 6620,
       "peak_today_time_central": "Jul 4, 2026, 11:47 AM Central Time",
       "peak_today_efficiency_pct": 62.7
     },
-    "insight": "Solar production is exceeding load and charging the battery. Array output is within a normal operating band for current conditions. Array 1 is underperforming Array 2 on a rated-watt basis. Total array output is 61.3% of top-side rating."
+    "insight": "Solar production is exceeding load and charging the battery. Array output is below expected clear-sky range; check shading, angle, wiring, soiling, or panel conditions if strong sun is visually confirmed. MPPT balance check deferred until stronger production is available. Total array output is 13.4% of top-side rating."
   }
 }
