@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-04T07:32:48.603152+00:00",
-  "timestamp_central": "Jul 4, 2026, 2:32 AM Central Time",
+  "timestamp": "2026-07-04T07:47:49.922882+00:00",
+  "timestamp_central": "Jul 4, 2026, 2:47 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,19 +11,19 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 763.0,
+    "load_w": 929.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 62.0,
-    "battery_power_w": -790.0,
+    "battery_power_w": -948.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 75.1,
-    "humidity": 84.0,
-    "cloud_cover": 1.0,
-    "class": "Clear",
+    "temperature_f": 75.5,
+    "humidity": 86.0,
+    "cloud_cover": 88.0,
+    "class": "Cloudy",
     "forecast_7day": {
       "source": "Open-Meteo",
       "days": [
@@ -182,13 +182,13 @@
     "mel_phone_present": 1,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-04T07:30:07.363747+00:00",
+        "timestamp": "2026-07-04T07:45:08.028300+00:00",
         "greg": "Present",
-        "mel": "Present",
+        "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-04T07:30:07.600478Z",
+        "timestamp": "2026-07-04T07:45:08.250936Z",
         "greg": "Away",
         "mel": "Home",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 7.91,
+    "consumed_kwh": 8.07,
     "produced_kwh": 0.08,
     "generator_kwh": 0,
-    "avg_load_w": 1057,
+    "avg_load_w": 1044,
     "peak_load_w": 3910,
     "peak_solar_w": 194,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 31.4,
-    "zero_solar_days": 1.2,
-    "similar_weather_days": 1.8,
-    "samples": 672
+    "zero_solar_days": 1.3,
+    "similar_weather_days": 2.9,
+    "samples": 2288
   },
   "historical_model": {
     "available": true,
@@ -228,39 +228,39 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 8.26,
-    "expected_so_far_kwh": 0.11,
+    "expected_today_kwh": 6.76,
+    "expected_so_far_kwh": 0.06,
     "produced_so_far_kwh": 0.08,
-    "tracking_vs_expected_so_far_pct": -30.9,
-    "progress_of_expected_day_pct": 0.9,
-    "historical_basis_days": 27,
+    "tracking_vs_expected_so_far_pct": 26.6,
+    "progress_of_expected_day_pct": 1.1,
+    "historical_basis_days": 11,
     "confidence": "Medium",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
-    "available": true,
+    "available": false,
     "actual_now_w": 0,
-    "expected_now_w": 31,
-    "performance_pct": 0.0,
-    "variance_pct": -100.0,
-    "grade": "F",
-    "basis_days": 41,
-    "samples": 41,
-    "confidence": "High",
-    "matched_cloud": 7.0,
+    "expected_now_w": null,
+    "performance_pct": null,
+    "variance_pct": null,
+    "grade": "N/A",
+    "basis_days": 0,
+    "samples": 0,
+    "confidence": "No Data",
+    "matched_cloud": null,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
     "available": true,
     "current_soc": 62.0,
-    "projected_sunset_soc": 50.3,
-    "hours_to_sunset": 17.3,
-    "remaining_expected_solar_kwh": 8.18,
-    "remaining_load_kwh": 13.19,
-    "net_remaining_kwh": -5.0,
-    "expected_today_kwh": 8.26,
+    "projected_sunset_soc": 40.5,
+    "hours_to_sunset": 17.0,
+    "remaining_expected_solar_kwh": 6.68,
+    "remaining_load_kwh": 15.82,
+    "net_remaining_kwh": -9.14,
+    "expected_today_kwh": 6.76,
     "produced_so_far_kwh": 0.08,
-    "basis_days": 27,
+    "basis_days": 11,
     "confidence": "Medium",
     "source": "Historical production tracking plus current load"
   },
@@ -282,7 +282,7 @@
     "expected_overnight_kwh": 9.56,
     "expected_sunrise_soc": 43.1,
     "confidence": "High",
-    "samples": 2669
+    "samples": 2684
   },
   "visual_conditions": {
     "camera_online": true,
