@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-09T01:48:16.487326+00:00",
-  "timestamp_central": "Jul 8, 2026, 8:48 PM Central Time",
+  "timestamp": "2026-07-09T02:03:15.326504+00:00",
+  "timestamp_central": "Jul 8, 2026, 9:03 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Dusk",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during dusk conditions."
   },
   "now": {
-    "load_w": 952.0,
+    "load_w": 1468.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 94.0,
-    "battery_power_w": -975.0,
+    "battery_power_w": -1498.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -34,7 +34,7 @@
           "high_f": 92,
           "low_f": 72,
           "precip_in": 0.0,
-          "cloud_cover": 11,
+          "cloud_cover": 10,
           "expected_solar_kwh": 7.98,
           "expected_solar_kwh_low": 3.15,
           "expected_solar_kwh_high": 11.45,
@@ -47,36 +47,36 @@
         {
           "day": "Thu",
           "date": "7/9",
-          "icon": "\u26c8\ufe0f",
+          "icon": "\ud83c\udf24\ufe0f",
           "high_f": 92,
           "low_f": 75,
-          "precip_in": 0.47,
-          "cloud_cover": 50,
-          "expected_solar_kwh": 7.38,
+          "precip_in": 0.0,
+          "cloud_cover": 49,
+          "expected_solar_kwh": 7.39,
           "expected_solar_kwh_low": 2.86,
           "expected_solar_kwh_high": 11.23,
-          "expected_peak_w": 1668.0,
-          "historical_days_used": 37,
+          "expected_peak_w": 1666.0,
+          "historical_days_used": 38,
           "confidence": "High",
           "solar_basis": "historical similar-weather daily model using P10/P90 range",
-          "matched_avg_cloud": 47.0
+          "matched_avg_cloud": 46.0
         },
         {
           "day": "Fri",
           "date": "7/10",
-          "icon": "\ud83c\udf24\ufe0f",
+          "icon": "\u26c5",
           "high_f": 96,
           "low_f": 72,
           "precip_in": 0.0,
-          "cloud_cover": 45,
-          "expected_solar_kwh": 7.53,
-          "expected_solar_kwh_low": 2.88,
+          "cloud_cover": 52,
+          "expected_solar_kwh": 7.33,
+          "expected_solar_kwh_low": 3.41,
           "expected_solar_kwh_high": 10.61,
-          "expected_peak_w": 1669.0,
-          "historical_days_used": 42,
+          "expected_peak_w": 1645.0,
+          "historical_days_used": 37,
           "confidence": "High",
           "solar_basis": "historical similar-weather daily model using P10/P90 range",
-          "matched_avg_cloud": 43.0
+          "matched_avg_cloud": 49.0
         },
         {
           "day": "Sat",
@@ -174,21 +174,21 @@
     "created_at_utc": "2026-06-17T00:45:10Z"
   },
   "occupancy": {
-    "state": "away",
-    "probability": 95,
+    "state": "possible_occupied",
+    "probability": 75,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.0m",
+    "reason": "HA both persons away; HA presence fresh 15.0m, high load without presence signal",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-09T01:45:08.391592+00:00",
+        "timestamp": "2026-07-09T02:00:05.934571+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-07-09T01:45:08.636338Z",
+        "timestamp": "2026-07-09T02:00:06.134024Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 1.75,
+    "consumed_kwh": 2.0,
     "produced_kwh": 0.16,
     "generator_kwh": 0,
-    "avg_load_w": 1012,
+    "avg_load_w": 1007,
     "peak_load_w": 1712,
     "peak_solar_w": 473,
     "peak_generator_w": 0,
@@ -211,7 +211,7 @@
     "usable_battery_kwh": 47.6,
     "zero_solar_days": 2.0,
     "similar_weather_days": 2.0,
-    "samples": 869
+    "samples": 824
   },
   "historical_model": {
     "available": true,
@@ -266,7 +266,7 @@
   },
   "performance": {
     "actual_solar_w": 0,
-    "similar_avg_solar_w": 1,
+    "similar_avg_solar_w": 0,
     "peak_trend": {
       "days": 29,
       "today_peak_w": 473,
