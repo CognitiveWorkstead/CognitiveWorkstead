@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-09T06:18:22.728635+00:00",
-  "timestamp_central": "Jul 9, 2026, 1:18 AM Central Time",
+  "timestamp": "2026-07-09T06:33:21.948809+00:00",
+  "timestamp_central": "Jul 9, 2026, 1:33 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,16 +11,16 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 636.0,
+    "load_w": 515.0,
     "solar_w": 0.0,
     "generator_w": 0,
-    "battery_soc": 88.0,
-    "battery_power_w": -649.0,
+    "battery_soc": 87.0,
+    "battery_power_w": -530.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 77.5,
+    "temperature_f": 76.7,
     "humidity": 89.0,
     "cloud_cover": 41.0,
     "class": "Partly cloudy",
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.1m",
+    "reason": "HA both persons away; HA presence fresh 14.9m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-09T06:15:08.808801+00:00",
+        "timestamp": "2026-07-09T06:30:05.862685+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-07-09T06:15:09.040752Z",
+        "timestamp": "2026-07-09T06:30:06.058973Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,20 +198,20 @@
     }
   },
   "today": {
-    "consumed_kwh": 5.13,
+    "consumed_kwh": 5.25,
     "produced_kwh": 0.16,
     "generator_kwh": 0,
-    "avg_load_w": 823,
+    "avg_load_w": 810,
     "peak_load_w": 1712,
     "peak_solar_w": 473,
     "peak_generator_w": 0,
-    "lowest_soc": 88
+    "lowest_soc": 87
   },
   "survivability": {
-    "usable_battery_kwh": 44.6,
+    "usable_battery_kwh": 44.1,
     "zero_solar_days": 2.3,
     "similar_weather_days": 3.1,
-    "samples": 592
+    "samples": 578
   },
   "historical_model": {
     "available": true,
@@ -252,12 +252,12 @@
   },
   "sunset_projection": {
     "available": true,
-    "current_soc": 88.0,
-    "projected_sunset_soc": 77.5,
-    "hours_to_sunset": 18.5,
+    "current_soc": 87.0,
+    "projected_sunset_soc": 82.0,
+    "hours_to_sunset": 18.3,
     "remaining_expected_solar_kwh": 7.3,
-    "remaining_load_kwh": 11.79,
-    "net_remaining_kwh": -4.49,
+    "remaining_load_kwh": 9.42,
+    "net_remaining_kwh": -2.11,
     "expected_today_kwh": 7.46,
     "produced_so_far_kwh": 0.16,
     "basis_days": 44,
@@ -277,12 +277,12 @@
     }
   },
   "forecast": {
-    "avg_overnight_load_w": 652.0,
+    "avg_overnight_load_w": 651.0,
     "overnight_hours": 12,
-    "expected_overnight_kwh": 7.82,
-    "expected_sunrise_soc": 72.6,
+    "expected_overnight_kwh": 7.81,
+    "expected_sunrise_soc": 71.6,
     "confidence": "High",
-    "samples": 4034
+    "samples": 4049
   },
   "visual_conditions": {
     "camera_online": true,
