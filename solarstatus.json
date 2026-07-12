@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-12T03:18:52.768813+00:00",
-  "timestamp_central": "Jul 11, 2026, 10:18 PM Central Time",
+  "timestamp": "2026-07-12T03:33:39.395769+00:00",
+  "timestamp_central": "Jul 11, 2026, 10:33 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 797.0,
+    "load_w": 604.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 90.0,
-    "battery_power_w": -814.0,
+    "battery_power_w": -626.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.0m",
+    "reason": "HA both persons away; HA presence fresh 15.1m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-12T03:15:06.023899+00:00",
+        "timestamp": "2026-07-12T03:30:10.638518+00:00",
         "greg": "Away",
         "mel": "Away",
         "state": "away"
       },
       "ha": {
-        "timestamp": "2026-07-12T03:15:06.228415Z",
+        "timestamp": "2026-07-12T03:30:10.847203Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 3.04,
+    "consumed_kwh": 3.22,
     "produced_kwh": 0.09,
     "generator_kwh": 0,
-    "avg_load_w": 941,
+    "avg_load_w": 924,
     "peak_load_w": 1472,
     "peak_solar_w": 194,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 45.6,
-    "zero_solar_days": 2.0,
-    "similar_weather_days": 2.1,
-    "samples": 1411
+    "zero_solar_days": 2.1,
+    "similar_weather_days": 2.4,
+    "samples": 1453
   },
   "historical_model": {
     "available": true,
@@ -282,7 +282,7 @@
     "expected_overnight_kwh": 6.86,
     "expected_sunrise_soc": 76.5,
     "confidence": "High",
-    "samples": 3854
+    "samples": 3869
   },
   "visual_conditions": {
     "camera_online": true,
