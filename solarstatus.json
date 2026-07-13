@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-13T07:53:10.637073+00:00",
-  "timestamp_central": "Jul 13, 2026, 2:53 AM Central Time",
+  "timestamp": "2026-07-13T08:08:29.773922+00:00",
+  "timestamp_central": "Jul 13, 2026, 3:08 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 591.0,
+    "load_w": 447.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 79.0,
-    "battery_power_w": -612.0,
+    "battery_power_w": -470.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -31,35 +31,35 @@
           "day": "Mon",
           "date": "7/13",
           "icon": "\u2601\ufe0f",
-          "high_f": 81,
-          "low_f": 72,
-          "precip_in": 0.0,
-          "cloud_cover": 84,
-          "expected_solar_kwh": 6.81,
+          "high_f": 82,
+          "low_f": 73,
+          "precip_in": 0.02,
+          "cloud_cover": 86,
+          "expected_solar_kwh": 6.74,
           "expected_solar_kwh_low": 1.95,
-          "expected_solar_kwh_high": 10.31,
-          "expected_peak_w": 1489.0,
-          "historical_days_used": 14,
+          "expected_solar_kwh_high": 10.18,
+          "expected_peak_w": 1475.0,
+          "historical_days_used": 13,
           "confidence": "Medium",
           "solar_basis": "historical similar-weather daily model using P10/P90 range",
-          "matched_avg_cloud": 73.0
+          "matched_avg_cloud": 74.0
         },
         {
           "day": "Tue",
           "date": "7/14",
           "icon": "\ud83c\udf27\ufe0f",
           "high_f": 83,
-          "low_f": 69,
-          "precip_in": 0.1,
-          "cloud_cover": 94,
-          "expected_solar_kwh": 6.6,
+          "low_f": 72,
+          "precip_in": 0.2,
+          "cloud_cover": 98,
+          "expected_solar_kwh": 6.66,
           "expected_solar_kwh_low": 1.94,
-          "expected_solar_kwh_high": 9.81,
-          "expected_peak_w": 1455.0,
-          "historical_days_used": 8,
+          "expected_solar_kwh_high": 9.44,
+          "expected_peak_w": 1439.0,
+          "historical_days_used": 6,
           "confidence": "Low",
           "solar_basis": "historical similar-weather daily model using P10/P90 range",
-          "matched_avg_cloud": 80.0
+          "matched_avg_cloud": 83.0
         },
         {
           "day": "Wed",
@@ -182,13 +182,13 @@
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-13T07:45:08.374960+00:00",
+        "timestamp": "2026-07-13T08:00:07.519965+00:00",
         "greg": "Present",
         "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-13T07:45:08.555024Z",
+        "timestamp": "2026-07-13T08:00:07.786043Z",
         "greg": "Home",
         "mel": "Away",
         "greg_raw": "home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 5.67,
+    "consumed_kwh": 5.82,
     "produced_kwh": 0.03,
     "generator_kwh": 0,
-    "avg_load_w": 734,
+    "avg_load_w": 729,
     "peak_load_w": 5451,
     "peak_solar_w": 58,
     "peak_generator_w": 0,
@@ -210,8 +210,8 @@
   "survivability": {
     "usable_battery_kwh": 40.0,
     "zero_solar_days": 2.3,
-    "similar_weather_days": 3.5,
-    "samples": 778
+    "similar_weather_days": 3.6,
+    "samples": 774
   },
   "historical_model": {
     "available": true,
@@ -253,11 +253,11 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 79.0,
-    "projected_sunset_soc": 72.5,
-    "hours_to_sunset": 17.0,
+    "projected_sunset_soc": 78.5,
+    "hours_to_sunset": 16.8,
     "remaining_expected_solar_kwh": 7.3,
-    "remaining_load_kwh": 10.07,
-    "net_remaining_kwh": -2.77,
+    "remaining_load_kwh": 7.5,
+    "net_remaining_kwh": -0.21,
     "expected_today_kwh": 7.33,
     "produced_so_far_kwh": 0.03,
     "basis_days": 37,
@@ -282,7 +282,7 @@
     "expected_overnight_kwh": 6.4,
     "expected_sunrise_soc": 66.4,
     "confidence": "High",
-    "samples": 4129
+    "samples": 4144
   },
   "visual_conditions": {
     "camera_online": true,
