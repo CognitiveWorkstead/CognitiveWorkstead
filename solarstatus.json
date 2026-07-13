@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-13T02:49:44.439001+00:00",
-  "timestamp_central": "Jul 12, 2026, 9:49 PM Central Time",
+  "timestamp": "2026-07-13T03:04:57.647025+00:00",
+  "timestamp_central": "Jul 12, 2026, 10:04 PM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,11 +11,11 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 277.0,
+    "load_w": 530.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 85.0,
-    "battery_power_w": -286.0,
+    "battery_power_w": -541.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
@@ -174,21 +174,21 @@
     "created_at_utc": "2026-06-17T00:45:10Z"
   },
   "occupancy": {
-    "state": "away",
-    "probability": 95,
-    "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.0m",
-    "greg_phone_present": 0,
+    "state": "occupied",
+    "probability": 75,
+    "label": "Probability",
+    "reason": "HA one person home; HA presence fresh 15.0m",
+    "greg_phone_present": 1,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-13T02:45:07.712015+00:00",
+        "timestamp": "2026-07-13T03:00:08.391901+00:00",
         "greg": "Present",
         "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-13T02:45:07.969788Z",
+        "timestamp": "2026-07-13T03:00:08.624723Z",
         "greg": "Home",
         "mel": "Away",
         "greg_raw": "home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 2.85,
+    "consumed_kwh": 2.98,
     "produced_kwh": 0.03,
     "generator_kwh": 0,
-    "avg_load_w": 1044,
+    "avg_load_w": 998,
     "peak_load_w": 5451,
     "peak_solar_w": 58,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 43.1,
-    "zero_solar_days": 1.7,
-    "similar_weather_days": 2.5,
-    "samples": 1597
+    "zero_solar_days": 1.8,
+    "similar_weather_days": 2.6,
+    "samples": 1593
   },
   "historical_model": {
     "available": true,
