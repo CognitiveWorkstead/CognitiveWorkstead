@@ -513,7 +513,6 @@ setInterval(refresh,900000);
         }
       }
     } catch(e) {
-      console.log("Solar state overlay pending", e);
     }
   }
 
@@ -554,7 +553,6 @@ setInterval(refresh,900000);
       const j = await r.json();
       renderWeatherForecastStrip(j);
     } catch(e) {
-      console.log("Weather forecast overlay pending", e);
     }
   }
 
@@ -600,7 +598,6 @@ setInterval(refresh,900000);
         }
       }
     } catch(e) {
-      console.log("Array education overlay pending", e);
     }
   }
 
@@ -702,7 +699,6 @@ setInterval(refresh,900000);
         });
       }
     } catch(e) {
-      console.log("Production tracking overlay pending", e);
     }
   }
 

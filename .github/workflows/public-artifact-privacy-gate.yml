@@ -1,0 +1,84 @@
+name: Public Artifact Privacy Gate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "CNAME"
+      - "COL-B.png"
+      - "dashboard.png"
+      - "index.html"
+      - "mckenzie-solar-change-log.md"
+      - "mckenzie-solar.html"
+      - "mckenzie-solar-status.png"
+      - "progress-log-01.html"
+      - "solarstatus.json"
+      - "assets/**"
+      - "tools/validate_public_artifacts.py"
+      - "tests/test_public_artifact_validator.py"
+      - ".github/workflows/public-artifact-privacy-gate.yml"
+  pull_request:
+    paths:
+      - "CNAME"
+      - "COL-B.png"
+      - "dashboard.png"
+      - "index.html"
+      - "mckenzie-solar-change-log.md"
+      - "mckenzie-solar.html"
+      - "mckenzie-solar-status.png"
+      - "progress-log-01.html"
+      - "solarstatus.json"
+      - "assets/**"
+      - "tools/validate_public_artifacts.py"
+      - "tests/test_public_artifact_validator.py"
+      - ".github/workflows/public-artifact-privacy-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate public artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run validator synthetic tests
+        run: python -m unittest tests/test_public_artifact_validator.py
+
+      - name: Stage exact public artifact
+        run: python tools/validate_public_artifacts.py --source . --stage _public_artifact
+
+      - name: Upload approved Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _public_artifact
+
+  deploy:
+    name: Deploy approved Pages artifact
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
