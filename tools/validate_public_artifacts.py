@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import ipaddress
 import json
+import math
 import re
 import shutil
 import sys
@@ -204,10 +205,10 @@ SCHEMA_SHAPE: dict[str, Any] = {
         "available": bool,
         "basis_days": int,
         "confidence": str,
-        "expected_now_w": int,
+        "expected_now_w": (int, type(None)),
         "grade": str,
-        "performance_pct": (int, float),
-        "variance_pct": (int, float),
+        "performance_pct": (int, float, type(None)),
+        "variance_pct": (int, float, type(None)),
     },
     "status": str,
     "sunset_projection": {
@@ -424,12 +425,67 @@ class Validator:
             "public_reserve.battery_soc": (0, 100),
             "weather.cloud_cover": (0, 100),
             "weather.humidity": (0, 100),
-            "solar_intelligence.performance_pct": (-100, 300),
-            "solar_intelligence.variance_pct": (-300, 300),
-            "production_tracking.progress_of_expected_day_pct": (0, 300),
             "sunset_projection.projected_sunset_soc": (0, 100),
             "forecast.expected_sunrise_soc": (0, 100),
         }
+        solar_intelligence = data.get("solar_intelligence", {})
+        solar_available = solar_intelligence.get("available") is True
+        solar_numeric_fields = {
+            "expected_now_w": (int,),
+            "performance_pct": (int, float),
+            "variance_pct": (int, float),
+        }
+
+        if solar_available:
+            for key, expected_types in solar_numeric_fields.items():
+                value = solar_intelligence.get(key)
+                if (
+                    isinstance(value, bool)
+                    or not isinstance(value, expected_types)
+                    or not math.isfinite(value)
+                ):
+                    self.fail(
+                        "schema",
+                        f"solar_intelligence.{key}",
+                        "expected finite numeric value when available is true",
+                    )
+
+            expected_now = solar_intelligence.get("expected_now_w")
+            if (
+                isinstance(expected_now, (int, float))
+                and not isinstance(expected_now, bool)
+                and expected_now < 0
+            ):
+                self.fail(
+                    "range",
+                    "solar_intelligence.expected_now_w",
+                    "expected nonnegative power when available is true",
+                )
+        else:
+            for key in solar_numeric_fields:
+                if solar_intelligence.get(key) is not None:
+                    self.fail(
+                        "schema",
+                        f"solar_intelligence.{key}",
+                        "must be null when available is false",
+                    )
+
+        progress = get_path(
+            data,
+            "production_tracking.progress_of_expected_day_pct",
+        )
+        if (
+            isinstance(progress, bool)
+            or not isinstance(progress, (int, float))
+            or not math.isfinite(progress)
+            or progress < 0
+        ):
+            self.fail(
+                "range",
+                "production_tracking.progress_of_expected_day_pct",
+                "expected finite nonnegative production progress",
+            )
+
         nonnegative = [
             "now.load_w",
             "now.solar_w",
