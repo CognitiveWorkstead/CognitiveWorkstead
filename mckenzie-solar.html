@@ -49,7 +49,7 @@ h2{margin:0 0 8px;font-size:17px;color:#e8eeee;letter-spacing:1px}
 .weatherHealth b{color:#8fd05b}
 .today{grid-column:3/5;background:rgba(8,25,43,.86);min-height:210px}
 .performance{grid-column:5/7;background:rgba(7,50,52,.86);min-height:210px}
-.occupancy{text-align:center}
+.feedcard{text-align:center}
 
 .occTable{width:100%;font-size:12px;line-height:1.2;margin-top:4px;border-collapse:collapse}
 .occTable th,.occTable td{padding:1px 3px;text-align:center}
@@ -82,7 +82,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
 @media(max-width:1100px){
   .top{grid-template-columns:1fr}.title h1{font-size:40px}.title div{font-size:20px}.time{text-align:center;padding-top:0}
   .grid{grid-template-columns:1fr}
-  .weather,.today,.performance,.occupancy,.arrayperf,.mission,.survive,.prob,.flags{grid-column:auto;grid-row:auto}
+  .weather,.today,.performance,.feedcard,.arrayperf,.mission,.survive,.prob,.flags{grid-column:auto;grid-row:auto}
   .footer{grid-template-columns:1fr}
 }
 </style>
@@ -117,7 +117,7 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
     <div class="card metric"><div class="icon">🔋</div><h2>BATTERY</h2><div class="big green"><span id="soc">--</span>%</div><div class="small"><span id="batteryPower">--</span>W <span id="chargeState">Charging</span><br>Stored Energy<br><b id="batteryStoredEnergy">--</b> kWh</div></div>
     <div class="card metric"><div class="icon">🔌</div><h2>MODE</h2><div class="big green" style="font-size:24px" id="mode">Solar/Battery</div></div>
     <div class="card metric"><div class="icon">🌡️</div><h2>BATTERY TEMP</h2><div class="big green"><span id="batTemp">--</span>°F</div><div class="spark"></div></div>
-    <div class="card metric occupancy"><div class="icon">👥</div><h2>OCCUPANCY</h2><div class="big green" id="occState">--</div><div class="small"><table class="occTable"><tr><th></th><th>Wi-Fi</th><th>HA</th></tr><tr><td>Greg</td><td id="gregWifi">--</td><td id="gregHa">--</td></tr><tr><td>Mel</td><td id="melWifi">--</td><td id="melHa">--</td></tr></table><div class="occAge">Wi-Fi: <span id="wifiAge">--</span><br>HA: <span id="haAge">--</span></div><span id="occLabel">Confidence</span>: <b id="occProb">--</b>%</div></div>
+    <div class="card metric feedcard"><div class="icon">📡</div><h2>PUBLIC FEED</h2><div class="big green" id="feedState">--</div><div class="small">Schema: <b id="schemaVersion">--</b><br>Data Age: <b id="feedAge">--</b><br>Boundary: public allowlist</div></div>
 
     <div class="card weather">
       <h2>☁️ WEATHER</h2>
@@ -128,11 +128,11 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
         </div>
         <div class="weatherHealth">
           Data: <b id="dataAge">--</b><br>
-          Skycam: <b id="skycamAge">--</b><br>
-          Presence: <b id="presenceSource">--</b>
+          Feed: <b id="feedHealth">--</b><br>
+          Schema: <b id="schemaHealth">--</b>
         </div>
       </div>
-      <p id="cloudCoverLine">Estimated Cloud Cover: <b id="cloudEstimated">--</b>% &nbsp;&nbsp;&nbsp; Regional: <b id="cloudRegional">--</b>% &nbsp;&nbsp;&nbsp; McKenzie Sky Cam: <b id="cloudSkycam">--</b>%</p>
+      <p id="cloudCoverLine">Estimated Cloud Cover: <b id="cloudEstimated">--</b>% &nbsp;&nbsp;&nbsp; Public Source: <b id="cloudRegional">--</b>%</p>
       <hr>
       <small>Class: <span id="weatherClass">--</span>
       <div class="forecast-strip" id="weatherForecastStrip">
@@ -210,11 +210,11 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
     </div>
 
     <div class="card survive">
-      <h2>🛡️ SURVIVABILITY FORECAST</h2>
+      <h2>🔋 PUBLIC BATTERY RESERVE VIEW</h2>
       <div class="row">
-        <div class="cell">Usable battery remaining<br><b class="big" id="usable">--</b> kWh<br>🔋</div>
-        <div class="cell"><span class="green">ZERO-SOLAR SCENARIO</span><br><b class="big" id="zeroDays">--</b> days<br><span class="small">at today’s average load</span></div>
-        <div><span class="green">SIMILAR UGLY-WEATHER SCENARIO</span><br><b class="big" id="similarDays">--</b> days<br><span class="small">based on <span id="samples">--</span> samples</span></div>
+        <div class="cell">Battery state of charge<br><b class="big" id="usable">--</b>%<br>🔋</div>
+        <div class="cell"><span class="green">RESERVE LEVEL</span><br><b class="big" id="zeroDays">--</b><br><span class="small">public summary</span></div>
+        <div><span class="green">CURRENT LOAD</span><br><b class="big" id="similarDays">--</b>W<br><span class="small">approved live metric</span></div>
       </div>
       <hr>
       <div class="small">
@@ -226,10 +226,10 @@ hr{border:0;border-top:1px solid rgba(255,255,255,.35);margin:18px 0}
     </div>
 
     <div class="card prob">
-      <h2>PROBABILITY OF SUSTAINABILITY</h2>
-      <div class="small">24 Hours <b class="green" id="p24">--%</b></div><div class="bar"><div id="b24" class="fill"></div></div>
-      <div class="small">48 Hours <b class="green" id="p48">--%</b></div><div class="bar"><div id="b48" class="fill"></div></div>
-      <div class="small">72 Hours <b class="green" id="p72">--%</b></div><div class="bar"><div id="b72" class="fill"></div></div>
+      <h2>PUBLIC RESERVE BAND</h2>
+      <div class="small">Battery SOC <b class="green" id="p24">--%</b></div><div class="bar"><div id="b24" class="fill"></div></div>
+      <div class="small">Operating Reserve <b class="green" id="p48">--</b></div><div class="bar"><div id="b48" class="fill"></div></div>
+      <div class="small">Feed Health <b class="green" id="p72">--</b></div><div class="bar"><div id="b72" class="fill"></div></div>
     </div>
 
     <div class="card flags">
@@ -260,12 +260,7 @@ function ageLabel(ts){
  return hrs + "h old";
 }
 function ageText(ts){return ageLabel(ts);}
-function presenceSourceLabel(j){
- const reason = String(j.occupancy?.reason || "").toLowerCase();
- if(reason.includes("ha ")) return "HA";
- if(reason.includes("wi-fi") || reason.includes("wifi")) return "Wi-Fi";
- return "Model";
-}
+
 function prob(days,hours){return Math.max(0,Math.min(99,Math.round((Number(days||0)/(hours/24))*100)))}
 function localClock(){
  const d=new Date();
@@ -283,44 +278,39 @@ function centralTime(ts){
  }) + " Central Time";
 }
 
-function buildSurvivabilityInsight(j){
+function buildReserveInsight(j){
  const load = Number(j.now?.load_w || 0);
  const solar = Number(j.now?.solar_w || 0);
  const soc = Number(j.now?.battery_soc || 0);
  const batt = Number(j.now?.battery_power_w || 0);
  const cloud = Number(j.weather?.cloud_cover || 0);
- const occ = String(j.occupancy?.state || "unknown").toLowerCase();
-
+ const reserve = j.public_reserve?.reserve_level || "unknown";
  const charging = batt > 50;
  const discharging = batt < -50;
- const net = solar - load;
-
- let flow = charging
-   ? "Battery is charging from surplus production"
-   : discharging
-     ? "Battery is discharging to support load"
-     : "Battery is near neutral";
-
- let risk = "Normal operating posture.";
- if (soc < 30) risk = "Conserve power and avoid discretionary loads.";
- else if (soc < 50 && cloud >= 80 && discharging) risk = "Cloud cover plus discharge creates a watch condition.";
- else if (soc >= 80 && charging) risk = "Strong reserve. Good window for flexible loads.";
- else if (occ.includes("away") && load > 1200) risk = "Away load is elevated. Review unattended loads.";
- else if (net > 500) risk = "Solar is carrying the load with positive headroom.";
-
- return `${flow}. Load ${Math.round(load).toLocaleString()}W, solar ${Math.round(solar).toLocaleString()}W, SOC ${Math.round(soc)}%, cloud cover ${Math.round(cloud)}%, occupancy ${occ}. ${risk}`;
+ let flow = charging ? "Battery is charging from surplus production" : discharging ? "Battery is supporting current load" : "Battery flow is near neutral";
+ let posture = "Normal public operating view.";
+ if (soc < 40) posture = "Public reserve level is in watch/conserve range.";
+ else if (soc >= 85 && solar >= load) posture = "Strong public reserve with solar carrying load.";
+ return `${flow}. Load ${Math.round(load).toLocaleString()}W, solar ${Math.round(solar).toLocaleString()}W, SOC ${Math.round(soc)}%, cloud cover ${Math.round(cloud)}%, reserve ${reserve}. ${posture}`;
 }
 
 async function refresh(){
  try{
   const r=await fetch("solarstatus.json?ts="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error("feed_unavailable");
   const j=await r.json();
 
   const ageMin=j.timestamp ? Math.round((Date.now()-new Date(j.timestamp).getTime())/60000) : 9999;
   const stale=ageMin>30;
+  const schemaOk=j.schema_version==="public-solar-feed-v1";
 
   set("status",stale ? "YELLOW ⚠" : ((j.status||"GREEN")+" 🍃"));
-  set("statusText",stale ? "Data feed stale" : "All Systems Normal");
+  set("statusText",stale ? "Data feed stale" : (schemaOk ? "Safe public feed active" : "Schema mismatch"));
+  set("feedState", stale ? "STALE" : (schemaOk ? "SAFE" : "CHECK"));
+  set("schemaVersion", j.schema_version || "unknown");
+  set("feedAge", ageLabel(j.timestamp));
+  set("feedHealth", stale ? "stale" : (j.feed_status || "ok"));
+  set("schemaHealth", schemaOk ? "v1" : "mismatch");
 
   set("load",fmt(j.now?.load_w));
   set("solar",fmt(j.now?.solar_w));
@@ -329,28 +319,15 @@ async function refresh(){
   set("batteryPower",fmt(Math.abs(j.now?.battery_power_w||0)));
   set("chargeState",(j.now?.battery_power_w||0)>=0 ? "Charging" : "Discharging");
   set("mode",String(j.now?.mode||"Solar/Battery").replaceAll("Grid","Generator"));
-  set("batTemp",one(j.now?.battery_temp_f||j.battery_temp_f||93));
+  set("batTemp",one(j.now?.battery_temp_f||j.battery_temp_f||0));
 
   set("temp",one(j.weather?.temperature_f));
   set("humidity",fmt(j.weather?.humidity));
   const regionalCloud = j.weather?.cloud_cover;
-  const skycamCloud = j.skycam?.cloud_cover_percent ?? j.visual_conditions?.cloud_cover_pct;
-  let estimatedCloud = null;
-  if (regionalCloud !== undefined && regionalCloud !== null && skycamCloud !== undefined && skycamCloud !== null) {
-    estimatedCloud = Math.round((Number(regionalCloud) + Number(skycamCloud)) / 2);
-  } else if (regionalCloud !== undefined && regionalCloud !== null) {
-    estimatedCloud = Math.round(Number(regionalCloud));
-  } else if (skycamCloud !== undefined && skycamCloud !== null) {
-    estimatedCloud = Math.round(Number(skycamCloud));
-  }
-
-  set("cloudEstimated", estimatedCloud === null ? "--" : fmt(estimatedCloud));
+  set("cloudEstimated", regionalCloud === undefined || regionalCloud === null ? "--" : fmt(Math.round(Number(regionalCloud))));
   set("cloudRegional", regionalCloud === undefined || regionalCloud === null ? "--" : fmt(Math.round(Number(regionalCloud))));
-  set("cloudSkycam", skycamCloud === undefined || skycamCloud === null ? "--" : fmt(Math.round(Number(skycamCloud))));
   set("weatherClass",j.weather?.class||"--");
   set("dataAge", ageLabel(j.timestamp));
-  set("skycamAge", ageLabel(j.skycam?.analyzed_at_utc || j.skycam?.created_at_utc));
-  set("presenceSource", presenceSourceLabel(j));
 
   set("consumed",one(j.today?.consumed_kwh));
   set("produced",one(j.today?.produced_kwh));
@@ -364,27 +341,16 @@ async function refresh(){
   set("actualSolar",fmt(j.performance?.actual_solar_w));
   set("similarAvg",fmt(j.performance?.similar_avg_solar_w));
 
-  set("array1Name",j.arrays?.array_1?.name || "Array 1");
-  set("array1Mppt",j.arrays?.array_1?.mppt || "MPPT1");
   set("array1Power",fmt(j.arrays?.array_1?.power_w));
-  set("array1Rated",fmt(j.arrays?.array_1?.rated_w));
   set("array1Eff",one(j.arrays?.array_1?.efficiency_pct));
   set("array1Peak",fmt(j.arrays?.array_1?.peak_today_w));
-  set("array1PeakTime",j.arrays?.array_1?.peak_today_time_central || "--");
-
-  set("array2Name",j.arrays?.array_2?.name || "Array 2");
-  set("array2Mppt",j.arrays?.array_2?.mppt || "MPPT2");
   set("array2Power",fmt(j.arrays?.array_2?.power_w));
-  set("array2Rated",fmt(j.arrays?.array_2?.rated_w));
   set("array2Eff",one(j.arrays?.array_2?.efficiency_pct));
   set("array2Peak",fmt(j.arrays?.array_2?.peak_today_w));
-  set("array2PeakTime",j.arrays?.array_2?.peak_today_time_central || "--");
-
   set("arrayTotalPower",fmt(j.arrays?.total?.power_w));
-  set("arrayTotalRated",fmt(j.arrays?.total?.rated_w));
   set("arrayTotalEff",one(j.arrays?.total?.efficiency_pct));
   set("arrayTotalPeak",fmt(j.arrays?.total?.peak_today_w));
-  set("arrayTotalPeakTime",j.arrays?.total?.peak_today_time_central || "--");
+
   const totalNow = Number(j.arrays?.total?.power_w || 0);
   const totalPeak = Number(j.arrays?.total?.peak_today_w || 0);
   const totalRated = Number(j.arrays?.total?.rated_w || 0);
@@ -400,7 +366,6 @@ async function refresh(){
   else if (peakEfficiency >= 30) qualityScore = 72;
   else if (peakEfficiency >= 20) qualityScore = 58;
   else if (peakEfficiency > 0) qualityScore = 40;
-
   if (socNow >= 98 && totalPeak > 0) qualityScore = Math.max(qualityScore, 88);
 
   let qualityAssessment = "Insufficient solar data.";
@@ -409,19 +374,17 @@ async function refresh(){
   else if (qualityScore >= 70) qualityAssessment = "Moderate production day. Weather, sun angle, or charge demand may be limiting output.";
   else if (qualityScore > 0) qualityAssessment = "Weak production day. Review weather, shading, battery demand, and array balance.";
   if (socNow >= 98 && currentVsPeak < 35 && totalPeak > 0) qualityAssessment += " Current low output is likely demand-limited, not a clean array-health signal.";
-
   set("solarQualityScore", qualityScore > 0 ? qualityScore : "--");
+  set("solarQualityAssessment", qualityAssessment);
 
   const peakTime = j.arrays?.total?.peak_today_time_central || "--";
   set("bestSolarWindow", peakTime === "--" ? "--" : "Peak around " + peakTime);
-
   let solarGrade = "F";
   if (qualityScore >= 95) solarGrade = "A+";
   else if (qualityScore >= 90) solarGrade = "A";
   else if (qualityScore >= 80) solarGrade = "B";
   else if (qualityScore >= 70) solarGrade = "C";
   else if (qualityScore >= 60) solarGrade = "D";
-
   set("solarGrade", solarGrade);
 
   const peakTrend = j.performance?.peak_trend || {};
@@ -430,110 +393,63 @@ async function refresh(){
   set("avgPeak30d", avgPeak30d > 0 ? fmt(avgPeak30d) : "--");
   set("todayVsAvgPeak", avgPeak30d > 0 ? (vsAvgPeak > 0 ? "+" + one(vsAvgPeak) : one(vsAvgPeak)) : "--");
 
-  let briefStatus = "Monitor";
-  let briefRisk = "Insufficient data for risk assessment.";
-  let briefAction = "Continue monitoring.";
-
   const loadNow = Number(j.now?.load_w || 0);
   const solarNow = Number(j.now?.solar_w || 0);
   const batterySoc = Number(j.now?.battery_soc || 0);
-  const zeroSolarDays = Number(j.survivability?.zero_solar_days || 0);
-  const occupiedState = String(j.occupancy?.state || "").toLowerCase();
-
-  if (batterySoc >= 90 && zeroSolarDays >= 3 && solarNow >= loadNow) {
-    briefStatus = "Excellent";
-    briefRisk = "No near-term energy risk detected before sunrise.";
-    briefAction = "Use surplus solar now: laundry, water heating, cooking, or shop tools. In hot/humid weather, pre-cool living spaces and reduce humidity before evening battery-only hours.";
-  } else if (batterySoc >= 70 && zeroSolarDays >= 2) {
-    briefStatus = "Strong";
-    briefRisk = "Low energy risk. Monitor overnight load.";
-    briefAction = "Normal operation is safe. Delay heavy discretionary loads if weather worsens.";
-  } else if (batterySoc >= 50) {
-    briefStatus = "Watch";
-    briefRisk = "Moderate reserve. Sustained heavy loads could reduce overnight margin.";
-    briefAction = "Avoid unnecessary high-load devices until solar improves.";
-  } else {
-    briefStatus = "Conserve";
-    briefRisk = "Battery reserve is becoming operationally important.";
-    briefAction = "Reduce discretionary loads and review backup options.";
-  }
-
-  if (occupiedState === "away" && loadNow > 3000) {
-    briefStatus = "Investigate";
-    briefRisk = "High load detected while site appears away.";
-    briefAction = "Check HVAC, pumps, appliances, or unexpected 240V loads.";
-  }
-
   const netWatts = solarNow - loadNow;
-  const storedKwh = Number(j.survivability?.usable_battery_kwh || 0);
-  const loadKw = Math.max(loadNow / 1000.0, 0.05);
-  const hoursAtCurrentLoad = storedKwh / loadKw;
+  const reserveLevel = j.public_reserve?.reserve_level || "unknown";
   const expectedSunriseSoc = Number(j.forecast?.expected_sunrise_soc || 0);
   const forecastConfidence = j.forecast?.confidence || "Unknown";
 
-  let energyBudgetText = netWatts >= 0 ? "+" + fmt(netWatts) + "W surplus" : fmt(netWatts) + "W deficit";
-  let timeRemainingText = hoursAtCurrentLoad >= 48 ? one(hoursAtCurrentLoad / 24) + " days" : one(hoursAtCurrentLoad) + " hours";
+  let briefStatus = "Monitor";
+  let briefRisk = "Public reserve state is pending.";
+  let briefAction = "Continue monitoring the public solar feed.";
+  if (batterySoc >= 85 && solarNow >= loadNow) {
+    briefStatus = "Strong";
+    briefRisk = "Low public energy concern.";
+    briefAction = "Good window for flexible loads while solar is carrying site load.";
+  } else if (batterySoc >= 60) {
+    briefStatus = "Normal";
+    briefRisk = "Normal public reserve.";
+    briefAction = "Normal operations appear supported by current reserve.";
+  } else if (batterySoc >= 40) {
+    briefStatus = "Watch";
+    briefRisk = "Public reserve is in watch range.";
+    briefAction = "Prioritize essential loads until solar or reserve improves.";
+  } else {
+    briefStatus = "Conserve";
+    briefRisk = "Public reserve is low.";
+    briefAction = "Reduce discretionary loads.";
+  }
 
-  let primaryRisk = "None identified.";
-  if (batterySoc < 50) primaryRisk = "Battery reserve is the primary risk.";
-  else if (loadNow > 3000) primaryRisk = "High load is the primary risk.";
-  else if (Number(j.weather?.cloud_cover || 0) >= 60 && solarNow < loadNow) primaryRisk = "Cloud cover plus load demand may reduce reserve.";
-  else if (batterySoc >= 98) primaryRisk = "Charge taper may limit solar harvest, but energy risk is low.";
-  else if (netWatts < 0) primaryRisk = "Current load exceeds solar production.";
-
-  let opportunityWindow = "Normal operation.";
-  if (batterySoc >= 95 && netWatts >= 0) opportunityWindow = "Now to sunset: good window for flexible loads.";
-  else if (batterySoc >= 90) opportunityWindow = "Good reserve. Use flexible loads cautiously.";
-  else opportunityWindow = "Limited. Prioritize essential loads.";
-
-  let missionScore = "A";
-  if (batterySoc >= 98 && zeroSolarDays >= 3 && qualityScore >= 90) missionScore = "A+";
-  else if (batterySoc >= 90 && zeroSolarDays >= 2 && qualityScore >= 80) missionScore = "A";
-  else if (batterySoc >= 75 && zeroSolarDays >= 1.5) missionScore = "B";
-  else if (batterySoc >= 55) missionScore = "C";
-  else missionScore = "D";
-
-  set("energyBudget", energyBudgetText);
-  set("timeRemaining", timeRemainingText);
-  set("sunriseSoc", one(expectedSunriseSoc) + "%");
+  set("energyBudget", netWatts >= 0 ? "+" + fmt(netWatts) + "W surplus" : fmt(netWatts) + "W deficit");
+  set("timeRemaining", reserveLevel);
+  set("sunriseSoc", expectedSunriseSoc ? one(expectedSunriseSoc) + "%" : "--");
   set("forecastConfidence", "(" + forecastConfidence + ")");
-  set("primaryRisk", primaryRisk);
-  set("opportunityWindow", opportunityWindow);
-  set("missionScore", missionScore);
-
+  set("primaryRisk", briefRisk);
+  set("opportunityWindow", netWatts >= 0 ? "Solar is meeting or exceeding current load." : "Current load exceeds solar production.");
+  set("missionScore", batterySoc >= 85 ? "A" : batterySoc >= 60 ? "B" : batterySoc >= 40 ? "C" : "D");
   set("colbyBriefStatus", briefStatus);
-  set("colbyBriefRisk", briefRisk);
   set("colbyBriefAction", briefAction);
-
-  set("solarQualityAssessment", qualityAssessment);
   set("arrayInsight",j.arrays?.insight || "Array data unavailable.");
 
-  set("occState",j.occupancy?.state||"--");
-  set("occProb",fmt(j.occupancy?.probability));
-  set("occLabel",j.occupancy?.label || (j.occupancy?.state==="occupied" ? "Probability" : "Confidence"));
-  set("occReason",j.occupancy?.reason || "phone presence model");
-  set("gregWifi",j.occupancy?.sources?.wifi?.greg || "--");
-  set("melWifi",j.occupancy?.sources?.wifi?.mel || "--");
-  set("gregHa",j.occupancy?.sources?.ha?.greg || "--");
-  set("melHa",j.occupancy?.sources?.ha?.mel || "--");
-  set("wifiAge",ageText(j.occupancy?.sources?.wifi?.timestamp));
-  set("haAge",ageText(j.occupancy?.sources?.ha?.timestamp));
-
-  const days=Number(j.survivability?.similar_weather_days||0);
-  const p24=prob(days,24),p48=prob(days,48),p72=prob(days,72);
-  set("usable",one(j.survivability?.usable_battery_kwh));
-  set("batteryStoredEnergy",one(j.survivability?.usable_battery_kwh));
-  set("zeroDays",one(j.survivability?.zero_solar_days));
-  set("similarDays",one(j.survivability?.similar_weather_days));
-  set("samples",fmt(j.survivability?.samples));
-  set("surviveInsight", buildSurvivabilityInsight(j));
+  const reservePct = Math.max(0, Math.min(100, Number(j.public_reserve?.battery_soc || batterySoc || 0)));
+  set("usable", fmt(reservePct));
+  set("batteryStoredEnergy", fmt(reservePct));
+  set("zeroDays", reserveLevel);
+  set("similarDays", fmt(loadNow));
+  set("samples", fmt(j.forecast?.samples));
+  set("surviveInsight", buildReserveInsight(j));
   set("lastUpdatedCt", "Last updated: " + centralTime(j.timestamp));
-  set("p24",p24+"%"); set("p48",p48+"%"); set("p72",p72+"%");
-  document.getElementById("b24").style.width=p24+"%";
-  document.getElementById("b48").style.width=p48+"%";
-  document.getElementById("b72").style.width=p72+"%";
+  set("p24", reservePct + "%");
+  set("p48", reserveLevel);
+  set("p72", stale ? "stale" : "ok");
+  document.getElementById("b24").style.width=reservePct+"%";
+  document.getElementById("b48").style.width=(reserveLevel==="strong"?90:reserveLevel==="normal"?70:reserveLevel==="watch"?45:25)+"%";
+  document.getElementById("b72").style.width=(stale ? 35 : 95)+"%";
 
   let flags=[];
+  if(!schemaOk) flags.push("Public feed schema mismatch.");
   if(stale) flags.push("Data stale: "+ageMin+" minutes old.");
   if(Number(j.now?.battery_soc||100)<30) flags.push("Battery reserve below 30%.");
   if(!flags.length) flags.push("OK — no critical issues.");
@@ -541,7 +457,9 @@ async function refresh(){
  }catch(e){
   set("status","RED ⚠");
   set("statusText","Data feed offline");
-  set("flags","DATA FEED ISSUE — solarstatus.json not reachable.");
+  set("feedState","OFFLINE");
+  set("feedHealth","offline");
+  set("flags","DATA FEED ISSUE — public solar feed not reachable.");
  }
 }
 localClock(); refresh();
