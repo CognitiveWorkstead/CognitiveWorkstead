@@ -33,6 +33,12 @@ on:
       - "tests/test_public_artifact_validator.py"
       - ".github/workflows/public-artifact-privacy-gate.yml"
   workflow_dispatch:
+    inputs:
+      privacy_failure_proof:
+        description: "Run a synthetic privacy-failure proof against the temporary artifact only"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -58,17 +64,42 @@ jobs:
         run: python -m unittest tests/test_public_artifact_validator.py
 
       - name: Stage exact public artifact
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.privacy_failure_proof) }}
         run: python tools/validate_public_artifacts.py --source . --stage _public_artifact
 
+      - name: Stage synthetic failure-proof artifact
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.privacy_failure_proof }}
+        run: |
+          python tools/validate_public_artifacts.py --source . --stage _public_artifact
+          printf '%s\n' '{"fixture":"synthetic privacy-boundary proof only"}' > _public_artifact/knowledge_transfer.json
+
+      - name: Prove synthetic privacy failure blocks validation
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.privacy_failure_proof }}
+        run: |
+          set +e
+          python tools/validate_public_artifacts.py _public_artifact > /tmp/privacy-proof.out 2>&1
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            echo "Synthetic privacy-failure proof unexpectedly passed validation." >&2
+            exit 1
+          fi
+          if ! grep -q "knowledge_transfer.json" /tmp/privacy-proof.out; then
+            echo "Synthetic privacy-failure proof did not detect the fabricated blocked file." >&2
+            exit 1
+          fi
+          echo "Synthetic privacy-failure proof blocked the fabricated artifact as expected."
+          exit 1
+
       - name: Upload approved Pages artifact
-        if: github.event_name != 'pull_request'
+        if: ${{ github.event_name != 'pull_request' && !(github.event_name == 'workflow_dispatch' && inputs.privacy_failure_proof) }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: _public_artifact
 
   deploy:
     name: Deploy approved Pages artifact
-    if: github.event_name != 'pull_request'
+    if: ${{ github.event_name != 'pull_request' && !(github.event_name == 'workflow_dispatch' && inputs.privacy_failure_proof) }}
     needs: validate
     runs-on: ubuntu-latest
     permissions:
