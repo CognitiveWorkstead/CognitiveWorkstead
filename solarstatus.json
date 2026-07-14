@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-14T06:10:11.926632+00:00",
-  "timestamp_central": "Jul 14, 2026, 1:10 AM Central Time",
+  "timestamp": "2026-07-14T06:25:45.590619+00:00",
+  "timestamp_central": "Jul 14, 2026, 1:25 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,18 +11,18 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 581.0,
+    "load_w": 230.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 78.0,
-    "battery_power_w": -605.0,
+    "battery_power_w": -247.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 72.8,
+    "temperature_f": 72.5,
     "humidity": 99.0,
-    "cloud_cover": 95.0,
+    "cloud_cover": 98.0,
     "class": "Solid overcast / Alabama soup",
     "forecast_7day": {
       "source": "Open-Meteo",
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.0m",
+    "reason": "HA both persons away; HA presence fresh 14.9m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-14T06:00:09.882435+00:00",
+        "timestamp": "2026-07-14T06:15:06.400251+00:00",
         "greg": "Present",
         "mel": "Present",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-14T06:00:10.062133Z",
+        "timestamp": "2026-07-14T06:15:06.602113Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 3.59,
+    "consumed_kwh": 3.65,
     "produced_kwh": 0.05,
     "generator_kwh": 0,
-    "avg_load_w": 600,
+    "avg_load_w": 585,
     "peak_load_w": 1526,
     "peak_solar_w": 111,
     "peak_generator_w": 0,
@@ -209,9 +209,9 @@
   },
   "survivability": {
     "usable_battery_kwh": 39.5,
-    "zero_solar_days": 2.7,
-    "similar_weather_days": 3.4,
-    "samples": 1901
+    "zero_solar_days": 2.8,
+    "similar_weather_days": 3.5,
+    "samples": 1888
   },
   "historical_model": {
     "available": true,
@@ -228,12 +228,12 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 6.6,
-    "expected_so_far_kwh": 0.0,
+    "expected_today_kwh": 6.66,
+    "expected_so_far_kwh": 0.07,
     "produced_so_far_kwh": 0.05,
-    "tracking_vs_expected_so_far_pct": null,
+    "tracking_vs_expected_so_far_pct": -23.7,
     "progress_of_expected_day_pct": 0.8,
-    "historical_basis_days": 8,
+    "historical_basis_days": 6,
     "confidence": "Low",
     "source": "Solar Assistant historical model"
   },
@@ -253,14 +253,14 @@
   "sunset_projection": {
     "available": true,
     "current_soc": 78.0,
-    "projected_sunset_soc": 67.8,
-    "hours_to_sunset": 18.8,
-    "remaining_expected_solar_kwh": 6.55,
-    "remaining_load_kwh": 10.91,
-    "net_remaining_kwh": -4.37,
-    "expected_today_kwh": 6.6,
+    "projected_sunset_soc": 83.5,
+    "hours_to_sunset": 18.5,
+    "remaining_expected_solar_kwh": 6.61,
+    "remaining_load_kwh": 4.26,
+    "net_remaining_kwh": 2.34,
+    "expected_today_kwh": 6.66,
     "produced_so_far_kwh": 0.05,
-    "basis_days": 8,
+    "basis_days": 6,
     "confidence": "Low",
     "source": "Historical production tracking plus current load"
   },
@@ -277,12 +277,12 @@
     }
   },
   "forecast": {
-    "avg_overnight_load_w": 480.0,
+    "avg_overnight_load_w": 479.0,
     "overnight_hours": 12,
-    "expected_overnight_kwh": 5.76,
-    "expected_sunrise_soc": 66.6,
+    "expected_overnight_kwh": 5.75,
+    "expected_sunrise_soc": 66.7,
     "confidence": "High",
-    "samples": 4024
+    "samples": 4044
   },
   "visual_conditions": {
     "camera_online": true,
