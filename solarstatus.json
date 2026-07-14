@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-14T07:26:40.878066+00:00",
-  "timestamp_central": "Jul 14, 2026, 2:26 AM Central Time",
+  "timestamp": "2026-07-14T07:41:10.016839+00:00",
+  "timestamp_central": "Jul 14, 2026, 2:41 AM Central Time",
   "status": "GREEN",
   "solar": {
     "state": "Night",
@@ -11,19 +11,19 @@
     "operational_message": "Solar grading suspended during night conditions."
   },
   "now": {
-    "load_w": 221.0,
+    "load_w": 438.0,
     "solar_w": 0.0,
     "generator_w": 0,
     "battery_soc": 77.0,
-    "battery_power_w": -244.0,
+    "battery_power_w": -467.0,
     "mode": "Battery",
     "battery_temp_f": 99.3
   },
   "weather": {
-    "temperature_f": 71.9,
+    "temperature_f": 71.3,
     "humidity": 99.0,
-    "cloud_cover": 100.0,
-    "class": "Solid overcast / Alabama soup",
+    "cloud_cover": 59.0,
+    "class": "Partly cloudy",
     "forecast_7day": {
       "source": "Open-Meteo",
       "days": [
@@ -177,18 +177,18 @@
     "state": "away",
     "probability": 95,
     "label": "Confidence",
-    "reason": "HA both persons away; HA presence fresh 15.1m",
+    "reason": "HA both persons away; HA presence fresh 14.9m",
     "greg_phone_present": 0,
     "mel_phone_present": 0,
     "sources": {
       "wifi": {
-        "timestamp": "2026-07-14T07:15:12.399684+00:00",
-        "greg": "Away",
-        "mel": "Present",
+        "timestamp": "2026-07-14T07:30:09.582647+00:00",
+        "greg": "Present",
+        "mel": "Away",
         "state": "occupied"
       },
       "ha": {
-        "timestamp": "2026-07-14T07:15:12.686136Z",
+        "timestamp": "2026-07-14T07:30:09.758489Z",
         "greg": "Away",
         "mel": "Away",
         "greg_raw": "not_home",
@@ -198,10 +198,10 @@
     }
   },
   "today": {
-    "consumed_kwh": 3.99,
+    "consumed_kwh": 4.07,
     "produced_kwh": 0.05,
     "generator_kwh": 0,
-    "avg_load_w": 551,
+    "avg_load_w": 544,
     "peak_load_w": 1526,
     "peak_solar_w": 111,
     "peak_generator_w": 0,
@@ -210,8 +210,8 @@
   "survivability": {
     "usable_battery_kwh": 39.0,
     "zero_solar_days": 3.0,
-    "similar_weather_days": 3.6,
-    "samples": 2284
+    "similar_weather_days": 3.2,
+    "samples": 1050
   },
   "historical_model": {
     "available": true,
@@ -228,13 +228,13 @@
   },
   "production_tracking": {
     "available": true,
-    "expected_today_kwh": 6.74,
-    "expected_so_far_kwh": 0.07,
+    "expected_today_kwh": 7.23,
+    "expected_so_far_kwh": 0.06,
     "produced_so_far_kwh": 0.05,
-    "tracking_vs_expected_so_far_pct": -23.7,
-    "progress_of_expected_day_pct": 0.8,
-    "historical_basis_days": 5,
-    "confidence": "Low",
+    "tracking_vs_expected_so_far_pct": -11.0,
+    "progress_of_expected_day_pct": 0.7,
+    "historical_basis_days": 31,
+    "confidence": "High",
     "source": "Solar Assistant historical model"
   },
   "solar_intelligence": {
@@ -244,24 +244,24 @@
     "performance_pct": 0.0,
     "variance_pct": -100.0,
     "grade": "F",
-    "basis_days": 7,
-    "samples": 7,
-    "confidence": "Low",
-    "matched_cloud": 90.0,
+    "basis_days": 18,
+    "samples": 18,
+    "confidence": "Medium",
+    "matched_cloud": 56.0,
     "source": "Historical time/season/cloud matched Solar Assistant model"
   },
   "sunset_projection": {
     "available": true,
     "current_soc": 77.0,
-    "projected_sunset_soc": 83.6,
-    "hours_to_sunset": 17.5,
-    "remaining_expected_solar_kwh": 6.69,
-    "remaining_load_kwh": 3.87,
-    "net_remaining_kwh": 2.81,
-    "expected_today_kwh": 6.74,
+    "projected_sunset_soc": 76.1,
+    "hours_to_sunset": 17.3,
+    "remaining_expected_solar_kwh": 7.18,
+    "remaining_load_kwh": 7.57,
+    "net_remaining_kwh": -0.39,
+    "expected_today_kwh": 7.23,
     "produced_so_far_kwh": 0.05,
-    "basis_days": 5,
-    "confidence": "Low",
+    "basis_days": 31,
+    "confidence": "High",
     "source": "Historical production tracking plus current load"
   },
   "performance": {
@@ -282,7 +282,7 @@
     "expected_overnight_kwh": 5.72,
     "expected_sunrise_soc": 65.7,
     "confidence": "High",
-    "samples": 4104
+    "samples": 4119
   },
   "visual_conditions": {
     "camera_online": true,
