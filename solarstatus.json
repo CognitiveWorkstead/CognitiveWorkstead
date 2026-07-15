@@ -3,7 +3,7 @@
     "array_1": {
       "azimuth_deg": 186,
       "bifacial": true,
-      "efficiency_pct": 0.5,
+      "efficiency_pct": 0.4,
       "label": "Array 1",
       "mppt": "MPPT1",
       "name": "12-Panel Bifacial Array",
@@ -12,7 +12,7 @@
       "peak_today_efficiency_pct": 0.6,
       "peak_today_time_central": "Jul 14, 2026, 7:03 PM Central Time",
       "peak_today_w": 31,
-      "power_w": 29,
+      "power_w": 22,
       "rated_w": 5340,
       "season_best_w": 3115,
       "tilt_deg": 21.2
@@ -29,7 +29,7 @@
       "peak_today_efficiency_pct": 0.9,
       "peak_today_time_central": "Jul 14, 2026, 7:01 PM Central Time",
       "peak_today_w": 32,
-      "power_w": 31,
+      "power_w": 30,
       "rated_w": 3480,
       "season_best_w": 3505,
       "tilt_deg": 9.2
@@ -47,7 +47,7 @@
       "peak_today_efficiency_pct": 0.7,
       "peak_today_time_central": "Jul 14, 2026, 7:03 PM Central Time",
       "peak_today_w": 62,
-      "power_w": 55,
+      "power_w": 52,
       "rated_w": 8820,
       "season_best_w": 6620,
       "tilt_deg": null
@@ -69,16 +69,16 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -681,
+    "battery_power_w": -757,
     "battery_soc": 95,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 679,
+    "load_w": 744,
     "mode": "Solar/Battery",
-    "solar_w": 63
+    "solar_w": 54
   },
   "performance": {
-    "actual_solar_w": 63,
+    "actual_solar_w": 54,
     "peak_trend": {
       "avg_peak_30d_w": 5122,
       "best_peak_30d_w": 6620,
@@ -87,18 +87,18 @@
       "today_vs_avg_peak_pct": 0.0,
       "worst_peak_30d_w": 907
     },
-    "similar_avg_solar_w": 246
+    "similar_avg_solar_w": 92
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "Medium",
-    "expected_so_far_kwh": 6.78,
-    "expected_today_kwh": 6.81,
-    "historical_basis_days": 19,
-    "produced_so_far_kwh": 23.88,
-    "progress_of_expected_day_pct": 350.7,
-    "tracking_vs_expected_so_far_pct": 252.2
+    "confidence": "Low",
+    "expected_so_far_kwh": 6.66,
+    "expected_today_kwh": 6.66,
+    "historical_basis_days": 6,
+    "produced_so_far_kwh": 0.01,
+    "progress_of_expected_day_pct": 0.2,
+    "tracking_vs_expected_so_far_pct": -99.8
   },
   "public_notes": {
     "boundary": "allowlist_only",
@@ -112,43 +112,43 @@
   },
   "schema_version": "public-solar-feed-v1",
   "solar": {
-    "grading_enabled": true,
-    "operational_message": "Building today's solar production profile before grading.",
+    "grading_enabled": false,
+    "operational_message": "Solar grading suspended during dusk conditions.",
     "peak_established": false,
-    "state": "Afternoon Decline"
+    "state": "Dusk"
   },
   "solar_intelligence": {
-    "actual_now_w": 63,
+    "actual_now_w": 54,
     "available": true,
-    "basis_days": 30,
-    "confidence": "High",
-    "expected_now_w": 10,
+    "basis_days": 21,
+    "confidence": "Medium",
+    "expected_now_w": 9,
     "grade": "A+",
-    "performance_pct": 630.0,
-    "variance_pct": 530.0
+    "performance_pct": 600.0,
+    "variance_pct": 500.0
   },
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 19,
-    "confidence": "Medium",
-    "projected_sunset_soc": 93.8
+    "basis_days": 6,
+    "confidence": "Low",
+    "projected_sunset_soc": 100.0
   },
-  "timestamp": "2026-07-15T00:14:24.699234+00:00",
-  "timestamp_central": "Jul 14, 2026, 7:14 PM Central Time",
+  "timestamp": "2026-07-15T00:29:13.662845+00:00",
+  "timestamp_central": "Jul 14, 2026, 7:29 PM Central Time",
   "today": {
-    "avg_load_w": 582,
-    "consumed_kwh": 13.95,
+    "avg_load_w": 706,
+    "consumed_kwh": 0.16,
     "generator_kwh": 0.0,
-    "lowest_soc": 72,
+    "lowest_soc": 95,
     "peak_generator_w": 0,
-    "peak_load_w": 3702,
-    "peak_solar_w": 6241,
-    "produced_kwh": 23.88
+    "peak_load_w": 762,
+    "peak_solar_w": 62,
+    "produced_kwh": 0.01
   },
   "weather": {
-    "class": "Cloudy",
-    "cloud_cover": 77,
+    "class": "Solid overcast / Alabama soup",
+    "cloud_cover": 99,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 94,
-    "temperature_f": 76.1
+    "humidity": 96,
+    "temperature_f": 74.4
   }
 }
