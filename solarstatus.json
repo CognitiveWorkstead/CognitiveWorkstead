@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -597,
+    "battery_power_w": -456,
     "battery_soc": 92,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 581,
+    "load_w": 445,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -87,15 +87,15 @@
       "today_vs_avg_peak_pct": 0.0,
       "worst_peak_30d_w": 62
     },
-    "similar_avg_solar_w": 1
+    "similar_avg_solar_w": 0
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "Medium",
-    "expected_so_far_kwh": 6.76,
-    "expected_today_kwh": 6.76,
-    "historical_basis_days": 11,
+    "confidence": "Low",
+    "expected_so_far_kwh": 6.66,
+    "expected_today_kwh": 6.66,
+    "historical_basis_days": 6,
     "produced_so_far_kwh": 0.04,
     "progress_of_expected_day_pct": 0.6,
     "tracking_vs_expected_so_far_pct": -99.4
@@ -113,9 +113,9 @@
   "schema_version": "public-solar-feed-v1",
   "solar": {
     "grading_enabled": false,
-    "operational_message": "Solar grading suspended during dusk conditions.",
+    "operational_message": "Solar grading suspended during night conditions.",
     "peak_established": false,
-    "state": "Dusk"
+    "state": "Night"
   },
   "solar_intelligence": {
     "actual_now_w": 0,
@@ -130,15 +130,15 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 11,
-    "confidence": "Medium",
+    "basis_days": 6,
+    "confidence": "Low",
     "projected_sunset_soc": 100.0
   },
-  "timestamp": "2026-07-15T02:00:09.447134+00:00",
-  "timestamp_central": "Jul 14, 2026, 9:00 PM Central Time",
+  "timestamp": "2026-07-15T02:29:17.454601+00:00",
+  "timestamp_central": "Jul 14, 2026, 9:29 PM Central Time",
   "today": {
-    "avg_load_w": 867,
-    "consumed_kwh": 1.5,
+    "avg_load_w": 795,
+    "consumed_kwh": 1.77,
     "generator_kwh": 0.0,
     "lowest_soc": 92,
     "peak_generator_w": 0,
@@ -147,8 +147,8 @@
     "produced_kwh": 0.04
   },
   "weather": {
-    "class": "Cloudy",
-    "cloud_cover": 89,
+    "class": "Solid overcast / Alabama soup",
+    "cloud_cover": 98,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 100,
-    "temperature_f": 73.0
+    "humidity": 99,
+    "temperature_f": 72.9
   }
 }
