@@ -3,7 +3,7 @@
     "array_1": {
       "azimuth_deg": 186,
       "bifacial": true,
-      "efficiency_pct": 12.3,
+      "efficiency_pct": 17.1,
       "label": "Array 1",
       "mppt": "MPPT1",
       "name": "12-Panel Bifacial Array",
@@ -12,7 +12,7 @@
       "peak_today_efficiency_pct": 67.2,
       "peak_today_time_central": "Jul 16, 2026, 2:48 PM Central Time",
       "peak_today_w": 3587,
-      "power_w": 658,
+      "power_w": 913,
       "rated_w": 5340,
       "season_best_w": 3587,
       "tilt_deg": 21.2
@@ -20,7 +20,7 @@
     "array_2": {
       "azimuth_deg": 186,
       "bifacial": false,
-      "efficiency_pct": 21.5,
+      "efficiency_pct": 27.7,
       "label": "Array 2",
       "mppt": "MPPT2",
       "name": "8-Panel 435W Array",
@@ -29,7 +29,7 @@
       "peak_today_efficiency_pct": 109.1,
       "peak_today_time_central": "Jul 16, 2026, 2:48 PM Central Time",
       "peak_today_w": 3795,
-      "power_w": 748,
+      "power_w": 965,
       "rated_w": 3480,
       "season_best_w": 3795,
       "tilt_deg": 9.2
@@ -38,7 +38,7 @@
     "total": {
       "azimuth_deg": null,
       "bifacial": null,
-      "efficiency_pct": 15.9,
+      "efficiency_pct": 21.3,
       "label": null,
       "mppt": null,
       "name": null,
@@ -47,7 +47,7 @@
       "peak_today_efficiency_pct": 83.7,
       "peak_today_time_central": "Jul 16, 2026, 2:48 PM Central Time",
       "peak_today_w": 7383,
-      "power_w": 1406,
+      "power_w": 1878,
       "rated_w": 8820,
       "season_best_w": 7383,
       "tilt_deg": null
@@ -69,16 +69,16 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": 117,
+    "battery_power_w": 204,
     "battery_soc": 99,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 1261,
+    "load_w": 1631,
     "mode": "Solar/Battery",
-    "solar_w": 1406
+    "solar_w": 1878
   },
   "performance": {
-    "actual_solar_w": 1406,
+    "actual_solar_w": 1878,
     "peak_trend": {
       "avg_peak_30d_w": 5189,
       "best_peak_30d_w": 7383,
@@ -87,18 +87,18 @@
       "today_vs_avg_peak_pct": 42.3,
       "worst_peak_30d_w": 907
     },
-    "similar_avg_solar_w": 1606
+    "similar_avg_solar_w": 1610
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
     "confidence": "High",
-    "expected_so_far_kwh": 7.39,
-    "expected_today_kwh": 7.42,
-    "historical_basis_days": 38,
-    "produced_so_far_kwh": 25.05,
-    "progress_of_expected_day_pct": 337.6,
-    "tracking_vs_expected_so_far_pct": 238.9
+    "expected_so_far_kwh": 7.52,
+    "expected_today_kwh": 7.56,
+    "historical_basis_days": 47,
+    "produced_so_far_kwh": 25.79,
+    "progress_of_expected_day_pct": 341.1,
+    "tracking_vs_expected_so_far_pct": 242.9
   },
   "public_notes": {
     "boundary": "allowlist_only",
@@ -118,7 +118,7 @@
     "state": "Afternoon Decline"
   },
   "solar_intelligence": {
-    "actual_now_w": 1406,
+    "actual_now_w": 1878,
     "available": false,
     "basis_days": 0,
     "confidence": "No Data",
@@ -130,25 +130,25 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 38,
+    "basis_days": 47,
     "confidence": "High",
-    "projected_sunset_soc": 88.7
+    "projected_sunset_soc": 90.9
   },
-  "timestamp": "2026-07-16T21:58:00+00:00",
-  "timestamp_central": "Jul 16, 2026, 4:58 PM Central Time",
+  "timestamp": "2026-07-16T22:28:00+00:00",
+  "timestamp_central": "Jul 16, 2026, 5:28 PM Central Time",
   "today": {
-    "avg_load_w": 959,
-    "consumed_kwh": 20.85,
+    "avg_load_w": 967,
+    "consumed_kwh": 21.5,
     "generator_kwh": 0.0,
     "lowest_soc": 81,
     "peak_generator_w": 0,
     "peak_load_w": 7492,
     "peak_solar_w": 7383,
-    "produced_kwh": 25.05
+    "produced_kwh": 25.79
   },
   "weather": {
     "class": "Partly cloudy",
-    "cloud_cover": 48,
+    "cloud_cover": 31,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 51,
-    "temperature_f": 90.1
+    "humidity": 52,
+    "temperature_f": 89.2
   }
 }
