@@ -56,8 +56,8 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 71.0,
-    "samples": 4138
+    "expected_sunrise_soc": 70.0,
+    "samples": 4168
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -474,
-    "battery_soc": 83,
+    "battery_power_w": -1064,
+    "battery_soc": 82,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 459,
+    "load_w": 1043,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -93,19 +93,19 @@
   "production_tracking": {
     "available": true,
     "confidence": "High",
-    "expected_so_far_kwh": 0.09,
-    "expected_today_kwh": 8.1,
-    "historical_basis_days": 45,
+    "expected_so_far_kwh": 0.1,
+    "expected_today_kwh": 8.08,
+    "historical_basis_days": 35,
     "produced_so_far_kwh": 0.08,
     "progress_of_expected_day_pct": 1.0,
-    "tracking_vs_expected_so_far_pct": -7.2
+    "tracking_vs_expected_so_far_pct": -16.5
   },
   "public_notes": {
     "boundary": "allowlist_only",
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 83,
+    "battery_soc": 82,
     "confidence": "High",
     "reserve_level": "normal",
     "summary": "Public reserve view uses battery percentage and current load only."
@@ -130,25 +130,25 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 45,
+    "basis_days": 35,
     "confidence": "High",
-    "projected_sunset_soc": 76.1
+    "projected_sunset_soc": 91.2
   },
-  "timestamp": "2026-07-17T07:58:00+00:00",
-  "timestamp_central": "Jul 17, 2026, 2:58 AM Central Time",
+  "timestamp": "2026-07-17T08:28:00+00:00",
+  "timestamp_central": "Jul 17, 2026, 3:28 AM Central Time",
   "today": {
-    "avg_load_w": 899,
-    "consumed_kwh": 6.94,
+    "avg_load_w": 879,
+    "consumed_kwh": 7.22,
     "generator_kwh": 0.0,
-    "lowest_soc": 83,
+    "lowest_soc": 82,
     "peak_generator_w": 0,
     "peak_load_w": 3261,
     "peak_solar_w": 179,
     "produced_kwh": 0.08
   },
   "weather": {
-    "class": "Partly cloudy",
-    "cloud_cover": 23,
+    "class": "Clear",
+    "cloud_cover": 9,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 90,
-    "temperature_f": 74.4
+    "humidity": 91,
+    "temperature_f": 73.9
   }
 }
