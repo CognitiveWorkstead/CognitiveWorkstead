@@ -3,7 +3,7 @@
     "array_1": {
       "azimuth_deg": 186,
       "bifacial": true,
-      "efficiency_pct": 8.2,
+      "efficiency_pct": 5.8,
       "label": "Array 1",
       "mppt": "MPPT1",
       "name": "12-Panel Bifacial Array",
@@ -12,7 +12,7 @@
       "peak_today_efficiency_pct": 51.6,
       "peak_today_time_central": "Jul 20, 2026, 11:46 AM Central Time",
       "peak_today_w": 2758,
-      "power_w": 436,
+      "power_w": 312,
       "rated_w": 5340,
       "season_best_w": 3587,
       "tilt_deg": 21.2
@@ -20,7 +20,7 @@
     "array_2": {
       "azimuth_deg": 186,
       "bifacial": false,
-      "efficiency_pct": 14.0,
+      "efficiency_pct": 8.8,
       "label": "Array 2",
       "mppt": "MPPT2",
       "name": "8-Panel 435W Array",
@@ -29,7 +29,7 @@
       "peak_today_efficiency_pct": 88.6,
       "peak_today_time_central": "Jul 20, 2026, 11:54 AM Central Time",
       "peak_today_w": 3084,
-      "power_w": 486,
+      "power_w": 307,
       "rated_w": 3480,
       "season_best_w": 3795,
       "tilt_deg": 9.2
@@ -38,7 +38,7 @@
     "total": {
       "azimuth_deg": null,
       "bifacial": null,
-      "efficiency_pct": 10.5,
+      "efficiency_pct": 7.0,
       "label": null,
       "mppt": null,
       "name": null,
@@ -47,7 +47,7 @@
       "peak_today_efficiency_pct": 66.1,
       "peak_today_time_central": "Jul 20, 2026, 11:54 AM Central Time",
       "peak_today_w": 5826,
-      "power_w": 922,
+      "power_w": 619,
       "rated_w": 8820,
       "season_best_w": 7383,
       "tilt_deg": null
@@ -69,16 +69,16 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": 117,
+    "battery_power_w": -957,
     "battery_soc": 99,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 786,
+    "load_w": 1531,
     "mode": "Solar/Battery",
-    "solar_w": 922
+    "solar_w": 619
   },
   "performance": {
-    "actual_solar_w": 922,
+    "actual_solar_w": 619,
     "peak_trend": {
       "avg_peak_30d_w": 5596,
       "best_peak_30d_w": 7383,
@@ -87,18 +87,18 @@
       "today_vs_avg_peak_pct": 4.1,
       "worst_peak_30d_w": 2797
     },
-    "similar_avg_solar_w": 3038
+    "similar_avg_solar_w": 2712
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "High",
-    "expected_so_far_kwh": 5.37,
-    "expected_today_kwh": 8.12,
-    "historical_basis_days": 34,
-    "produced_so_far_kwh": 15.51,
-    "progress_of_expected_day_pct": 191.0,
-    "tracking_vs_expected_so_far_pct": 188.9
+    "confidence": "Medium",
+    "expected_so_far_kwh": 8.15,
+    "expected_today_kwh": 8.21,
+    "historical_basis_days": 29,
+    "produced_so_far_kwh": 15.96,
+    "progress_of_expected_day_pct": 194.3,
+    "tracking_vs_expected_so_far_pct": 95.8
   },
   "public_notes": {
     "boundary": "allowlist_only",
@@ -118,33 +118,33 @@
     "state": "Prime Solar"
   },
   "solar_intelligence": {
-    "actual_now_w": 922,
+    "actual_now_w": 619,
     "available": true,
-    "basis_days": 26,
+    "basis_days": 24,
     "confidence": "Medium",
-    "expected_now_w": 935,
-    "grade": "A",
-    "performance_pct": 108.1,
-    "variance_pct": 8.1
+    "expected_now_w": 942,
+    "grade": "F",
+    "performance_pct": 25.1,
+    "variance_pct": -74.9
   },
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 34,
-    "confidence": "High",
-    "projected_sunset_soc": 85.4
+    "basis_days": 29,
+    "confidence": "Medium",
+    "projected_sunset_soc": 89.7
   },
-  "timestamp": "2026-07-20T18:08:00+00:00",
-  "timestamp_central": "Jul 20, 2026, 1:08 PM Central Time",
+  "timestamp": "2026-07-20T18:38:00+00:00",
+  "timestamp_central": "Jul 20, 2026, 1:38 PM Central Time",
   "today": {
-    "avg_load_w": 398,
-    "consumed_kwh": 7.06,
+    "avg_load_w": 406,
+    "consumed_kwh": 7.41,
     "generator_kwh": 0.0,
     "lowest_soc": 78,
     "peak_generator_w": 0,
     "peak_load_w": 1223,
     "peak_solar_w": 5826,
-    "produced_kwh": 15.51
+    "produced_kwh": 15.96
   },
   "weather": {
     "class": "Clear",
