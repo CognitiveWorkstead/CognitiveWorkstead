@@ -3,7 +3,7 @@
     "array_1": {
       "azimuth_deg": 186,
       "bifacial": true,
-      "efficiency_pct": 7.2,
+      "efficiency_pct": 13.7,
       "label": "Array 1",
       "mppt": "MPPT1",
       "name": "12-Panel Bifacial Array",
@@ -12,7 +12,7 @@
       "peak_today_efficiency_pct": 45.4,
       "peak_today_time_central": "Jul 24, 2026, 11:42 AM Central Time",
       "peak_today_w": 2426,
-      "power_w": 384,
+      "power_w": 733,
       "rated_w": 5340,
       "season_best_w": 3587,
       "tilt_deg": 21.2
@@ -20,7 +20,7 @@
     "array_2": {
       "azimuth_deg": 186,
       "bifacial": false,
-      "efficiency_pct": 12.5,
+      "efficiency_pct": 23.6,
       "label": "Array 2",
       "mppt": "MPPT2",
       "name": "8-Panel 435W Array",
@@ -29,7 +29,7 @@
       "peak_today_efficiency_pct": 78.0,
       "peak_today_time_central": "Jul 24, 2026, 11:43 AM Central Time",
       "peak_today_w": 2713,
-      "power_w": 435,
+      "power_w": 820,
       "rated_w": 3480,
       "season_best_w": 3795,
       "tilt_deg": 9.2
@@ -38,7 +38,7 @@
     "total": {
       "azimuth_deg": null,
       "bifacial": null,
-      "efficiency_pct": 9.3,
+      "efficiency_pct": 17.6,
       "label": null,
       "mppt": null,
       "name": null,
@@ -47,7 +47,7 @@
       "peak_today_efficiency_pct": 58.3,
       "peak_today_time_central": "Jul 24, 2026, 11:42 AM Central Time",
       "peak_today_w": 5138,
-      "power_w": 819,
+      "power_w": 1553,
       "rated_w": 8820,
       "season_best_w": 7383,
       "tilt_deg": null
@@ -73,12 +73,12 @@
     "battery_soc": 99,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 686,
+    "load_w": 1406,
     "mode": "Solar/Battery",
-    "solar_w": 819
+    "solar_w": 1553
   },
   "performance": {
-    "actual_solar_w": 819,
+    "actual_solar_w": 1553,
     "peak_trend": {
       "avg_peak_30d_w": 5682,
       "best_peak_30d_w": 7383,
@@ -87,18 +87,18 @@
       "today_vs_avg_peak_pct": -9.6,
       "worst_peak_30d_w": 4375
     },
-    "similar_avg_solar_w": 2315
+    "similar_avg_solar_w": 2150
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
     "confidence": "Low",
-    "expected_so_far_kwh": 6.71,
-    "expected_today_kwh": 6.74,
-    "historical_basis_days": 5,
-    "produced_so_far_kwh": 13.77,
-    "progress_of_expected_day_pct": 204.3,
-    "tracking_vs_expected_so_far_pct": 105.3
+    "expected_so_far_kwh": 6.64,
+    "expected_today_kwh": 6.66,
+    "historical_basis_days": 6,
+    "produced_so_far_kwh": 14.45,
+    "progress_of_expected_day_pct": 216.9,
+    "tracking_vs_expected_so_far_pct": 117.6
   },
   "public_notes": {
     "boundary": "allowlist_only",
@@ -118,37 +118,37 @@
     "state": "Prime Solar"
   },
   "solar_intelligence": {
-    "actual_now_w": 819,
+    "actual_now_w": 1553,
     "available": true,
-    "basis_days": 9,
-    "confidence": "Low",
-    "expected_now_w": 871,
-    "grade": "C",
-    "performance_pct": 76.2,
-    "variance_pct": -23.8
+    "basis_days": 10,
+    "confidence": "Medium",
+    "expected_now_w": 839,
+    "grade": "A+",
+    "performance_pct": 116.3,
+    "variance_pct": 16.3
   },
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 5,
+    "basis_days": 6,
     "confidence": "Low",
-    "projected_sunset_soc": 91.1
+    "projected_sunset_soc": 88.1
   },
-  "timestamp": "2026-07-24T18:58:00+00:00",
-  "timestamp_central": "Jul 24, 2026, 1:58 PM Central Time",
+  "timestamp": "2026-07-24T19:43:00+00:00",
+  "timestamp_central": "Jul 24, 2026, 2:43 PM Central Time",
   "today": {
-    "avg_load_w": 567,
-    "consumed_kwh": 10.48,
+    "avg_load_w": 573,
+    "consumed_kwh": 11.03,
     "generator_kwh": 0.0,
     "lowest_soc": 83,
     "peak_generator_w": 0,
     "peak_load_w": 1853,
     "peak_solar_w": 5138,
-    "produced_kwh": 13.77
+    "produced_kwh": 14.45
   },
   "weather": {
     "class": "Cloudy",
-    "cloud_cover": 100,
+    "cloud_cover": 98,
     "forecast_7day": {
       "days": [
         {
@@ -259,6 +259,6 @@
       ]
     },
     "humidity": 44,
-    "temperature_f": 92.2
+    "temperature_f": 93.4
   }
 }
