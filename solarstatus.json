@@ -56,8 +56,8 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 73.7,
-    "samples": 4077
+    "expected_sunrise_soc": 72.7,
+    "samples": 4122
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -638,
-    "battery_soc": 86,
+    "battery_power_w": -692,
+    "battery_soc": 85,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 625,
+    "load_w": 672,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -92,10 +92,10 @@
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "Low",
+    "confidence": "Medium",
     "expected_so_far_kwh": 0.07,
-    "expected_today_kwh": 6.74,
-    "historical_basis_days": 5,
+    "expected_today_kwh": 6.8,
+    "historical_basis_days": 16,
     "produced_so_far_kwh": 0.05,
     "progress_of_expected_day_pct": 0.8,
     "tracking_vs_expected_so_far_pct": -24.2
@@ -105,7 +105,7 @@
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 86,
+    "battery_soc": 85,
     "confidence": "High",
     "reserve_level": "strong",
     "summary": "Public reserve view uses battery percentage and current load only."
@@ -120,9 +120,9 @@
   "solar_intelligence": {
     "actual_now_w": 0,
     "available": true,
-    "basis_days": 7,
-    "confidence": "Low",
-    "expected_now_w": 21,
+    "basis_days": 15,
+    "confidence": "Medium",
+    "expected_now_w": 19,
     "grade": "F",
     "performance_pct": 0.0,
     "variance_pct": -100.0
@@ -130,25 +130,25 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 5,
-    "confidence": "Low",
-    "projected_sunset_soc": 84.3
+    "basis_days": 16,
+    "confidence": "Medium",
+    "projected_sunset_soc": 74.1
   },
-  "timestamp": "2026-07-25T06:58:00+00:00",
-  "timestamp_central": "Jul 25, 2026, 1:58 AM Central Time",
+  "timestamp": "2026-07-25T07:43:00+00:00",
+  "timestamp_central": "Jul 25, 2026, 2:43 AM Central Time",
   "today": {
-    "avg_load_w": 820,
-    "consumed_kwh": 5.32,
+    "avg_load_w": 805,
+    "consumed_kwh": 5.82,
     "generator_kwh": 0.0,
-    "lowest_soc": 86,
+    "lowest_soc": 85,
     "peak_generator_w": 0,
     "peak_load_w": 1716,
     "peak_solar_w": 135,
     "produced_kwh": 0.05
   },
   "weather": {
-    "class": "Solid overcast / Alabama soup",
-    "cloud_cover": 100,
+    "class": "Cloudy",
+    "cloud_cover": 80,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 94,
-    "temperature_f": 76.3
+    "humidity": 96,
+    "temperature_f": 76.5
   }
 }
