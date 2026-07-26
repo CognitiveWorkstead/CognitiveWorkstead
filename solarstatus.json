@@ -56,8 +56,8 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 68.1,
-    "samples": 4263
+    "expected_sunrise_soc": 67.1,
+    "samples": 4308
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -675,
+    "battery_power_w": -216,
     "battery_soc": 79,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 662,
+    "load_w": 210,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -87,7 +87,7 @@
       "today_vs_avg_peak_pct": 0.0,
       "worst_peak_30d_w": 171
     },
-    "similar_avg_solar_w": 0
+    "similar_avg_solar_w": 14
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
@@ -113,9 +113,9 @@
   "schema_version": "public-solar-feed-v1",
   "solar": {
     "grading_enabled": false,
-    "operational_message": "Solar grading suspended during night conditions.",
+    "operational_message": "Solar grading suspended during dawn conditions.",
     "peak_established": false,
-    "state": "Night"
+    "state": "Dawn"
   },
   "solar_intelligence": {
     "actual_now_w": 0,
@@ -132,15 +132,15 @@
     "available": true,
     "basis_days": 14,
     "confidence": "Medium",
-    "projected_sunset_soc": 71.2
+    "projected_sunset_soc": 78.8
   },
-  "timestamp": "2026-07-26T10:03:00+00:00",
-  "timestamp_central": "Jul 26, 2026, 5:03 AM Central Time",
+  "timestamp": "2026-07-26T10:48:00+00:00",
+  "timestamp_central": "Jul 26, 2026, 5:48 AM Central Time",
   "today": {
-    "avg_load_w": 832,
-    "consumed_kwh": 7.89,
+    "avg_load_w": 821,
+    "consumed_kwh": 8.4,
     "generator_kwh": 0.0,
-    "lowest_soc": 80,
+    "lowest_soc": 79,
     "peak_generator_w": 0,
     "peak_load_w": 2107,
     "peak_solar_w": 171,
@@ -152,16 +152,16 @@
     "forecast_7day": {
       "days": [
         {
-          "cloud_cover": 72,
+          "cloud_cover": 66,
           "confidence": "Medium",
           "date": "7/26",
           "day": "Sun",
-          "expected_peak_w": 1566,
-          "expected_solar_kwh": 6.94,
-          "expected_solar_kwh_high": 10.39,
-          "expected_solar_kwh_low": 2.03,
-          "high_f": 93,
-          "historical_days_used": 24,
+          "expected_peak_w": 1610,
+          "expected_solar_kwh": 7.18,
+          "expected_solar_kwh_high": 10.45,
+          "expected_solar_kwh_low": 2.08,
+          "high_f": 94,
+          "historical_days_used": 26,
           "icon": "\u26c5",
           "low_f": 75,
           "precip_in": 0.0
