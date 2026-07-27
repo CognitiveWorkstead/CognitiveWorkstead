@@ -56,8 +56,8 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 73.0,
-    "samples": 4083
+    "expected_sunrise_soc": 72.0,
+    "samples": 4128
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -719,
+    "battery_power_w": -418,
     "battery_soc": 84,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 690,
+    "load_w": 406,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -92,13 +92,13 @@
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "Low",
-    "expected_so_far_kwh": 0.07,
-    "expected_today_kwh": 6.66,
-    "historical_basis_days": 6,
+    "confidence": "High",
+    "expected_so_far_kwh": 0.09,
+    "expected_today_kwh": 8.06,
+    "historical_basis_days": 40,
     "produced_so_far_kwh": 0.18,
-    "progress_of_expected_day_pct": 2.8,
-    "tracking_vs_expected_so_far_pct": 161.7
+    "progress_of_expected_day_pct": 2.3,
+    "tracking_vs_expected_so_far_pct": 103.6
   },
   "public_notes": {
     "boundary": "allowlist_only",
@@ -120,9 +120,9 @@
   "solar_intelligence": {
     "actual_now_w": 0,
     "available": true,
-    "basis_days": 7,
-    "confidence": "Low",
-    "expected_now_w": 21,
+    "basis_days": 44,
+    "confidence": "High",
+    "expected_now_w": 30,
     "grade": "F",
     "performance_pct": 0.0,
     "variance_pct": -100.0
@@ -130,25 +130,25 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 6,
-    "confidence": "Low",
-    "projected_sunset_soc": 74.5
+    "basis_days": 40,
+    "confidence": "High",
+    "projected_sunset_soc": 83.5
   },
-  "timestamp": "2026-07-27T07:03:00+00:00",
-  "timestamp_central": "Jul 27, 2026, 2:03 AM Central Time",
+  "timestamp": "2026-07-27T07:48:00+00:00",
+  "timestamp_central": "Jul 27, 2026, 2:48 AM Central Time",
   "today": {
-    "avg_load_w": 890,
-    "consumed_kwh": 5.77,
+    "avg_load_w": 864,
+    "consumed_kwh": 6.25,
     "generator_kwh": 0.0,
-    "lowest_soc": 85,
+    "lowest_soc": 84,
     "peak_generator_w": 0,
     "peak_load_w": 2154,
     "peak_solar_w": 454,
     "produced_kwh": 0.18
   },
   "weather": {
-    "class": "Solid overcast / Alabama soup",
-    "cloud_cover": 74,
+    "class": "Clear",
+    "cloud_cover": 15,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 92,
-    "temperature_f": 75.9
+    "humidity": 95,
+    "temperature_f": 76.5
   }
 }
