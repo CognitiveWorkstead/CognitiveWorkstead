@@ -56,7 +56,7 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 80.7,
+    "expected_sunrise_soc": 78.7,
     "samples": 3840
   },
   "historical_model": {
@@ -69,53 +69,53 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -1140,
-    "battery_soc": 93,
+    "battery_power_w": -1396,
+    "battery_soc": 92,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 1116,
+    "load_w": 1354,
     "mode": "Battery",
     "solar_w": 0
   },
   "performance": {
     "actual_solar_w": 0,
     "peak_trend": {
-      "avg_peak_30d_w": 5640,
+      "avg_peak_30d_w": 5461,
       "best_peak_30d_w": 7383,
-      "days": 30,
+      "days": 31,
       "today_peak_w": 90,
       "today_vs_avg_peak_pct": 0.0,
-      "worst_peak_30d_w": 4375
+      "worst_peak_30d_w": 90
     },
-    "similar_avg_solar_w": 104
+    "similar_avg_solar_w": 54
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
     "confidence": "Low",
-    "expected_so_far_kwh": 6.71,
-    "expected_today_kwh": 6.74,
-    "historical_basis_days": 5,
-    "produced_so_far_kwh": 21.71,
-    "progress_of_expected_day_pct": 322.1,
-    "tracking_vs_expected_so_far_pct": 223.6
+    "expected_so_far_kwh": 6.66,
+    "expected_today_kwh": 6.66,
+    "historical_basis_days": 6,
+    "produced_so_far_kwh": 0.04,
+    "progress_of_expected_day_pct": 0.6,
+    "tracking_vs_expected_so_far_pct": -99.4
   },
   "public_notes": {
     "boundary": "allowlist_only",
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 93,
+    "battery_soc": 92,
     "confidence": "High",
     "reserve_level": "strong",
     "summary": "Public reserve view uses battery percentage and current load only."
   },
   "schema_version": "public-solar-feed-v1",
   "solar": {
-    "grading_enabled": true,
-    "operational_message": "Building today's solar production profile before grading.",
+    "grading_enabled": false,
+    "operational_message": "Solar grading suspended during dusk conditions.",
     "peak_established": false,
-    "state": "Afternoon Decline"
+    "state": "Dusk"
   },
   "solar_intelligence": {
     "actual_now_w": 0,
@@ -123,32 +123,32 @@
     "basis_days": 21,
     "confidence": "Medium",
     "expected_now_w": 9,
-    "grade": "A+",
-    "performance_pct": 622.2,
-    "variance_pct": 522.2
+    "grade": "F",
+    "performance_pct": 0.0,
+    "variance_pct": -100.0
   },
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 5,
+    "basis_days": 6,
     "confidence": "Low",
-    "projected_sunset_soc": 92.6
+    "projected_sunset_soc": 100.0
   },
-  "timestamp": "2026-08-01T00:38:00+00:00",
-  "timestamp_central": "Jul 31, 2026, 7:38 PM Central Time",
+  "timestamp": "2026-08-01T01:23:00+00:00",
+  "timestamp_central": "Jul 31, 2026, 8:23 PM Central Time",
   "today": {
-    "avg_load_w": 738,
-    "consumed_kwh": 17.7,
+    "avg_load_w": 1094,
+    "consumed_kwh": 0.8,
     "generator_kwh": 0.0,
-    "lowest_soc": 79,
+    "lowest_soc": 93,
     "peak_generator_w": 0,
-    "peak_load_w": 2506,
-    "peak_solar_w": 5246,
-    "produced_kwh": 21.71
+    "peak_load_w": 1134,
+    "peak_solar_w": 90,
+    "produced_kwh": 0.04
   },
   "weather": {
     "class": "Solid overcast / Alabama soup",
-    "cloud_cover": 99,
+    "cloud_cover": 90,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 96,
-    "temperature_f": 78.6
+    "humidity": 97,
+    "temperature_f": 78.9
   }
 }
