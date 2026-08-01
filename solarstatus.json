@@ -56,8 +56,8 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 74.7,
-    "samples": 3879
+    "expected_sunrise_soc": 73.7,
+    "samples": 3924
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -867,
-    "battery_soc": 88,
+    "battery_power_w": -268,
+    "battery_soc": 87,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 839,
+    "load_w": 263,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -92,10 +92,10 @@
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "Medium",
-    "expected_so_far_kwh": 6.76,
-    "expected_today_kwh": 6.76,
-    "historical_basis_days": 11,
+    "confidence": "Low",
+    "expected_so_far_kwh": 6.66,
+    "expected_today_kwh": 6.66,
+    "historical_basis_days": 6,
     "produced_so_far_kwh": 0.04,
     "progress_of_expected_day_pct": 0.6,
     "tracking_vs_expected_so_far_pct": -99.4
@@ -105,7 +105,7 @@
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 88,
+    "battery_soc": 87,
     "confidence": "High",
     "reserve_level": "strong",
     "summary": "Public reserve view uses battery percentage and current load only."
@@ -130,17 +130,17 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 11,
-    "confidence": "Medium",
+    "basis_days": 6,
+    "confidence": "Low",
     "projected_sunset_soc": 100.0
   },
-  "timestamp": "2026-08-01T03:38:00+00:00",
-  "timestamp_central": "Jul 31, 2026, 10:38 PM Central Time",
+  "timestamp": "2026-08-01T04:23:00+00:00",
+  "timestamp_central": "Jul 31, 2026, 11:23 PM Central Time",
   "today": {
-    "avg_load_w": 1069,
-    "consumed_kwh": 3.19,
+    "avg_load_w": 990,
+    "consumed_kwh": 3.7,
     "generator_kwh": 0.0,
-    "lowest_soc": 89,
+    "lowest_soc": 88,
     "peak_generator_w": 0,
     "peak_load_w": 1645,
     "peak_solar_w": 90,
@@ -148,7 +148,7 @@
   },
   "weather": {
     "class": "Solid overcast / Alabama soup",
-    "cloud_cover": 99,
+    "cloud_cover": 98,
     "forecast_7day": {
       "days": [
         {
@@ -259,6 +259,6 @@
       ]
     },
     "humidity": 99,
-    "temperature_f": 77.7
+    "temperature_f": 77.5
   }
 }
