@@ -56,8 +56,8 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 71.6,
-    "samples": 4104
+    "expected_sunrise_soc": 70.6,
+    "samples": 4149
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -869,
-    "battery_soc": 85,
+    "battery_power_w": -631,
+    "battery_soc": 84,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 848,
+    "load_w": 616,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -94,8 +94,8 @@
     "available": true,
     "confidence": "High",
     "expected_so_far_kwh": 0.07,
-    "expected_today_kwh": 8.01,
-    "historical_basis_days": 47,
+    "expected_today_kwh": 8.05,
+    "historical_basis_days": 39,
     "produced_so_far_kwh": 0.07,
     "progress_of_expected_day_pct": 0.8,
     "tracking_vs_expected_so_far_pct": -5.5
@@ -105,9 +105,9 @@
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 85,
+    "battery_soc": 84,
     "confidence": "High",
-    "reserve_level": "strong",
+    "reserve_level": "normal",
     "summary": "Public reserve view uses battery percentage and current load only."
   },
   "schema_version": "public-solar-feed-v1",
@@ -120,9 +120,9 @@
   "solar_intelligence": {
     "actual_now_w": 0,
     "available": true,
-    "basis_days": 60,
+    "basis_days": 57,
     "confidence": "High",
-    "expected_now_w": 21,
+    "expected_now_w": 22,
     "grade": "F",
     "performance_pct": 0.0,
     "variance_pct": -100.0
@@ -130,17 +130,17 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 47,
+    "basis_days": 39,
     "confidence": "High",
-    "projected_sunset_soc": 93.5
+    "projected_sunset_soc": 77.0
   },
-  "timestamp": "2026-08-02T07:23:00+00:00",
-  "timestamp_central": "Aug 2, 2026, 2:23 AM Central Time",
+  "timestamp": "2026-08-02T08:08:00+00:00",
+  "timestamp_central": "Aug 2, 2026, 3:08 AM Central Time",
   "today": {
-    "avg_load_w": 872,
-    "consumed_kwh": 5.87,
+    "avg_load_w": 855,
+    "consumed_kwh": 6.4,
     "generator_kwh": 0.0,
-    "lowest_soc": 86,
+    "lowest_soc": 85,
     "peak_generator_w": 0,
     "peak_load_w": 1760,
     "peak_solar_w": 151,
@@ -148,37 +148,37 @@
   },
   "weather": {
     "class": "Clear",
-    "cloud_cover": 1,
+    "cloud_cover": 2,
     "forecast_7day": {
       "days": [
         {
-          "cloud_cover": 52,
+          "cloud_cover": 47,
           "confidence": "High",
           "date": "8/2",
           "day": "Sun",
-          "expected_peak_w": 1722,
-          "expected_solar_kwh": 7.78,
-          "expected_solar_kwh_high": 10.61,
-          "expected_solar_kwh_low": 3.41,
+          "expected_peak_w": 1746,
+          "expected_solar_kwh": 7.95,
+          "expected_solar_kwh_high": 11.23,
+          "expected_solar_kwh_low": 2.86,
           "high_f": 92,
-          "historical_days_used": 45,
-          "icon": "\u26c5",
-          "low_f": 78,
+          "historical_days_used": 49,
+          "icon": "\ud83c\udf24\ufe0f",
+          "low_f": 79,
           "precip_in": 0.0
         },
         {
-          "cloud_cover": 42,
+          "cloud_cover": 12,
           "confidence": "High",
           "date": "8/3",
           "day": "Mon",
-          "expected_peak_w": 1723,
-          "expected_solar_kwh": 7.82,
-          "expected_solar_kwh_high": 10.61,
-          "expected_solar_kwh_low": 3.47,
-          "high_f": 88,
-          "historical_days_used": 54,
-          "icon": "\ud83c\udf24\ufe0f",
-          "low_f": 71,
+          "expected_peak_w": 1728,
+          "expected_solar_kwh": 7.88,
+          "expected_solar_kwh_high": 11.45,
+          "expected_solar_kwh_low": 3.15,
+          "high_f": 89,
+          "historical_days_used": 58,
+          "icon": "\u2600\ufe0f",
+          "low_f": 72,
           "precip_in": 0.0
         },
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 96,
-    "temperature_f": 77.9
+    "humidity": 98,
+    "temperature_f": 77.7
   }
 }
