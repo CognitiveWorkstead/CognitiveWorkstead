@@ -24,14 +24,24 @@ MAX_FILE_BYTES = 8 * 1024 * 1024
 PUBLIC_FILES = {
     "CNAME",
     "COL-B.png",
+    "about.html",
+    "ask-colb.html",
+    "contact.html",
     "dashboard.png",
+    "focus-areas.html",
     "index.html",
     "mckenzie-solar-change-log.md",
     "mckenzie-solar.html",
     "mckenzie-solar-status.png",
+    "partnerships.html",
     "progress-log-01.html",
+    "progress.html",
+    "projects.html",
     "solarstatus.json",
+    "updates.html",
     "assets/mckenzie-real.jpg",
+    "assets/site.css",
+    "assets/site.js",
 }
 
 TEXT_SUFFIXES = {".html", ".htm", ".js", ".css", ".json", ".md", ".txt", ""}
@@ -118,6 +128,7 @@ PROHIBITED_PATTERNS = {
 ALLOWED_TEXT_EXCEPTIONS = {
     ("index.html", "colb-current-truth", "colby"): "Public COL-B/Colby brand, public feature copy, and public contact address only.",
     ("index.html", "private-infrastructure", "remote"): "Public-page phrase, not a hostname or endpoint.",
+    ("contact.html", "colb-current-truth", "colby"): "Public contact address only; no Current Truth export or private COL-B details.",
     ("progress-log-01.html", "colb-current-truth", "colby"): "Public COL-B/Colby brand and public contact address only.",
     ("progress-log-01.html", "phone-or-device-presence", "presence"): "Public website-presence phrase, not household telemetry.",
     ("mckenzie-solar.html", "colb-current-truth", "colby"): "Public dashboard label/identifier only; no Current Truth export or private bridge path.",
