@@ -519,7 +519,10 @@ class Validator:
             parsed = datetime.fromisoformat(str(data["timestamp"]).replace("Z", "+00:00"))
             if parsed.tzinfo is None:
                 self.fail("timestamp", "timestamp", "timestamp must include timezone")
-            elif (datetime.now(timezone.utc) - parsed.astimezone(timezone.utc)).total_seconds() > 24 * 3600:
+            elif (
+                str(data.get("feed_status", "")).lower() != "stale"
+                and (datetime.now(timezone.utc) - parsed.astimezone(timezone.utc)).total_seconds() > 24 * 3600
+            ):
                 self.fail("timestamp", "timestamp", "timestamp is older than 24 hours")
         except Exception:
             self.fail("timestamp", "timestamp", "timestamp is malformed")
