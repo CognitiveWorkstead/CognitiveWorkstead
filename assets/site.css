@@ -484,13 +484,18 @@ section {
 }
 
 .ask-live-section {
-  padding-top: 34px;
+  padding: 28px 20px 48px;
+}
+
+.ask-live-container {
+  width: min(1760px, calc(100vw - 40px));
+  margin: 0 auto;
 }
 
 .ask-colb-frame {
   display: block;
   width: 100%;
-  min-height: 860px;
+  min-height: 1040px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -659,7 +664,7 @@ footer {
   }
 
   .ask-colb-frame {
-    min-height: 780px;
+    min-height: 860px;
   }
 
   .phase,
