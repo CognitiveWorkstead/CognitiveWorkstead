@@ -483,6 +483,32 @@ section {
   font-weight: 700;
 }
 
+.ask-live-section {
+  padding-top: 34px;
+}
+
+.ask-colb-frame {
+  display: block;
+  width: 100%;
+  min-height: 860px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.frame-fallback {
+  margin: 14px 0 0;
+  font-size: 14px;
+}
+
+.frame-fallback a {
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .contact {
   background: var(--green-dark);
   color: #fff;
@@ -630,6 +656,10 @@ footer {
   .card,
   .status-panel {
     padding: 20px;
+  }
+
+  .ask-colb-frame {
+    min-height: 780px;
   }
 
   .phase,

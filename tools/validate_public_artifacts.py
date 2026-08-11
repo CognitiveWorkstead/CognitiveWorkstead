@@ -127,6 +127,7 @@ PROHIBITED_PATTERNS = {
 
 ALLOWED_TEXT_EXCEPTIONS = {
     ("index.html", "colb-current-truth", "colby"): "Public COL-B/Colby brand, public feature copy, and public contact address only.",
+    ("ask-colb.html", "colb-current-truth", "colby"): "Public Ask COL-B/Colby brand and public feature copy only.",
     ("index.html", "private-infrastructure", "remote"): "Public-page phrase, not a hostname or endpoint.",
     ("contact.html", "colb-current-truth", "colby"): "Public contact address only; no Current Truth export or private COL-B details.",
     ("progress-log-01.html", "colb-current-truth", "colby"): "Public COL-B/Colby brand and public contact address only.",
