@@ -3,7 +3,7 @@
     "array_1": {
       "azimuth_deg": 186,
       "bifacial": true,
-      "efficiency_pct": 0.4,
+      "efficiency_pct": 0.3,
       "label": "Array 1",
       "mppt": "MPPT1",
       "name": "12-Panel Bifacial Array",
@@ -12,7 +12,7 @@
       "peak_today_efficiency_pct": 45.2,
       "peak_today_time_central": "Aug 18, 2026, 1:50 PM Central Time",
       "peak_today_w": 2414,
-      "power_w": 19,
+      "power_w": 18,
       "rated_w": 5340,
       "season_best_w": 3587,
       "tilt_deg": 21.2
@@ -29,7 +29,7 @@
       "peak_today_efficiency_pct": 74.6,
       "peak_today_time_central": "Aug 18, 2026, 1:50 PM Central Time",
       "peak_today_w": 2597,
-      "power_w": 25,
+      "power_w": 23,
       "rated_w": 3480,
       "season_best_w": 3795,
       "tilt_deg": 9.2
@@ -47,7 +47,7 @@
       "peak_today_efficiency_pct": 56.8,
       "peak_today_time_central": "Aug 18, 2026, 1:50 PM Central Time",
       "peak_today_w": 5011,
-      "power_w": 44,
+      "power_w": 42,
       "rated_w": 8820,
       "season_best_w": 7383,
       "tilt_deg": null
@@ -56,7 +56,7 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 80.4,
+    "expected_sunrise_soc": 79.4,
     "samples": 4320
   },
   "historical_model": {
@@ -69,16 +69,16 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -1158,
-    "battery_soc": 93,
+    "battery_power_w": -1074,
+    "battery_soc": 92,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 1129,
+    "load_w": 1054,
     "mode": "Solar/Battery",
-    "solar_w": 44
+    "solar_w": 42
   },
   "performance": {
-    "actual_solar_w": 44,
+    "actual_solar_w": 42,
     "peak_trend": {
       "avg_peak_30d_w": 5351,
       "best_peak_30d_w": 6258,
@@ -87,7 +87,7 @@
       "today_vs_avg_peak_pct": -6.4,
       "worst_peak_30d_w": 3566
     },
-    "similar_avg_solar_w": 357
+    "similar_avg_solar_w": 323
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
@@ -96,16 +96,16 @@
     "expected_so_far_kwh": 7.56,
     "expected_today_kwh": 7.58,
     "historical_basis_days": 7,
-    "produced_so_far_kwh": 25.64,
-    "progress_of_expected_day_pct": 338.3,
-    "tracking_vs_expected_so_far_pct": 239.2
+    "produced_so_far_kwh": 25.65,
+    "progress_of_expected_day_pct": 338.5,
+    "tracking_vs_expected_so_far_pct": 239.4
   },
   "public_notes": {
     "boundary": "allowlist_only",
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 93,
+    "battery_soc": 92,
     "confidence": "High",
     "reserve_level": "strong",
     "summary": "Public reserve view uses battery percentage and current load only."
@@ -118,33 +118,33 @@
     "state": "Afternoon Decline"
   },
   "solar_intelligence": {
-    "actual_now_w": 44,
+    "actual_now_w": 42,
     "available": true,
     "basis_days": 23,
     "confidence": "Medium",
     "expected_now_w": 7,
     "grade": "A+",
-    "performance_pct": 628.6,
-    "variance_pct": 528.6
+    "performance_pct": 600.0,
+    "variance_pct": 500.0
   },
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
     "basis_days": 7,
     "confidence": "Low",
-    "projected_sunset_soc": 89.6
+    "projected_sunset_soc": 89.4
   },
-  "timestamp": "2026-08-18T23:28:00+00:00",
-  "timestamp_central": "Aug 18, 2026, 6:28 PM Central Time",
+  "timestamp": "2026-08-18T23:43:00+00:00",
+  "timestamp_central": "Aug 18, 2026, 6:43 PM Central Time",
   "today": {
-    "avg_load_w": 873,
-    "consumed_kwh": 20.48,
+    "avg_load_w": 877,
+    "consumed_kwh": 20.79,
     "generator_kwh": 0.0,
     "lowest_soc": 75,
     "peak_generator_w": 0,
     "peak_load_w": 2815,
     "peak_solar_w": 5011,
-    "produced_kwh": 25.64
+    "produced_kwh": 25.65
   },
   "weather": {
     "class": "Solid overcast / Alabama soup",
@@ -152,7 +152,7 @@
     "forecast_7day": {
       "days": [
         {
-          "cloud_cover": 40,
+          "cloud_cover": 39,
           "confidence": "High",
           "date": "8/18",
           "day": "Tue",
@@ -178,8 +178,8 @@
           "high_f": 100,
           "historical_days_used": 17,
           "icon": "\u26c8\ufe0f",
-          "low_f": 76,
-          "precip_in": 0.27
+          "low_f": 74,
+          "precip_in": 0.28
         },
         {
           "cloud_cover": 52,
