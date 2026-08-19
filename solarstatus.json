@@ -3,7 +3,7 @@
     "array_1": {
       "azimuth_deg": 186,
       "bifacial": true,
-      "efficiency_pct": 2.8,
+      "efficiency_pct": 2.1,
       "label": "Array 1",
       "mppt": "MPPT1",
       "name": "12-Panel Bifacial Array",
@@ -12,7 +12,7 @@
       "peak_today_efficiency_pct": 44.6,
       "peak_today_time_central": "Aug 19, 2026, 12:15 PM Central Time",
       "peak_today_w": 2384,
-      "power_w": 149,
+      "power_w": 111,
       "rated_w": 5340,
       "season_best_w": 3587,
       "tilt_deg": 21.2
@@ -20,7 +20,7 @@
     "array_2": {
       "azimuth_deg": 186,
       "bifacial": false,
-      "efficiency_pct": 4.0,
+      "efficiency_pct": 3.0,
       "label": "Array 2",
       "mppt": "MPPT2",
       "name": "8-Panel 435W Array",
@@ -29,7 +29,7 @@
       "peak_today_efficiency_pct": 76.2,
       "peak_today_time_central": "Aug 19, 2026, 12:15 PM Central Time",
       "peak_today_w": 2652,
-      "power_w": 139,
+      "power_w": 106,
       "rated_w": 3480,
       "season_best_w": 3795,
       "tilt_deg": 9.2
@@ -38,7 +38,7 @@
     "total": {
       "azimuth_deg": null,
       "bifacial": null,
-      "efficiency_pct": 3.3,
+      "efficiency_pct": 2.5,
       "label": null,
       "mppt": null,
       "name": null,
@@ -47,7 +47,7 @@
       "peak_today_efficiency_pct": 57.1,
       "peak_today_time_central": "Aug 19, 2026, 12:15 PM Central Time",
       "peak_today_w": 5036,
-      "power_w": 288,
+      "power_w": 217,
       "rated_w": 8820,
       "season_best_w": 7383,
       "tilt_deg": null
@@ -56,7 +56,7 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 82.3,
+    "expected_sunrise_soc": 81.3,
     "samples": 4320
   },
   "historical_model": {
@@ -69,16 +69,16 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -2150,
-    "battery_soc": 95,
+    "battery_power_w": -1872,
+    "battery_soc": 94,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 2391,
+    "load_w": 2049,
     "mode": "Solar/Battery",
-    "solar_w": 288
+    "solar_w": 217
   },
   "performance": {
-    "actual_solar_w": 288,
+    "actual_solar_w": 217,
     "peak_trend": {
       "avg_peak_30d_w": 5315,
       "best_peak_30d_w": 6258,
@@ -87,7 +87,7 @@
       "today_vs_avg_peak_pct": -5.2,
       "worst_peak_30d_w": 3566
     },
-    "similar_avg_solar_w": 1094
+    "similar_avg_solar_w": 956
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
@@ -96,16 +96,16 @@
     "expected_so_far_kwh": 7.47,
     "expected_today_kwh": 7.49,
     "historical_basis_days": 8,
-    "produced_so_far_kwh": 21.45,
-    "progress_of_expected_day_pct": 286.3,
-    "tracking_vs_expected_so_far_pct": 187.1
+    "produced_so_far_kwh": 21.51,
+    "progress_of_expected_day_pct": 287.1,
+    "tracking_vs_expected_so_far_pct": 187.9
   },
   "public_notes": {
     "boundary": "allowlist_only",
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 95,
+    "battery_soc": 94,
     "confidence": "High",
     "reserve_level": "strong",
     "summary": "Public reserve view uses battery percentage and current load only."
@@ -118,7 +118,7 @@
     "state": "Afternoon Decline"
   },
   "solar_intelligence": {
-    "actual_now_w": 288,
+    "actual_now_w": 217,
     "available": false,
     "basis_days": 0,
     "confidence": "No Data",
@@ -132,19 +132,19 @@
     "available": true,
     "basis_days": 8,
     "confidence": "Low",
-    "projected_sunset_soc": 78.0
+    "projected_sunset_soc": 80.6
   },
-  "timestamp": "2026-08-19T21:43:00+00:00",
-  "timestamp_central": "Aug 19, 2026, 4:43 PM Central Time",
+  "timestamp": "2026-08-19T21:58:00+00:00",
+  "timestamp_central": "Aug 19, 2026, 4:58 PM Central Time",
   "today": {
-    "avg_load_w": 779,
-    "consumed_kwh": 16.93,
+    "avg_load_w": 795,
+    "consumed_kwh": 17.47,
     "generator_kwh": 0.0,
     "lowest_soc": 79,
     "peak_generator_w": 0,
     "peak_load_w": 2730,
     "peak_solar_w": 5036,
-    "produced_kwh": 21.45
+    "produced_kwh": 21.51
   },
   "weather": {
     "class": "Cloudy",
