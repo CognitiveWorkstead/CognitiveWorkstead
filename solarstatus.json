@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -1363,
+    "battery_power_w": -1056,
     "battery_soc": 91,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 1336,
+    "load_w": 1031,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -87,15 +87,15 @@
       "today_vs_avg_peak_pct": 0.0,
       "worst_peak_30d_w": 3566
     },
-    "similar_avg_solar_w": 82
+    "similar_avg_solar_w": 74
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
-    "confidence": "Low",
-    "expected_so_far_kwh": 7.5,
-    "expected_today_kwh": 7.5,
-    "historical_basis_days": 6,
+    "confidence": "Medium",
+    "expected_so_far_kwh": 7.23,
+    "expected_today_kwh": 7.23,
+    "historical_basis_days": 18,
     "produced_so_far_kwh": 0.0,
     "progress_of_expected_day_pct": 0.0,
     "tracking_vs_expected_so_far_pct": -100.0
@@ -120,9 +120,9 @@
   "solar_intelligence": {
     "actual_now_w": 0,
     "available": true,
-    "basis_days": 23,
-    "confidence": "Medium",
-    "expected_now_w": 7,
+    "basis_days": 33,
+    "confidence": "High",
+    "expected_now_w": 8,
     "grade": "F",
     "performance_pct": 0.0,
     "variance_pct": -100.0
@@ -130,15 +130,15 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 6,
-    "confidence": "Low",
+    "basis_days": 18,
+    "confidence": "Medium",
     "projected_sunset_soc": 100.0
   },
-  "timestamp": "2026-08-19T00:13:00+00:00",
-  "timestamp_central": "Aug 18, 2026, 7:13 PM Central Time",
+  "timestamp": "2026-08-19T00:28:00+00:00",
+  "timestamp_central": "Aug 18, 2026, 7:28 PM Central Time",
   "today": {
-    "avg_load_w": 1248,
-    "consumed_kwh": 0.29,
+    "avg_load_w": 1149,
+    "consumed_kwh": 0.56,
     "generator_kwh": 0.0,
     "lowest_soc": 91,
     "peak_generator_w": 0,
@@ -147,8 +147,8 @@
     "produced_kwh": 0.0
   },
   "weather": {
-    "class": "Solid overcast / Alabama soup",
-    "cloud_cover": 98,
+    "class": "Cloudy",
+    "cloud_cover": 77,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 99,
-    "temperature_f": 77.5
+    "humidity": 75,
+    "temperature_f": 85.0
   }
 }
