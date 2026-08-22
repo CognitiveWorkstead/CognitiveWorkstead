@@ -57,7 +57,7 @@
   "forecast": {
     "confidence": "High",
     "expected_sunrise_soc": 70.6,
-    "samples": 4259
+    "samples": 4274
   },
   "historical_model": {
     "available": true,
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -420,
+    "battery_power_w": -431,
     "battery_soc": 82,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 409,
+    "load_w": 419,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -87,18 +87,18 @@
       "today_vs_avg_peak_pct": 0.0,
       "worst_peak_30d_w": 70
     },
-    "similar_avg_solar_w": 2
+    "similar_avg_solar_w": 6
   },
   "privacy_boundary": "public_allowlist_v1",
   "production_tracking": {
     "available": true,
     "confidence": "High",
-    "expected_so_far_kwh": 0.07,
-    "expected_today_kwh": 7.97,
-    "historical_basis_days": 52,
+    "expected_so_far_kwh": 0.06,
+    "expected_today_kwh": 8.08,
+    "historical_basis_days": 63,
     "produced_so_far_kwh": 0.02,
     "progress_of_expected_day_pct": 0.3,
-    "tracking_vs_expected_so_far_pct": -66.9
+    "tracking_vs_expected_so_far_pct": -61.4
   },
   "public_notes": {
     "boundary": "allowlist_only",
@@ -113,9 +113,9 @@
   "schema_version": "public-solar-feed-v1",
   "solar": {
     "grading_enabled": false,
-    "operational_message": "Solar grading suspended during night conditions.",
+    "operational_message": "Solar grading suspended during dawn conditions.",
     "peak_established": false,
-    "state": "Night"
+    "state": "Dawn"
   },
   "solar_intelligence": {
     "actual_now_w": 0,
@@ -130,15 +130,15 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 52,
+    "basis_days": 63,
     "confidence": "High",
-    "projected_sunset_soc": 86.5
+    "projected_sunset_soc": 86.6
   },
-  "timestamp": "2026-08-22T09:58:00+00:00",
-  "timestamp_central": "Aug 22, 2026, 4:58 AM Central Time",
+  "timestamp": "2026-08-22T10:13:00+00:00",
+  "timestamp_central": "Aug 22, 2026, 5:13 AM Central Time",
   "today": {
-    "avg_load_w": 566,
-    "consumed_kwh": 5.65,
+    "avg_load_w": 561,
+    "consumed_kwh": 5.75,
     "generator_kwh": 0.0,
     "lowest_soc": 82,
     "peak_generator_w": 0,
@@ -147,8 +147,8 @@
     "produced_kwh": 0.02
   },
   "weather": {
-    "class": "Clear",
-    "cloud_cover": 7,
+    "class": "Partly cloudy",
+    "cloud_cover": 20,
     "forecast_7day": {
       "days": [
         {
@@ -259,6 +259,6 @@
       ]
     },
     "humidity": 97,
-    "temperature_f": 72.8
+    "temperature_f": 72.4
   }
 }
