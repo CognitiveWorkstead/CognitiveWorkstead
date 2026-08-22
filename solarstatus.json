@@ -56,7 +56,7 @@
   "feed_status": "ok",
   "forecast": {
     "confidence": "High",
-    "expected_sunrise_soc": 78.4,
+    "expected_sunrise_soc": 77.4,
     "samples": 3840
   },
   "historical_model": {
@@ -69,11 +69,11 @@
     "worst_solar_kwh": 0.96
   },
   "now": {
-    "battery_power_w": -830,
-    "battery_soc": 90,
+    "battery_power_w": -960,
+    "battery_soc": 89,
     "battery_temp_f": 99.3,
     "generator_w": 0,
-    "load_w": 814,
+    "load_w": 867,
     "mode": "Battery",
     "solar_w": 0
   },
@@ -93,9 +93,9 @@
   "production_tracking": {
     "available": true,
     "confidence": "Low",
-    "expected_so_far_kwh": 7.58,
-    "expected_today_kwh": 7.58,
-    "historical_basis_days": 7,
+    "expected_so_far_kwh": 7.49,
+    "expected_today_kwh": 7.49,
+    "historical_basis_days": 8,
     "produced_so_far_kwh": 0.02,
     "progress_of_expected_day_pct": 0.3,
     "tracking_vs_expected_so_far_pct": -99.7
@@ -105,7 +105,7 @@
     "cadence": "Dashboard schedule."
   },
   "public_reserve": {
-    "battery_soc": 90,
+    "battery_soc": 89,
     "confidence": "High",
     "reserve_level": "strong",
     "summary": "Public reserve view uses battery percentage and current load only."
@@ -113,9 +113,9 @@
   "schema_version": "public-solar-feed-v1",
   "solar": {
     "grading_enabled": false,
-    "operational_message": "Solar grading suspended during dusk conditions.",
+    "operational_message": "Solar grading suspended during night conditions.",
     "peak_established": false,
-    "state": "Dusk"
+    "state": "Night"
   },
   "solar_intelligence": {
     "actual_now_w": 0,
@@ -130,17 +130,17 @@
   "status": "GREEN",
   "sunset_projection": {
     "available": true,
-    "basis_days": 7,
+    "basis_days": 8,
     "confidence": "Low",
     "projected_sunset_soc": 100.0
   },
-  "timestamp": "2026-08-22T01:58:00+00:00",
-  "timestamp_central": "Aug 21, 2026, 8:58 PM Central Time",
+  "timestamp": "2026-08-22T02:13:00+00:00",
+  "timestamp_central": "Aug 21, 2026, 9:13 PM Central Time",
   "today": {
-    "avg_load_w": 942,
-    "consumed_kwh": 1.87,
+    "avg_load_w": 933,
+    "consumed_kwh": 2.08,
     "generator_kwh": 0.0,
-    "lowest_soc": 90,
+    "lowest_soc": 89,
     "peak_generator_w": 0,
     "peak_load_w": 1511,
     "peak_solar_w": 70,
@@ -148,7 +148,7 @@
   },
   "weather": {
     "class": "Solid overcast / Alabama soup",
-    "cloud_cover": 97,
+    "cloud_cover": 95,
     "forecast_7day": {
       "days": [
         {
@@ -258,7 +258,7 @@
         }
       ]
     },
-    "humidity": 85,
-    "temperature_f": 79.6
+    "humidity": 88,
+    "temperature_f": 78.6
   }
 }
