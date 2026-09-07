@@ -1,130 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cognitive Workstead | AI Consulting, R&D, and Real-World Implementation</title>
-  <meta name="description" content="Cognitive Workstead is an AI consulting and applied R&D practice helping organizations identify, prototype, and implement practical AI systems in real-world operations." />
-  <meta name="theme-color" content="#f7f5ef" />
-  <meta property="og:title" content="Cognitive Workstead" />
-  <meta property="og:description" content="AI consulting, applied R&D, and real-world implementation for practical business operations, training, workflow, and governance." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.cognitiveworkstead.com/" />
-  <meta property="og:image" content="https://www.cognitiveworkstead.com/COL-B.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cognitive Workstead" />
-  <meta name="twitter:description" content="AI consulting, applied R&D, and real-world implementation for practical business operations, training, workflow, and governance." />
-  <meta name="twitter:image" content="https://www.cognitiveworkstead.com/COL-B.png" />
-  <link rel="icon" href="COL-B.png" />
-  <link rel="stylesheet" href="assets/site.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Cognitive Workstead",
-    "url": "https://www.cognitiveworkstead.com/",
-    "description": "An AI consulting and applied R&D practice helping organizations identify, prototype, and implement practical AI systems in real-world operations.",
-    "areaServed": "United States",
-    "sameAs": ["https://www.linkedin.com/company/cognitiveworkstead"]
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cognitive Workstead helps organizations move from AI curiosity to practical, working systems.">
+  <title>Cognitive Workstead</title>
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html" class="brand" aria-label="Cognitive Workstead home">
-        <img src="COL-B.png" alt="Cognitive Workstead logo" />
-        <div><div class="brand-title">Cognitive Workstead</div><div class="brand-subtitle">AI Consulting &amp; R&amp;D</div></div>
-      </a>
-      <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
-      <div class="nav-links" id="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="focus-areas.html">Focus</a>
-        <a href="projects.html">Projects</a>
-        <a href="progress.html">Progress</a>
-        <a href="updates.html">Updates</a>
-        <a href="partnerships.html">Partners</a>
-        <a href="ask-colb.html">Ask COL-B</a>
-        <a href="https://assessment.cognitiveworkstead.com">Assessment</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="./"><span class="brand-mark">CW</span><span>Cognitive Workstead</span></a>
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" type="button">Menu</button>
+      <nav class="primary-nav" data-primary-nav aria-label="Primary navigation">
+        <a data-nav-link href="./">Home</a>
+        <a data-nav-link href="./services/">Services</a>
+        <a data-nav-link href="./solutions/">Solutions</a>
+        <a data-nav-link href="./colby-systems/">Colby Systems</a>
+        <a data-nav-link href="./applied-work/">Applied Work</a>
+        <a data-nav-link href="./ask-colb/">Ask COL-B</a>
+        <a data-nav-link href="./assessment/">Assessment</a>
+        <a data-nav-link href="./contact/">Contact</a>
+      </nav>
+    </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="hero-inner">
         <div>
-          <p class="eyebrow">AI consulting. Applied R&amp;D. Real-world implementation.</p>
-          <h1>Practical AI systems for real-world operations.</h1>
-          <p class="hero-copy">Cognitive Workstead helps organizations move from AI curiosity to useful implementation: opportunity assessment, applied R&amp;D, workflow design, scenario training, governance, and pilot delivery. The workstead, solar, and off-grid projects are demonstration environments, not the whole business.</p>
-          <div class="hero-actions">
-            <a class="button" href="https://assessment.cognitiveworkstead.com">Take the Business Assessment</a>
-            <a class="button" href="contact.html">Start a Consulting Conversation</a>
-            <a class="button secondary" href="projects.html">View Demonstration Projects</a>
+          <p class="eyebrow">Hybrid AI implementation studio</p>
+          <h1>Practical AI systems for real business operations.</h1>
+          <p>Cognitive Workstead is a hybrid AI implementation studio helping organizations move from AI curiosity to working systems.</p>
+          <p>We assess opportunities, design workflows, build practical pilots, and help teams implement AI responsibly across real operations - with clear human oversight, useful automation, and measurable value from the start.</p>
+          <div class="cta-row">
+            <a class="button primary" href="./assessment/">Take the AI Assessment</a>
+            <a class="button secondary" href="./contact/">Start a Conversation</a>
+            <a class="button secondary" href="./ask-colb/">Ask COL-B</a>
           </div>
         </div>
-        <aside class="status-panel" aria-labelledby="hero-status-title">
-          <img src="COL-B.png" alt="Cognitive Workstead visual mark" />
-          <p class="status-label">Current focus</p>
-          <h2 id="hero-status-title">AI opportunity assessment and implementation readiness.</h2>
-          <p>The public assessment is the front door for companies that need practical AI consulting, applied research, training tools, workflow automation, and governance support.</p>
+        <aside class="hero-panel" aria-label="Implementation path">
+          <div class="system-map">
+            <div class="system-row"><strong>Assess</strong><span class="signal"></span></div>
+            <div class="system-row"><strong>Design</strong><span class="signal"></span></div>
+            <div class="system-row"><strong>Build</strong><span class="signal"></span></div>
+            <div class="system-row"><strong>Govern</strong><span class="signal"></span></div>
+            <div class="system-row"><strong>Improve</strong><span class="signal"></span></div>
+          </div>
         </aside>
       </div>
     </section>
-
     <section>
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">Site map</p>
-          <h2>A professional home for the AI practice.</h2>
-          <p>The site is organized so companies can understand the consulting focus, assess a first AI opportunity, and then inspect the demonstration projects that show how Cognitive Workstead thinks in the real world.</p>
+      <div class="section-inner split">
+        <div class="section-heading">
+          <p class="eyebrow">The problem</p>
+          <h2>AI is everywhere. Practical implementation is still hard.</h2>
         </div>
-        <div class="grid three">
-          <a class="feature-link" href="about.html">About <span>Practice, method, audience</span></a>
-          <a class="feature-link" href="focus-areas.html">Focus Areas <span>Consulting and implementation work</span></a>
-          <a class="feature-link" href="projects.html">Projects <span>Demonstration testbeds</span></a>
-          <a class="feature-link" href="progress.html">Progress <span>Build log and next entries</span></a>
-          <a class="feature-link" href="updates.html">Updates <span>LinkedIn and public notes</span></a>
-          <a class="feature-link" href="partnerships.html">Partnerships <span>Pilots and applied R&amp;D</span></a>
-          <a class="feature-link" href="https://assessment.cognitiveworkstead.com">Business Assessment <span>AI opportunity and readiness</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="surface-band">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">What it is</p>
-          <h2>An AI consulting and R&amp;D practice with real-world testbeds.</h2>
-          <p>Cognitive Workstead combines consulting, applied research, and implementation support. The physical workstead, solar, off-grid, and sustainability projects serve as proof environments for durable AI operations.</p>
-        </div>
-        <div class="grid three">
-          <article class="card"><div class="tag">Consult</div><h3>AI consulting and discovery</h3><p>Clarify where AI can create value, where it should not be used yet, and what a responsible first project should prove.</p></article>
-          <article class="card"><div class="tag">Research</div><h3>Applied AI R&amp;D</h3><p>Prototype retrieval, training, reporting, decision support, and operations tools against real workflows and evidence.</p></article>
-          <article class="card"><div class="tag">Implement</div><h3>Workflow, training, and governance pilots</h3><p>Turn promising ideas into scoped pilots with reviewable outputs, safety boundaries, and measurable operational value.</p></article>
-          <article class="card"><div class="tag">Demonstrate</div><h3>Real-world testbeds</h3><p>Use the workstead and public projects to show practical AI implementation in physical, operational, and learning environments.</p></article>
+        <div>
+          <p class="lead">Most organizations know AI could help, but the real challenge is deciding where it belongs, how to use it safely, and how to turn interest into working capability.</p>
+          <ul class="question-list">
+            <li>Where should we start?</li>
+            <li>Which workflows are worth changing?</li>
+            <li>What should AI automate, assist, monitor, summarize, or recommend?</li>
+            <li>What should stay human-controlled?</li>
+            <li>What data, tools, policies, and review points are needed?</li>
+            <li>How do we test value before making a major investment?</li>
+          </ul>
+          <p>Cognitive Workstead helps turn those questions into a practical path forward - one that connects strategy, workflow design, implementation, governance, and measurable results.</p>
         </div>
       </div>
     </section>
-
-    <section class="dark">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">Next step</p>
-          <h2>Ready to find the first AI project worth implementing?</h2>
-          <p>Start with the assessment, then use a consulting conversation to validate the opportunity, data, workflow, risk, and pilot path.</p>
+    <section class="soft-band">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">What we do</p>
+          <h2>We help organizations turn AI interest into practical implementation.</h2>
         </div>
-        <div class="action-row" style="justify-content:center">
-          <a class="button" href="https://assessment.cognitiveworkstead.com">Take the Business Assessment</a>
-          <a class="button secondary" href="contact.html">Start a Conversation</a>
+        <div class="grid">
+          <article class="card"><span class="badge">Assess</span><h3>Find the first real opportunity.</h3><p>We help identify where AI could create value, where it may introduce risk, and which opportunities are worth pursuing first.</p></article>
+          <article class="card"><span class="badge">Design</span><h3>Fit AI into real work.</h3><p>We map workflows, users, decisions, data, handoffs, review points, and operating rhythms so AI fits into real work instead of sitting beside it.</p></article>
+          <article class="card"><span class="badge">Build</span><h3>Create practical pilots.</h3><p>We create practical pilots, prototypes, assistants, automations, reports, knowledge tools, and decision-support systems that can be tested by real users.</p></article>
+          <article class="card"><span class="badge">Govern</span><h3>Keep systems accountable.</h3><p>We define human oversight, approval points, audit trails, security boundaries, and responsible-use controls so AI stays useful, observable, and accountable.</p></article>
+          <article class="card"><span class="badge">Improve</span><h3>Expand where value is proven.</h3><p>We help teams evaluate results, learn from usage, refine workflows, and expand only where the system is producing measurable value.</p></article>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Colby Systems</p>
+          <h2>Colby-powered systems for real decisions.</h2>
+          <p>Cognitive Workstead is developing a family of Colby-powered advisory systems that help people and organizations organize information, explore options, prepare decisions, and move from rough ideas to practical next steps.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>Colby Architect</h3><p>Structured support for system design and planning.</p></article>
+          <article class="card"><h3>Colby Retirement Companion</h3><p>Calm preparation support for retirement planning conversations.</p></article>
+          <article class="card"><h3>Colby Executive Advisor</h3><p>Decision preparation for leaders and operators.</p></article>
+          <article class="card"><h3>Colby Field Reporter</h3><p>Field notes, reports, and operational documentation.</p></article>
+          <article class="card"><h3>Colby Think Tank</h3><p>Structured analysis for complex questions.</p></article>
+          <article class="card"><h3>Colby Command Center</h3><p>Operational awareness for internal systems.</p></article>
+        </div>
+        <div class="cta-row"><a class="button ghost" href="./colby-systems/">Explore Colby Systems</a></div>
+      </div>
+    </section>
+    <section class="soft-band">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Applied Work</p>
+          <h2>Ideas become testable systems.</h2>
+          <p>Cognitive Workstead develops and tests practical AI systems through applied work: public demonstrations, internal pilots, implementation patterns, and real-world operating experiments.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><span class="badge">Live</span><h3>Ask COL-B</h3><p>A public guide for practical AI questions.</p></article>
+          <article class="card"><span class="badge">Live</span><h3>AI Business Assessment</h3><p>A guided path to identify useful first projects.</p></article>
+          <article class="card"><span class="badge">Prototype / Private Design</span><h3>Field Inspection Reporting System</h3><p>Applied reporting patterns for field work.</p></article>
+          <article class="card"><span class="badge">Internal Pilot</span><h3>THINK TANK OS</h3><p>Structured analysis and mission work.</p></article>
+          <article class="card"><span class="badge">Internal Operating System</span><h3>Software Factory</h3><p>Governed software delivery workflows.</p></article>
+          <article class="card"><span class="badge">Real-World Testbed</span><h3>Workstead Operations</h3><p>Daily operations as a practical proving ground.</p></article>
+        </div>
+        <div class="cta-row"><a class="button ghost" href="./applied-work/">View Applied Work</a></div>
+      </div>
+    </section>
+    <section>
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">How to start</p>
+          <h2>Start with the path that fits where you are.</h2>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>Take the AI Assessment</h3><p>Use the guided assessment to identify practical AI opportunities, readiness signals, risks, and possible first projects.</p><div class="cta-row"><a class="button ghost" href="./assessment/">Take the AI Assessment</a></div></article>
+          <article class="card"><h3>Start a Conversation</h3><p>Reach out with a business problem, workflow, idea, or implementation question.</p><div class="cta-row"><a class="button ghost" href="./contact/">Start a Conversation</a></div></article>
+          <article class="card"><h3>Ask COL-B</h3><p>Explore Cognitive Workstead, practical AI concepts, implementation patterns, and systems being built.</p><div class="cta-row"><a class="button ghost" href="./ask-colb/">Ask COL-B</a></div></article>
         </div>
       </div>
     </section>
   </main>
-
-  <footer><div class="footer-inner"><div>&copy; 2026 Cognitive Workstead, LLC. All rights reserved.</div><div>AI consulting. Applied R&amp;D. Real-world implementation.</div></div></footer>
-  <script src="assets/site.js"></script>
+  <footer class="footer"><div class="section-inner"><strong>Cognitive Workstead</strong><span>Practical AI systems for real business operations.</span></div></footer>
+  <script src="./assets/app.js"></script>
 </body>
 </html>
