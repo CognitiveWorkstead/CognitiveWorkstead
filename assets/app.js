@@ -33,7 +33,7 @@
         title = "You have a workable starting point.";
         body = "There is likely a practical first project here. Tighten the workflow scope, gather examples, and decide what humans must review.";
       }
-      result.innerHTML = `<span class="badge">Result: ${checked}/6</span><h3>${title}</h3><p>${body}</p><div class="cta-row"><a class="button ghost" href="../contact/">Start a Conversation</a><a class="button ghost" href="../ask-colb/">Ask COL-B</a></div>`;
+      result.innerHTML = `<span class="badge">Result: ${checked}/6</span><h3>${title}</h3><p>${body}</p><div class="cta-row"><a class="button ghost" href="../contact/">Start a Conversation</a></div>`;
     });
   }
 })();
