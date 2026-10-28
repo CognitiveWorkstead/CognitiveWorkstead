@@ -7,8 +7,19 @@
   <title>Cognitive Workstead</title>
   <link rel="stylesheet" href="./assets/styles.css">
   <link rel="stylesheet" href="./assets/rig/company-rig.css">
+  <style>
+    .company-home .brand { flex-shrink: 0; white-space: nowrap; }
+    .company-home .primary-nav { gap: 4px; }
+    .company-home .primary-nav a { padding-inline: 6px; white-space: nowrap; }
+    @media (max-width: 1250px) {
+      .company-home .menu-toggle { display: block; }
+      .company-home .nav-shell { flex-wrap: wrap; }
+      .company-home .primary-nav { display: none; width: 100%; flex-direction: column; align-items: stretch; padding-bottom: 18px; }
+      .company-home .primary-nav.is-open { display: flex; }
+    }
+  </style>
 </head>
-<body>
+<body class="company-home">
   <header class="site-header">
     <div class="nav-shell">
       <a class="brand" href="./"><span class="brand-mark">CW</span><span>Cognitive Workstead</span></a>
@@ -16,6 +27,7 @@
       <nav class="primary-nav" data-primary-nav aria-label="Primary navigation">
         <a data-nav-link href="./">Home</a>
         <a data-nav-link class="rig-nav-feature" href="./rig/">RIG <span>For RV owners</span></a>
+        <a data-nav-link href="./col-b/" aria-label="COL-B Cognitive Core">COL-B</a>
         <a data-nav-link href="./services/">Services</a>
         <a data-nav-link href="./solutions/">Solutions</a>
         <a data-nav-link href="./colby-systems/">Colby Systems</a>
@@ -95,6 +107,7 @@
           <p>Cognitive Workstead is developing a family of Colby-powered advisory systems that help people and organizations organize information, explore options, prepare decisions, and move from rough ideas to practical next steps.</p>
         </div>
         <div class="grid">
+          <article class="card"><span class="badge">Portable AI profile</span><h3>COL-B Cognitive Core</h3><p>Bring Colby’s thoughtful, direct working style to your chosen AI host, with adaptive onboarding and a Memory Passport you control.</p><div class="cta-row"><a class="button ghost" href="./col-b/">Explore COL-B Cognitive Core</a></div></article>
           <article class="card"><h3>Colby Architect</h3><p>Structured support for system design and planning.</p></article>
           <article class="card"><h3>Colby Retirement Companion</h3><p>Calm preparation support for retirement planning conversations.</p></article>
           <article class="card"><h3>Colby Executive Advisor</h3><p>Decision preparation for leaders and operators.</p></article>
