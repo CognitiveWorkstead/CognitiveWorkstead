@@ -7,11 +7,33 @@
   <title>AI Business Assessment - Cognitive Workstead</title>
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="stylesheet" href="../assets/rig/company-rig.css">
+
+<link rel="stylesheet" href="/assets/company-navigation.css?v=8b16f843c0">
+<script src="/assets/company-navigation.js?v=37c0bbd7f5" defer></script>
 </head>
 <body>
-  <header class="site-header"><div class="nav-shell"><a class="brand" href="../"><span class="brand-mark">CW</span><span>Cognitive Workstead</span></a><button class="menu-toggle" data-menu-toggle aria-expanded="false" type="button">Menu</button><nav class="primary-nav" data-primary-nav aria-label="Primary navigation"><a data-nav-link href="../">Home</a><a data-nav-link class="rig-nav-feature" href="../rig/">RIG <span>For RV owners</span></a>
-        <a data-nav-link href="../services/">Services</a><a data-nav-link href="../solutions/">Solutions</a><a data-nav-link href="../colby-systems/">Colby Systems</a><a data-nav-link href="../applied-work/">Applied Work</a><a data-nav-link href="../assessment/">Assessment</a><a data-nav-link href="../workshops/">Workshops & speaking</a><a data-nav-link href="../contact/">Contact</a></nav></div></header>
-  <main>
+<!-- CW navigation: generated from _includes/company-navigation.html; edit the template, then run python3 scripts/sync-navigation.py. -->
+<header class="cw-header" data-cw-navigation>
+  <div class="cw-nav-inner">
+    <a class="cw-brand" href="/" aria-label="Cognitive Workstead home"><span class="cw-mark" aria-hidden="true">CW</span><span>Cognitive Workstead</span></a>
+    <button class="cw-menu-toggle" type="button" aria-controls="cw-primary-nav" aria-expanded="false" aria-label="Company menu">Menu <span aria-hidden="true">☰</span></button>
+    <nav class="cw-primary-nav" id="cw-primary-nav" aria-label="Cognitive Workstead navigation">
+      <a href="/">Home</a>
+      <a href="/rig/">RIG</a>
+      <a href="/col-b/">COL-B</a>
+      <a href="/services/">Services</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/colby-systems/">Colby Systems</a>
+      <a href="/applied-work/">Applied Work</a>
+      <a href="/assessment/" aria-current="page">Assessment</a>
+      <a href="/workshops/">Workshops &amp; speaking</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- /CW navigation -->
+
+<main>
     <section class="page-hero"><div class="section-inner"><p class="eyebrow">Assessment</p><h1>AI Business Assessment</h1><p>Find the first AI project worth exploring.</p><p>The AI Business Assessment helps organizations move from general interest in AI to a practical opportunity map. It is designed for leaders, teams, and operators who want to understand where AI could help, what risks or constraints may matter, and what kind of first project could be realistic.</p><div class="cta-row"><a class="button primary" href="#assessment-path">Take the AI Assessment</a><a class="button secondary" href="../contact/">Start a Conversation</a></div></div></section>
     <section id="assessment-path"><div class="section-inner split"><div><div class="section-heading"><h2>Take the quick readiness check.</h2><p>Select the statements that are true for your organization. Your result appears immediately on this page.</p></div><form id="assessment-form" class="assessment-form"><label><input type="checkbox" data-assessment-item value="1"> We can name a real workflow that costs time, creates delays, or produces inconsistent output.</label><label><input type="checkbox" data-assessment-item value="1"> The workflow has examples, documents, reports, messages, or records that can be reviewed.</label><label><input type="checkbox" data-assessment-item value="1"> A human owner can review AI-assisted output before it affects customers, money, safety, or compliance.</label><label><input type="checkbox" data-assessment-item value="1"> The first version can be tested with a small group before wider rollout.</label><label><input type="checkbox" data-assessment-item value="1"> Success can be measured with time saved, fewer errors, faster review, better consistency, or clearer decisions.</label><label><input type="checkbox" data-assessment-item value="1"> Sensitive, regulated, or private data can be excluded or handled with explicit controls.</label><button class="button primary" type="submit">Show My Result</button></form></div><aside id="assessment-result" class="card result-card" aria-live="polite"><span class="badge">Assessment</span><h3>Your result will appear here.</h3><p>Answer the readiness check to see whether your first move should be discovery, a bounded pilot, or implementation planning.</p></aside></div></section>
     <section class="soft-band"><div class="section-inner grid three"><article class="card"><h3>Discovery fit</h3><p>Use discovery when the workflow is still fuzzy, the data boundaries are unclear, or the owner is not yet obvious.</p></article><article class="card"><h3>Pilot fit</h3><p>Use a bounded pilot when the workflow is known, examples are available, and humans can review the output.</p></article><article class="card"><h3>Implementation fit</h3><p>Use implementation planning when the workflow, owner, review model, and success measure are already clear.</p></article></div></section>

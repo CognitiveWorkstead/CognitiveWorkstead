@@ -1,0 +1,44 @@
+/* Scoped so company, COL-B, and RIG page styles cannot change the shared menu. */
+.cw-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #d7ddd2;
+  background: #fbfaf5;
+  color: #153b31;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+.cw-header *, .cw-header *::before, .cw-header *::after { box-sizing: border-box; }
+.cw-header .cw-nav-inner { width: min(1560px, calc(100% - 48px)); min-height: 78px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.cw-header .cw-brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 10px; color: #153b31; font-size: 15px; font-weight: 700; text-decoration: none; white-space: nowrap; padding: 0; }
+.cw-header .cw-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 3px; background: #153b31; color: #fbfaf5; font-size: 13px; font-weight: 700; }
+.cw-header .cw-primary-nav { display: flex; align-items: center; gap: 3px; margin: 0; padding: 0; border: 0; position: static; width: auto; max-height: none; background: transparent; box-shadow: none; }
+.cw-header .cw-primary-nav a { display: inline-flex; align-items: center; min-height: 44px; margin: 0; padding: 10px 7px; border: 0; border-bottom: 2px solid transparent; color: #153b31; font-size: 13px; font-weight: 600; text-decoration: none; line-height: 1.4; white-space: nowrap; }
+.cw-header .cw-primary-nav a:hover, .cw-header .cw-primary-nav a[aria-current] { border-bottom-color: #9b742e; background: #edf0e6; }
+.cw-header a:focus-visible, .cw-header button:focus-visible { outline: 3px solid #9b742e; outline-offset: 3px; }
+.cw-header .cw-menu-toggle { display: none; }
+/* RIG keeps its product links below the same company header, without competing sticky bars. */
+.cw-header + .site-header { position: relative; top: auto; z-index: 30; }
+@media (max-width: 1179px) {
+  .cw-header .cw-nav-inner { flex-wrap: wrap; gap: 0 14px; padding: 14px 0; min-height: 72px; }
+  .cw-header .cw-brand { font-size: 14px; min-height: 44px; }
+  .cw-header .cw-primary-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); flex-basis: 100%; gap: 0 12px; padding-top: 12px; }
+  .cw-header .cw-primary-nav a { white-space: normal; padding: 12px 10px; }
+  .cw-header.cw-nav-ready .cw-menu-toggle { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; padding: 10px 12px; margin-left: auto; border: 1px solid #a7b39d; border-radius: 4px; color: #153b31; background: #fbfaf5; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .cw-header.cw-nav-ready .cw-menu-toggle[aria-expanded="false"] + .cw-primary-nav { display: none; }
+  .cw-header.cw-nav-ready .cw-primary-nav { max-height: calc(100svh - 88px); overflow-y: auto; }
+}
+@media (max-width: 390px) {
+  .cw-header .cw-nav-inner { width: calc(100% - 32px); gap: 0 10px; }
+  .cw-header .cw-brand { font-size: 13px; gap: 8px; }
+  .cw-header .cw-mark { width: 32px; height: 32px; }
+  .cw-header.cw-nav-ready .cw-menu-toggle { padding: 10px; gap: 6px; }
+}
