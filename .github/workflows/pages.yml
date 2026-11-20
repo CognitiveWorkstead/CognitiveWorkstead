@@ -31,10 +31,49 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Wait for the exact uploaded delivery artifact
+        env:
+          REPOSITORY: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+          ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          repo = os.environ["REPOSITORY"]
+          run_id = os.environ["RUN_ID"]
+          expected_id = int(os.environ["ARTIFACT_ID"])
+          name = os.environ["ARTIFACT_NAME"]
+          url = f"https://api.github.com/repos/{repo}/actions/runs/{run_id}/artifacts?per_page=100"
+          for attempt in range(12):
+              request = urllib.request.Request(
+                  url + f"&visibility_check={attempt}",
+                  headers={"User-Agent": "CW-Pages-Delivery", "Cache-Control": "no-cache"},
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=10) as response:
+                      artifacts = json.load(response)["artifacts"]
+                  matches = [a for a in artifacts if a["name"] == name and not a["expired"]]
+                  if len(matches) > 1:
+                      raise SystemExit("Duplicate exact delivery artifacts; deployment held")
+                  if len(matches) == 1 and matches[0]["id"] == expected_id:
+                      print("Exact uploaded Pages artifact is visible")
+                      break
+              except (OSError, ValueError, KeyError):
+                  pass
+              if attempt == 11:
+                  raise SystemExit("Exact delivery artifact unavailable; live website preserved")
+              time.sleep(5)
+          PY
 
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
